@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './Home.css';
+import Project from '../../components/project/Project';
+
+import notifi from '../../media/home/diego_2.jpg';
 
 class Home extends Component {
+
   render() {
     return (
       <div className="Home container">
@@ -16,8 +20,12 @@ class Home extends Component {
               Scroll down to see some highlighted projects, or get an overall sense by reading my resume.
             </p>
           </div>
+
         </div>
 
+        <Project title="NotifiVR" description="Framework to provide you with notifications such as texts and phone calls when you’re inside a virtual reality environment." image={notifi} alt="Picking up a VR telephone to answer a real life call"/>
+        
+        <Project title="Future of Macy's" description="Service design project done in collaboration with Macy's to help envision their customer experience both in and out of the store 5 years from now." link="http://macys.com" image="" alt=""/>
       </div>
     );
   }

@@ -8,6 +8,13 @@ body {
 h1 {
   font-weight: 900;
   font-size: 4em;
+  letter-spacing: .1rem;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3em;
+  margin: .33em 0;
 }
 
 h3 {

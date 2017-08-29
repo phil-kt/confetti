@@ -1,3 +1,25 @@
+.Project {
+  margin-top: 12em;
+  margin-bottom: 12em;
+}
+.project-image {
+  height: 27em;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.30);
+}
+
 .project-blurb {
-  position: absolute;
+  background-color: #fff;
+  padding: 1em 1.5em;
+  box-shadow: 0 1em 2em 0 rgba(0,0,0,0.30);
+  height: 15em;
+  margin-top: -10em;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between
 }
