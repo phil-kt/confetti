@@ -1,32 +1,36 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './Button.css';
 
 class Button extends Component {
   static propTypes = {
     label: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired
+    link: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired
   }
 
   static defaultProps = {
     label: undefined,
-    link: undefined
+    link: undefined,
+    color: undefined
   }
 
   isLinkInternal () {
-    if(this.props.link.indexOf("://")=== -1)
+    if(this.props.link.indexOf("://") === -1)
       return true;
 
     return window.location.host === this.props.link.host;
   }
 
   render() {
+
     return (
-      <div className="button">
+      <div className={"button " + this.props.color}>
         {this.isLinkInternal() ?
-          <a href={this.props.link}>
+          <Link to={this.props.link}>
             {this.props.label}
-          </a> :
+          </Link> :
           <a href={this.props.link} target="_blank">
             {this.props.label}
           </a>

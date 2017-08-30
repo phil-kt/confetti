@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Project.css';
+import './NotifiVR.css';
 
-import Button from '../button/Button';
+import Button from '../../../components/button/Button';
+import PortfolioPage from '../../../components/portfolio-page/PortfolioPage';
 
 class Project extends Component {
 
@@ -26,16 +27,11 @@ class Project extends Component {
   render() {
 
     return (
-      <div className="Project row">
-        <img className="col-lg-offset-2 project-image col-lg-6" src={this.props.image} alt={this.props.alt}/>
-        <div className="project-blurb col-lg-offset-5 col-lg-5">
-          <h2>{this.props.title}</h2>
-          <p>{this.props.description}</p>
-          <div className="bottom">
-            <div className="stats"></div>
-            <Button label="See Details" link={this.props.link} color={this.props.color}/>
-          </div>
-        </div>
+      <div className="NotifiVR container">
+        <PortfolioPage
+          title={"NotifiVR"}
+
+        />
       </div>
     );
   }
