@@ -27,7 +27,9 @@ class Project extends Component {
 
     return (
       <div className="Project row">
-        <img className="col-lg-offset-2 project-image col-lg-6" src={this.props.image} alt={this.props.alt}/>
+        <div className="col-lg-offset-2 col-lg-6">
+        <img className="project-image" src={this.props.image} alt={this.props.alt}/>
+        </div>
         <div className="project-blurb col-lg-offset-5 col-lg-5">
           <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
