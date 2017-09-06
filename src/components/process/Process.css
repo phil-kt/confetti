@@ -1,0 +1,70 @@
+.Process .stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+}
+
+
+.Process .stat {
+  display: flex;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+.Process .stat img {
+  margin-right: .5em;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+}
+
+.Process ul, .Process li {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.Process .timeline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Process .timeline .step {
+  display: flex;
+  margin-bottom: 0.5em;
+
+}
+
+.Process .timeline .time {
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.Process .timeline .step-header {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.Process .timeline .step-info li {
+  margin: .4rem 0;
+  font-size: .75em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 787px){
+  .Process .timeline {
+    justify-content: start;
+  }
+
+  .Process .timeline .step {
+    min-width: 176px;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  .Process .timeline img {
+    transform: rotate(90deg);
+  }
+  
+}

@@ -1,0 +1,12 @@
+.project-page {
+  padding: 3em 0;
+}
+
+.hero-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 20em;
+}
+

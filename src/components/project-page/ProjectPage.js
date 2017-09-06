@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import './PortfolioPage.css';
+import './ProjectPage.css';
 
 class ProjectPage extends Component {
 
@@ -25,12 +25,14 @@ class ProjectPage extends Component {
     return (
       <div className={"project-page " + this.props.title}>
         <div className="header row">
-          <h1 className="col-lg-offset-1 col-lg-10">{this.props.title}</h1>
+          <h1 className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">{this.props.title}</h1>
         </div>
         <div className="row">
-        <img className="col-lg-12" src={this.props.hero} alt={this.props.heroAlt}/>
+          <div className="col-sm-12 col-md-12 col-xs-12 col-lg-12 col-xl-12">
+            <img className="hero-image" src={this.props.hero} alt={this.props.heroAlt}/>
+          </div>
         </div>
-        <div className="content row">
+        <div className="content">
           {this.props.content}
         </div>
       </div>

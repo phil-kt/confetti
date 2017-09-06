@@ -27,15 +27,15 @@ class Project extends Component {
 
     return (
       <div className="Project row">
-        <div className="col-lg-offset-2 col-lg-6">
+        <div className="col-md-offset-2 col-md-6 col-lg-offset-2 col-lg-6">
         <img className="project-image" src={this.props.image} alt={this.props.alt}/>
         </div>
-        <div className="project-blurb col-lg-offset-5 col-lg-5">
+        <div className="project-blurb col-md-offset-4 col-md-7 col-lg-offset-5 col-lg-5 ">
           <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
           <div className="bottom">
             <div className="stats"></div>
-            <Button label="See Details" link={this.props.link} color={this.props.color}/>
+            <Button label="Case Study" link={this.props.link} color={this.props.color}/>
           </div>
         </div>
       </div>
