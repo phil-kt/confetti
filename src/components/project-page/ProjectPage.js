@@ -13,17 +13,17 @@ class ProjectPage extends Component {
   }
 
   static defaultProps = {
-    title: undefined,
-    description: undefined,
+    title: "",
+    description: "",
     content: undefined,
-    hero: undefined,
-    heroAlt: undefined
+    hero: "",
+    heroAlt: ""
   }
 
   render () {
 
     return (
-      <div className={"project-page " + this.props.title}>
+      <div className={"project-page container " + this.props.title}>
         <div className="header row">
           <h1 className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">{this.props.title}</h1>
         </div>

@@ -5,9 +5,10 @@ import './NotifiVR.css';
 import Button from '../../../components/button/Button';
 import PortfolioPage from '../../../components/project-page/ProjectPage';
 import Process from '../../../components/process/Process';
+import ProjectSection from "../../../components/project-section/ProjectSection";
 
 import hero from '../../../media/notifiVR/pickup.png';
-import ProjectSection from "../../../components/project-section/ProjectSection";
+import sharing from '../../../media/notifiVR/sharing.JPG';
 
 
 class Project extends Component {
@@ -59,7 +60,7 @@ class Project extends Component {
 
 
     return (
-      <div className="NotifiVR container">
+      <div className="NotifiVR">
         <PortfolioPage
           title={"NotifiVR"}
           hero={hero}
@@ -107,7 +108,14 @@ class Project extends Component {
                   </p>
 
                   <p className={pStyle}>
+                    Taking the results of this survey, we then decided to hold a 2 hour participatory design activity with professional VR Designers in the Atlanta area to help get their perspective on how we might solve for those problems. We provided 2 different environments to think about while designing notifications: a closed and busy scenario like a shooter game, and a more open relaxed game like Tilt Brush. At the end of the activity everyone shared the designs and concerns they had written on Post It notes and we collected them for further coding and grouping.
+                  </p>
 
+                  <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <img src={sharing} alt="Image of one person at a whiteboard sharing their design ideas"/>
+                  </div>
+                  <p className={"caption " + pStyle}>
+                    Sharing and discussing designs at our participatory design event
                   </p>
                   </span>
                 }

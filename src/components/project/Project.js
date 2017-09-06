@@ -16,12 +16,12 @@ class Project extends Component {
   }
 
   static defaultProps = {
-    title: undefined,
-    description: undefined,
-    link: undefined,
-    image: undefined,
-    alt: undefined,
-    color: undefined
+    title: "",
+    description: "",
+    link: "",
+    image: "",
+    alt: "",
+    color: ""
   }
   render() {
 

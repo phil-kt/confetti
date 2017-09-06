@@ -43,6 +43,7 @@ class Process extends Component {
                       src={index === 0 ? first :
                         (index === stepsLength - 1 ? last
                         : middle)}
+                      alt={index + " step"}
                     />
                   </div>
                   <li key={index} className="step-details">

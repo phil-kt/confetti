@@ -1,7 +1,75 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/book/CircularStd-Book.woff2') format('woff2'),
+       url('./fonts/circular/book/CircularStd-Book.woff') format('woff'),
+       url('./fonts/circular/book/CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/book-italic/CircularStd-BookItalic.woff2') format('woff2'),
+       url('./fonts/circular/book-italic/CircularStd-BookItalic.woff') format('woff'),
+       url('./fonts/circular/book-italic/CircularStd-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/medium/CircularStd-Medium.woff2') format('woff2'),
+       url('./fonts/circular/medium/CircularStd-Medium.woff') format('woff'),
+       url('./fonts/circular/medium/CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/medium-italic/CircularStd-MediumItalic.woff2') format('woff2'),
+  url('./fonts/circular/medium-italic/CircularStd-MediumItalic.woff') format('woff'),
+  url('./fonts/circular/medium-italic/CircularStd-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/bold/CircularStd-Bold.woff2') format('woff2'),
+  url('./fonts/circular/bold/CircularStd-Bold.woff') format('woff'),
+  url('./fonts/circular/bold/CircularStd-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/bold-italic/CircularStd-BoldItalic.woff2') format('woff2'),
+  url('./fonts/circular/bold-italic/CircularStd-BoldItalic.woff') format('woff'),
+  url('./fonts/circular/bold-italic/CircularStd-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/black/CircularStd-Black.woff2') format('woff2'),
+  url('./fonts/circular/black/CircularStd-Black.woff') format('woff'),
+  url('./fonts/circular/black/CircularStd-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('./fonts/circular/black-italic/CircularStd-BlackItalic.woff2') format('woff2'),
+  url('./fonts/circular/black-italic/CircularStd-BlackItalic.woff') format('woff'),
+  url('./fonts/circular/black-italic/CircularStd-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-feature-settings: "liga", "kern";
   text-rendering: optimizeLegibility;
@@ -9,6 +77,7 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   position: relative;
+  background: #FAFAFA;
 }
 
 h1 {
@@ -37,10 +106,4 @@ h4 {
 
 p {
   line-height: 1.5em;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 831px) {
-  #root {
-    padding-right: 1em;
-  }
 }
