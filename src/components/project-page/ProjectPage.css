@@ -8,5 +8,6 @@
   width: 100%;
   height: auto;
   max-height: 20em;
+  box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.30);
 }
 

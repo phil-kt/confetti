@@ -36,7 +36,7 @@
 }
 
 .button a:hover {
-  transform: scale(1.02)
+  transform: translate(0, -1px);
 }
 
 .button a:hover::after {

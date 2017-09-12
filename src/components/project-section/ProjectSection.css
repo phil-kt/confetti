@@ -7,13 +7,35 @@
   font-style: italic;
 }
 
-.project-section img {
+.project-section .feature-image {
+  max-width: 100%;
+  height: auto;
+  margin: .75em 0;
+  box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.30);
+}
+
+.project-section .mini-image {
+  box-shadow: 0 0.25em .5em 0 rgba(0,0,0,0.15);
   max-width: 100%;
   height: auto;
   margin: .75em 0;
 }
 
+.project-section .mini-image:hover {
+  cursor: pointer;
+}
+
 .project-section .caption {
   font-size: .875em;
   text-align: center;
+  margin-bottom: 0;
+}
+
+.project-section .list {
+  padding-left: 1.5em;
+  margin-top: 0;
+}
+
+.project-section .list li {
+  margin: 0.5em 0;
 }

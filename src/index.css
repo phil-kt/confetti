@@ -74,10 +74,13 @@ body {
   font-feature-settings: "liga", "kern";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  padding-left: 2rem;
-  padding-right: 2rem;
   position: relative;
   background: #FAFAFA;
+}
+
+#root {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 h1 {
@@ -100,8 +103,9 @@ h3 {
 }
 
 h4 {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1em;
+  margin: .5em auto;
 }
 
 p {

@@ -37,7 +37,7 @@ class Process extends Component {
           {(this.props.steps).map(function (step, index){
 
               return (
-                <span className="step">
+                <span key={"step" + index} className="step">
                   <div className="time">
                     <img
                       src={index === 0 ? first :
@@ -50,7 +50,7 @@ class Process extends Component {
                     <h4 className="step-header">{step.title}</h4>
                     <ul className="step-info">
                     {(step.processes).map(function (process, index){
-                      return <li>{process}</li>
+                      return <li key={step.title + "desc" + index}>{process}</li>
                     })}
                     </ul>
                   </li>
