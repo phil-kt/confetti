@@ -29,6 +29,11 @@ import phone_booth_video from '../../../media/notifiVR/video/pb_fc_c.mp4';
 import watch_video from '../../../media/notifiVR/video/watch_c.mp4';
 import popup_video from '../../../media/notifiVR/video/slack.mp4';
 
+import phone_median from '../../../media/notifiVR/stats/phone_median.png';
+import phone_booth_median from '../../../media/notifiVR/stats/phone_booth_median.png';
+import popup_median from '../../../media/notifiVR/stats/popup_median.png';
+import watch_median from '../../../media/notifiVR/stats/watch_median.png';
+
 class NotifiVR extends Component {
 
   constructor () {
@@ -310,9 +315,12 @@ class NotifiVR extends Component {
                         },
                         {
                           src: physical,
-                          caption: 'Sydney, Australia - Photo by Jill Smith',
+                          caption: 'Displaying a physical obstacle in VR'
                         },
-                        { src: footsteps}
+                        {
+                          src: footsteps,
+                          caption: 'Footsteps conveying that someone is in the room'
+                        }
                       ]}
                       open={this.state.lightboxIsOpen}
                       index={this.state.index}
@@ -512,13 +520,13 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        For testing these interactions, we recruited 14 participants, all with variable experience with virtual reality. We began with getting each user accustomed to the controls of the Vive, by having them teleport and place the ball in the ring several times until they felt comfortable. Each participant was then presented each notification in a counterbalanced order according to a latin square of 12 conditions (4 notification methods, 3 modes of feedback). Participants were encouraged to think-aloud as they encountered each notification and the system logged their reaction time.
+                        For testing these interactions, we recruited 14 participants, all with variable experience with virtual reality. We began with getting each user accustomed to the controls of the HTC Vive, by having them teleport and place the ball in the ring several times until they felt comfortable. Each participant was then presented each notification in a counterbalanced order according to a latin square of 12 conditions (4 notification methods, 3 modes of feedback). Participants were encouraged to think-aloud as they encountered each notification and the system logged their reaction time.
                       </p>
                     }/>
 
                     <Row content={
                       <p className={pStyle}>
-                        After the test, we then had users fill out a questionnare to rate the notifications on a Likert scale for five different metrics:
+                        After the test, we then had users fill out a questionnare containing some short answer questions and a prompt to rate the notifications on a Likert scale for five different metrics:
                       </p>
                     }/>
 
@@ -531,15 +539,129 @@ class NotifiVR extends Component {
                         <li>Intrusiveness (how much did it affect your immersion?)</li>
                       </ul>
                     }/>
+                  </span>
+                }
+              />
+
+              <ProjectSection
+                title={"Results"}
+                content={
+                  <span>
+                    <Row content={
+                      <p className={pStyle}>
+                        To analyze the data, we compiled the Likert scores and compared medians across a wide margin of metrics. We mapped various combinations of our notification designs, feedback methods (visual, audio visual, and visual haptic), and five metrics across the x and y axis.
+                      </p>
+                    }/>
+
+                    <div className="row">
+                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
+                        <img className="feature-image" src={phone_median} alt=""/>
+                      </div>
+                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
+                        <img className="feature-image" src={phone_booth_median} alt=""/>
+                      </div>
+                    </div>
+
+                    <div className="row">
+                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
+                        <img className="feature-image" src={popup_median} alt=""/>
+                      </div>
+                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
+                        <img className="feature-image" src={watch_median} alt=""/>
+                      </div>
+                    </div>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        There were a lot of these graphs
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        From these charts it is easy to see that the phone booth was the most intrusive of all four notification methods. However, it also scored the highest on the Believability scale, which means that perhaps because it was so intrusive to the game it was easy to understand it represented something from the real world coming into the VR environment.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        The wrist watch is also notable for its high level of Interactibility, people were quick and wanting to play with the wrist watch to view and manage their notifications, and thought it could be capitalized on to a greater extent.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        One other important result was that the reaction time for visual notifications were the slowest, probably due to the fact that in VR you have large viewport and may not be looking necessarily where the viewport is. Notifications with audio or haptic cues both had consistently faster reaction times compared to just a visual cue.
+                      </p>
+                    }/>
+
+                  </span>
+
+                }
+              />
+
+              <ProjectSection
+                title={"Recommendations"}
+                content={
+                  <span>
+                    <Row content={
+                      <p className={pStyle}>
+                        From our observations, testing, and participant feedback, we can provide the following suggestions when designing notifications for virtual reality:
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <ul className={pStyle + " list"}>
+                        <li>Notifications should have a visual style or language that is different from the environment, as multiple users noted the visual difference of the notifications versus the game made them understand they were from an external source</li>
+                        <li>Haptic feedback should be reserved for only the most important notifications, as it is intrusive to the game and can also be hard to differentiate from diagetic vibration, optimally vibration would occur from a source other then the controller (e.g. wrist, feet, or head motors)</li>
+                        <li>Controllers are easier to understand as a source of external alerts, because they are both real and virtual (as in they are rendered in the game, but are also physically held by the player). However, placing a lot of notifications over the controller would be very disruptive so they should be used sparingly</li>
+                        <li>Purely visual notifications should be avoided, or placed in a specific spot in the environment, as tey are easy to miss and require a lot of visual scan by the user to find</li>
+                        <li>Do not spawn notifications too close to the body (if they are not on the body), as it causes undesired jump scares and user confusion</li>
+                        <li>Borrow from existing metaphors (smart watch, phone interfaces) to display notifications in VR, it is easier for the player to grasp and interact with as they already have a mental model of how it works</li>
+                      </ul>
+                    }/>
+
 
 
                   </span>
+
+                }
+              />
+
+              <ProjectSection
+                title={"Conclusion"}
+                content={
+                  <span>
+                  <Row content={
+                    <p className={pStyle}>
+                      From this project I learned a lot about designing for virtual reality as well as the affordances provided by the platform. I got to try my hand at both designing software for the Vive, as well as designing the interactions and exploring the new possibilites within VR.
+                    </p>
+                  }/>
+
+                  <Row content={
+                    <p className={pStyle}>
+                      Designing for VR is stimulating because not all the interaction paradigms are thought out yet, which gives you a lot more freedom to explore and trial things that might not make sense in a 2D interface. I hope that I can continue to play with and design for VR experiences in the future as the technology becomes more mainstream and more accessible.
+                    </p>
+                  }
+                  />
+
+                  <Row content={
+                    <p className={pStyle}>
+                      (I also really hope our paper gets published)
+                    </p>
+                  }
+                  />
+
+                  </span>
+
                 }
               />
 
             </span>
           }
         />
+
+
       </div>
     );
   }
