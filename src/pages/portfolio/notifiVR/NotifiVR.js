@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
+import { Collapse } from 'react-collapse';
+import VisibilitySensor from 'react-visibility-sensor';
 import './NotifiVR.css';
 
 import Button from '../../../components/button/Button';
-import PortfolioPage from '../../../components/project-page/ProjectPage';
+import ProjectPage from '../../../components/project-page/ProjectPage';
 import Process from '../../../components/process/Process';
 import ProjectSection from "../../../components/project-section/ProjectSection";
 import Row from '../../../components/row/Row';
 import Lightbox from '../../../components/lightbox/Lightbox';
+import Video from '../../../components/video/Video';
 
 import hero from '../../../media/notifiVR/pickup.png';
-import sharing from '../../../media/notifiVR/sharing.JPG';
+import sharing from '../../../media/notifiVR/sharing.jpg';
 import playing_env from '../../../media/notifiVR/playing_env.png';
 import framework from '../../../media/notifiVR/framework.png';
 import developer_storyboard from '../../../media/notifiVR/developer_storyboard.png';
@@ -21,6 +24,10 @@ import popup from '../../../media/notifiVR/sketches/popup.jpg';
 import watch from '../../../media/notifiVR/sketches/watch.jpg';
 import footsteps from '../../../media/notifiVR/sketches/footstep.jpg';
 
+import phone_video from '../../../media/notifiVR/video/denwa_c.mp4';
+import phone_booth_video from '../../../media/notifiVR/video/pb_fc_c.mp4';
+import watch_video from '../../../media/notifiVR/video/watch_c.mp4';
+import popup_video from '../../../media/notifiVR/video/slack.mp4';
 
 class NotifiVR extends Component {
 
@@ -30,17 +37,24 @@ class NotifiVR extends Component {
     this.state = {
       lightboxIsOpen: false,
       index: 0,
+      environmentOpen: false,
     };
 
-
-    this.openLightbox = this.openLightbox.bind(this)
-
+    this.openLightbox = this.openLightbox.bind(this);
+    this.collapseEnvironment = this.collapseEnvironment.bind(this);
   }
 
   openLightbox(index, event) {
+    console.log(index);
     this.setState({
       lightboxIsOpen: true,
       index: index
+    })
+  }
+
+  collapseEnvironment() {
+    this.setState({
+      environmentOpen: !this.state.environmentOpen
     })
   }
 
@@ -78,7 +92,7 @@ class NotifiVR extends Component {
 
     return (
       <div className="NotifiVR">
-        <PortfolioPage
+        <ProjectPage
           title={"NotifiVR"}
           hero={hero}
           heroAlt={"User testing of a person testing the Vive VR headset."}
@@ -169,6 +183,7 @@ class NotifiVR extends Component {
                 }
 
               />
+
               <ProjectSection
                 title={"Insights"}
                 content={
@@ -246,7 +261,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Taking our insights of possible solutions generated from our participatory exercise, we then began to sketch and ideate different designs to prototype. There were three necessary tasks to establish our testing environment:
+                        Taking our insights of possible solutions generated from our participatory exercise, we then began to sketch and ideate different designs to prototype. There were two necessary tasks to establish our testing environment:
                       </p>
                     }/>
 
@@ -259,10 +274,6 @@ class NotifiVR extends Component {
                         <li>
                           Create the Unity environment and framework that would allow us to quickly edit notification
                           methods and to test users with
-                        </li>
-                        <li>
-                          Develop a method for the digital notifications from your phone to be transmitted to the VR
-                          environment, as Unity had no built-in method for that
                         </li>
                       </ul>
                     }/>
@@ -280,35 +291,83 @@ class NotifiVR extends Component {
 
                     <Lightbox
                       images={[
-                        { src: phone },
-                        { src: phone_booth },
-                        { src: watch },
-                        { src: popup },
-                        { src: physical },
+                        {
+                          src: phone,
+                          caption: 'Displaying call information over a controller'
+
+                        },
+                        {
+                          src: phone_booth,
+                          caption: 'Popping up a phone booth to answer a call'
+                        },
+                        {
+                          src: watch,
+                          caption: 'A smartwatch showing info using 3D space'
+                        },
+                        {
+                          src: popup,
+                          caption: 'Message popups over the game environment'
+                        },
+                        {
+                          src: physical,
+                          caption: 'Sydney, Australia - Photo by Jill Smith',
+                        },
                         { src: footsteps}
                       ]}
                       open={this.state.lightboxIsOpen}
                       index={this.state.index}
                     />
 
-                    <div className="row">
-
-                      {
-                        images.map(function (image, index){
+                    <Row content={
+                      images.map(function (image, index) {
                         return (
-                          <div onClick={(e) => self.openLightbox(index, e)} className={"col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"}>
+                          <div key={"sketch" + index} onClick={(e) => self.openLightbox(index, e)}
+                               className={"col-xs-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"}>
                             <img className="mini-image" src={image} alt=""/>
                           </div>
                         )
-                        })
-                      }
-                    </div>
+                      })
+                    }/>
 
                     <Row content={
                       <p className={"caption " + pStyle}>
                         Sketches of different notification approaches
                       </p>
                     }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        After brainstorming, we ended up with four different notifications type we wanted to pursue for this part of the project, which were all aimed at conveying the status of digital notifications you'd received.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <ul className={pStyle + " list"}>
+                        <li>
+                          A phone overlaid on the controller for incoming calls
+                        </li>
+                        <li>
+                          A phone booth in the environment for incoming calls
+                        </li>
+                        <li>
+                          Popups on the environments for messages
+                        </li>
+                        <li>
+                          A smart watch on the wrist to show messages
+                        </li>
+                      </ul>
+                    }/>
+
+                    <Row content={
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseEnvironment}>
+                        <Button
+                          label={this.state.environmentOpen ? "Hide Unity Details" : "See Unity Details"}
+                          color={"green"}
+                        />
+                      </div>
+                    }/>
+
+                    <Collapse isOpened={this.state.environmentOpen}>
 
                     <Row content={
                       <h4 className={pStyle}>Unity Environment and Framework</h4>
@@ -366,7 +425,7 @@ class NotifiVR extends Component {
                         triggers like phone calls, text messages, or physical entrances. The Manager also keeps track of
                         what Notifier objects exist, which are the game objects that actually spawn and inform you of
                         the notification that you received. A developer is able to pick what sort of feedback the
-                        Notifer object provides, and how it manifests itself.
+                        Notifier object provides, and how it manifests itself.
                       </p>
                     }/>
 
@@ -383,11 +442,102 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
+                    </Collapse>
 
                   </span>
-                }/>
-            </span>
+                }
+              />
 
+              <ProjectSection
+                title={"Prototype"}
+                content={
+                  <span>
+                    <Row content={
+                      <p className={pStyle}>
+                        After we had the designs, framework, and the environment decided upon, it was time to combine them and start testing. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and some help from our good old friend the Wizard of Oz to fake the outside triggers.
+                      </p>
+                    }/>
+                    <Row content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              src={phone_video}
+                              caption={"Receiving a phone call on the controller"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+
+                    }/>
+
+                    <Row content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              src={phone_booth_video}
+                              caption={"Answering a call in a phone booth"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              src={popup_video}
+                              caption={"Getting a message from Slack on a wall"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row content={
+                      <VisibilitySensor>
+                       {({isVisible}) =>
+                         <div className={pStyle}>
+                           <Video
+                             autoplay={isVisible}
+                             src={watch_video}
+                             caption={"Checking email on a watch"}/>
+                         </div>
+                       }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        For testing these interactions, we recruited 14 participants, all with variable experience with virtual reality. We began with getting each user accustomed to the controls of the Vive, by having them teleport and place the ball in the ring several times until they felt comfortable. Each participant was then presented each notification in a counterbalanced order according to a latin square of 12 conditions (4 notification methods, 3 modes of feedback). Participants were encouraged to think-aloud as they encountered each notification and the system logged their reaction time.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        After the test, we then had users fill out a questionnare to rate the notifications on a Likert scale for five different metrics:
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <ul className={pStyle + " list"}>
+                        <li>Noticeability (How easy was it to notice?)</li>
+                        <li>Understandability (Could you understand what it was conveying?)</li>
+                        <li>Interactibility (how was the level of interaction?)</li>
+                        <li>Believability (Did you believe it was coming from the real world?)</li>
+                        <li>Intrusiveness (how much did it affect your immersion?)</li>
+                      </ul>
+                    }/>
+
+
+                  </span>
+                }
+              />
+
+            </span>
           }
         />
       </div>

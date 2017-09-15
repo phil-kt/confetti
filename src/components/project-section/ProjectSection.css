@@ -39,3 +39,9 @@
 .project-section .list li {
   margin: 0.5em 0;
 }
+
+.button-wrapper {
+  text-align: center;
+  margin: 1em;
+}
+

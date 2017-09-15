@@ -34,7 +34,8 @@ class MyLightbox extends Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState ({
-      lightboxIsOpen: nextProps.open
+      lightboxIsOpen: nextProps.open,
+      currentImage: nextProps.index
     })
   }
 

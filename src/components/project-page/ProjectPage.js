@@ -4,6 +4,12 @@ import './ProjectPage.css';
 
 class ProjectPage extends Component {
 
+  constructor() {
+    super()
+
+    this.pStyle = "col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6";
+  }
+
   static propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -28,7 +34,7 @@ class ProjectPage extends Component {
     return (
       <div className={"project-page container " + this.props.title}>
         <div className="header row">
-          <h1 className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6">{this.props.title}</h1>
+          <h1 className={this.pStyle}>{this.props.title}</h1>
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-12 col-xs-12 col-lg-12 col-xl-12">

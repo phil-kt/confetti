@@ -1,0 +1,9 @@
+.video {
+  width: 100%;
+  margin: .75em auto;
+  box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.30);
+}
+
+.video + .caption {
+  margin-bottom: 1em;
+}

@@ -6,14 +6,14 @@ import './Button.css';
 class Button extends Component {
   static propTypes = {
     label: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired
+    link: PropTypes.string,
+    color: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
-    label: undefined,
-    link: undefined,
-    color: undefined
+    label: "Button",
+    link: "#",
+    color: "green"
   }
 
   isLinkInternal () {
@@ -27,13 +27,18 @@ class Button extends Component {
 
     return (
       <div className={"button " + this.props.color}>
-        {this.isLinkInternal() ?
-          <Link to={this.props.link}>
-            {this.props.label}
-          </Link> :
-          <a href={this.props.link} target="_blank">
-            {this.props.label}
-          </a>
+
+        {
+          this.props.link ?
+            (
+              this.isLinkInternal() ?
+              <Link to={this.props.link}>
+                {this.props.label}
+              </Link> :
+              <a href={this.props.link} target="_blank">
+                {this.props.label}
+              </a>
+            ) : <a>{this.props.label}</a>
         }
       </div>
     );
