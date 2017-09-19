@@ -7,11 +7,35 @@ import macy from '../../media/home/macy.jpg';
 
 class Home extends Component {
 
+
+  constructor(){
+    super();
+
+    const date = new Date();
+    let localTime = date.toLocaleTimeString();
+
+    if(localTime.includes("AM")){
+      this.state = {
+        greeting: "Good morning"
+      }
+    }
+    else if (localTime.split(" ")[0][1] === ":" && parseInt(localTime.split("")[0][0], 10) < 6){
+      this.state = {
+        greeting: "Good afternoon"
+      }
+    }
+    else {
+      this.state = {
+        greeting: "Good evening"
+      }
+    }
+  }
+
   render() {
     return (
       <div className="Home container">
         <div className="intro row">
-          <h3 className="col-lg-4">Good morning, I'm</h3>
+          <h3 className="col-lg-4">{this.state.greeting}, I'm</h3>
           <h1 className="col-lg-12">Philippe Kimura-Thollander</h1>
           <div className="col-lg-6">
             <p>
