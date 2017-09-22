@@ -11,13 +11,15 @@ class Video extends Component {
   static propTypes = {
     autoplay: PropTypes.bool,
     src: PropTypes.string.isRequired,
-    caption: PropTypes.string.isRequired
+    caption: PropTypes.string.isRequired,
+    controls: PropTypes.bool
   }
 
   static defaultProps = {
     autoplay: false,
     src: "",
-    caption: ""
+    caption: "",
+    controls: false
   }
 
   playVideo = () => {

@@ -180,7 +180,7 @@ class NotifiVR extends Component {
                     }/>
 
                     <Row content={
-                      <p className={"caption " + pStyle}>
+                      <p className={"caption no-margin-bottom " + pStyle}>
                         Sharing and discussing ideas at our participatory design event
                       </p>
                     }/>
@@ -196,8 +196,8 @@ class NotifiVR extends Component {
                     <Row content={
                       <p className={pStyle}>
                         Once we gathered all the design results from the event, we then mapped them all in order to find
-                        common themes and ideas that we could use to guide what designs we could create and test with
-                        users. In the end, we had <em>three main notification methods:</em>
+                        common themes and ideas that we could use to guide what designs to create and test with
+                        users. In the end, we had three main notification methods:
                       </p>
                     }/>
 
@@ -218,7 +218,7 @@ class NotifiVR extends Component {
                         <em>Metaphors</em> were also very popular. Sounds like a door creak to signify someone entering
                         the room, or having an hourly chime to help keep track of how long you've been in VR. The
                         designers also mentioned using sounds you were familiar with, like your ring tone or text tone,
-                        to alert you when you've received a message.
+                        to alert you when you’ve received a message.
                       </p>
                     }/>
 
@@ -230,7 +230,7 @@ class NotifiVR extends Component {
                       <p className={pStyle}>
                         <em>3D representations</em> of real world objects were the most common solutions shared.
                         Examples included a hand or person model appearing when someone is waving or trying to talk to
-                        you, or a digital wireframe of your couch in the environment so you don't bump into it. This
+                        you, or a digital wireframe of your couch in the environment so you don’t bump into it. This
                         also extended into ideas like smart watches or phones for digital notifications.
                       </p>
                     }/>
@@ -345,7 +345,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        After brainstorming, we ended up with four different notifications type we wanted to pursue for this part of the project, which were all aimed at conveying the status of digital notifications you'd received.
+                        After brainstorming, we ended up with four different notifications type we wanted to pursue for this part of the project, which were all aimed at conveying the status of digital notifications you’d received.
                       </p>
                     }/>
 
@@ -388,7 +388,7 @@ class NotifiVR extends Component {
                         HTC Vive controllers and place it in a glowing ring on the floor in a giant warehouse. As the
                         user repeated this task, different notifications and signifiers would be triggered randomly,
                         like a vibration and a pop up to indicate you have a message, or spawning a phone booth in the
-                        player's field of view to inform you of an incoming call.
+                        player’s field of view to inform you of an incoming call.
                       </p>
                     }/>
 
@@ -615,9 +615,9 @@ class NotifiVR extends Component {
                         <li>Notifications should have a visual style or language that is different from the environment, as multiple users noted the visual difference of the notifications versus the game made them understand they were from an external source</li>
                         <li>Haptic feedback should be reserved for only the most important notifications, as it is intrusive to the game and can also be hard to differentiate from diagetic vibration, optimally vibration would occur from a source other then the controller (e.g. wrist, feet, or head motors)</li>
                         <li>Controllers are easier to understand as a source of external alerts, because they are both real and virtual (as in they are rendered in the game, but are also physically held by the player). However, placing a lot of notifications over the controller would be very disruptive so they should be used sparingly</li>
-                        <li>Purely visual notifications should be avoided, or placed in a specific spot in the environment, as tey are easy to miss and require a lot of visual scan by the user to find</li>
+                        <li>Purely visual notifications should be avoided, or placed in a specific spot in the environment, as they are easy to miss and require a lot of visual scan by the user to find</li>
                         <li>Do not spawn notifications too close to the body (if they are not on the body), as it causes undesired jump scares and user confusion</li>
-                        <li>Borrow from existing metaphors (smart watch, phone interfaces) to display notifications in VR, it is easier for the player to grasp and interact with as they already have a mental model of how it works</li>
+                        <li>Borrow from existing metaphors (smart watches, phone interfaces) to display notifications in VR, it is easier for the player to grasp and interact with as they already have a mental model of how it works</li>
                       </ul>
                     }/>
 
@@ -651,17 +651,12 @@ class NotifiVR extends Component {
                     </p>
                   }
                   />
-
                   </span>
-
                 }
               />
-
             </span>
           }
         />
-
-
       </div>
     );
   }

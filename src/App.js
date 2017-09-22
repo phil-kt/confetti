@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from './pages/home/Home';
 import NotifiVR from './pages/portfolio/notifiVR/NotifiVR';
+import Macy from './pages/portfolio/macy/Macy';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/notifivr' component={NotifiVR}/>
+        <Route path='/macys' component={Macy}/>
       </Switch>
     );
   }
