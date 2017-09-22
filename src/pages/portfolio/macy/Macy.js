@@ -18,6 +18,7 @@ import reimplement_brand from '../../../media/macy/reimplement_brand.png';
 import storefront from '../../../media/macy/storefront.png';
 import stimulus_overload from '../../../media/macy/stimulus_overload.jpg';
 
+// persona previews
 import michelle from '../../../media/macy/personas/michelle.png';
 import carol from '../../../media/macy/personas/carol.png';
 import david from '../../../media/macy/personas/david.png';
@@ -27,6 +28,17 @@ import stephy from '../../../media/macy/personas/stephy.png';
 import bruno from '../../../media/macy/personas/bruno.png';
 import heather from '../../../media/macy/personas/heather.png';
 import kevin from '../../../media/macy/personas/kevin.png';
+
+//persona full
+import michelle_full from '../../../media/macy/personas_full/michelle.png';
+import carol_full from '../../../media/macy/personas_full/carol.png';
+import david_full from '../../../media/macy/personas_full/david.png';
+import diane_full from '../../../media/macy/personas_full/diane.png';
+import stacy_full from '../../../media/macy/personas_full/stacy.png';
+import stephy_full from '../../../media/macy/personas_full/stephy.png';
+import bruno_full from '../../../media/macy/personas_full/bruno.png';
+import heather_full from '../../../media/macy/personas_full/heather.png';
+import kevin_full from '../../../media/macy/personas_full/kevin.png';
 
 
 class Macy extends Component {
@@ -45,11 +57,11 @@ class Macy extends Component {
 
 
   openLightbox(index, type, event) {
-
     if(type === "research") {
 
       this.setState({
         researchLightboxIsOpen: true,
+        personaLightboxIsOpen: false,
         index: index
       })
     }
@@ -57,6 +69,7 @@ class Macy extends Component {
     if(type === "persona") {
       this.setState({
         personaLightboxIsOpen: true,
+        researchLightboxIsOpen: false,
         index: index
       })
     }
@@ -154,15 +167,15 @@ class Macy extends Component {
                       images={[
                         {
                           src: annual_report,
-                          caption: 'Macy\'s 2016 report for shareholders'
+                          caption: 'Macy’s 2016 report for shareholders'
                         },
                         {
                           src: bazaar,
-                          caption: 'Bazaarvoice\'s trends report for retail'
+                          caption: 'Bazaarvoice’s trends report for retail'
                         },
                         {
                           src: reimplement_brand,
-                          caption: 'Case study on uniting the Macy\'s brand'
+                          caption: 'Case study on uniting the Macy’s brand'
                         },
                         {
                           src: storefront,
@@ -288,16 +301,40 @@ class Macy extends Component {
                     <Lightbox
                       images={[
                         {
-                          src: '',
-                          caption: 'Casual Browser, Bargain Seeker, and Bored Companion'
+                          src: michelle_full,
+                          caption: 'Michelle shops for fun'
                         },
                         {
-                          src: '',
-                          caption: 'Bazaarvoice\'s trends report for retail'
+                          src: carol_full,
+                          caption: 'Carol is a deal hunter'
                         },
                         {
-                          src: '',
-                          caption: 'Case study on uniting the Macy\'s brand'
+                          src: david_full,
+                          caption: 'David got dragged along'
+                        },
+                        {
+                          src: diane_full,
+                          caption: 'Diane shops for others'
+                        },
+                        {
+                          src: stacy_full,
+                          caption: 'Stacy shops to hang out'
+                        },
+                        {
+                          src: stephy_full,
+                          caption: 'Stephy focuses on fashion'
+                        },
+                        {
+                          src: bruno_full,
+                          caption: 'Bruno doesn’t know what to get'
+                        },
+                        {
+                          src: heather_full,
+                          caption: 'Heather helps others shop'
+                        },
+                        {
+                          src: kevin_full,
+                          caption: 'Kevin wants to be in and out'
                         }
                       ]}
                       open={this.state.personaLightboxIsOpen}
@@ -308,11 +345,39 @@ class Macy extends Component {
                       personas_1.map(function (persona, index) {
                         return (
                           <div key={"persona" + index} onClick={(e) => self.openLightbox(index, "persona", e)}
-                               className={index === 0 ? "col-xs-4 col-sm-4 col-md-4 col-lg-offset-1 col-lg-3 col-xl-offset-1 col-xl-3" : "col-xs-4 col-sm-4 col-md-4 col-lg-3 col-xl-3" }>
+                               className={index === 0 ? "col-xs-4 col-sm-4 col-md-4 col-lg-offset-1dot5 col-lg-3 col-xl-offset-1dot5 col-xl-3" : "col-xs-4 col-sm-4 col-md-4 col-lg-3 col-xl-3" }>
                             <img className="mini-image" src={persona} alt=""/>
                           </div>
                         )
                       })
+                    }/>
+
+                    <Row content={
+                      personas_2.map(function (persona, index) {
+                        return (
+                          <div key={"persona" + index+3} onClick={(e) => self.openLightbox(index+3, "persona", e)}
+                               className={index === 0 ? "col-xs-4 col-sm-4 col-md-4 col-lg-offset-1dot5 col-lg-3 col-xl-offset-1dot5 col-xl-3" : "col-xs-4 col-sm-4 col-md-4 col-lg-3 col-xl-3" }>
+                            <img className="mini-image" src={persona} alt=""/>
+                          </div>
+                        )
+                      })
+                    }/>
+
+                    <Row content={
+                      personas_3.map(function (persona, index) {
+                        return (
+                          <div key={"persona" + index+6} onClick={(e) => self.openLightbox(index+6, "persona", e)}
+                               className={index === 0 ? "col-xs-4 col-sm-4 col-md-4 col-lg-offset-1dot5 col-lg-3 col-xl-offset-1dot5 col-xl-3" : "col-xs-4 col-sm-4 col-md-4 col-lg-3 col-xl-3" }>
+                            <img className="mini-image" src={persona} alt=""/>
+                          </div>
+                        )
+                      })
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        Click to see each shopper's full details
+                      </p>
                     }/>
 
                   </span>
