@@ -40,6 +40,11 @@ import bruno_full from '../../../media/macy/personas_full/bruno.png';
 import heather_full from '../../../media/macy/personas_full/heather.png';
 import kevin_full from '../../../media/macy/personas_full/kevin.png';
 
+import current_journey from '../../../media/macy/current_journey.svg';
+import stakeholder_map from '../../../media/macy/stakeholder_map.png';
+
+import bar_and_style from '../../../media/macy/bar_and_style.png';
+import robots from '../../../media/macy/robots.png';
 
 class Macy extends Component {
 
@@ -50,7 +55,7 @@ class Macy extends Component {
       researchLightboxIsOpen: false,
       personaLightboxIsOpen: false,
       index: 0
-    }
+    };
 
     this.openLightbox = this.openLightbox.bind(this);
   }
@@ -94,7 +99,7 @@ class Macy extends Component {
         processes: ["Brand Approach", "Store Layout", "Service Concept"]
       },
       {
-        title: "Build",
+        title: "Prototype",
         processes: ["Mobile App", "3D Models", "Unity Environment"]
       },
       {
@@ -114,7 +119,7 @@ class Macy extends Component {
     return (
       <div className="Macy">
         <ProjectPage
-          title={"The Future of Macy’s"}
+          title={"Macy’s of the Future"}
           hero={hero}
           heroAlt={"User testing of a person testing the Vive VR headset."}
           content={
@@ -200,7 +205,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle + " caption no-margin-bottom"}>
-                        Various asses from researching
+                        Various assets from researching
                       </p>
                     }/>
 
@@ -380,9 +385,160 @@ class Macy extends Component {
                       </p>
                     }/>
 
+                    <Row content={
+                      <h4 className={pStyle}>Customer Journeys</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        After we had our personas developed, we then developed in-store journeys for them to help us identify key problems to tackle in our designs. The example below highlights the pains of walking between departments and having to interact with different associates at each one.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
+                        <img className="feature-image" src={current_journey}
+                             alt="Displays and racks of shoes upon shoes with no real focus"/>
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        You can see there's quite a few negative moments
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <h4 className={pStyle}>Stakeholder Map</h4>
+                    }/>
+
+
+                    <Row content={
+                      <p className={pStyle}>
+                        We also had to consider the context of which our solution would be launched in. A large corporation like Macy’s deals with a lot of different stakeholder on a daily basis, and how our solution would affect those relationships. To help illustrate and consider these factors, we created a stakeholder map.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10"}>
+                        <img className="feature-image" src={stakeholder_map}
+                             alt="Displays and racks of shoes upon shoes with no real focus"/>
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        A lot of relationships going on
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <h4 className={pStyle}>Problems to Tackle</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        After mapping out all of this information, we finally mananged to narrow down some of the problems in the Macy’s shopping experience we wanted to tackle:
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <ul className={pStyle + " list"}>
+                        <li>The disconnect of Macy’s idealized brand identity versus the actual</li>
+                        <li>The difficulty of associates having work the front and back of the store at the same time</li>
+                        <li>Make shopping in-store more personal and more rewarding</li>
+                        <li>Rearrange store departments to create a smoother experience</li>
+                      </ul>
+                    }/>
+
                   </span>
                 }
               />
+
+              <ProjectSection
+                title={"Design"}
+                content={
+                  <span>
+                    <Row content={
+                      <p className={pStyle}>
+                        Once we had identified the problems we wanted to tackle, we began to brainstorm solutions. Because we had the flexibility of thinking of technical developments five years in the future, we leveraged cutting edge commercial innovations that we thought will be commonplace in five years.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <h4 className={pStyle}>Shopping as a Service</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        With the rise of the sharing economy businesses have increasingly about providing a service, like taxis (Uber, Lyft) or lodging (Airbnb). These companies don't actually own the physical entities that enable their product, however Macy’s does have a vast stock of physical merchandise, and we thought that we could leverage that to create the best of both worlds.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <h4 className={pStyle}>Restructuring the Band</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        Currently Macy’s brand does not resonate with any real core demographic, symptoms of the curse of being a department store meant to carry "everything". However within Macy’s they do have their own in-house brands, which do have specific target demographics, such as Bar III and Style&co.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        We thought there was an opportunity to take advantage of those brands, by spinning them out into their own stores that could live outside of Macy’s department stores. Malls are seeing less and less foot traffic, so this tactic would allow them greater market penetration in smaller markets.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <div className={pStyle}>
+                        <img className={"feature-image"} src={bar_and_style}/>
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        Getting Macy's out of the mall and into the streets
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <h4 className={pStyle}>Supporting the Employees</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        Macy’s employees are often caught running between the customer and the backroom checking stock and supplies, and we figured that their time was more valuably spent interacting with the customer rather than checking what was available in the back.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        In order to facilitate more forward-facing time, we imagined a stockroom that was managed by autonomous robots, where an employee could enter what a shopper wanted and the backroom would gather the objects and set them aside in changing room so at the end of their shopping trip, a customer would merely pop into a changing room with their desired clothing waiting for them to try on.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <div className={pStyle}>
+                        <img className={"feature-image"} src={robots}/>
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        An army of automation for fetching clothing
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <h4 className={pStyle}>Resulting Customer Journey</h4>
+                    }/>
+
+                  </span>
+                }
+              />
+
             </span>
           }
         />

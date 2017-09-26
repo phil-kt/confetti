@@ -1,0 +1,498 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1773" height="388" style="background:#fff" viewBox="0 0 1773 388">
+  <defs>
+    <circle id="current_journey-a" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-b" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-c" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-d" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-e" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-f" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-g" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-h" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-i" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-j" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-k" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-l" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-m" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-n" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-o" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-p" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-q" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-r" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-s" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-t" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-u" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-v" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-w" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-x" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-y" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-z" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-A" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-B" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-C" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-D" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-E" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-F" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-G" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-H" cx="10.081" cy="10.081" r="10.081"/>
+    <circle id="current_journey-I" cx="10.081" cy="10.081" r="10.081"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+      <tspan x="410.184" y="74">Wishes she had </tspan> <tspan x="407.622" y="86">the dress to find </tspan> <tspan x="411.168" y="98">the best match</tspan>
+    </text>
+    <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+      <tspan x="430.492" y="220">Checks the back</tspan>
+    </text>
+    <path stroke="#22D4A0" stroke-width="4" d="M1404,304 L1404,155.927049 C1404,147.646022 1410.7079,140.96297 1419.00908,141.000154 L1640.99092,141.994502 C1649.28021,142.031633 1656,148.775502 1656,157.06048 L1656,304"/>
+    <path stroke="#5455C7" stroke-width="4" d="M1221,141.000806 L783.607238,141.000806 C775.320947,141.000806 768.60358,147.720057 768.60358,156.006846 L768.60358,288.993854 C768.60358,297.281461 761.885481,303.999894 753.605346,303.999894 L675.22459,303.999894 C666.941295,303.999894 660.226357,297.280643 660.226357,288.993854 L660.226357,156.006846 C660.226357,147.719239 653.512725,141.000806 645.230857,141.000806 L464.953255,141.000806 C456.671469,141.000806 449.957755,147.715829 449.957755,156.004494 L449.957755,286.437063 C449.957755,294.723371 443.24335,301.440751 434.959031,301.440751 L393.92554,301.440751 C385.641973,301.440751 378.926816,294.725728 378.926816,286.437063 L378.926816,156.004494 C378.926816,147.718186 372.210918,141.000787 363.930489,141.000764 L90.9963269,141 C82.7140842,140.999977 76,147.719248 76,156.006086 L76,304" transform="matrix(-1 0 0 1 1297 0)"/>
+    <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold" transform="translate(547 320)">
+      <tspan x="10.424" y="8.5">Can&apos;t find </tspan> <tspan x="6.536" y="20.5">one shoe in </tspan> <tspan x="12.224" y="32.5">right size</tspan>
+    </text>
+    <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold" transform="translate(848 320)">
+      <tspan x="6.206" y="8.5">Got to keep </tspan> <tspan x="7.856" y="20.5">going back </tspan> <tspan x="11.516" y="32.5">and forth</tspan>
+    </text>
+    <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold" transform="translate(1571 166)">
+      <tspan x="3.876" y="8">Worries about </tspan> <tspan x="10.428" y="20">unattended </tspan> <tspan x="27.318" y="32">floor</tspan>
+    </text>
+    <path stroke="#D03701" stroke-width="4" d="M76,126 C76,126 76.450404,126 77.0063853,126 L436.920514,126 C437.476325,126 438.365835,126 438.925827,126 L1715,126"/>
+    <g transform="translate(518.42 207.42)">
+      <use fill="#FFF" xlink:href="#current_journey-a"/>
+      <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+      <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-a"/>
+      <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+      <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+      <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+    </g>
+    <g transform="translate(776 205)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="4.232" y="10">Returns to </tspan> <tspan x="33.092" y="22">back</tspan>
+      </text>
+      <g transform="translate(61.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-b"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-b"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(1564 239)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="23.232" y="8">Returns to </tspan> <tspan x="4.008" y="20">floor for other </tspan> <tspan x="24.816" y="32">customers</tspan>
+      </text>
+      <g transform="translate(82.42 6.42)">
+        <use fill="#FFF" xlink:href="#current_journey-c"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-c"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(624 205)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="30" y="10">Comes back </tspan> <tspan x="30" y="22">with 2/3 styles</tspan>
+      </text>
+      <g transform="translate(2.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-d"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-d"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(906 205)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="30" y="10">Comes with </tspan> <tspan x="30" y="22">new size</tspan>
+      </text>
+      <g transform="translate(2.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-e"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-e"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(110 78)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="7.12" y="8">Explains what </tspan> <tspan x="16.852" y="20">she wants</tspan>
+      </text>
+      <g transform="translate(31.42 30.42)">
+        <use fill="#FFF" xlink:href="#current_journey-f"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-f"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(202 90)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="8.02" y="8">Browses </tspan>
+      </text>
+      <g transform="translate(16.42 18.42)">
+        <use fill="#FFF" xlink:href="#current_journey-g"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-g"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(330 66)">
+      <g transform="translate(22.42 42.42)">
+        <use fill="#FFF" xlink:href="#current_journey-h"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-h"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="9.662" y="8">Picks out </tspan> <tspan x=".992" y="20">three outifts </tspan> <tspan x="18.332" y="32">to try</tspan>
+      </text>
+    </g>
+    <g transform="translate(263 66)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="10.9" y="8">There’s </tspan> <tspan x="1.204" y="20">some good </tspan> <tspan x="3.526" y="32">stuff here</tspan>
+      </text>
+      <g transform="translate(17.42 42.42)">
+        <use fill="#FFF" xlink:href="#current_journey-i"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBD9B0" stroke-width="3"/>
+        <use stroke="#90AB5D" stroke-width="2" xlink:href="#current_journey-i"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <path stroke="#90AB5D" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516"/>
+      </g>
+    </g>
+    <g transform="translate(1656 80)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="6.118" y="8">Let’s buy </tspan> <tspan x="14.68" y="20">these</tspan>
+      </text>
+      <g transform="translate(17.42 30.42)">
+        <use fill="#FFF" xlink:href="#current_journey-j"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBD9B0" stroke-width="3"/>
+        <use stroke="#90AB5D" stroke-width="2" xlink:href="#current_journey-j"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <path stroke="#90AB5D" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516"/>
+      </g>
+    </g>
+    <g transform="translate(77 132)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="10.418" y="38.5">How can I </tspan> <tspan x="21.65" y="50.5">help?</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-k"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBD9B0" stroke-width="3"/>
+        <use stroke="#90AB5D" stroke-width="2" xlink:href="#current_journey-k"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <path stroke="#90AB5D" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516"/>
+      </g>
+    </g>
+    <g transform="translate(156 132)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="6.674" y="38.5">Let&apos;s take a </tspan> <tspan x="24.536" y="50.5">look</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-l"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBD9B0" stroke-width="3"/>
+        <use stroke="#90AB5D" stroke-width="2" xlink:href="#current_journey-l"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <path stroke="#90AB5D" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516"/>
+      </g>
+    </g>
+    <g transform="translate(1054 134)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="2.648" y="38.5">Compliments </tspan> <tspan x="8.096" y="50.5">on one she </tspan> <tspan x="23.78" y="62.5">likes</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-m"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBD9B0" stroke-width="3"/>
+        <use stroke="#90AB5D" stroke-width="2" xlink:href="#current_journey-m"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#90AB5D"/>
+        <path stroke="#90AB5D" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516"/>
+      </g>
+    </g>
+    <g transform="translate(438.42 108.42)">
+      <use fill="#FFF" xlink:href="#current_journey-n"/>
+      <circle cx="10.081" cy="10.081" r="11.581" stroke="#F5C5B3" stroke-width="3"/>
+      <use stroke="#EE7D52" stroke-width="2" xlink:href="#current_journey-n"/>
+      <circle cx="6.452" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <circle cx="13.71" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <path stroke="#EE7D52" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516" transform="matrix(1 0 0 -1 0 28.397)"/>
+    </g>
+    <g transform="translate(366 132)">
+      <g transform="translate(26.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-o"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-o"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="9.824" y="38">Memorizes </tspan> <tspan x="1.406" y="50">three shoes to </tspan> <tspan x="25.382" y="62">grab</tspan>
+      </text>
+    </g>
+    <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="20" font-weight="bold">
+      <tspan x="58" y="46">Stephy</tspan>
+    </text>
+    <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="20" font-weight="bold">
+      <tspan x="58" y="259">Shoe Associate</tspan>
+    </text>
+    <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="20" font-weight="bold">
+      <tspan x="1256" y="259">Dress Associate</tspan>
+    </text>
+    <g transform="translate(530 78)">
+      <g transform="translate(41.42 30.42)">
+        <use fill="#FFF" xlink:href="#current_journey-p"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-p"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x=".82" y="8">Sits down and waits </tspan> <tspan x="18.934" y="20">for associate</tspan>
+      </text>
+    </g>
+    <g transform="translate(776 78)">
+      <g transform="translate(28.42 30.42)">
+        <use fill="#FFF" xlink:href="#current_journey-q"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-q"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="18.058" y="8">One size </tspan> <tspan x="13.174" y="20">doesn’t fit</tspan>
+      </text>
+    </g>
+    <g transform="translate(848 90)">
+      <g transform="translate(28.42 18.42)">
+        <use fill="#FFF" xlink:href="#current_journey-r"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-r"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="18.928" y="8">Waiting</tspan>
+      </text>
+    </g>
+    <g transform="translate(918 90)">
+      <g transform="translate(28.42 18.42)">
+        <use fill="#FFF" xlink:href="#current_journey-s"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-s"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="4.618" y="8">Tries new size</tspan>
+      </text>
+    </g>
+    <g transform="translate(1004 78)">
+      <g transform="translate(28.42 30.42)">
+        <use fill="#FFF" xlink:href="#current_journey-t"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-t"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="9.604" y="8">Doesn’t like </tspan> <tspan x="26.956" y="20">style</tspan>
+      </text>
+    </g>
+    <g transform="translate(1100 66)">
+      <g transform="translate(28.42 42.42)">
+        <use fill="#FFF" xlink:href="#current_journey-u"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-u"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="7.51" y="8">Wants to try </tspan> <tspan x="3.082" y="20">with dress she </tspan> <tspan x="22.486" y="32">picked</tspan>
+      </text>
+    </g>
+    <g transform="translate(1184 66)">
+      <g transform="translate(28.42 42.42)">
+        <use fill="#FFF" xlink:href="#current_journey-v"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-v"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="3.826" y="8">Walks back to </tspan> <tspan x="6.418" y="20">dress section </tspan> <tspan x="12.064" y="32">with shoes</tspan>
+      </text>
+    </g>
+    <g transform="translate(1350 78)">
+      <g transform="translate(28.42 30.42)">
+        <use fill="#FFF" xlink:href="#current_journey-w"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-w"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="11.08" y="8">Finds dress </tspan> <tspan x="15.85" y="20">associate</tspan>
+      </text>
+    </g>
+    <g transform="translate(1529 68)">
+      <g transform="translate(28.42 42.42)">
+        <use fill="#FFF" xlink:href="#current_journey-x"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-x"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="19.162" y="8">Tries on </tspan> <tspan x="9.64" y="20">dresses and </tspan> <tspan x="24.742" y="32">shoes</tspan>
+      </text>
+    </g>
+    <g transform="translate(683 78)">
+      <g transform="translate(36.42 30.42)">
+        <use fill="#FFF" xlink:href="#current_journey-y"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#F5C5B3" stroke-width="3"/>
+        <use stroke="#EE7D52" stroke-width="2" xlink:href="#current_journey-y"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#EE7D52"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#EE7D52"/>
+        <path stroke="#EE7D52" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516" transform="matrix(1 0 0 -1 0 28.397)"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="18.132" y="8">Really liked </tspan> <tspan x="16.386" y="20">missing pair</tspan>
+      </text>
+    </g>
+    <g transform="translate(1267 66)">
+      <g transform="translate(31.42 42.42)">
+        <use fill="#FFF" xlink:href="#current_journey-z"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#F5C5B3" stroke-width="3"/>
+        <use stroke="#EE7D52" stroke-width="2" xlink:href="#current_journey-z"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#EE7D52"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#EE7D52"/>
+        <path stroke="#EE7D52" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516" transform="matrix(1 0 0 -1 0 28.397)"/>
+      </g>
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="9.658" y="8">Wishes dress </tspan> <tspan x="7.366" y="20">were with her </tspan> <tspan x="14.026" y="32">whole time</tspan>
+      </text>
+    </g>
+    <g transform="translate(455 132)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="9.656" y="38.5">Shoe size?</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-A"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-A"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(659 132)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="19.328" y="38.5">Shows </tspan> <tspan x="2.222" y="50.5">customer 2/3</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-B"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-B"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(737 132)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="12.782" y="38.5">Helps try </tspan> <tspan x="21.242" y="50.5">shoes</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-C"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-C"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(1143 134)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="2.558" y="38.5">Stays in shoe </tspan> <tspan x="17.336" y="50.5">section</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-D"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-D"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(1409 135)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="1.826" y="38.5">Takes dresses </tspan> <tspan x="11.732" y="50.5">from POS </tspan> <tspan x="5.642" y="62.5">hanger rack</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-E"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-E"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(1489 135)">
+      <text fill="#000" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+        <tspan x="3.662" y="38.5">Walks her to </tspan> <tspan x=".11" y="50.5">dressing room</tspan>
+      </text>
+      <g transform="translate(24.42 2.42)">
+        <use fill="#FFF" xlink:href="#current_journey-F"/>
+        <circle cx="10.081" cy="10.081" r="11.581" stroke="#CBCBCB" stroke-width="3"/>
+        <use stroke="#4A4A4A" stroke-width="2" xlink:href="#current_journey-F"/>
+        <circle cx="6.452" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <circle cx="13.71" cy="8.065" r="1.613" fill="#2F2E2E"/>
+        <path stroke="#2F2E2E" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.7096774 L12.566744,13.7096774"/>
+      </g>
+    </g>
+    <g transform="translate(1600.42 138.42)">
+      <use fill="#FFF" xlink:href="#current_journey-G"/>
+      <circle cx="10.081" cy="10.081" r="11.581" stroke="#F5C5B3" stroke-width="3"/>
+      <use stroke="#EE7D52" stroke-width="2" xlink:href="#current_journey-G"/>
+      <circle cx="6.452" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <circle cx="13.71" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <path stroke="#EE7D52" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516" transform="matrix(1 0 0 -1 0 28.397)"/>
+    </g>
+    <g transform="translate(873.42 292.42)">
+      <use fill="#FFF" xlink:href="#current_journey-H"/>
+      <circle cx="10.081" cy="10.081" r="11.581" stroke="#F5C5B3" stroke-width="3"/>
+      <use stroke="#EE7D52" stroke-width="2" xlink:href="#current_journey-H"/>
+      <circle cx="6.452" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <circle cx="13.71" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <path stroke="#EE7D52" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516" transform="matrix(1 0 0 -1 0 28.397)"/>
+    </g>
+    <g transform="translate(572.42 292.42)">
+      <use fill="#FFF" xlink:href="#current_journey-I"/>
+      <circle cx="10.081" cy="10.081" r="11.581" stroke="#F5C5B3" stroke-width="3"/>
+      <use stroke="#EE7D52" stroke-width="2" xlink:href="#current_journey-I"/>
+      <circle cx="6.452" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <circle cx="13.71" cy="8.065" r="1.613" fill="#EE7D52"/>
+      <path stroke="#EE7D52" stroke-linecap="round" stroke-width="2" d="M7.66129032,13.3064516 C7.66129032,13.3064516 8.34738236,15.0905775 10.1140171,15.0905775 C11.8806519,15.0905775 12.566744,13.3064516 12.566744,13.3064516" transform="matrix(1 0 0 -1 0 28.397)"/>
+    </g>
+  </g>
+</svg>
