@@ -37,7 +37,6 @@ class MyLightbox extends Component {
       lightboxIsOpen: nextProps.open,
       currentImage: nextProps.index
     })
-    console.log(this.props.images);
   }
 
   closeLightbox () {

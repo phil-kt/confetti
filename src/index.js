@@ -10,13 +10,18 @@ import NotifiVR from './pages/portfolio/notifiVR/NotifiVR';
 import Macy from './pages/portfolio/macy/Macy';
 
 const history = createHistory();
+let pastURL = ""
 
 function logPageView() {
-  console.log("page");
-  window.scrollTo(0,0);
+  console.log(history);
+  if (history.location.pathname !== pastURL) {
+    window.scrollTo(0, 0);
+  }
   if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
   }
+
+  pastURL = history.location.pathname;
   return null;
 }
 

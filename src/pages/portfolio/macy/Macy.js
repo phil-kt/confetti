@@ -12,10 +12,10 @@ import Lightbox from '../../../components/lightbox/Lightbox';
 import Video from '../../../components/video/Video';
 
 import hero from '../../../media/macy/macy_hero.jpg';
-import bazaar from '../../../media/macy/bazaar.png';
-import annual_report from '../../../media/macy/annual_report.png';
+import bazaar from '../../../media/macy/research/bazaar.png';
+import annual_report from '../../../media/macy/research/annual_report.png';
 import reimplement_brand from '../../../media/macy/reimplement_brand.png';
-import storefront from '../../../media/macy/storefront.png';
+import storefront from '../../../media/macy/research/storefront.png';
 import stimulus_overload from '../../../media/macy/stimulus_overload.jpg';
 
 // persona previews

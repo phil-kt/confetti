@@ -125,6 +125,10 @@ p {
   margin-top: 0 !important;
 }
 
+.one-margin-vert {
+  margin: 1em auto;
+}
+
 a {
   color: #296EA3;
   text-decoration: none;

@@ -10,12 +10,18 @@ import ProjectSection from "../../../components/project-section/ProjectSection";
 import Row from '../../../components/row/Row';
 import Lightbox from '../../../components/lightbox/Lightbox';
 import Video from '../../../components/video/Video';
+import Callout from '../../../components/callout/Callout';
 
 import hero from '../../../media/notifiVR/pickup.png';
 import sharing from '../../../media/notifiVR/sharing.jpg';
 import playing_env from '../../../media/notifiVR/playing_env.png';
 import framework from '../../../media/notifiVR/framework.png';
 import developer_storyboard from '../../../media/notifiVR/developer_storyboard.png';
+
+//insight icons
+import visual from '../../../media/notifiVR/insights/vision.svg';
+import sound from '../../../media/notifiVR/insights/sound.svg';
+import haptic from '../../../media/notifiVR/insights/haptic.svg';
 
 import phone from '../../../media/notifiVR/sketches/phone.jpg';
 import phone_booth from '../../../media/notifiVR/sketches/phone_booth.jpg';
@@ -42,10 +48,12 @@ class NotifiVR extends Component {
     this.state = {
       lightboxIsOpen: false,
       index: 0,
+      insightsOpen: false,
       environmentOpen: false,
     };
 
     this.openLightbox = this.openLightbox.bind(this);
+    this.collapseInsights = this.collapseInsights.bind(this);
     this.collapseEnvironment = this.collapseEnvironment.bind(this);
   }
 
@@ -54,6 +62,13 @@ class NotifiVR extends Component {
     this.setState({
       lightboxIsOpen: true,
       index: index
+    })
+  }
+
+
+  collapseInsights() {
+    this.setState({
+      insightsOpen: !this.state.insightsOpen
     })
   }
 
@@ -200,6 +215,42 @@ class NotifiVR extends Component {
                         users. In the end, we had three main notification methods:
                       </p>
                     }/>
+                    
+                    <div className="row">
+                      <Callout
+                        image={visual}
+                        altText={"icon of an eye"}
+                        title={"Visual"}
+                        description={"3D models of IRL objects or info popups"}
+                        first={true}
+                      />
+
+                      <Callout
+                        image={sound}
+                        altText={"icon of a speaker"}
+                        title={"Audio"}
+                        description={"3D sound and metaphors like creaking doors"}
+                      />
+
+                      <Callout
+                        image={haptic}
+                        altText={"icon of haptics"}
+                        title={"Haptic"}
+                        description={"Vibration feedback of entities around you"}
+                        middle={true}
+                      />
+                    </div>
+
+                    <Row content={
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsights}>
+                        <Button
+                          label={this.state.insightsOpen ? "Hide Detailed Insights" : "See Detailed Insights"}
+                          color={"green"}
+                        />
+                      </div>
+                    }/>
+
+                    <Collapse isOpened={this.state.insightsOpen}>
 
                     <Row content={
                       <h4 className={pStyle}>Audio</h4>
@@ -251,11 +302,13 @@ class NotifiVR extends Component {
                     <Row content={
                       <p className={pStyle}>
                         <em>Metaphorical vibrations</em> were very common, such as using feet vibrations to warn you
-                        about stepping on a pet, or a tap vibration for someone trying ot get your attention. One idea
+                        about stepping on a pet, or a tap vibration for someone trying to get your attention. One idea
                         even played with using a ring finger vibration to indicate you had a call or message from your
                         spouse.
                       </p>
                     }/>
+                    </Collapse>
+                    
                   </span>
                 }
               />

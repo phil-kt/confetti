@@ -1,0 +1,14 @@
+.callout img {
+  height: 75px;
+  display: block;
+  max-width: 100px;
+  margin: 1em auto;
+}
+
+.callout h4 {
+  text-align: center;
+}
+
+.callout p {
+  text-align: center;
+}
