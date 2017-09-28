@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2127" height="601" style="background:#fff" viewBox="0 0 2127 601">
+  <g fill="none" fill-rule="evenodd">
+    <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="20" font-weight="bold">
+      <tspan x="64" y="46">Kevin</tspan>
+    </text>
+    <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="20" font-weight="bold">
+      <tspan x="1155" y="293">Fitting</tspan> <tspan x="1155" y="313">Room</tspan> <tspan x="1155" y="333">Associate </tspan>
+    </text>
+    <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="20" font-weight="bold">
+      <tspan x="637" y="259">Kiosk</tspan>
+    </text>
+    <g transform="matrix(1 0 0 -1 1155 426)">
+      <path stroke="#3C6EE7" stroke-width="3" d="M11,35 C11,35 26.6668068,35 46.0092812,35 L120.201177,35 C128.483572,35 135.19778,41.7240747 135.19778,49.9984698 L135.19778,213.708196 C135.19778,221.991622 141.907742,228.706665 150.204583,228.706665 L761.061528,228.706665"/>
+      <path stroke="#3C6EE7" stroke-width="3" d="M5.06388799,30.689779 C5.67823062,29.768265 6.67668954,29.7718841 7.28861944,30.689779 L13.063888,39.3526818 C13.6782306,40.2741957 13.28174,41.0212304 12.1821934,41.0212304 L0.170313992,41.0212304 C-0.930975089,41.0212304 -1.32331046,40.2705766 -0.711380563,39.3526818 L5.06388799,30.689779 Z" transform="rotate(90 6.177 35.51)"/>
+      <g transform="matrix(1 0 0 -1 40 70)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#3C6EE7" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="14.66" y="28">Picks up</tspan> <tspan x="4.976" y="40">fitting room</tspan> <tspan x="21.566" y="52">items</tspan>
+        </text>
+      </g>
+      <g transform="matrix(1 0 0 -1 165 263)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#3C6EE7" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="9.902" y="28">Puts jeans</tspan> <tspan x="12.872" y="40">in fitting</tspan> <tspan x="22.316" y="52">room</tspan>
+        </text>
+      </g>
+      <g transform="matrix(1 0 0 -1 258 264)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#3C6EE7" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="19.352" y="34">Greets</tspan> <tspan x="12.224" y="46">customer</tspan>
+        </text>
+      </g>
+      <g transform="matrix(1 0 0 -1 691 264)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#3C6EE7" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="7.886" y="34">Checks out</tspan> <tspan x="12.224" y="46">customer</tspan>
+        </text>
+      </g>
+    </g>
+    <g transform="translate(685 159)">
+      <path stroke="#63E138" stroke-width="3" d="M8,228.706665 C8,228.706665 8,213.039377 8,193.711994 L8,49.9984698 C8,41.7150436 14.7128183,35 23.0018289,35 L369.389546,35 C377.674827,35 384.391374,41.7240747 384.391374,49.9984698 L384.391374,228.706665"/>
+      <path stroke="#63E138" stroke-width="3" d="M6.56388799,228.355771 C7.17823062,227.434257 8.17668954,227.437876 8.78861944,228.355771 L14.563888,237.018674 C15.1782306,237.940188 14.78174,238.687223 13.6821934,238.687223 L1.67031399,238.687223 C0.569024911,238.687223 0.176689543,237.936569 0.788619437,237.018674 L6.56388799,228.355771 Z"/>
+      <g transform="translate(36)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#63E138" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="11.418" y="27">Sitting on</tspan> <tspan x="19.56" y="39">standy</tspan> <tspan x="20.232" y="51">screen</tspan>
+        </text>
+      </g>
+      <g transform="translate(151)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#63E138" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="15.36" y="27">Presents</tspan> <tspan x="23.226" y="39">jeans </tspan> <tspan x="12.33" y="51">on screen</tspan>
+        </text>
+      </g>
+      <g transform="translate(275)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#63E138" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="11.664" y="27">Prints out</tspan> <tspan x="5.976" y="39">fitting room</tspan> <tspan x="16.542" y="51">barcode</tspan>
+        </text>
+      </g>
+    </g>
+    <g transform="translate(72 89)">
+      <path stroke="#E74C3C" stroke-width="3" d="M10,37 C10,37 10.4504145,37 11.0064087,37 L370.928921,37 C371.484745,37 372.39236,37 372.926562,37 L1978.84966,37"/>
+      <path stroke="#E74C3C" stroke-width="3" d="M4.39789562,31.3557713 C5.01223824,30.4342574 6.01069717,30.4378765 6.62262706,31.3557713 L12.3978956,40.0186742 C13.0122382,40.9401881 12.6157476,41.6872228 11.5162011,41.6872228 L-0.495678383,41.6872228 C-1.59696746,41.6872228 -1.98930283,40.936569 -1.37737294,40.0186742 L4.39789562,31.3557713 Z" transform="rotate(90 5.51 36.177)"/>
+      <g transform="translate(30)">
+        <circle cx="42" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="27.228" y="32">Walks</tspan> <tspan x="18.114" y="44">into store</tspan>
+        </text>
+      </g>
+      <g transform="translate(139)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="16.334" y="27">Goes to</tspan> <tspan x="22.226" y="39">jeans</tspan> <tspan x="17.336" y="51">section</tspan>
+        </text>
+      </g>
+      <g transform="translate(239)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="17.438" y="27">Finds a</tspan> <tspan x="17.648" y="39">pair he</tspan> <tspan x="23.78" y="51">likes</tspan>
+        </text>
+      </g>
+      <g transform="translate(340)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="17.438" y="27">Finds a</tspan> <tspan x="17.648" y="39">pair he</tspan> <tspan x="23.78" y="51">likes</tspan>
+        </text>
+      </g>
+      <g transform="translate(463)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="13.664" y="27">Takes an</tspan> <tspan x="13.988" y="39">RFID tag</tspan> <tspan x="11.186" y="51">from rack</tspan>
+        </text>
+      </g>
+      <g transform="translate(596)">
+        <circle cx="37" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="18.334" y="27">Goes to</tspan> <tspan x="20.206" y="39">nearby</tspan> <tspan x="24.334" y="51">kiosk</tspan>
+        </text>
+      </g>
+      <g transform="translate(703)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="11.222" y="27">Scans the</tspan> <tspan x="16.964" y="39">RFID of</tspan> <tspan x="12.446" y="51">the jeans</tspan>
+        </text>
+      </g>
+      <g transform="translate(825)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="13.664" y="27">Sends to </tspan> <tspan x="14.768" y="39">a fitting </tspan> <tspan x="22.316" y="51">room</tspan>
+        </text>
+      </g>
+      <g transform="translate(1069 1)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="13.226" y="27">Heads to</tspan> <tspan x="19.328" y="39">fitting </tspan> <tspan x="22.316" y="51">room</tspan>
+        </text>
+      </g>
+      <g transform="translate(1426)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="19.568" y="23">Enters </tspan> <tspan x="4.976" y="35">fitting room</tspan> <tspan x="2.864" y="47">with barcode</tspan>
+        </text>
+      </g>
+      <g transform="translate(1527)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="15.662" y="34">Tries on </tspan> <tspan x="22.226" y="46">jeans</tspan>
+        </text>
+      </g>
+      <g transform="translate(1624)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="9.122" y="30">Tries jeans </tspan> <tspan x="13.61" y="42">in mixed</tspan> <tspan x="15.338" y="54">realities</tspan>
+        </text>
+      </g>
+      <g transform="translate(1725)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="9.446" y="33">Decides to</tspan> <tspan x="11.546" y="45">buy jeans</tspan>
+        </text>
+      </g>
+      <g transform="translate(1861 1)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#E74C3C" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="16.124" y="33">Departs</tspan> <tspan x="22.682" y="45">store</tspan>
+        </text>
+      </g>
+    </g>
+    <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="20" font-weight="bold">
+      <tspan x="912" y="464">System</tspan>
+    </text>
+    <g transform="translate(971 459)">
+      <path stroke="#3FE7FC" stroke-linecap="square" stroke-width="4" d="M0.5,37 L341.986874,37"/>
+      <g transform="translate(58)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#3FE7FC" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="8.45" y="28">Robot gets </tspan> <tspan x="8.75" y="40">jeans from</tspan> <tspan x="16.676" y="52">storage</tspan>
+        </text>
+      </g>
+      <g transform="translate(208)">
+        <circle cx="35" cy="35" r="35" fill="#FFF" stroke="#3FE7FC" stroke-width="4"/>
+        <text fill="#303030" font-family="RotisSemiSansStd-Bold, Rotis Semi Sans Std" font-size="12" font-weight="bold">
+          <tspan x="15.668" y="33">Notifies </tspan> <tspan x="12.35" y="45">associate</tspan>
+        </text>
+      </g>
+    </g>
+    <path stroke="#E74C3C" stroke-width="3" d="M2055.40404,121.187747 C2056.0078,120.261044 2056.98537,120.25901 2057.59046,121.187747 L2063.20717,129.808741 C2063.81093,130.735444 2063.40527,131.486686 2062.29208,131.486686 L2050.70242,131.486686 C2049.59327,131.486686 2049.18224,130.737478 2049.78733,129.808741 L2055.40404,121.187747 Z" transform="rotate(90 2056.497 125.99)"/>
+    <path fill="#E70000" fill-rule="nonzero" d="M800.300028 76.751465C800.340296 76.6147696 800.838072 75.1049026 801.406199 73.3962064 802.476722 70.1764946 803.949471 65.6844995 803.976802 65.555662 803.985405 65.5151085 803.08887 64.839398 801.9845 64.0540782 800.880131 63.2687585 798.631831 61.6709113 796.988278 60.5032964L794 58.3803692 800.196984 58.3285911 806.393967 58.2768129 807.828187 53.9791803C808.617009 51.6154788 809.445203 49.0990317 809.668618 48.3870765 809.892035 47.6751152 810.111951 47.0535103 810.157318 47.005731 810.202689 46.9579518 810.334927 47.2142595 810.451182 47.5752964 810.56744 47.9363394 811.413335 50.5035315 812.330948 53.2801636L813.999339 58.3285911 820.163609 58.3285911C825.449412 58.3350633 825.893415 58.3589469 825.989965 58.3589469 826.128599 58.3589469 824.809866 59.4802288 823.331752 60.5270949 817.779625 64.4593453 816.363449 65.4999154 816.407569 65.6147935 816.449103 65.7229442 819.852083 76.0140218 820.071497 76.6950135L820.166754 76.9906593 819.878558 76.8054796C819.615991 76.6367692 816.434057 74.3687234 815.163924 73.4449398 813.036002 71.8972784 810.310958 69.9998352 810.202497 69.9903121 810.086189 69.9800902 805.433251 73.2364842 802.150016 75.6258986 801.48236 76.1117925 800.776508 76.6197408 800.581456 76.7546677L800.226815 77 800.300028 76.751465zM985.300028 267.751465C985.340296 267.61477 985.838072 266.104903 986.406199 264.396206 987.476722 261.176495 988.949471 256.6845 988.976802 256.555662 988.985405 256.515109 988.08887 255.839398 986.9845 255.054078 985.880131 254.268759 983.631831 252.670911 981.988278 251.503296L979 249.380369 985.196984 249.328591 991.393967 249.276813 992.828187 244.97918C993.617009 242.615479 994.445203 240.099032 994.668618 239.387076 994.892035 238.675115 995.111951 238.05351 995.157318 238.005731 995.202689 237.957952 995.334927 238.21426 995.451182 238.575296 995.56744 238.936339 996.413335 241.503531 997.330948 244.280164L998.999339 249.328591 1005.16361 249.328591C1010.44941 249.335063 1010.89341 249.358947 1010.98996 249.358947 1011.1286 249.358947 1009.80987 250.480229 1008.33175 251.527095 1002.77963 255.459345 1001.36345 256.499915 1001.40757 256.614794 1001.4491 256.722944 1004.85208 267.014022 1005.0715 267.695014L1005.16675 267.990659 1004.87856 267.80548C1004.61599 267.636769 1001.43406 265.368723 1000.16392 264.44494 998.036002 262.897278 995.310958 260.999835 995.202497 260.990312 995.086189 260.98009 990.433251 264.236484 987.150016 266.625899 986.48236 267.111793 985.776508 267.619741 985.581456 267.754668L985.226815 268 985.300028 267.751465zM1204.30003 568.751465C1204.3403 568.61477 1204.83807 567.104903 1205.4062 565.396206 1206.47672 562.176495 1207.94947 557.6845 1207.9768 557.555662 1207.98541 557.515109 1207.08887 556.839398 1205.9845 556.054078 1204.88013 555.268759 1202.63183 553.670911 1200.98828 552.503296L1198 550.380369 1204.19698 550.328591 1210.39397 550.276813 1211.82819 545.97918C1212.61701 543.615479 1213.4452 541.099032 1213.66862 540.387076 1213.89203 539.675115 1214.11195 539.05351 1214.15732 539.005731 1214.20269 538.957952 1214.33493 539.21426 1214.45118 539.575296 1214.56744 539.936339 1215.41333 542.503531 1216.33095 545.280164L1217.99934 550.328591 1224.16361 550.328591C1229.44941 550.335063 1229.89341 550.358947 1229.98996 550.358947 1230.1286 550.358947 1228.80987 551.480229 1227.33175 552.527095 1221.77963 556.459345 1220.36345 557.499915 1220.40757 557.614794 1220.4491 557.722944 1223.85208 568.014022 1224.0715 568.695014L1224.16675 568.990659 1223.87856 568.80548C1223.61599 568.636769 1220.43406 566.368723 1219.16392 565.44494 1217.036 563.897278 1214.31096 561.999835 1214.2025 561.990312 1214.08619 561.98009 1209.43325 565.236484 1206.15002 567.625899 1205.48236 568.111793 1204.77651 568.619741 1204.58146 568.754668L1204.22682 569 1204.30003 568.751465zM1721.30003 77.751465C1721.3403 77.6147696 1721.83807 76.1049026 1722.4062 74.3962064 1723.47672 71.1764946 1724.94947 66.6844995 1724.9768 66.555662 1724.98541 66.5151085 1724.08887 65.839398 1722.9845 65.0540782 1721.88013 64.2687585 1719.63183 62.6709113 1717.98828 61.5032964L1715 59.3803692 1721.19698 59.3285911 1727.39397 59.2768129 1728.82819 54.9791803C1729.61701 52.6154788 1730.4452 50.0990317 1730.66862 49.3870765 1730.89203 48.6751152 1731.11195 48.0535103 1731.15732 48.005731 1731.20269 47.9579518 1731.33493 48.2142595 1731.45118 48.5752964 1731.56744 48.9363394 1732.41333 51.5035315 1733.33095 54.2801636L1734.99934 59.3285911 1741.16361 59.3285911C1746.44941 59.3350633 1746.89341 59.3589469 1746.98996 59.3589469 1747.1286 59.3589469 1745.80987 60.4802288 1744.33175 61.5270949 1738.77963 65.4593453 1737.36345 66.4999154 1737.40757 66.6147935 1737.4491 66.7229442 1740.85208 77.0140218 1741.0715 77.6950135L1741.16675 77.9906593 1740.87856 77.8054796C1740.61599 77.6367692 1737.43406 75.3687234 1736.16392 74.4449398 1734.036 72.8972784 1731.31096 70.9998352 1731.2025 70.9903121 1731.08619 70.9800902 1726.43325 74.2364842 1723.15002 76.6258986 1722.48236 77.1117925 1721.77651 77.6197408 1721.58146 77.7546677L1721.22682 78 1721.30003 77.751465z"/>
+  </g>
+</svg>

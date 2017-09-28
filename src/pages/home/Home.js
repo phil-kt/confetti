@@ -39,10 +39,13 @@ class Home extends Component {
           <h1 className="col-lg-12">Philippe Kimura-Thollander</h1>
           <div className="col-lg-6">
             <p>
-              A user experience designer passionate about making technology delightful, intuitive, and accessible to everyone. (Especially in the realm of emoji, virtual reality, and augmented reality). Currently I'm wrapping up my Master's degree at Georgia Tech's HCI program and searching for full-time opportunities.
+              A user experience designer passionate about making technology delightful, intuitive, and accessible to everyone. (Especially in the realm of emoji, virtual reality, and augmented reality).
             </p>
             <p>
-              Scroll down to see some highlighted projects, or get an overall sense by reading my resume.
+              Currently I'm wrapping up my Master's degree at Georgia Tech's HCI program and searching for full-time opportunities.
+            </p>
+            <p>
+              Scroll down to see some highlighted projects, or get an overall sense by <a href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank">reading my resume.</a>
             </p>
           </div>
 
