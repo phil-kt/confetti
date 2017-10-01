@@ -19,7 +19,7 @@ class ProjectSection extends Component {
     return (
       <div className={"project-section"}>
         <div className="row">
-          <h3 className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6">{this.props.title}</h3>
+          <h3 className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7 col-xl-offset-3 col-xl-6">{this.props.title}</h3>
         </div>
         <div className="project-section-content">
           {this.props.content}

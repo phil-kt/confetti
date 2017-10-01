@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Process.css';
 
-
-import clock from '../../media/icons/clock.svg';
-import hat from '../../media/icons/hat.svg';
-import team from '../../media/icons/team.svg';
-
 import first from '../../media/icons/first.svg';
 import middle from '../../media/icons/middle.svg';
 import last from '../../media/icons/last.svg';
@@ -59,22 +54,6 @@ class Process extends Component {
 
           })}
         </ul>
-        {/*
-        <div className="stats">
-          <div className="stat">
-            <img src={team} alt="Team"/>
-            <span>{this.props.team}</span>
-          </div>
-          <div className="stat">
-            <img src={hat} alt="Hats"/>
-            <span>{this.props.duty}</span>
-          </div>
-          <div className="stat">
-            <img src={clock} alt="Clock"/>
-            <span>{this.props.time}</span>
-          </div>
-        </div>
-          */}
 
       </span>
     );

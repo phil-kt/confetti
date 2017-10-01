@@ -11,7 +11,7 @@ class Video extends Component {
   static propTypes = {
     autoplay: PropTypes.bool,
     src: PropTypes.string.isRequired,
-    caption: PropTypes.string.isRequired,
+    caption: PropTypes.string,
     controls: PropTypes.bool
   }
 
@@ -37,9 +37,12 @@ class Video extends Component {
         <video className={"video"} ref={(video) => { this._video = video; }} src={this.props.src} loop>
           Your browser does not support the video tag. You can alternatively <a href={this.props.src}>download</a> the video.
         </video>
-        <p className={"caption"}>
-          {this.props.caption}
-        </p>
+        {this.props.caption ?
+          <p className={"caption"}>
+            {this.props.caption}
+          </p>
+          : null
+        }
       </span>
     )
   }

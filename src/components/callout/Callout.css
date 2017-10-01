@@ -12,3 +12,7 @@
 .callout p {
   text-align: center;
 }
+
+.callout.Audio img {
+  max-width: 70px;
+}

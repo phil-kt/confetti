@@ -2,6 +2,18 @@
   padding: 3em 0;
 }
 
+.project-page h1 {
+  margin: 0 auto;
+}
+
+.project-page .subtitle {
+  font-size: 2em;
+}
+
+.project-page .subtitle p {
+  margin-top: .5em;
+}
+
 .hero-image {
   display: block;
   object-fit: cover;

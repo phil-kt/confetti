@@ -1,0 +1,9 @@
+.stats ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stats ul li {
+  line-height: 1.4em;
+  margin: 0.25em 0;
+}

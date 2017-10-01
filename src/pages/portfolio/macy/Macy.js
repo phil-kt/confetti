@@ -162,8 +162,9 @@ class Macy extends Component {
       <div className="Macy">
         <ProjectPage
           title={"Macy’s of the Future"}
+          sub
           hero={hero}
-          heroAlt={"User testing of a person testing the Vive VR headset."}
+          heroAlt={"Our Macy's app on top of a bag."}
           content={
             <span>
 
@@ -177,11 +178,6 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <Row content={
-                      <p className={pStyle}>
-                        <a href="#solution">Click here to skip to the end and see how we solved this.</a>
-                      </p>
-                    }/>
                   </span>
                 }
               />
@@ -704,7 +700,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        Click to play around with my <a href="https://www.lauranesaliou.me/" target="_blank">partner's</a> store model
+                        Click to play around with my <a href="https://www.lauranesaliou.me/" target="_blank" rel="noopener noreferrer" >partner's</a> store model
                       </p>
                     }/>
 
@@ -747,7 +743,7 @@ class Macy extends Component {
 
                     <Row content={
                       <div className={pStyle}>
-                        <a href="http://philkt.me/macys-service-design" target="_blank">
+                        <a href="http://philkt.me/macys-service-design" target="_blank" rel="noopener noreferrer" >
                           <img className={"feature-image"} src={unity} alt="Unity demo link"/>
                         </a>
                       </div>
@@ -787,7 +783,7 @@ class Macy extends Component {
                     <Row content={
                       <span>
                         <p className={pStyle}>
-                          If you're REALLY interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macys_presentation.pdf" target="_blank">presentation</a> and <a href="http://philkt.me/files/macys_doc.pdf" target="_blank">document</a> that we ultimately handed off to Macy’s.
+                          If you're REALLY interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macys_presentation.pdf" target="_blank" rel="noopener noreferrer" >presentation</a> and <a href="http://philkt.me/files/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >document</a> that we ultimately handed off to Macy’s.
                         </p>
                       </span>
                     }/>
