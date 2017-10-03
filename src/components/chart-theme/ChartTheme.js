@@ -3,7 +3,6 @@
   Try changing the theme. You could start with `colors` or `fontSize`.
 */
 
-// Colors
 const yellow200 = "#FFF59D";
 const deepOrange600 = "#F4511E";
 const lime300 = "#DCE775";
@@ -22,12 +21,10 @@ const blueGrey50 = "#ECEFF1";
 const blueGrey300 = "#90A4AE";
 const blueGrey700 = "#455A64";
 const grey900 = "#212121";
-// Typography
 const sansSerif = "'Circular Std', 'Helvetica Neue', Helvetica, sans-serif";
 const letterSpacing = "normal";
-const fontSize = 12;
+const fontSize = 16;
 
-// Layout
 const padding = 8;
 const baseProps = {
   width: 350,
@@ -35,7 +32,6 @@ const baseProps = {
   padding: 50
 };
 
-// Labels
 const baseLabelStyles = {
   fontFamily: sansSerif,
   fontSize,
@@ -44,16 +40,14 @@ const baseLabelStyles = {
   fill: blueGrey700
 };
 
-const centeredLabelStyles = assign({ textAnchor: "middle" }, baseLabelStyles);
+const centeredLabelStyles = Object.assign({textAnchor: "middle"}, baseLabelStyles);
 
-// Strokes
 const strokeDasharray = "10, 5";
 const strokeLinecap = "round";
 const strokeLinejoin = "round";
 
-// Put it all together...
 const theme = {
-  area: assign({
+  area: Object.assign({
     style: {
       data: {
         fill: grey900
@@ -61,7 +55,7 @@ const theme = {
       labels: centeredLabelStyles
     }
   }, baseProps),
-  axis: assign({
+  axis: Object.assign({
     style: {
       axis: {
         fill: "transparent",
@@ -70,7 +64,7 @@ const theme = {
         strokeLinecap,
         strokeLinejoin
       },
-      axisLabel: assign({}, centeredLabelStyles, {
+      axisLabel: Object.assign({}, centeredLabelStyles, {
         padding,
         stroke: "transparent"
       }),
@@ -89,13 +83,13 @@ const theme = {
         strokeLinecap,
         strokeLinejoin
       },
-      tickLabels: assign({}, baseLabelStyles, {
+      tickLabels: Object.assign({}, baseLabelStyles, {
         fill: blueGrey700,
         stroke: "transparent"
       })
     }
   }, baseProps),
-  bar: assign({
+  bar: Object.assign({
     style: {
       data: {
         fill: blueGrey700,
@@ -107,7 +101,7 @@ const theme = {
       labels: baseLabelStyles
     }
   }, baseProps),
-  candlestick: assign({
+  candlestick: Object.assign({
     style: {
       data: {
         stroke: blueGrey700
@@ -120,7 +114,7 @@ const theme = {
     }
   }, baseProps),
   chart: baseProps,
-  errorbar: assign({
+  errorbar: Object.assign({
     style: {
       data: {
         fill: "transparent",
@@ -128,16 +122,16 @@ const theme = {
         stroke: blueGrey700,
         strokeWidth: 2
       },
-      labels: assign({}, centeredLabelStyles, {
+      labels: Object.assign({}, centeredLabelStyles, {
         stroke: "transparent",
         strokeWidth: 0
       })
     }
   }, baseProps),
-  group: assign({
+  group: Object.assign({
     colorScale: colors
   }, baseProps),
-  line: assign({
+  line: Object.assign({
     style: {
       data: {
         fill: "transparent",
@@ -145,14 +139,14 @@ const theme = {
         stroke: blueGrey700,
         strokeWidth: 2
       },
-      labels: assign({}, baseLabelStyles, {
+      labels: Object.assign({}, baseLabelStyles, {
         stroke: "transparent",
         strokeWidth: 0,
         textAnchor: "start"
       })
     }
   }, baseProps),
-  pie: assign({
+  pie: Object.assign({
     colorScale: colors,
     style: {
       data: {
@@ -160,14 +154,14 @@ const theme = {
         stroke: blueGrey50,
         strokeWidth: 1
       },
-      labels: assign({}, baseLabelStyles, {
+      labels: Object.assign({}, baseLabelStyles, {
         padding: 20,
         stroke: "transparent",
         strokeWidth: 0
       })
     }
   }, baseProps),
-  scatter: assign({
+  scatter: Object.assign({
     style: {
       data: {
         fill: blueGrey700,
@@ -175,15 +169,15 @@ const theme = {
         stroke: "transparent",
         strokeWidth: 0
       },
-      labels: assign({}, centeredLabelStyles, {
+      labels: Object.assign({}, centeredLabelStyles, {
         stroke: "transparent"
       })
     }
   }, baseProps),
-  stack: assign({
+  stack: Object.assign({
     colorScale: colors
   }, baseProps),
-  tooltip: assign({
+  tooltip: Object.assign({
     style: {
       data: {
         fill: "transparent",
@@ -202,7 +196,7 @@ const theme = {
       pointerLength: 10
     }
   }, baseProps),
-  voronoi: assign({
+  voronoi: Object.assign({
     style: {
       data: {
         fill: "transparent",
@@ -213,3 +207,6 @@ const theme = {
     }
   }, baseProps)
 };
+
+export default theme;
+

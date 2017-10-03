@@ -850,7 +850,16 @@ class NotifiVR extends Component {
                     }/>
                     
                     
-                    <Row content={
+                    <div className="row">
+                      <PolarChart data={[
+                        {x: "Notice", y: 3.5},
+                        {x: "Understand", y: 2},
+                        {x: "Interact", y: 2.5},
+                        {x: "Believe", y: 2},
+                        {x: "Intrude", y: 2.16666666667},
+                      ]}
+                      />
+
                       <PolarChart data={[
                         {x: "N", y: 3.5},
                         {x: "U", y: 2},
@@ -859,7 +868,26 @@ class NotifiVR extends Component {
                         {x: "In", y: 2.16666666667},
                       ]}
                       />
-                    }/>
+
+                      <PolarChart data={[
+                        {x: "Notice", y: 3.5},
+                        {x: "Understand", y: 2},
+                        {x: "Interact", y: 2.5},
+                        {x: "Believe", y: 2},
+                        {x: "Intrude", y: 2.16666666667},
+                      ]}
+                      />
+
+                      <PolarChart data={[
+                        {x: "Notice", y: 3.5},
+                        {x: "Understand", y: 2},
+                        {x: "Interact", y: 2.5},
+                        {x: "Believe", y: 2},
+                        {x: "Intrude", y: 2.16666666667},
+                      ]}
+                      />
+
+                    </div>
 
                     {/*
                     <div className="row">
