@@ -12,6 +12,7 @@ import Row from '../../../components/row/Row';
 import Lightbox from '../../../components/lightbox/Lightbox';
 import Video from '../../../components/video/Video';
 import Callout from '../../../components/callout/Callout';
+import PolarChart from '../../../components/polar-chart/PolarChart';
 
 import hero from '../../../media/notifiVR/hero.png';
 import solution from '../../../media/notifiVR/notifi_solution.mp4';
@@ -210,7 +211,7 @@ class NotifiVR extends Component {
 
                     <ProjectStats
                       team={["3 designers", "3 developers"]}
-                      role={["Interaction Design", "Framework Design", "User Testing", "Stats Analysis"]}
+                      responsibilities={["Interaction Design", "Framework Design", "User Testing", "Stats Analysis"]}
                       time={"4 months"}
                     />
 
@@ -847,7 +848,20 @@ class NotifiVR extends Component {
                         To analyze the data, we compiled the Likert scores and compared medians across a wide margin of metrics. We mapped various combinations of our notification designs, feedback methods (visual, audio visual, and visual haptic), and five metrics across the x and y axis.
                       </p>
                     }/>
+                    
+                    
+                    <Row content={
+                      <PolarChart data={[
+                        {x: "N", y: 3.5},
+                        {x: "U", y: 2},
+                        {x: "I", y: 2.5},
+                        {x: "B", y: 2},
+                        {x: "In", y: 2.16666666667},
+                      ]}
+                      />
+                    }/>
 
+                    {/*
                     <div className="row">
                       <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
                         <img className="feature-image" src={phone_median} alt=""/>
@@ -870,7 +884,7 @@ class NotifiVR extends Component {
                       <p className={"caption " + pStyle}>
                         There were a lot of these graphs
                       </p>
-                    }/>
+                    }/>*/}
 
                     <Row content={
                       <p className={pStyle}>

@@ -6,13 +6,13 @@ class ProjectStats extends Component {
 
   static propTypes = {
     team: PropTypes.array.isRequired,
-    role: PropTypes.array.isRequired,
+    responsibilities: PropTypes.array.isRequired,
     time: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
     team: undefined,
-    duty: undefined,
+    responsibilities: undefined,
     time: undefined
   }
 
@@ -39,7 +39,7 @@ class ProjectStats extends Component {
         <div className="col-xs-4 col-sm-4 col-md-3 col-lg-2dot3 col-xl-2">
           <h4>My Role</h4>
           <ul>
-            {(this.props.role).map(function (role, index){
+            {(this.props.responsibilities).map(function (role, index){
               return (
                 <li key={"role" + index}>{role}</li>
               )
