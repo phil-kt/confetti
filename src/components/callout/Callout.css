@@ -16,3 +16,7 @@
 .callout.Audio img {
   max-width: 70px;
 }
+
+.callout.Popup img {
+  max-width: 80px;
+}

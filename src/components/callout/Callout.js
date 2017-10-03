@@ -9,7 +9,8 @@ class Callout extends Component {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     first: PropTypes.bool,
-    middle: PropTypes.bool
+    middle: PropTypes.bool,
+    number: PropTypes.number
   }
 
   static defaultProps = {
@@ -18,15 +19,25 @@ class Callout extends Component {
     title: "Test",
     description: "",
     first: false,
-    middle: false
+    middle: false,
+    number: 3
   }
 
   render() {
 
-    let layout = this.props.title + " callout col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3 col-xl-3";
-    this.props.first ? (layout += " col-lg-offset-1dot5 col-xl-offset-1dot5") : null;
-    this.props.middle ? (layout += " col-md-offset-0") : null;
-    !this.props.first || !this.props.middle ? (layout += " col-md-offset-0 col-lg-offset-0 col-xl-offset-0") : null;
+    let layout = "";
+
+    if(this.props.number === 3) {
+      layout = this.props.title + " callout col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3 col-xl-3";
+      this.props.first ? (layout += " col-lg-offset-1dot5 col-xl-offset-1dot5") : null;
+      this.props.middle ? (layout += " col-md-offset-0") : null;
+      !this.props.first || !this.props.middle ? (layout += " col-md-offset-0 col-lg-offset-0 col-xl-offset-0") : null;
+    }
+
+    if(this.props.number === 4) {
+      layout = this.props.title + " callout col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 col-lg-2 col-xl-2";
+      this.props.first ? (layout += " col-lg-offset-2 col-xl-offset-2") : (layout += " col-lg-offset-0 col-xl-offset-0");
+    }
 
     return (
       <div className={layout}>

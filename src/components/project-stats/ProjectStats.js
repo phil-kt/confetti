@@ -20,8 +20,8 @@ class ProjectStats extends Component {
 
     return (
       <div className="row stats">
-        <div className="col-xs-12 col-sm-4 col-md-offset-1 col-md-3 col-lg-offset-2dot5 col-lg-2dot3 col-xl-offset-3 col-xl-2">
-          <h4>Team Members</h4>
+        <div className="col-xs-4 col-sm-4 col-md-offset-1 col-md-3 col-lg-offset-2dot5 col-lg-2dot3 col-xl-offset-3 col-xl-2">
+          <h4>Team</h4>
           <ul>
             {(this.props.team).map(function (teammate, index){
               return (
@@ -31,12 +31,12 @@ class ProjectStats extends Component {
           </ul>
         </div>
 
-        <div className="col-xs-12 col-sm-4 col-md-3 col-lg-2dot3 col-xl-2">
+        <div className="col-xs-4 col-sm-4 col-md-3 col-lg-2dot3 col-xl-2">
           <h4>Time Frame</h4>
           <ul><li>{this.props.time}</li></ul>
         </div>
 
-        <div className="col-xs-12 col-sm-4 col-md-3 col-lg-2dot3 col-xl-2">
+        <div className="col-xs-4 col-sm-4 col-md-3 col-lg-2dot3 col-xl-2">
           <h4>My Role</h4>
           <ul>
             {(this.props.role).map(function (role, index){

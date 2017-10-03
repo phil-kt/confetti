@@ -1,24 +1,3 @@
-.Process .stats {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto;
-  flex-wrap: wrap;
-}
-
-
-.Process .stat {
-  display: flex;
-  margin-bottom: 1em;
-  align-items: center;
-}
-
-.Process .stat img {
-  margin-right: .5em;
-  height: 1.5em;
-  width: 1.5em;
-  display: inline-block;
-}
-
 .Process ul, .Process li {
   list-style: none;
   padding: 0;

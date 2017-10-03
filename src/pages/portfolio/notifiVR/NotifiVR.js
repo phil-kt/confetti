@@ -29,9 +29,9 @@ import framework from '../../../media/notifiVR/framework.png';
 import developer_storyboard from '../../../media/notifiVR/developer_storyboard.png';
 
 //insight icons
-import visual from '../../../media/notifiVR/insights/vision.svg';
-import sound from '../../../media/notifiVR/insights/sound.svg';
-import haptic from '../../../media/notifiVR/insights/haptic.svg';
+import visual from '../../../media/notifiVR/icons/vision.svg';
+import sound from '../../../media/notifiVR/icons/sound.svg';
+import haptic from '../../../media/notifiVR/icons/haptic.svg';
 
 import phone from '../../../media/notifiVR/sketches/phone.jpg';
 import phone_booth from '../../../media/notifiVR/sketches/phone_booth.jpg';
@@ -40,10 +40,23 @@ import popup from '../../../media/notifiVR/sketches/popup.jpg';
 import watch from '../../../media/notifiVR/sketches/watch.jpg';
 import footsteps from '../../../media/notifiVR/sketches/footstep.jpg';
 
+//icons
+import phone_icon from '../../../media/notifiVR/icons/phone.svg';
+import phone_booth_icon from '../../../media/notifiVR/icons/phone_booth.svg';
+import popup_icon from '../../../media/notifiVR/icons/popup-2.svg';
+import watch_icon from '../../../media/notifiVR/icons/watch.svg';
+
+
 import phone_video from '../../../media/notifiVR/video/denwa_c.mp4';
 import phone_booth_video from '../../../media/notifiVR/video/pb_fc_c.mp4';
 import watch_video from '../../../media/notifiVR/video/watch_c.mp4';
 import popup_video from '../../../media/notifiVR/video/slack.mp4';
+
+import fourteen from '../../../media/notifiVR/icons/fourteen.svg';
+import lattice_square from '../../../media/notifiVR/icons/square.svg';
+import six from '../../../media/notifiVR/icons/six.svg';
+
+import testing from '../../../media/home/diego_2.jpg';
 
 import phone_median from '../../../media/notifiVR/stats/phone_median.png';
 import phone_booth_median from '../../../media/notifiVR/stats/phone_booth_median.png';
@@ -61,12 +74,14 @@ class NotifiVR extends Component {
       researchOpen: false,
       insightsOpen: false,
       environmentOpen: false,
+      evaluateOpen: false
     };
 
     this.openLightbox = this.openLightbox.bind(this);
     this.collapseResearch = this.collapseResearch.bind(this);
     this.collapseInsights = this.collapseInsights.bind(this);
     this.collapseEnvironment = this.collapseEnvironment.bind(this);
+    this.collapseEvaluate = this.collapseEvaluate.bind(this);
   }
 
   openLightbox(index, event) {
@@ -91,6 +106,12 @@ class NotifiVR extends Component {
   collapseEnvironment() {
     this.setState({
       environmentOpen: !this.state.environmentOpen
+    })
+  }
+
+  collapseEvaluate() {
+    this.setState({
+      evaluateOpen: !this.state.evaluateOpen
     })
   }
 
@@ -203,7 +224,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        We began our research by sending out a survey to get VR fans experience with missed notifications as well as how they would prioritize certain alerts over others. We used the survey to inform a design workshop we held with Atlanta VR designers and developers, and also conducted research into how Playstation VR, the HTC Vive, and the Oculus Rift handled interruptions.
+                        We began our research by sending out a survey to get VR fans’ experience with missed notifications as well as how they would prioritize certain alerts over others. We used the survey to inform a design workshop we held with Atlanta VR designers and developers, and also conducted research into how Playstation VR, the HTC Vive, and the Oculus Rift handled interruptions.
                       </p>
                     }/>
 
@@ -286,7 +307,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                   <div className="row">
+                    <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                           <img className="feature-image" src={fps}
                                alt="One person at a whiteboard sharing their design ideas"/>
@@ -324,6 +345,17 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
+                    <Row content={
+                      <h4 className={pStyle}>Competitive Analysis</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        Some of my teammates also went out and tried various types of headgear, including the HTC Vive, the Oculus Rift, Google Daydream, Gear VR, and Playstation VR. The Vive does have a notification pairing app with your phone, but it is a non diagetic approach where you must go to the dashboard to get details other than the sender's name. Daydream, Gear, and Playstation also have notifications to some extent, but very 2D inspired in that they just appear on your HUD and disappear, rather than take advantage of the 3D space.
+                      </p>
+                    }/>
+
+
                     </Collapse>
                   </span>
                 }
@@ -331,13 +363,13 @@ class NotifiVR extends Component {
               />
 
               <ProjectSection
-                title={"Insights"}
+                title={"Synthesize"}
                 content={
                   <span>
                     <Row content={
                       <p className={pStyle}>
                         Once we gathered all the results from our research, we mapped them in order to find common themes and ideas that we could use to guide what designs to create and test with
-                        users. In the end, we had three main notification methods:
+                        users. In the end, we had <b>three main notification methods:</b>
                       </p>
                     }/>
                     
@@ -524,26 +556,44 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        After brainstorming, we ended up with four different notifications type we wanted to pursue for this part of the project, which were all aimed at conveying the status of digital notifications you’d received.
+                        After brainstorming, we ended up with <b>four different notifications types</b> we wanted to pursue for this part of the project, which were all aimed at conveying the status of digital notifications you’d received.
                       </p>
                     }/>
 
-                    <Row content={
-                      <ul className={pStyle + " list"}>
-                        <li>
-                          A phone overlaid on the controller for incoming calls
-                        </li>
-                        <li>
-                          A phone booth in the environment for incoming calls
-                        </li>
-                        <li>
-                          Popups on the environments for messages
-                        </li>
-                        <li>
-                          A smart watch on the wrist to show messages
-                        </li>
-                      </ul>
-                    }/>
+                    <div className="row">
+                      <Callout
+                        image={phone_icon}
+                        altText={"lol"}
+                        title={"Phone Overlay"}
+                        description={"A phone overlaid on the controller for incoming calls"}
+                        first={true}
+                        number={4}
+                      />
+
+                      <Callout
+                        image={phone_booth_icon}
+                        altText={"lol"}
+                        title={"Phone Booth"}
+                        description={"A phone booth in the environment for incoming calls"}
+                        number={4}
+                      />
+
+                      <Callout
+                        image={popup_icon}
+                        altText={"lol"}
+                        title={"Popup"}
+                        description={"Popups placed on the environment for messages"}
+                        number={4}
+                      />
+
+                      <Callout
+                        image={watch_icon}
+                        altText={"lol"}
+                        title={"Watch"}
+                        description={"A smart watch on the wrist to show messages"}
+                        number={4}
+                      />
+                    </div>
 
                     <Row content={
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseEnvironment}>
@@ -563,11 +613,7 @@ class NotifiVR extends Component {
                     <Row content={
                       <p className={pStyle}>
                         For user comfort and time restraint reasons, we decided to use a low energy environment for
-                        testing purposes. The environment modeled was one where the user would pick up a ball using the
-                        HTC Vive controllers and place it in a glowing ring on the floor in a giant warehouse. As the
-                        user repeated this task, different notifications and signifiers would be triggered randomly,
-                        like a vibration and a pop up to indicate you have a message, or spawning a phone booth in the
-                        player’s field of view to inform you of an incoming call.
+                        testing purposes. The environment modeled was one where the user would pick up a ball using the HTC Vive controllers and place it in a glowing ring on the floor in a giant warehouse. As the user repeated this task, different notifications and signifiers would be triggered randomly, like a vibration and a pop up to indicate you have a message, or spawning a phone booth in the player’s field of view to inform you of an incoming call.
                       </p>
                     }/>
 
@@ -641,7 +687,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        After we had the designs, framework, and the environment decided upon, it was time to combine them and start testing. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and with some help from our good old friend the Wizard of Oz to fake the outside triggers.
+                        After we had the designs, framework, and the environment decided upon, it was time to combine them into one cohesive unity. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and with some help from our good old friend the Wizard of Oz to fake the outside triggers.
                       </p>
                     }/>
                     <Row content={
@@ -706,25 +752,88 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        For testing these interactions, we recruited 14 participants, all with variable experience with virtual reality. We began with getting each user accustomed to the controls of the HTC Vive, by having them teleport and place the ball in the ring several times until they felt comfortable. Each participant was then presented each notification in a counterbalanced order according to a latin square of 12 conditions (4 notification methods, 3 modes of feedback). Participants were encouraged to think-aloud as they encountered each notification and the system logged their reaction time.
+                        Once we had the prototypes down it was time to see how they performed with people. We rounded up willing participants to go through our user testing and get their impressions on our notification methods.
                       </p>
                     }/>
 
-                    <Row content={
-                      <p className={pStyle}>
-                        After the test, we then had users fill out a questionnare containing some short answer questions and a prompt to rate the notifications on a Likert scale for five different metrics:
-                      </p>
-                    }/>
+                    <div className="row">
+                      <Callout
+                        image={fourteen}
+                        altText={"fourteen"}
+                        title={"Participants"}
+                        description={"Most without any extensive VR experience, and about half were interaction designers"}
+                        first={true}
+                      />
+
+                      <Callout
+                        image={lattice_square}
+                        altText={"grid with 12 boxes"}
+                        title={"Lattice Square"}
+                        description={"Displayed all alerts in a random order with 3 types of feedback: visual, visual audio, and visual haptic"}
+                      />
+
+                      <Callout
+                        image={six}
+                        altText={"six"}
+                        title={"Metrics Measured"}
+                        description={"Noticeability, understandability, interactibility, believability, intrusiveness, reaction time"}
+                        middle={true}
+                      />
+                    </div>
 
                     <Row content={
-                      <ul className={pStyle + " list"}>
-                        <li>Noticeability (How easy was it to notice?)</li>
-                        <li>Understandability (Could you understand what it was conveying?)</li>
-                        <li>Interactibility (how was the level of interaction?)</li>
-                        <li>Believability (Did you believe it was coming from the real world?)</li>
-                        <li>Intrusiveness (how much did it affect your immersion?)</li>
-                      </ul>
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsights}>
+                        <Button
+                          label={this.state.insightsOpen ? "Hide Detailed Evaluation" : "See Detailed Evaluation"}
+                          color={"green"}
+                        />
+                      </div>
                     }/>
+
+                    <Collapse isOpened={this.state.insightsOpen}>
+
+                      <Row content={
+                        <p className={pStyle}>
+                          All 14 participants had some experience with VR, but most not a whole ton. Because of that, we began the test with each user getting accustomed to the controls of the HTC Vive by having them teleport and place a ball in a ring several times until they felt comfortable.
+                        </p>
+                      }/>
+
+                      <Row content={
+                        <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
+                          <img className="feature-image" src={testing}
+                               alt="One person holding a Vive controller with a phone on screen"/>
+                        </div>
+                      }/>
+
+                      <Row content={
+                        <p className={"caption " + pStyle}>
+                          Testing out our phone booth
+                        </p>
+                      }/>
+
+                      <Row content={
+                        <p className={pStyle}>
+                          Each participant was presented each notification in a counterbalanced order according to a latin square of 12 conditions (4 notification methods, 3 modes of feedback). Participants were encouraged to think-aloud as they encountered each notification and the system logged their reaction time.
+                        </p>
+                      }/>
+
+                      <Row content={
+                        <p className={pStyle}>
+                          After the test, we then had users fill out a questionnare containing some short answer questions and a prompt to rate the notifications on a Likert scale for five different metrics:
+                        </p>
+                      }/>
+
+                      <Row content={
+                        <ul className={pStyle + " list"}>
+                          <li>Noticeability (How easy was it to notice?)</li>
+                          <li>Understandability (Could you understand what it was conveying?)</li>
+                          <li>Interactibility (how was the level of interaction?)</li>
+                          <li>Believability (Did you believe it was coming from the real world?)</li>
+                          <li>Intrusiveness (how much did it affect your immersion?)</li>
+                        </ul>
+                      }/>
+
+                    </Collapse>
                   </span>
                 }
               />

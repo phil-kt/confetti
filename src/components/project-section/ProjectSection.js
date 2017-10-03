@@ -17,7 +17,7 @@ class ProjectSection extends Component {
   render () {
 
     return (
-      <div className={"project-section"}>
+      <div className={"project-section " + this.props.title}>
         <div className="row">
           <h3 className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7 col-xl-offset-3 col-xl-6">{this.props.title}</h3>
         </div>
