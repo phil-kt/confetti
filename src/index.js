@@ -13,7 +13,6 @@ const history = createHistory();
 let pastURL = ""
 
 function logPageView() {
-  console.log(history);
   if (history.location.pathname !== pastURL) {
     window.scrollTo(0, 0);
   }

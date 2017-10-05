@@ -1,3 +1,25 @@
 .NotifiVR .Evaluate .callout img {
   height: 60px;
 }
+
+.NotifiVR .charts {
+  margin-bottom: 2.5em;
+}
+
+.NotifiVR .legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NotifiVR .legend p {
+  width: 150px;
+  text-align: left;
+  margin: 0;
+}
+
+#phoneEmoji {
+  transform: scale(-1, 1);
+  display: inline-block;
+}

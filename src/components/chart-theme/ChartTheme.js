@@ -23,7 +23,7 @@ const blueGrey700 = "#455A64";
 const grey900 = "#212121";
 const sansSerif = "'Circular Std', 'Helvetica Neue', Helvetica, sans-serif";
 const letterSpacing = "normal";
-const fontSize = 16;
+const fontSize = 20;
 
 const padding = 8;
 const baseProps = {

@@ -29,10 +29,11 @@ import playing_env from '../../../media/notifiVR/playing_env.png';
 import framework from '../../../media/notifiVR/framework.png';
 import developer_storyboard from '../../../media/notifiVR/developer_storyboard.png';
 
-//insight icons
+//insight
 import visual from '../../../media/notifiVR/icons/vision.svg';
 import sound from '../../../media/notifiVR/icons/sound.svg';
 import haptic from '../../../media/notifiVR/icons/haptic.svg';
+import affinity_map from '../../../media/notifiVR/affinity_map.jpg';
 
 import phone from '../../../media/notifiVR/sketches/phone.jpg';
 import phone_booth from '../../../media/notifiVR/sketches/phone_booth.jpg';
@@ -55,14 +56,9 @@ import popup_video from '../../../media/notifiVR/video/slack.mp4';
 
 import fourteen from '../../../media/notifiVR/icons/fourteen.svg';
 import lattice_square from '../../../media/notifiVR/icons/square.svg';
-import six from '../../../media/notifiVR/icons/six.svg';
+import metrics from '../../../media/notifiVR/icons/five.svg';
 
 import testing from '../../../media/home/diego_2.jpg';
-
-import phone_median from '../../../media/notifiVR/stats/phone_median.png';
-import phone_booth_median from '../../../media/notifiVR/stats/phone_booth_median.png';
-import popup_median from '../../../media/notifiVR/stats/popup_median.png';
-import watch_median from '../../../media/notifiVR/stats/watch_median.png';
 
 class NotifiVR extends Component {
 
@@ -75,7 +71,8 @@ class NotifiVR extends Component {
       researchOpen: false,
       insightsOpen: false,
       environmentOpen: false,
-      evaluateOpen: false
+      evaluateOpen: false,
+      resultsOpen: false,
     };
 
     this.openLightbox = this.openLightbox.bind(this);
@@ -83,6 +80,7 @@ class NotifiVR extends Component {
     this.collapseInsights = this.collapseInsights.bind(this);
     this.collapseEnvironment = this.collapseEnvironment.bind(this);
     this.collapseEvaluate = this.collapseEvaluate.bind(this);
+    this.collapseResults = this.collapseResults.bind(this);
   }
 
   openLightbox(index, event) {
@@ -113,6 +111,13 @@ class NotifiVR extends Component {
   collapseEvaluate() {
     this.setState({
       evaluateOpen: !this.state.evaluateOpen
+    })
+  }
+
+
+  collapseResults() {
+    this.setState({
+      resultsOpen: !this.state.resultsOpen
     })
   }
 
@@ -255,15 +260,15 @@ class NotifiVR extends Component {
                     </div>
 
                     <Row content={
-                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsights}>
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResearch}>
                         <Button
-                          label={this.state.insightsOpen ? "Hide Research Process" : "See Research Process"}
+                          label={this.state.researchOpen ? "Hide Research Process" : "See Research Process"}
                           color={"green"}
                         />
                       </div>
                     }/>
 
-                    <Collapse isOpened={this.state.insightsOpen}>
+                    <Collapse isOpened={this.state.researchOpen}>
 
                     <Row content={
                       <h4 className={pStyle}>Survey</h4>
@@ -433,6 +438,19 @@ class NotifiVR extends Component {
                     }/>
 
                     <Row content={
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
+                        <img className="feature-image" src={affinity_map}
+                             alt="A bunch of post its"/>
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        A look at codifying our results
+                      </p>
+                    }/>
+
+                    <Row content={
                       <h4 className={pStyle}>Audio</h4>
                     }/>
 
@@ -490,8 +508,7 @@ class NotifiVR extends Component {
                         </li>
 
                         <li>
-                          Create the Unity environment and framework that would allow us to quickly edit notification
-                          methods and to test users with
+                          Create the Unity environment and framework for user testing
                         </li>
                       </ul>
                     }/>
@@ -564,7 +581,7 @@ class NotifiVR extends Component {
                     <div className="row">
                       <Callout
                         image={phone_icon}
-                        altText={"lol"}
+                        altText={"ICon of a phone over Vive controller"}
                         title={"Phone Overlay"}
                         description={"A phone overlaid on the controller for incoming calls"}
                         first={true}
@@ -573,7 +590,7 @@ class NotifiVR extends Component {
 
                       <Callout
                         image={phone_booth_icon}
-                        altText={"lol"}
+                        altText={"Icon of a British phone booth"}
                         title={"Phone Booth"}
                         description={"A phone booth in the environment for incoming calls"}
                         number={4}
@@ -581,7 +598,7 @@ class NotifiVR extends Component {
 
                       <Callout
                         image={popup_icon}
-                        altText={"lol"}
+                        altText={"Icon of a Popup"}
                         title={"Popup"}
                         description={"Popups placed on the environment for messages"}
                         number={4}
@@ -589,7 +606,7 @@ class NotifiVR extends Component {
 
                       <Callout
                         image={watch_icon}
-                        altText={"lol"}
+                        altText={"Icon of a smart watch"}
                         title={"Watch"}
                         description={"A smart watch on the wrist to show messages"}
                         number={4}
@@ -621,7 +638,7 @@ class NotifiVR extends Component {
                     <Row content={
                       <div className={pStyle}>
                         <img className="feature-image" src={playing_env}
-                             alt="Screen capture of our game environement with a controller, a blue ball, and a yellow circle goal in the distance"/>
+                             alt="Screen capture of our game environment with a controller, a blue ball, and a yellow circle goal in the distance"/>
                       </div>
                     }/>
 
@@ -774,24 +791,24 @@ class NotifiVR extends Component {
                       />
 
                       <Callout
-                        image={six}
-                        altText={"six"}
+                        image={metrics}
+                        altText={"five"}
                         title={"Metrics Measured"}
-                        description={"Noticeability, understandability, interactibility, believability, intrusiveness, reaction time"}
+                        description={"Noticeability, understandability, interactibility, believability, intrusiveness"}
                         middle={true}
                       />
                     </div>
 
                     <Row content={
-                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsights}>
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseEvaluate}>
                         <Button
-                          label={this.state.insightsOpen ? "Hide Detailed Evaluation" : "See Detailed Evaluation"}
+                          label={this.state.evaluateOpen ? "Hide Detailed Evaluation" : "See Detailed Evaluation"}
                           color={"green"}
                         />
                       </div>
                     }/>
 
-                    <Collapse isOpened={this.state.insightsOpen}>
+                    <Collapse isOpened={this.state.evaluateOpen}>
 
                       <Row content={
                         <p className={pStyle}>
@@ -814,27 +831,30 @@ class NotifiVR extends Component {
 
                       <Row content={
                         <p className={pStyle}>
-                          Each participant was presented each notification in a counterbalanced order according to a latin square of 12 conditions (4 notification methods, 3 modes of feedback). Participants were encouraged to think-aloud as they encountered each notification and the system logged their reaction time.
+                          Each participant was presented each notification in a counterbalanced order according to a latin square of 12 conditions (4 notification methods, 3 modes of feedback). Participants were encouraged to think-aloud as they encountered each notification and the system logged their reaction time and interaction time.
                         </p>
                       }/>
 
-                      <Row content={
-                        <p className={pStyle}>
-                          After the test, we then had users fill out a questionnare containing some short answer questions and a prompt to rate the notifications on a Likert scale for five different metrics:
-                        </p>
-                      }/>
 
-                      <Row content={
-                        <ul className={pStyle + " list"}>
-                          <li>Noticeability (How easy was it to notice?)</li>
-                          <li>Understandability (Could you understand what it was conveying?)</li>
-                          <li>Interactibility (how was the level of interaction?)</li>
-                          <li>Believability (Did you believe it was coming from the real world?)</li>
-                          <li>Intrusiveness (how much did it affect your immersion?)</li>
-                        </ul>
-                      }/>
 
                     </Collapse>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        After the test, we then had users fill out a questionnare containing some short answer questions and a prompt to rate the notifications on a <b>Likert scale for five different metrics:</b>
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <ul className={pStyle + " list"}>
+                        <li>Noticeability (How easy was it to notice?)</li>
+                        <li>Understandability (Could you understand what it was conveying?)</li>
+                        <li>Interactibility (How much did you want to play with it?)</li>
+                        <li>Believability (Did you believe it was coming from the real world?)</li>
+                        <li>Intrusiveness (How did it affect your immersion?)</li>
+                      </ul>
+                    }/>
+
                   </span>
                 }
               />
@@ -845,78 +865,87 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        To analyze the data, we compiled the Likert scores and compared medians across a wide margin of metrics. We mapped various combinations of our notification designs, feedback methods (visual, audio visual, and visual haptic), and five metrics across the x and y axis.
+                        To analyze the data, we compiled the Likert scores and compared medians across a wide margin of metrics. The graphs below are an <b>average across all metrics of each design</b> with visual, visual audio, and visual haptic feedback.
                       </p>
                     }/>
                     
                     
-                    <div className="row">
-                      <PolarChart data={[
-                        {x: "Notice", y: 3.5},
-                        {x: "Understand", y: 2},
-                        {x: "Interact", y: 2.5},
-                        {x: "Believe", y: 2},
-                        {x: "Intrude", y: 2.16666666667},
-                      ]}
+                    <div className="row charts">
+                      <PolarChart
+                        data={[
+                          {x: "📞", y: 2},
+                          {x: "⌚️", y: 3.5},
+                          {x: "📰", y: 3.166666666666},
+                          {x: "☎️", y: 1.3333333333},
+                        ]}
+                        caption={"Noticeability"}
+                        first={true}
                       />
 
-                      <PolarChart data={[
-                        {x: "N", y: 3.5},
-                        {x: "U", y: 2},
-                        {x: "I", y: 2.5},
-                        {x: "B", y: 2},
-                        {x: "In", y: 2.16666666667},
-                      ]}
+                      <PolarChart
+                        data={[
+                          {x: "📞", y: 2},
+                          {x: "⌚️", y: 2},
+                          {x: "📰", y: 2.333333333333},
+                          {x: "☎️", y: 2},
+                        ]}
+                        caption={"Understandability"}
                       />
 
-                      <PolarChart data={[
-                        {x: "Notice", y: 3.5},
-                        {x: "Understand", y: 2},
-                        {x: "Interact", y: 2.5},
-                        {x: "Believe", y: 2},
-                        {x: "Intrude", y: 2.16666666667},
-                      ]}
+                      <PolarChart
+                        data={[
+                          {x: "📞", y: 3},
+                          {x: "⌚️", y: 2.5},
+                          {x: "📰", y: 5.5},
+                          {x: "☎️", y: 2.66666666667},
+                        ]}
+                        caption={"Interactability"}
                       />
 
-                      <PolarChart data={[
-                        {x: "Notice", y: 3.5},
-                        {x: "Understand", y: 2},
-                        {x: "Interact", y: 2.5},
-                        {x: "Believe", y: 2},
-                        {x: "Intrude", y: 2.16666666667},
-                      ]}
+                      <PolarChart
+                        data={[
+                          {x: "📞", y: 1.333333333},
+                          {x: "⌚️", y: 2},
+                          {x: "📰", y: 2},
+                          {x: "☎️", y: 2.833333333},
+                        ]}
+                        caption={"Believability"}
+                        first={true}
                       />
+
+                      <PolarChart
+                        data={[
+                          {x: "📞", y: 4},
+                          {x: "⌚️", y: 2.166666667},
+                          {x: "📰", y: 2.166666667},
+                          {x: "☎️", y: 6.5},
+                        ]}
+                        caption={"Instrusiveness"}
+                      />
+
+                      <div className="legend col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                        <p><div id={"phoneEmoji"}>📞</div> = Phone Overlay</p>
+                        <p>☎️ = Phone Booth</p>
+                        <p>📰 = Popup</p>
+                        <p>⌚️ = Watch</p>
+                      </div>
 
                     </div>
 
-                    {/*
-                    <div className="row">
-                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
-                        <img className="feature-image" src={phone_median} alt=""/>
-                      </div>
-                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
-                        <img className="feature-image" src={phone_booth_median} alt=""/>
-                      </div>
-                    </div>
+                     <Row content={
+                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResults}>
+                         <Button
+                           label={this.state.resultsOpen ? "Hide Detailed Results" : "See Detailed Results"}
+                           color={"green"}
+                         />
+                       </div>
+                     }/>
 
-                    <div className="row">
-                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
-                        <img className="feature-image" src={popup_median} alt=""/>
-                      </div>
-                      <div className={"col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"}>
-                        <img className="feature-image" src={watch_median} alt=""/>
-                      </div>
-                    </div>
-
-                    <Row content={
-                      <p className={"caption " + pStyle}>
-                        There were a lot of these graphs
-                      </p>
-                    }/>*/}
+                    <Collapse isOpened={this.state.resultsOpen}>
 
                     <Row content={
                       <p className={pStyle}>
-                        From these charts it is easy to see that the phone booth was the most intrusive of all four notification methods. However, it also scored the highest on the Believability scale, which means that perhaps because it was so intrusive to the game it was easy to understand it represented something from the real world coming into the VR environment.
+                        From these charts it is easy to see that the phone booth was the most intrusive of all four notification methods. However, it also scored the highest on the Believability scale, which means that perhaps because it was so intrusive to the game it was easy to understand it represented something from the real world coming into the VR environment. This is also seen on a smaller scale with the phone overlay.
                       </p>
                     }/>
 
@@ -928,9 +957,11 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        One other important result was that the reaction time for visual notifications were the slowest, probably due to the fact that in VR you have large viewport and may not be looking necessarily where the viewport is. Notifications with audio or haptic cues both had consistently faster reaction times compared to just a visual cue.
+                        One other important result was that the reaction time for purely visual feedback notifications were the slowest, probably due to the fact that in VR you have a large viewport and may not be looking where the viewport is. Notifications with audio or haptic cues both had consistently faster reaction times compared to just a visual cue.
                       </p>
                     }/>
+
+                    </Collapse>
 
                   </span>
 
@@ -971,13 +1002,13 @@ class NotifiVR extends Component {
                   <span>
                   <Row content={
                     <p className={pStyle}>
-                      From this project I learned a lot about designing for virtual reality as well as the affordances provided by the platform. I got to try my hand at both designing software for the Vive, as well as designing the interactions and exploring the new possibilites within VR.
+                      From this project I learned a lot about designing for virtual reality as well as the affordances provided by the platform. I got to try my hand at designing the interactions and exploring the new possibilites within VR, as well as designing Unity software for the Vive.
                     </p>
                   }/>
 
                   <Row content={
                     <p className={pStyle}>
-                      Designing for VR is stimulating because not all the interaction paradigms are thought out yet, which gives you a lot more freedom to explore and trial things that might not make sense in a 2D interface. I hope that I can continue to play with and design for VR experiences in the future as the technology becomes more mainstream and more accessible.
+                      Designing for VR is stimulating because not all the interaction paradigms are thought out yet, which gives you a lot more freedom to explore and try ouy things that might not make sense in a 2D interface. I hope that I can continue to play with and design for VR experiences in the future as the technology becomes more mainstream and more accessible.
                     </p>
                   }
                   />
