@@ -37,6 +37,7 @@
 
 .button a:hover {
   transform: translate(0, -1px);
+  cursor: pointer;
 }
 
 .button a:hover::after {

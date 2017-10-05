@@ -12,7 +12,6 @@ class Button extends Component {
 
   static defaultProps = {
     label: "Button",
-    link: "#",
     color: "green"
   }
 
