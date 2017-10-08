@@ -159,6 +159,7 @@ class NotifiVR extends Component {
           title={"NotifiVR"}
           hero={hero}
           heroAlt={"User testing of a person testing the Vive VR headset."}
+          description={"Receive notifications in VR through virtual phones, smart watches, and popups"}
           content={
             <span>
               <ProjectSection
@@ -207,9 +208,6 @@ class NotifiVR extends Component {
                       <div
                         className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10">
                         <Process
-                          team={"5 person team"}
-                          duty={"Interaction, Visual, Software design role"}
-                          time={"Feb ’17 to May ‘17"}
                           steps={steps}/>
                       </div>
                     }/>
@@ -217,7 +215,7 @@ class NotifiVR extends Component {
                     <ProjectStats
                       team={["3 designers", "3 developers"]}
                       responsibilities={["Interaction Design", "Framework Design", "User Testing", "Stats Analysis"]}
-                      time={"4 months"}
+                      time={"Jan ’17 - April ’17"}
                     />
 
                   </span>
@@ -581,7 +579,7 @@ class NotifiVR extends Component {
                     <div className="row">
                       <Callout
                         image={phone_icon}
-                        altText={"ICon of a phone over Vive controller"}
+                        altText={"Icon of a phone over Vive controller"}
                         title={"Phone Overlay"}
                         description={"A phone overlaid on the controller for incoming calls"}
                         first={true}

@@ -1,8 +1,15 @@
-.callout img {
+.callout .callout-image-container {
   height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+}
+
+.callout img {
+  max-height: 75px;
   display: block;
   max-width: 100px;
-  margin: 1em auto;
 }
 
 .callout h4 {

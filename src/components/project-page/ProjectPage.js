@@ -43,7 +43,7 @@ class ProjectPage extends Component {
           <h1 className={this.pStyle}>{this.props.title}</h1>
         </div>
         <div className="row subtitle">
-          <p className={this.pStyle}>Receive notifications in VR through virtual phones, smart watches, and popups</p>
+          <p className={this.pStyle}>{this.props.description}</p>
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-12 col-xs-12 col-lg-12 col-xl-12">

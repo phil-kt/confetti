@@ -41,7 +41,7 @@ class Callout extends Component {
 
     return (
       <div className={layout}>
-        <div>
+        <div className={"callout-image-container"}>
           <img src={this.props.image} alt={this.props.altText} />
         </div>
         <h4>{this.props.title}</h4>

@@ -6,16 +6,29 @@ import './Macy.css';
 import Button from '../../../components/button/Button';
 import ProjectPage from '../../../components/project-page/ProjectPage';
 import Process from '../../../components/process/Process';
+import ProjectStats from '../../../components/project-stats/ProjectStats';
 import ProjectSection from "../../../components/project-section/ProjectSection";
 import Row from '../../../components/row/Row';
 import Lightbox from '../../../components/lightbox/Lightbox';
 import Video from '../../../components/video/Video';
+import Callout from '../../../components/callout/Callout';
+
+
+//research icons
+import dept from '../../../media/macy/icons/dept.svg';
+import star from '../../../media/macy/icons/star.svg';
+import docs from '../../../media/macy/icons/docs.svg';
+import phone from '../../../media/macy/icons/phone.svg';
 
 import hero from '../../../media/macy/macy_hero.jpg';
 import bazaar from '../../../media/macy/research/bazaar.png';
 import annual_report from '../../../media/macy/research/annual_report.png';
 import reimplement_brand from '../../../media/macy/reimplement_brand.png';
 import storefront from '../../../media/macy/research/storefront.png';
+
+//insights icons
+import trend from '../../../media/macy/icons/trend.svg';
+import pain from '../../../media/macy/icons/pain.svg';
 import stimulus_overload from '../../../media/macy/stimulus_overload.jpg';
 
 // persona previews
@@ -71,12 +84,27 @@ class Macy extends Component {
       personaLightboxIsOpen: false,
       customerLightboxIsOpen: false,
       associateLightboxIsOpen: false,
+      researchOpen: false,
+      insightsOpen: false,
       index: 0
     };
 
     this.openLightbox = this.openLightbox.bind(this);
+    this.collapseResearch = this.collapseResearch.bind(this);
+    this.collapseInsight = this.collapseInsight.bind(this);
   }
 
+  collapseResearch() {
+    this.setState({
+      researchOpen: !this.state.researchOpen
+    })
+  }
+
+  collapseInsight() {
+    this.setState({
+      insightsOpen: !this.state.insightsOpen
+    })
+  }
 
   openLightbox(index, type, event) {
     if(type === "research") {
@@ -124,11 +152,12 @@ class Macy extends Component {
   render() {
 
     let pStyle = "col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6";
+    let quoteStyle = "quote col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 col-xl-offset-4 col-xl-4";
 
     let steps = [
       {
         title: "Research",
-        processes: ["Competitive Analysis", "Observations in Store", "Literature Review"]
+        processes: ["Observations in Store", "Literature Review", "Calls with Corporate"]
       },
       {
         title: "Synthesize",
@@ -162,7 +191,7 @@ class Macy extends Component {
       <div className="Macy">
         <ProjectPage
           title={"Macy’s of the Future"}
-          sub
+          description={"A shopping experience focused on personal assistance and a smaller store footprint"}
           hero={hero}
           heroAlt={"Our Macy's app on top of a bag."}
           content={
@@ -183,18 +212,37 @@ class Macy extends Component {
               />
 
               <ProjectSection
+                title={"Solution"}
+                content={
+                  <span>
+                    <Row content={
+                      <p className={pStyle}>
+                        Four different notification methods that were prototyped and tested with real users to inform us how to design alerts in VR.
+                      </p>
+                    }/>
+                  </span>
+                }
+              />
+
+              <ProjectSection
                 title={"Process"}
                 content={
-                  <Row content={
-                    <div
-                      className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10">
-                      <Process
-                        team={"5 person team"}
-                        duty={"Interaction, Visual, Software design role"}
-                        time={"Feb ’17 to May ‘17"}
-                        steps={steps}/>
-                    </div>
-                  }/>
+                  <span>
+                    <Row content={
+                      <div
+                        className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10">
+                        <Process
+                          steps={steps}/>
+                      </div>
+                    }/>
+
+                     <ProjectStats
+                       team={["8 designers", "(Research & Synthesize)", "2 designers", "(Design onwards)"]}
+                       responsibilities={["Interaction Design", "Journey Maps", "App Concept & Design", "Unity Protoype"]}
+                       time={"Jan ’17 - April ’17"}
+                     />
+                  </span>
+
                 }
               />
 
@@ -204,15 +252,67 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        We began our approach by looking at the current status of Macy’s and current retailer trends. We read through financial reports, brand guidelines, retail news, corporate policies, internal documents,  peer reviewed articles, and a bunch of other relevant information.
+                        Our research began by both visiting Macy's stores and reading as many documents as we could relating to either Macy's or retail in general. We also had several calls with Macy's employees to talk about our findings and also learn about the internal workings of the company.
                       </p>
+                    }/>
+
+                    <div className="row">
+                      <Callout
+                        image={dept}
+                        altText={"deaprtment store icon"}
+                        title={"Store Visits"}
+                        description={"Went to Macy's and their competitors to see store environments"}
+                        first={true}
+                      />
+
+                      <Callout
+                        image={docs}
+                        altText={"papers stacked"}
+                        title={"Literature Review"}
+                        description={"Read financial reports, news articles, trend reports, retail journals, etc"}
+                      />
+
+                      <Callout
+                        image={phone}
+                        altText={"phone icon"}
+                        title={"Conference Calls"}
+                        description={"Discussed internal structure and brand vision with corporate contacts"}
+                        middle={true}
+                      />
+                    </div>
+
+                    <Row content={
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResearch}>
+                        <Button
+                          label={this.state.researchOpen ? "Hide Research Process" : "See Research Process"}
+                          color={"green"}
+                        />
+                      </div>
+                    }/>
+
+                    <Collapse isOpened={this.state.researchOpen}>
+
+                    <Row content={
+                      <h4 className={pStyle}>Store Visits</h4>
                     }/>
 
                     <Row content={
                       <p className={pStyle}>
-                        We also conducted in-store research, both at Macy’s and their competitors, browsing between different departments, observing customers, and noting any challenges or problems within the store environment, and had calls with Macy’s corporate to ask questions regarding what we discovered in-store and find out the direction the brand was heading towards.
+                        We conducted in-store research, both at Macy’s and their competitors like Nordstrom and Nieman Marcus, browsing between different departments and observing customers. We documented and photographed any problems we encountered with the store environment, and also noted where their competitors were succeeding.
                       </p>
                     }/>
+
+                    <Row content={
+                      <h4 className={pStyle}>Literature Review</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                         We also read through financial reports, brand guidelines, retail news, corporate policies, internal documents,  peer reviewed articles, and a bunch of other relevant information to help us understand Macy's situation and the current retail landscape.
+                      </p>
+                    }/>
+
+
 
                     <Lightbox
                       images={[
@@ -255,19 +355,67 @@ class Macy extends Component {
                       </p>
                     }/>
 
+                    <Row content={
+                      <h4 className={pStyle}>Conference Calls</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        We had several calls with Macy's corporate, where we asked them questions regarding problems or promotions we encountered in-store, as well as news articles and interviews regarding Macy’s future plans. These helped us to understand where Macy’s saw themselves going in the next year or two, as well as
+                      </p>
+                    }/>
+
+                    </Collapse>
+
                   </span>
                 }
               />
 
               <ProjectSection
-                title={"Findings"}
+                title={"Insights"}
                 content={
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        From all our investigation we gathered a lot of different important information, ranging from what customers currently desire to the challenges shoppers face when inside the store. Here are some of the highlights:
+                        From all our investigation we gathered a lot of different important information, ranging from what customers currently desire to the challenges shoppers face when inside the store. Here are the highlights:
                       </p>
                     }/>
+
+                    <div className="row">
+                      <Callout
+                        image={trend}
+                        altText={"line graph icon"}
+                        title={"Retail Trends"}
+                        description={"Bringing entertainment in-store and a consistent experience with the brand"}
+                        first={true}
+                      />
+
+                      <Callout
+                        image={pain}
+                        altText={"pain emoji"}
+                        title={"Pain Points"}
+                        description={"Absent service and stimulus overload plague in-store environments"}
+                      />
+
+                      <Callout
+                        image={star}
+                        altText={"macy's star"}
+                        title={"Macy’s Brand"}
+                        description={"Core principles of Macy’s not being conveyed to customers"}
+                        middle={true}
+                      />
+                    </div>
+
+                    <Row content={
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsight}>
+                        <Button
+                          label={this.state.insightsOpen ? "Hide Detailed Insights" : "See Detailed Insights"}
+                          color={"green"}
+                        />
+                      </div>
+                    }/>
+
+                    <Collapse isOpened={this.state.insightsOpen}>
 
                     <Row content={
                       <h4 className={pStyle}>Retail Trends</h4>
@@ -322,9 +470,25 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>Magic</em> is Macy’s favorite term for describing themselves. Per their careers page magic is "an energy you feel when you walk in the door – a special connection and a sense that good things are happening." Unfortunately this goal is not being met in-store.
+                        <em>Magic</em> is Macy’s favorite term for describing themselves. Per their careers page magic is "an energy you feel when you walk in the door – a special connection and a sense that good things are happening." It also serves as an acronym:
                       </p>
                     }/>
+
+                    <Row content={
+                      <p className={quoteStyle}>
+                        "The M is for meet and make a connection; the A, ask questions and listen; G, give options and give advice; I, inspire to buy; and C, celebrate the purchase."
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        Unfortunately, while visiting the store we felt none of those moments. We felt as though this strong brand message was getting lost somewhere along the way and it was important our solution brought it to the forefront.
+                      </p>
+                    }/>
+
+                    </Collapse>
+
+
                   </span>
                 }
               />
