@@ -25,7 +25,7 @@
 }
 
 .button.outline a {
-  color: #000;
+  color: #696a6d;
   background-color: #FAFAFA;
   background-image: none;
   padding: 0;
@@ -38,7 +38,15 @@
   display: inline-block;
   border-radius: 26px;
   padding: .5em 1.5em;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: #FAFAFA;
+  background-size: 200% auto;
+  background-image: linear-gradient(90deg, #696a6d 0%, #696a6d 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradient 1s ease infinite;
+  animation-play-state: paused;
 }
 
 
@@ -55,11 +63,13 @@
   background-size: 300% 300%;
   animation: gradient 1s infinite;
   animation-play-state: paused;
+  background-color: #696a6d;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
 
-.button.outline.red a::before {
+.button.outline.red a:hover::before {
   background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
 }
 
@@ -67,14 +77,14 @@
   content: none;
 }
 
-
 .button.outline a:hover {
   transform: none;
   background: #FAFAFA;
 }
 
 .button.outline.red a:hover span {
-  color: #EC6565;
+  background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
+  animation-play-state: running;
 }
 
 
