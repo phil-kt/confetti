@@ -55,6 +55,7 @@
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   display: block;
+  max-width: 100%;
 }
 
 .aspect-keeper iframe {

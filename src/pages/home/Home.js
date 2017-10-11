@@ -39,7 +39,7 @@ class Home extends Component {
           <h1 className="col-lg-12">Philippe Kimura-Thollander</h1>
           <div className="col-lg-6">
             <p>
-              A user experience designer passionate about making technology delightful, intuitive, and accessible to everyone. (Especially in the realm of emoji, virtual reality, and augmented reality).
+              A user experience designer passionate about making technology delightful, intuitive, and accessible to everyone. (Especially in the realm of emoji, virtual reality, and augmented reality)
             </p>
             <p>
               Currently I'm wrapping up my Master's degree at Georgia Tech's HCI program and searching for full-time opportunities.

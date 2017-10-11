@@ -26,7 +26,6 @@ class Button extends Component {
 
     return (
       <div className={"button " + this.props.color}>
-
         {
           this.props.link ?
             (
@@ -37,7 +36,7 @@ class Button extends Component {
               <a href={this.props.link} target="_blank">
                 {this.props.label}
               </a>
-            ) : <a>{this.props.label}</a>
+            ) : <a><span>{this.props.label}</span></a>
         }
       </div>
     );

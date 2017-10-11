@@ -9,16 +9,10 @@ import last from '../../media/icons/last.svg';
 class Process extends Component {
 
   static propTypes = {
-    team: PropTypes.string.isRequired,
-    duty: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
     steps: PropTypes.array.isRequired
   }
 
   static defaultProps = {
-    team: undefined,
-    duty: undefined,
-    time: undefined,
     steps: undefined
   }
 

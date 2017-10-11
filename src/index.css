@@ -130,7 +130,6 @@ p {
 }
 
 a {
-  color: #296EA3;
   text-decoration: none;
   display: inline-block;
 }
@@ -138,17 +137,19 @@ a {
 p a::after {
   content: '';
   display: block;
-  height: 2px;
-  width: 0;
-  background: #296EA3;
+  height: 8px;
+  width: 98%;
+  background: #8BC8F690;
   transition: width .5s ease;
+  margin-top: -9px;
+  margin-left: 2px;
 }
 
 p a:hover::after {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 p a:visited {
-  color: #296EA3;
+  color: #000;
   text-decoration: none;
 }

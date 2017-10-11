@@ -20,7 +20,7 @@ import solution from '../../../media/notifiVR/notifi_solution.mp4';
 //research icons
 import survey from '../../../media/icons/survey.svg';
 import participate from '../../../media/icons/participate.svg';
-import vr_comp from '../../../media/icons/comp.svg';
+import vr_comp from '../../../media/notifiVR/icons/comp.svg';
 
 import fps from '../../../media/notifiVR/space_pirate.jpg';
 import blocks from '../../../media/notifiVR/blocks.jpg';
@@ -918,7 +918,7 @@ class NotifiVR extends Component {
                           {x: "📰", y: 2.166666667},
                           {x: "☎️", y: 6.5},
                         ]}
-                        caption={"Instrusiveness"}
+                        caption={"Intrusiveness"}
                       />
 
                       <div className="legend col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">

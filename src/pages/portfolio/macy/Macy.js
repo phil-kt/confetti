@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse } from 'react-collapse';
+import ImageZoom from 'react-medium-image-zoom'
 import VisibilitySensor from 'react-visibility-sensor';
 import './Macy.css';
 
@@ -20,6 +21,7 @@ import star from '../../../media/macy/icons/star.svg';
 import docs from '../../../media/macy/icons/docs.svg';
 import phone from '../../../media/macy/icons/phone.svg';
 
+//research
 import hero from '../../../media/macy/macy_hero.jpg';
 import bazaar from '../../../media/macy/research/bazaar.png';
 import annual_report from '../../../media/macy/research/annual_report.png';
@@ -30,6 +32,11 @@ import storefront from '../../../media/macy/research/storefront.png';
 import trend from '../../../media/macy/icons/trend.svg';
 import pain from '../../../media/macy/icons/pain.svg';
 import stimulus_overload from '../../../media/macy/stimulus_overload.jpg';
+
+//synthesize icons
+import personas from '../../../media/macy/icons/personas.svg';
+import cust_journey from '../../../media/macy/icons/cust_journey.svg';
+import stakeholders from '../../../media/macy/icons/stakeholder.svg';
 
 // persona previews
 import michelle from '../../../media/macy/personas/michelle.png';
@@ -86,23 +93,44 @@ class Macy extends Component {
       associateLightboxIsOpen: false,
       researchOpen: false,
       insightsOpen: false,
+      synthesizeOpen: false,
       index: 0
     };
 
     this.openLightbox = this.openLightbox.bind(this);
     this.collapseResearch = this.collapseResearch.bind(this);
     this.collapseInsight = this.collapseInsight.bind(this);
+    this.collapseSynthesize = this.collapseSynthesize.bind(this);
+    this.closeLightboxes = this.closeLightboxes.bind(this);
   }
 
   collapseResearch() {
+    this.closeLightboxes();
     this.setState({
       researchOpen: !this.state.researchOpen
     })
   }
 
   collapseInsight() {
+    this.closeLightboxes();
     this.setState({
       insightsOpen: !this.state.insightsOpen
+    })
+  }
+
+  collapseSynthesize() {
+    this.closeLightboxes();
+    this.setState({
+      synthesizeOpen: !this.state.synthesizeOpen
+    })
+  }
+
+  closeLightboxes() {
+    this.setState({
+      researchLightboxIsOpen: false,
+      personaLightboxIsOpen: false,
+      customerLightboxIsOpen: false,
+      associateLightboxIsOpen: false
     })
   }
 
@@ -151,7 +179,7 @@ class Macy extends Component {
 
   render() {
 
-    let pStyle = "col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6";
+    let pStyle = "col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7 col-xl-offset-3 col-xl-6";
     let quoteStyle = "quote col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 col-xl-offset-4 col-xl-4";
 
     let steps = [
@@ -238,7 +266,7 @@ class Macy extends Component {
 
                      <ProjectStats
                        team={["8 designers", "(Research & Synthesize)", "2 designers", "(Design onwards)"]}
-                       responsibilities={["Interaction Design", "Journey Maps", "App Concept & Design", "Unity Protoype"]}
+                       responsibilities={["Interaction Design", "Journey Maps", "App Concept & Design", "Unity Prototype"]}
                        time={"Jan ’17 - April ’17"}
                      />
                   </span>
@@ -499,9 +527,45 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        With all these insights, we then began to figure out how all these factors connect to one another to shape the customer experience. We began developing personas, creating journey maps, identifying stakeholder relationships, and identifying which problems to solve.
+                        With all these insights, we then began to figure out how all these factors connect to one another to shape the customer experience. We began developing personas, creating journey maps, and identifying stakeholder relationships which led us to identifying which problems to solve.
                       </p>
                     }/>
+
+                    <div className="row">
+                      <Callout
+                        image={personas}
+                        altText={"people lined up"}
+                        title={"Personas"}
+                        description={"Developed identities of who we were designing for"}
+                        first={true}
+                      />
+
+                      <Callout
+                        image={cust_journey}
+                        altText={"map icon"}
+                        title={"Customer Journeys"}
+                        description={"Mapped out current in-store experiences with highs and lows"}
+                      />
+
+                      <Callout
+                        image={stakeholders}
+                        altText={"graph icon"}
+                        title={"Stakeholder Map"}
+                        description={"Identified key relationships that affect the business strategy"}
+                        middle={true}
+                      />
+                    </div>
+
+                    <Row content={
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseSynthesize}>
+                        <Button
+                          label={this.state.synthesizeOpen ? "Hide Detailed Synthesis" : "See Detailed Synthesis"}
+                          color={"outline red"}
+                        />
+                      </div>
+                    }/>
+
+                    <Collapse isOpened={this.state.synthesizeOpen}>
 
                     <Row content={
                       <h4 className={pStyle}>Personas</h4>
@@ -607,8 +671,17 @@ class Macy extends Component {
 
                     <Row content={
                       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
-                        <img className="feature-image" src={current_journey}
-                             alt="Displays and racks of shoes upon shoes with no real focus"/>
+                        <ImageZoom
+                          image={{
+                            src: current_journey,
+                            alt: 'Displays and racks of shoes upon shoes with no real focus',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: current_journey,
+                            alt: 'Displays and racks of shoes upon shoes with no real focus'
+                          }}
+                        />
                       </div>
                     }/>
 
@@ -631,8 +704,17 @@ class Macy extends Component {
 
                     <Row content={
                       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10"}>
-                        <img className="feature-image" src={stakeholder_map}
-                             alt="MAp of Macy's relations with customer, suppliers, malls, associates, etc"/>
+                        <ImageZoom
+                          image={{
+                            src: stakeholder_map,
+                            alt: 'Map of Macy’s relations with customer, suppliers, malls, associates, etc',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: stakeholder_map,
+                            alt: 'Map of Macy’s relations with customer, suppliers, malls, associates, etc'
+                          }}
+                        />
                       </div>
                     }/>
 
@@ -641,6 +723,8 @@ class Macy extends Component {
                         A lot of relationships going on
                       </p>
                     }/>
+
+                    </Collapse>
 
                     <Row content={
                       <h4 className={pStyle}>Problems to Tackle</h4>
@@ -654,9 +738,9 @@ class Macy extends Component {
 
                     <Row content={
                       <ul className={pStyle + " list"}>
-                        <li>The difficulty of associates having work the front and back of the store at the same time</li>
                         <li>Make shopping in-store more personal and more rewarding</li>
-                        <li>The disconnect of Macy’s idealized brand identity versus the actual</li>
+                        <li>The difficulty of associates having work the front and back of the store at the same time</li>
+                        <li>The disconnect of Macy’s idealized brand identity versus the perceived image</li>
                         <li>Rearrange store departments to create a smoother experience</li>
                       </ul>
                     }/>
@@ -787,35 +871,6 @@ class Macy extends Component {
                       </p>
                     }/>
 
-
-                    <Row content={
-                      <h4 className={pStyle}>Restructuring the Band</h4>
-                    }/>
-
-                    <Row content={
-                      <p className={pStyle}>
-                        Currently Macy’s brand does not resonate with any real core demographic, symptoms of the curse of being a department store meant to carry "everything". However within Macy’s they do have their own in-house brands, which do have specific target demographics, such as Bar III and Style&co.
-                      </p>
-                    }/>
-
-                    <Row content={
-                      <p className={pStyle}>
-                        We thought there was an opportunity to take advantage of those brands, by spinning them out into their own stores that could live outside of Macy’s department stores. Malls are seeing less and less foot traffic, so this tactic would allow them greater market penetration in smaller markets.
-                      </p>
-                    }/>
-
-                    <Row content={
-                      <div className={pStyle}>
-                        <img className={"feature-image"} src={bar_and_style} alt="Two Macy's brands on street level stores"/>
-                      </div>
-                    }/>
-
-                    <Row content={
-                      <p className={"caption " + pStyle}>
-                        Getting Macy's out of the mall and into the streets
-                      </p>
-                    }/>
-
                     <Row content={
                       <h4 className={pStyle}>Supporting the Employees</h4>
                     }/>
@@ -846,6 +901,47 @@ class Macy extends Component {
                       </p>
                     }/>
 
+
+                    <Row content={
+                      <h4 className={pStyle}>Restructuring the Band</h4>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        Currently Macy’s brand does not resonate with any real core demographic, symptoms of the curse of being a department store meant to carry "everything". However within Macy’s they do have their own in-house brands, which do have specific target demographics, such as Bar III and Style&co.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        We thought there was an opportunity to take advantage of those brands, by spinning them out into their own stores that could live outside of Macy’s department stores. Malls are seeing less and less foot traffic, so this tactic would allow them greater market penetration in smaller markets.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <div className={pStyle}>
+                        <ImageZoom
+                          image={{
+                            src: bar_and_style,
+                            alt: 'Two Macy’s brands on street level stores',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: bar_and_style,
+                            alt: 'Two Macy’s brands on street level stores'
+                          }}
+                        />
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        Getting Macy's out of the mall and into the streets
+                      </p>
+                    }/>
+
+
+
                     <Row content={
                       <h4 className={pStyle}>Rethinking the Store Layout</h4>
                     }/>
@@ -857,9 +953,12 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
-                      <p className={pStyle}>
-                        <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=acc0b6c2-33b3-4be9-bb45-052f385cb8bf&width=580&height=326" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" width="580" height="326" allowFullScreen />
-                      </p>
+                      <span className={pStyle + " video-holder"}>
+                        <span className="aspect-keeper">
+                          <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=acc0b6c2-33b3-4be9-bb45-052f385cb8bf" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" allowFullScreen />
+                        </span>
+                      </span>
+
                     }/>
 
                     <Row content={
@@ -880,8 +979,17 @@ class Macy extends Component {
 
                     <Row content={
                       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10"}>
-                        <img className="feature-image" src={design_journey}
-                             alt="Customer journey, with a private assistant"/>
+                        <ImageZoom
+                          image={{
+                            src: design_journey,
+                            alt: 'Customer journey, with a private assistant',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: design_journey,
+                            alt: 'Customer journey, with a private assistant'
+                          }}
+                        />
                       </div>
                     }/>
 
