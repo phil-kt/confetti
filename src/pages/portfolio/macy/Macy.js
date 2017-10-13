@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse } from 'react-collapse';
 import ImageZoom from 'react-medium-image-zoom'
-import VisibilitySensor from 'react-visibility-sensor';
 import './Macy.css';
 
 import Button from '../../../components/button/Button';
@@ -11,7 +10,6 @@ import ProjectStats from '../../../components/project-stats/ProjectStats';
 import ProjectSection from "../../../components/project-section/ProjectSection";
 import Row from '../../../components/row/Row';
 import Lightbox from '../../../components/lightbox/Lightbox';
-import Video from '../../../components/video/Video';
 import Callout from '../../../components/callout/Callout';
 
 
@@ -25,7 +23,7 @@ import phone from '../../../media/macy/icons/phone.svg';
 import hero from '../../../media/macy/macy_hero.jpg';
 import bazaar from '../../../media/macy/research/bazaar.png';
 import annual_report from '../../../media/macy/research/annual_report.png';
-import reimplement_brand from '../../../media/macy/reimplement_brand.png';
+import reimplement_brand from '../../../media/macy/research/reimplement_brand.png';
 import storefront from '../../../media/macy/research/storefront.png';
 
 //insights icons
@@ -76,8 +74,8 @@ import k_initial from '../../../media/macy/kiosk/Kiosk_Initial.png';
 
 import bar_and_style from '../../../media/macy/bar_and_style.png';
 import robots from '../../../media/macy/robots.png';
+import layout from '../../../media/macy/layout.jpg';
 import design_journey from '../../../media/macy/designed_journey.svg';
-import get_in_out from '../../../media/macy/get_in_out_journey.svg';
 
 import unity from '../../../media/macy/unity.png';
 
@@ -94,6 +92,7 @@ class Macy extends Component {
       researchOpen: false,
       insightsOpen: false,
       synthesizeOpen: false,
+      designOpen: false,
       index: 0
     };
 
@@ -101,6 +100,7 @@ class Macy extends Component {
     this.collapseResearch = this.collapseResearch.bind(this);
     this.collapseInsight = this.collapseInsight.bind(this);
     this.collapseSynthesize = this.collapseSynthesize.bind(this);
+    this.collapseDesign = this.collapseDesign.bind(this);
     this.closeLightboxes = this.closeLightboxes.bind(this);
   }
 
@@ -122,6 +122,13 @@ class Macy extends Component {
     this.closeLightboxes();
     this.setState({
       synthesizeOpen: !this.state.synthesizeOpen
+    })
+  }
+
+  collapseDesign() {
+    this.closeLightboxes();
+    this.setState({
+      designOpen: !this.state.designOpen
     })
   }
 
@@ -267,7 +274,7 @@ class Macy extends Component {
                      <ProjectStats
                        team={["8 designers", "(Research & Synthesize)", "2 designers", "(Design onwards)"]}
                        responsibilities={["Interaction Design", "Journey Maps", "App Concept & Design", "Unity Prototype"]}
-                       time={"Jan ’17 - April ’17"}
+                       time={"Jan ’17 – April ’17"}
                      />
                   </span>
 
@@ -313,7 +320,7 @@ class Macy extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResearch}>
                         <Button
                           label={this.state.researchOpen ? "Hide Research Process" : "See Research Process"}
-                          color={"green"}
+                          color={"outline red"}
                         />
                       </div>
                     }/>
@@ -389,7 +396,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        We had several calls with Macy's corporate, where we asked them questions regarding problems or promotions we encountered in-store, as well as news articles and interviews regarding Macy’s future plans. These helped us to understand where Macy’s saw themselves going in the next year or two, as well as
+                        We had several calls with Macy's corporate, where we asked them questions regarding problems or promotions we encountered in-store, as well as news articles and interviews regarding Macy’s future plans. These helped us to understand where Macy’s saw themselves going in the next year or two, as well as what could potentially be implemented on a five year timeline.
                       </p>
                     }/>
 
@@ -438,7 +445,7 @@ class Macy extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsight}>
                         <Button
                           label={this.state.insightsOpen ? "Hide Detailed Insights" : "See Detailed Insights"}
-                          color={"green"}
+                          color={"outline red"}
                         />
                       </div>
                     }/>
@@ -670,24 +677,17 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
-                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
-                        <ImageZoom
-                          image={{
-                            src: current_journey,
-                            alt: 'Displays and racks of shoes upon shoes with no real focus',
-                            className: 'feature-image'
-                          }}
-                          zoomImage={{
-                            src: current_journey,
-                            alt: 'Displays and racks of shoes upon shoes with no real focus'
-                          }}
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8 customer-journey-container"}>
+                        <img src={current_journey}
+                            alt='Displays and racks of shoes upon shoes with no real focus'
+                            className='customer-journey'
                         />
                       </div>
                     }/>
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        You can see there's quite a few negative moments
+                        Scroll through the current journey
                       </p>
                     }/>
 
@@ -703,7 +703,7 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
-                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10"}>
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8"}>
                         <ImageZoom
                           image={{
                             src: stakeholder_map,
@@ -758,6 +758,8 @@ class Macy extends Component {
                         Once we had identified the issues to address, we began to brainstorm solutions. Because we had the flexibility of thinking of technical developments five years in the future, we leveraged cutting edge commercial innovations that we thought will be commonplace in five years.
                       </p>
                     }/>
+
+
 
                     <Row content={
                       <h4 className={pStyle}>Shopping as a Service</h4>
@@ -872,6 +874,17 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseDesign}>
+                        <Button
+                          label={this.state.designOpen ? "Hide Designs" : "See More Designs"}
+                          color={"outline red"}
+                        />
+                      </div>
+                    }/>
+
+                    <Collapse isOpened={this.state.designOpen}>
+
+                    <Row content={
                       <h4 className={pStyle}>Supporting the Employees</h4>
                     }/>
 
@@ -955,7 +968,7 @@ class Macy extends Component {
                     <Row content={
                       <span className={pStyle + " video-holder"}>
                         <span className="aspect-keeper">
-                          <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=acc0b6c2-33b3-4be9-bb45-052f385cb8bf" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" allowFullScreen />
+                          <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=acc0b6c2-33b3-4be9-bb45-052f385cb8bf" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" allowFullScreen title="Sketchup 3D model"/>
                         </span>
                       </span>
 
@@ -967,8 +980,10 @@ class Macy extends Component {
                       </p>
                     }/>
 
+                    </Collapse>
+
                     <Row content={
-                      <h4 className={pStyle}>Resulting Customer Journey</h4>
+                      <h4 className={pStyle}>Customer Journey — 5 Years From Now</h4>
                     }/>
 
                     <Row content={
@@ -978,24 +993,17 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
-                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10"}>
-                        <ImageZoom
-                          image={{
-                            src: design_journey,
-                            alt: 'Customer journey, with a private assistant',
-                            className: 'feature-image'
-                          }}
-                          zoomImage={{
-                            src: design_journey,
-                            alt: 'Customer journey, with a private assistant'
-                          }}
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 customer-journey-container"}>
+                        <img src={design_journey}
+                             alt='Customer journey, with a private assistant'
+                             className='customer-journey-2'
                         />
                       </div>
                     }/>
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        A more intricate system, involving AI, robots, and dedicated fitting room associates
+                        Scroll through our more intricate system, involving AI, robots, and dedicated fitting room associates — stars mark our key innovations
                       </p>
                     }/>
 
@@ -1047,7 +1055,7 @@ class Macy extends Component {
                     <Row content={
                       <span className={pStyle + " video-holder"}>
                           <span className="aspect-keeper">
-                            <iframe src="https://www.youtube.com/embed/ivBOMyQble8" frameBorder="0" allowFullScreen />
+                            <iframe src="https://www.youtube.com/embed/ivBOMyQble8" frameBorder="0" allowFullScreen title="Youtube video of concept" />
                           </span>
                       </span>
                     }/>

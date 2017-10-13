@@ -140,13 +140,13 @@ p a::after {
   height: 8px;
   width: 98%;
   background: #8BC8F690;
-  transition: width .5s ease;
+  transition: all .1s ease;
   margin-top: -9px;
   margin-left: 2px;
 }
 
 p a:hover::after {
-  /*width: 100%;*/
+  margin-left: 7px;
 }
 
 p a:visited {

@@ -215,7 +215,7 @@ class NotifiVR extends Component {
                     <ProjectStats
                       team={["3 designers", "3 developers"]}
                       responsibilities={["Interaction Design", "Framework Design", "User Testing", "Stats Analysis"]}
-                      time={"Jan ’17 - April ’17"}
+                      time={"Jan ’17 – April ’17"}
                     />
 
                   </span>
@@ -261,7 +261,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResearch}>
                         <Button
                           label={this.state.researchOpen ? "Hide Research Process" : "See Research Process"}
-                          color={"green"}
+                          color={"outline blue"}
                         />
                       </div>
                     }/>
@@ -406,7 +406,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsights}>
                         <Button
                           label={this.state.insightsOpen ? "Hide Detailed Insights" : "See Detailed Insights"}
-                          color={"green"}
+                          color={"outline blue"}
                         />
                       </div>
                     }/>
@@ -615,7 +615,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseEnvironment}>
                         <Button
                           label={this.state.environmentOpen ? "Hide Unity Details" : "See Unity Details"}
-                          color={"green"}
+                          color={"outline blue"}
                         />
                       </div>
                     }/>
@@ -801,7 +801,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseEvaluate}>
                         <Button
                           label={this.state.evaluateOpen ? "Hide Detailed Evaluation" : "See Detailed Evaluation"}
-                          color={"green"}
+                          color={"outline blue"}
                         />
                       </div>
                     }/>
@@ -934,7 +934,7 @@ class NotifiVR extends Component {
                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResults}>
                          <Button
                            label={this.state.resultsOpen ? "Hide Detailed Results" : "See Detailed Results"}
-                           color={"green"}
+                           color={"outline blue"}
                          />
                        </div>
                      }/>
