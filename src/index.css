@@ -146,7 +146,7 @@ p a::after {
 }
 
 p a:hover::after {
-  margin-left: 7px;
+  margin-left: 5px;
 }
 
 p a:visited {

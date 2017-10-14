@@ -58,6 +58,10 @@
   max-width: 100%;
 }
 
+.project-section .links a {
+  margin-right: 10px;
+}
+
 .aspect-keeper iframe {
   position: absolute;
   top: 0;

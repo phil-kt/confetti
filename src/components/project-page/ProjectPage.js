@@ -4,11 +4,12 @@ import VisibilitySensor from 'react-visibility-sensor';
 import './ProjectPage.css';
 
 import Video from '../video/Video';
+import Navbar from '../navbar/Navbar';
 
 class ProjectPage extends Component {
 
   constructor() {
-    super()
+    super();
 
     this.pStyle = "col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7 col-xl-offset-3 col-xl-6";
   }
@@ -39,6 +40,7 @@ class ProjectPage extends Component {
 
     return (
       <div className={"project-page container " + this.props.title}>
+        <Navbar/>
         <div className="header row">
           <h1 className={this.pStyle}>{this.props.title}</h1>
         </div>

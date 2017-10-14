@@ -993,7 +993,7 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
-                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 customer-journey-container"}>
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10 customer-journey-container"}>
                         <img src={design_journey}
                              alt='Customer journey, with a private assistant'
                              className='customer-journey-2'
@@ -1023,7 +1023,7 @@ class Macy extends Component {
 
                     <Row content={
                       <div className={pStyle}>
-                        <a href="http://philkt.me/macys-service-design" target="_blank" rel="noopener noreferrer" >
+                        <a href="http://macys.philkt.me/" target="_blank" rel="noopener noreferrer" >
                           <img className={"feature-image"} src={unity} alt="Unity demo link"/>
                         </a>
                       </div>
@@ -1069,6 +1069,40 @@ class Macy extends Component {
                     }/>
                   </span>
               }/>
+
+              <ProjectSection
+                title={"Conclusion"}
+                content={
+                  <span>
+                    <Row content={
+                      <p className={pStyle}>
+                        I learned a LOT from this project. From managing a product with an industry client to the entire concept and practice of service design, I grew several times as a designer through this work. It was a really rewarding way to spend my semester.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        I hope that Macy's corporate takes some of our ideas to heart, and you can one day in the future experience a shopping trip like no other, designed by yours truly.
+                      </p>
+                    }/>
+
+                  </span>
+                }
+              />
+
+              <ProjectSection
+                title={"Links"}
+                content={
+                  <Row content={
+                    <p className={pStyle + " links"}>
+                      <a href="https://3dwarehouse.sketchup.com/model/acc0b6c2-33b3-4be9-bb45-052f385cb8bf/Macys-Rooms">SketchUp Model</a>
+                      <a href="http://macys.philkt.me">Unity Demo</a>
+                      <a href="http://philkt.me/files/macys_presentation.pdf">Presentation Deck</a>
+                      <a href="http://philkt.me/files/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >Presentation Document</a>
+                    </p>
+                  }/>
+                }
+              />
 
             </span>
           }
