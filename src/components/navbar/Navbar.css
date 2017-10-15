@@ -1,12 +1,18 @@
+.headroom {
+  left: 0;
+  right: 0;
+  background: #FAFAFA;
+  box-shadow: 0 .2em .2em 0 rgba(0,0,0,0.10);
+  z-index: 100 !important;
+}
+
 .navbar {
-  position: fixed;
-  margin-top: -1.5em;
+  height: 2.5em;
   display: flex;
   justify-content: space-between;
-  left: 2em;
-  right: 2em;
 }
 
 .navbar a {
   display: block;
+  padding: .6em 2em;
 }
