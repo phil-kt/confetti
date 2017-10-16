@@ -26,11 +26,15 @@ class Project extends Component {
   render() {
 
     return (
-      <div className="Project row">
-        <div className="col-md-offset-2 col-md-6 col-lg-offset-2 col-lg-6">
-        <img className="project-image" src={this.props.image} alt={this.props.alt}/>
+      <div className="Project">
+        <span>
+        <div className="row">
+        <div className="col-xs-12 col-sm-10 col-md-8 col-lg-offset-2 col-lg-6">
+          <img className="project-image" src={this.props.image} alt={this.props.alt}/>
         </div>
-        <div className="project-blurb col-md-offset-4 col-md-7 col-lg-offset-5 col-lg-5 ">
+        </div>
+        <div className="row">
+        <div className="project-blurb col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-7 col-lg-offset-5 col-lg-5 ">
           <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
           <div className="bottom">
@@ -38,6 +42,8 @@ class Project extends Component {
             <Button label="Case Study" link={this.props.link} color={this.props.color}/>
           </div>
         </div>
+        </div>
+        </span>
       </div>
     );
   }

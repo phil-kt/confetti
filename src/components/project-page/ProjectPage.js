@@ -20,6 +20,8 @@ class ProjectPage extends Component {
     content: PropTypes.object.isRequired,
     hero: PropTypes.string.isRequired,
     heroAlt: PropTypes.string.isRequired,
+    nextProjectName: PropTypes.string.isRequired,
+    nextProjectLink: PropTypes.string.isRequired,
     video: PropTypes.bool
 
   }
@@ -30,7 +32,9 @@ class ProjectPage extends Component {
     content: undefined,
     hero: "",
     heroAlt: "",
-    video: false
+    video: false,
+    nextProjectName: "Next Page",
+    nextProjectLink: "/"
   }
 
   render () {
@@ -40,7 +44,7 @@ class ProjectPage extends Component {
 
     return (
       <div className={"project-page container " + this.props.title}>
-        <Navbar/>
+        <Navbar nextProjectName={this.props.nextProjectName} nextProjectLink={this.props.nextProjectLink}/>
         <div className="header row">
           <h1 className={this.pStyle}>{this.props.title}</h1>
         </div>

@@ -160,6 +160,8 @@ class NotifiVR extends Component {
           hero={hero}
           heroAlt={"User testing of a person testing the Vive VR headset."}
           description={"Receive notifications in VR through virtual phones, smart watches, and popups"}
+          nextProjectName={"The Future of Macy's"}
+          nextProjectLink={"/macys"}
           content={
             <span>
               <ProjectSection
@@ -232,7 +234,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <div className="row">
+                    <div className="row callouts">
                       <Callout
                         image={survey}
                         altText={"survey checklist"}
@@ -377,7 +379,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
                     
-                    <div className="row">
+                    <div className="row callouts">
                       <Callout
                         image={visual}
                         altText={"icon of an eye"}
@@ -576,7 +578,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <div className="row">
+                    <div className="row callouts">
                       <Callout
                         image={phone_icon}
                         altText={"Icon of a phone over Vive controller"}
@@ -703,7 +705,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        After we had the designs, framework, and the environment decided upon, it was time to combine them into one cohesive unity. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and with some help from our good old friend the Wizard of Oz to fake the outside triggers.
+                        After we had the designs, framework, and the environment decided upon, it was time to combine them into one cohesive unit. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and with some help from our good old friend the Wizard of Oz to fake the outside triggers.
                       </p>
                     }/>
                     <Row content={
@@ -772,7 +774,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <div className="row">
+                    <div className="row callouts">
                       <Callout
                         image={fourteen}
                         altText={"fourteen"}

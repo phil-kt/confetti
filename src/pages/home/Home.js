@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import Project from '../../components/project/Project';
+import Row from '../../components/row/Row';
 
 import notifi from '../../media/home/diego_2.jpg';
 import macy from '../../media/home/macy.jpg';
@@ -34,26 +35,45 @@ class Home extends Component {
   render() {
     return (
       <div className="Home container">
-        <div className="intro row">
-          <h3 className="col-lg-4">{this.state.greeting}, I'm</h3>
-          <h1 className="col-lg-12">Philippe Kimura-Thollander</h1>
-          <div className="col-lg-6">
-            <p>
-              A user experience designer passionate about making technology delightful, intuitive, and accessible to everyone. (Especially in the realm of emoji, virtual reality, and augmented reality)
-            </p>
-            <p>
-              Currently I'm wrapping up my Master's degree at Georgia Tech's HCI program and searching for full-time opportunities.
-            </p>
-            <p>
-              Scroll down to see some highlighted projects, or get an overall sense by <a href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank">reading my resume.</a>
-            </p>
-          </div>
+        <div className="intro">
+
+          <Row content={
+            <h3 className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">{this.state.greeting}, I'm</h3>
+          }/>
+
+          <Row content={
+            <h1 className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Philippe Kimura-Thollander</h1>
+          }/>
+
+          <Row content={
+            <div className="col-xs-12 col-sm-12 col-md-9 col-lg-6">
+              <p>
+                A user experience designer passionate about making technology delightful, intuitive, and accessible to
+                everyone. (Especially in the realm of emoji, virtual reality, and augmented reality)
+              </p>
+              <p>
+                Currently I'm wrapping up my Master's degree at Georgia Tech's HCI program and searching for full-time
+                opportunities.
+              </p>
+              <p>
+                Scroll down to see some highlighted projects, or get an overall sense by <a
+                href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank">reading my
+                resume.</a>
+              </p>
+            </div>
+          }/>
 
         </div>
 
         <Project title="NotifiVR" description="Designing and delivering real world notifications when you’re inside a virtual reality environment." image={notifi} link="/notifivr" alt="Picking up a VR telephone to answer a real life call" color="blue"/>
         
-        <Project title="Macy’s of the Future" description="Service design project done in collaboration with Macy's to help envision their customer experience both in and out of the store 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red"/>
+        <Project title="Macy’s of the Future" description="Project done in collaboration with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red"/>
+
+        <Row content={
+          <h3 className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 other-stuff"}>Some other stuff I've done</h3>
+        }/>
+
+
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Headroom from 'react-headroom';
 import './Navbar.css';
 
@@ -27,13 +28,10 @@ class Navbar extends Component {
   render() {
 
     return (
-      <Headroom
-        onPin={() => console.log('pinned')}
-        onUnpin={() => console.log('unpinned')}
-      >
+      <Headroom>
         <navbar className="navbar">
-          <a href="/">Home</a>
-          <a href="/">Next Project</a>
+          <Link to="/">Home</Link>
+          <Link to={this.props.nextProjectLink}>{this.props.nextProjectName}</Link>
         </navbar>
       </Headroom>
     );

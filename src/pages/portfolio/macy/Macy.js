@@ -252,8 +252,16 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Four different notification methods that were prototyped and tested with real users to inform us how to design alerts in VR.
+                        An intimate shopping experience with a personal shopping attendant enabled by smaller store footprints, redesigned interior layouts, and an automated storage facility.
                       </p>
+                    }/>
+
+                    <Row content={
+                      <span className={pStyle + " video-holder"}>
+                          <span className="aspect-keeper">
+                            <iframe src="https://www.youtube.com/embed/ivBOMyQble8" frameBorder="0" allowFullScreen title="Youtube video of concept" />
+                          </span>
+                      </span>
                     }/>
                   </span>
                 }
@@ -291,7 +299,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <div className="row">
+                    <div className="row callouts">
                       <Callout
                         image={dept}
                         altText={"deaprtment store icon"}
@@ -416,7 +424,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <div className="row">
+                    <div className="row callouts">
                       <Callout
                         image={trend}
                         altText={"line graph icon"}
@@ -538,7 +546,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <div className="row">
+                    <div className="row callouts">
                       <Callout
                         image={personas}
                         altText={"people lined up"}
@@ -1097,6 +1105,7 @@ class Macy extends Component {
                     <p className={pStyle + " links"}>
                       <a href="https://3dwarehouse.sketchup.com/model/acc0b6c2-33b3-4be9-bb45-052f385cb8bf/Macys-Rooms">SketchUp Model</a>
                       <a href="http://macys.philkt.me">Unity Demo</a>
+                      <br />
                       <a href="http://philkt.me/files/macys_presentation.pdf">Presentation Deck</a>
                       <a href="http://philkt.me/files/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >Presentation Document</a>
                     </p>
