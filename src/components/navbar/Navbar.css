@@ -10,8 +10,16 @@
   position: absolute !important;
 }
 
+.headroom--unfixed .navbar {
+  padding-top: 0;
+}
+
+.headroom--unfixed .progress-bar {
+  display: none;
+}
+
 .navbar {
-  height: 2.5em;
+  padding-top: .6em;
   display: flex;
   justify-content: space-between;
 }
@@ -19,4 +27,36 @@
 .navbar a {
   display: block;
   padding: .6em 2em;
+}
+
+
+
+.nav .progress-bar {
+  -webkit-appearance: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0.4rem;
+  border: 0;
+  background-color: transparent;
+  color: rgb(97, 13, 255);
+  z-index: 999;
+}
+
+.navbar .progress-bar {
+  position: absolute;
+  width: 100%;
+}
+
+progress::-webkit-progress-bar {
+  background: #FAFAFA;
+}
+
+progress::-webkit-progress-value {
+  background: rgb(97, 13, 255);
+}
+
+progress::-moz-progress-bar {
+  background-color: rgb(97, 13, 255);
 }

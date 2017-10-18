@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import Project from '../../components/project/Project';
 import Row from '../../components/row/Row';
+import ProjectIcon from '../../components/project-icon/ProjectIcon';
 
 import notifi from '../../media/home/diego_2.jpg';
 import macy from '../../media/home/macy.jpg';
@@ -53,7 +54,7 @@ class Home extends Component {
               </p>
               <p>
                 Currently I'm wrapping up my Master's degree at Georgia Tech's HCI program and searching for full-time
-                opportunities.
+                opportunities starting May 2018.
               </p>
               <p>
                 Scroll down to see some highlighted projects, or get an overall sense by <a
@@ -72,6 +73,20 @@ class Home extends Component {
         <Row content={
           <h3 className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 other-stuff"}>Some other stuff I've done</h3>
         }/>
+
+        <div className="misc">
+            <ProjectIcon/>
+            <ProjectIcon/>
+            <ProjectIcon/>
+            <ProjectIcon/>
+            <ProjectIcon/>
+            <ProjectIcon/>
+            <ProjectIcon/>
+            <ProjectIcon/>
+            <ProjectIcon/>
+
+
+        </div>
 
 
       </div>

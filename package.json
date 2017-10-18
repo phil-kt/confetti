@@ -18,6 +18,7 @@
     "react-images": "^0.5.5",
     "react-medium-image-zoom": "^2.0.3",
     "react-motion": "^0.5.1",
+    "react-reading-progress": "^0.2.7",
     "react-router-dom": "^4.2.2",
     "react-visibility-sensor": "^3.10.1",
     "victory": "^0.23.0"

@@ -13,4 +13,23 @@
 .Home .other-stuff {
   text-align: center;
   margin-top: -1.5em;
+  margin-bottom: 1.5em;
+}
+
+
+.Home .misc {
+  display: flex;
+  flex-wrap: wrap;
+  animation: move 10s ease-in-out infinite;
+}
+
+
+@keyframes move
+{
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
 }

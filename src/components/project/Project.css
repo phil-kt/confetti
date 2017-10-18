@@ -2,6 +2,20 @@
   margin-top: 12em;
   margin-bottom: 12em;
 }
+
+.project-link-container {
+  color: inherit;
+}
+
+.Project:hover .project-image {
+  box-shadow: 0 0.75em 1.25em 0 rgba(0,0,0,0.30);
+}
+
+.Project:hover .project-blurb {
+  box-shadow: 0 1.5em 2.5em 0 rgba(0,0,0,0.30);
+}
+
+
 .project-image {
   display: block;
   object-fit: cover;
@@ -10,6 +24,7 @@
   padding: 0;
   overflow: hidden;
   box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.30);
+  transition: box-shadow .5s ease;
 }
 
 .project-blurb {
@@ -19,6 +34,7 @@
   height: auto;
   margin-top: -10em;
   opacity: 0.95;
+  transition: box-shadow .5s ease;
 }
 
 .bottom {
