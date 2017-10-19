@@ -49,7 +49,7 @@ class Home extends Component {
           <Row content={
             <div className="col-xs-12 col-sm-12 col-md-9 col-lg-6">
               <p>
-                A user experience designer passionate about making technology delightful, intuitive, and accessible to
+                An experience designer passionate about making technology delightful, intuitive, and accessible to
                 everyone. (Especially in the realm of emoji, virtual reality, and augmented reality)
               </p>
               <p>
@@ -71,21 +71,20 @@ class Home extends Component {
         <Project title="Macy’s of the Future" description="Project done in collaboration with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red"/>
 
         <Row content={
-          <h3 className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 other-stuff"}>Some other stuff I've done</h3>
+          <h3 className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 other-stuff"}>Some other stuff I’ve done</h3>
         }/>
 
-        <div className="misc">
+        <div className="row misc">
             <ProjectIcon/>
             <ProjectIcon/>
             <ProjectIcon/>
             <ProjectIcon/>
+        </div>
+        <div className="row">
             <ProjectIcon/>
             <ProjectIcon/>
             <ProjectIcon/>
             <ProjectIcon/>
-            <ProjectIcon/>
-
-
         </div>
 
 

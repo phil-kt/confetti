@@ -1,6 +1,28 @@
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-icon img{
+
+  filter: url(grey.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */
+
+  transition: all .6s ease;
   height: 8em;
   width: 8em;
   background: #EC6565;
   border-radius: 100px;
+}
+
+
+.project-icon img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+
 }

@@ -132,6 +132,7 @@ p {
 a {
   text-decoration: none;
   display: inline-block;
+  color: #000
 }
 
 p a::after {
@@ -143,10 +144,6 @@ p a::after {
   transition: all .1s ease;
   margin-top: -9px;
   margin-left: 2px;
-}
-
-p a:hover::after {
-  margin-left: 5px;
 }
 
 p a:visited {

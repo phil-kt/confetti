@@ -1,5 +1,5 @@
 .Home h1 {
-  margin-top: 0;
+  margin-top: -.5rem;
 }
 
 .Home {
@@ -14,22 +14,4 @@
   text-align: center;
   margin-top: -1.5em;
   margin-bottom: 1.5em;
-}
-
-
-.Home .misc {
-  display: flex;
-  flex-wrap: wrap;
-  animation: move 10s ease-in-out infinite;
-}
-
-
-@keyframes move
-{
-  from {
-    left: 0;
-  }
-  to {
-    left: 100%;
-  }
 }
