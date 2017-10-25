@@ -229,6 +229,7 @@ class Macy extends Component {
           description={"A shopping experience focused on personal assistance and a smaller store footprint"}
           hero={hero}
           heroAlt={"Our Macy's app on top of a bag."}
+          navbarColor={"red"}
           content={
             <span>
 

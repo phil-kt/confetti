@@ -162,6 +162,7 @@ class NotifiVR extends Component {
           description={"Receive notifications in VR through virtual phones, smart watches, and popups"}
           nextProjectName={"The Future of Macy's"}
           nextProjectLink={"/macys"}
+          navbarColor={"blue"}
           content={
             <span>
               <ProjectSection
@@ -924,7 +925,7 @@ class NotifiVR extends Component {
                       />
 
                       <div className="legend col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
-                        <p><div id={"phoneEmoji"}>📞</div> = Phone Overlay</p>
+                        <p><span id={"phoneEmoji"}>📞</span> = Phone Overlay</p>
                         <p>☎️ = Phone Booth</p>
                         <p>📰 = Popup</p>
                         <p>⌚️ = Watch</p>

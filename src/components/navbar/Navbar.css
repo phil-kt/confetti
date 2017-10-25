@@ -11,7 +11,10 @@
 }
 
 .headroom--unfixed .navbar {
-  padding-top: 0;
+  position: fixed;
+  padding: 1em 0;
+  left: 0;
+  right: 0;
 }
 
 .headroom--unfixed .progress-bar {
@@ -44,6 +47,14 @@
   z-index: 999;
 }
 
+.progress-bar.red {
+  color: #EC6565;
+}
+
+.progress-bar.blue {
+  color: #7CE1EC;
+}
+
 .navbar .progress-bar {
   position: absolute;
   width: 100%;
@@ -57,6 +68,22 @@ progress::-webkit-progress-value {
   background: rgb(97, 13, 255);
 }
 
+progress.red::-webkit-progress-value {
+  background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
+}
+
+progress.blue::-webkit-progress-value {
+  background-image: linear-gradient(90deg, #A06FE8 0%, #7CE1EC 100%);
+}
+
 progress::-moz-progress-bar {
   background-color: rgb(97, 13, 255);
+}
+
+progress.red::-moz-progress-bar {
+  background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
+}
+
+progress.blue::-moz-progress-bar {
+  background-image: linear-gradient(90deg, #A06FE8 0%, #7CE1EC 100%);
 }

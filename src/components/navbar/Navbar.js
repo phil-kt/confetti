@@ -18,11 +18,13 @@ class Navbar extends Component {
   static propTypes = {
     nextProjectLink: PropTypes.string.isRequired,
     nextProjectName: PropTypes.string.isRequired,
+    color: PropTypes.string
   }
 
   static defaultProps = {
     nextProjectLink: "/",
-    nextProjectName: "Next Project"
+    nextProjectName: "Next Project",
+    color: ""
   }
 
 
@@ -30,7 +32,7 @@ class Navbar extends Component {
 
     return (
       <div className="nav">
-        <ReadingProgress className="progress-bar"/>
+        <ReadingProgress className={"progress-bar " + this.props.color} />
         <Headroom>
           <div>
           <navbar className="navbar">

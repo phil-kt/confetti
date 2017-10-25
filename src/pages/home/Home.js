@@ -3,6 +3,7 @@ import './Home.css';
 import Project from '../../components/project/Project';
 import Row from '../../components/row/Row';
 import ProjectIcon from '../../components/project-icon/ProjectIcon';
+import Misc from '../../components/misc/Misc';
 
 import notifi from '../../media/home/diego_2.jpg';
 import macy from '../../media/home/macy.jpg';
@@ -74,18 +75,7 @@ class Home extends Component {
           <h3 className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 other-stuff"}>Some other stuff I’ve done</h3>
         }/>
 
-        <div className="row misc">
-            <ProjectIcon/>
-            <ProjectIcon/>
-            <ProjectIcon/>
-            <ProjectIcon/>
-        </div>
-        <div className="row">
-            <ProjectIcon/>
-            <ProjectIcon/>
-            <ProjectIcon/>
-            <ProjectIcon/>
-        </div>
+        <Misc/>
 
 
       </div>

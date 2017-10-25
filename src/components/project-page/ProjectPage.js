@@ -22,8 +22,8 @@ class ProjectPage extends Component {
     heroAlt: PropTypes.string.isRequired,
     nextProjectName: PropTypes.string.isRequired,
     nextProjectLink: PropTypes.string.isRequired,
-    video: PropTypes.bool
-
+    video: PropTypes.bool,
+    navbarColor: PropTypes.string
   }
 
   static defaultProps = {
@@ -34,17 +34,15 @@ class ProjectPage extends Component {
     heroAlt: "",
     video: false,
     nextProjectName: "Next Page",
-    nextProjectLink: "/"
+    nextProjectLink: "/",
+    navbarColor: ""
   }
 
   render () {
 
-    //TODO: Read time
-    //Read time is based on the average reading speed of an adult (roughly 275 WPM). We take the total word count of a post and translate it into minutes. Then, we add 12 seconds for each inline image.
-
     return (
       <div className={"project-page container " + this.props.title}>
-        <Navbar nextProjectName={this.props.nextProjectName} nextProjectLink={this.props.nextProjectLink}/>
+        <Navbar nextProjectName={this.props.nextProjectName} nextProjectLink={this.props.nextProjectLink} color={this.props.navbarColor}/>
         <div className="header row">
           <h1 className={this.pStyle}>{this.props.title}</h1>
         </div>
