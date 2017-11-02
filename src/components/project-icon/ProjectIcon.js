@@ -20,12 +20,15 @@ class ProjectIcon extends Component {
 
   static propTypes = {
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.object.isRequired,
     link: PropTypes.string.isRequired,
     svg: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
     square: PropTypes.bool,
-    round: PropTypes.bool
+    round: PropTypes.bool,
+    links: PropTypes.array,
+    first: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -34,8 +37,11 @@ class ProjectIcon extends Component {
     link: "",
     svg: "",
     alt: "",
+    image: null,
     square: false,
-    round: false
+    round: false,
+    links: [],
+    first: false
   }
 
   showModal() {
@@ -54,17 +60,39 @@ class ProjectIcon extends Component {
     let square = this.props.square ? "square" : null;
     let round = this.props.round ? "round" : null;
 
+    const rodalCustomStyles = {
+      height: 'auto',
+      maxHeight: '80%',
+      bottom: 'auto',
+      overflow: 'scroll',
+      top: '50%',
+      transform: 'translateY(-50%)'
+    }
+
+    let iconClass = "project-icon col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xl-2";
+    this.props.first ? iconClass += " col-xl-offset-2" : null;
+
     return (
-      <div className="project-icon col-lg-3">
+      <div className={iconClass}>
         <span onClick={this.showModal}>
         <Isvg src={this.props.svg} alt={this.props.alt} className={square || round}/>
         </span>
-        <Rodal visible={this.state.modalOpen} onClose={this.hideModal}>
+        <Rodal visible={this.state.modalOpen} onClose={this.hideModal} customStyles={rodalCustomStyles}>
           <div>
             <h2>{this.props.title}</h2>
-            <p className="modal-content">
+            <div className="modal-content">
               {this.props.description}
-            </p>
+              <img src={this.props.image} alt={this.props.alt}/>
+              <p>
+              {
+                (this.props.links).map(function (link, index){
+                  return (
+                    <a key={link.title + "link" + index} href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
+                  )
+                })
+              }
+              </p>
+            </div>
           </div>
         </Rodal>
       </div>

@@ -1,8 +1,5 @@
 .headroom {
-  left: 0;
-  right: 0;
   background: #FAFAFA;
-  box-shadow: 0 .2em .2em 0 rgba(0,0,0,0.10);
   z-index: 100 !important;
 }
 
@@ -11,10 +8,7 @@
 }
 
 .headroom--unfixed .navbar {
-  position: fixed;
-  padding: 1em 0;
-  left: 0;
-  right: 0;
+  box-shadow: none;
 }
 
 .headroom--unfixed .progress-bar {
@@ -25,14 +19,13 @@
   padding-top: .6em;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 .2em .2em 0 rgba(0,0,0,0.10);
 }
 
 .navbar a {
   display: block;
-  padding: .6em 2em;
+  padding: .6em 2em .8em;
 }
-
-
 
 .nav .progress-bar {
   -webkit-appearance: none;

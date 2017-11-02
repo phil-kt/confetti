@@ -7,11 +7,22 @@
   padding-bottom: 5rem;
 }
 
+.NotifiVR.Project {
+  margin-top: 2em;
+}
+
 .intro {
+  height: 100vh;
 }
 
 .Home .other-stuff {
   text-align: center;
   margin-top: -1.5em;
+  margin-bottom: 1.5em;
+}
+
+.Home .get-in-touch {
+  text-align: center;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }

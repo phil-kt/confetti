@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Home.css';
 import Project from '../../components/project/Project';
 import Row from '../../components/row/Row';
-import ProjectIcon from '../../components/project-icon/ProjectIcon';
 import Misc from '../../components/misc/Misc';
 
 import notifi from '../../media/home/diego_2.jpg';
@@ -40,7 +39,7 @@ class Home extends Component {
         <div className="intro">
 
           <Row content={
-            <h3 className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">{this.state.greeting}, I'm</h3>
+            <h3 className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">{this.state.greeting}, I’m</h3>
           }/>
 
           <Row content={
@@ -77,6 +76,10 @@ class Home extends Component {
 
         <Misc/>
 
+
+        <Row content={
+          <h3 className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 get-in-touch"}>Get in touch</h3>
+        }/>
 
       </div>
     );

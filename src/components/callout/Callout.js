@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Zoom } from 'react-reveal';
 import './Callout.css';
 
 class Callout extends Component {
@@ -10,6 +11,7 @@ class Callout extends Component {
     description: PropTypes.string.isRequired,
     first: PropTypes.bool,
     middle: PropTypes.bool,
+    delay: PropTypes.number,
     number: PropTypes.number
   }
 
@@ -20,7 +22,8 @@ class Callout extends Component {
     description: "",
     first: false,
     middle: false,
-    number: 3
+    number: 3,
+    delay: 0
   }
 
   render() {
@@ -40,7 +43,7 @@ class Callout extends Component {
     }
 
     return (
-      <div className={layout}>
+      <Zoom delay={this.props.delay} className={layout}>
         <div className={"callout-image-container"}>
           <img src={this.props.image} alt={this.props.altText} />
         </div>
@@ -48,7 +51,7 @@ class Callout extends Component {
         <p>
           {this.props.description}
         </p>
-      </div>
+      </Zoom>
     );
   }
 }

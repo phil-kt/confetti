@@ -33,7 +33,7 @@ class Button extends Component {
               <Link to={this.props.link}>
                 {this.props.label}
               </Link> :
-              <a href={this.props.link} target="_blank">
+              <a href={this.props.link} target="_blank" rel="noopener noreferrer">
                 {this.props.label}
               </a>
             ) : <a><span>{this.props.label}</span></a>

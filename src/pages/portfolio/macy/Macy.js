@@ -314,6 +314,7 @@ class Macy extends Component {
                         altText={"papers stacked"}
                         title={"Literature Review"}
                         description={"Read financial reports, news articles, trend reports, retail journals, etc"}
+                        delay={150}
                       />
 
                       <Callout
@@ -322,6 +323,7 @@ class Macy extends Component {
                         title={"Conference Calls"}
                         description={"Discussed internal structure and brand vision with corporate contacts"}
                         middle={true}
+                        delay={300}
                       />
                     </div>
 
@@ -439,6 +441,7 @@ class Macy extends Component {
                         altText={"pain emoji"}
                         title={"Pain Points"}
                         description={"Absent service and stimulus overload plague in-store environments"}
+                        delay={150}
                       />
 
                       <Callout
@@ -447,6 +450,7 @@ class Macy extends Component {
                         title={"Macy’s Brand"}
                         description={"Core principles of Macy’s not being conveyed to customers"}
                         middle={true}
+                        delay={300}
                       />
                     </div>
 
@@ -561,6 +565,7 @@ class Macy extends Component {
                         altText={"map icon"}
                         title={"Customer Journeys"}
                         description={"Mapped out current in-store experiences with highs and lows"}
+                        delay={150}
                       />
 
                       <Callout
@@ -569,6 +574,7 @@ class Macy extends Component {
                         title={"Stakeholder Map"}
                         description={"Identified key relationships that affect the business strategy"}
                         middle={true}
+                        delay={300}
                       />
                     </div>
 

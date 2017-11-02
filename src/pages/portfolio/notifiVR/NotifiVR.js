@@ -242,6 +242,7 @@ class NotifiVR extends Component {
                         title={"Survey"}
                         description={"Distributed online to VR enthusiasts with 61 responses"}
                         first={true}
+                        delay={0}
                       />
 
                       <Callout
@@ -249,6 +250,7 @@ class NotifiVR extends Component {
                         altText={"two people in front of a board"}
                         title={"Participatory Design"}
                         description={"Conducted 2 hour session with 7 VR professionals"}
+                        delay={150}
                       />
 
                       <Callout
@@ -257,6 +259,7 @@ class NotifiVR extends Component {
                         title={"Competitive Analysis"}
                         description={"Looked at what Playstation VR, HTC Vive, and Oculus do"}
                         middle={true}
+                        delay={300}
                       />
                     </div>
 
@@ -327,7 +330,7 @@ class NotifiVR extends Component {
                     </div>
 
                     <Row content={
-                      <p className={"caption no-margin-bottom " + pStyle}>
+                      <p className={"caption " + pStyle}>
                         Designing notifications for both high energy and low energy VR environments
                       </p>
                     }/>
@@ -347,7 +350,7 @@ class NotifiVR extends Component {
                     }/>
 
                     <Row content={
-                      <p className={"caption no-margin-bottom " + pStyle}>
+                      <p className={"caption " + pStyle}>
                         Sharing and discussing ideas at our participatory design event
                       </p>
                     }/>
@@ -358,7 +361,13 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Some of my teammates also went out and tried various types of headgear, including the HTC Vive, the Oculus Rift, Google Daydream, Gear VR, and Playstation VR. The Vive does have a notification pairing app with your phone, but it is a non diagetic approach where you must go to the dashboard to get details other than the sender's name. Daydream, Gear, and Playstation also have notifications to some extent, but very 2D inspired in that they just appear on your HUD and disappear, rather than take advantage of the 3D space.
+                        Some of my teammates also went out and tried various types of headgear, including the HTC Vive, the Oculus Rift, Google Daydream, Gear VR, and Playstation VR.
+                      </p>
+
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>The Vive does have a notification pairing app with your phone, but it is a non diagetic approach where you must go to the dashboard to get details other than the sender's name. Daydream, Gear, and Playstation also have notifications to some extent, but very 2D inspired in that they just appear on your HUD and disappear, rather than take advantage of the 3D space.
                       </p>
                     }/>
 
@@ -394,6 +403,7 @@ class NotifiVR extends Component {
                         altText={"icon of a speaker"}
                         title={"Audio"}
                         description={"3D sound and metaphors like creaking doors"}
+                        delay={150}
                       />
 
                       <Callout
@@ -402,6 +412,7 @@ class NotifiVR extends Component {
                         title={"Haptic"}
                         description={"Vibration feedback of entities around you"}
                         middle={true}
+                        delay={300}
                       />
                     </div>
 
@@ -595,6 +606,7 @@ class NotifiVR extends Component {
                         title={"Phone Booth"}
                         description={"A phone booth in the environment for incoming calls"}
                         number={4}
+                        delay={150}
                       />
 
                       <Callout
@@ -603,6 +615,7 @@ class NotifiVR extends Component {
                         title={"Popup"}
                         description={"Popups placed on the environment for messages"}
                         number={4}
+                        delay={300}
                       />
 
                       <Callout
@@ -611,6 +624,7 @@ class NotifiVR extends Component {
                         title={"Watch"}
                         description={"A smart watch on the wrist to show messages"}
                         number={4}
+                        delay={450}
                       />
                     </div>
 
@@ -789,6 +803,7 @@ class NotifiVR extends Component {
                         altText={"grid with 12 boxes"}
                         title={"Lattice Square"}
                         description={"Displayed all alerts in a random order with 3 types of feedback: visual, visual audio, and visual haptic"}
+                        delay={150}
                       />
 
                       <Callout
@@ -797,6 +812,7 @@ class NotifiVR extends Component {
                         title={"Metrics Measured"}
                         description={"Noticeability, understandability, interactibility, believability, intrusiveness"}
                         middle={true}
+                        delay={300}
                       />
                     </div>
 

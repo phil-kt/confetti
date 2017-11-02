@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Fade } from 'react-reveal';
 import { Link } from 'react-router-dom';
 import './Project.css';
 
@@ -28,7 +29,7 @@ class Project extends Component {
   render() {
 
     return (
-      <div className="Project">
+      <Fade bottom fraaction={.4} className={this.props.title + " Project"}>
         <span>
         <div className="row">
           <div className="col-xs-12 col-sm-10 col-md-8 col-lg-offset-2 col-lg-6">
@@ -52,7 +53,7 @@ class Project extends Component {
         </div>
         </div>
         </span>
-      </div>
+      </Fade>
     );
   }
 }
