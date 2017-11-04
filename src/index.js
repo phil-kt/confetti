@@ -5,6 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
+import App from './App.js';
 import Home from './pages/home/Home';
 import NotifiVR from './pages/portfolio/notifiVR/NotifiVR';
 import Macy from './pages/portfolio/macy/Macy';
@@ -34,7 +35,7 @@ ReactDOM.render((
   <Router history={history} >
     <TrackPageView>
       <Switch>
-        <Route exact path='/' component={Home}/>
+        <Route exact path='/' component={App}/>
         <Route path='/notifivr' component={NotifiVR}/>
         <Route path='/macys' component={Macy}/>
       </Switch>

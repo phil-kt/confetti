@@ -2,43 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a84ce5-4153-4f1b-9bcc-df2245c632bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/media/misc/pics/dribbble.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/media/home/diego_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/media/home/pickup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/media/misc/icons/gt_webdev.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/home/diego_2.jpg" afterPath="$PROJECT_DIR$/src/media/home/diego_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/home/macy.jpg" afterPath="$PROJECT_DIR$/src/media/home/macy.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/bar_and_style.png" afterPath="$PROJECT_DIR$/src/media/macy/bar_and_style.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/layout.jpg" afterPath="$PROJECT_DIR$/src/media/macy/layout.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/macy_hero.jpg" afterPath="$PROJECT_DIR$/src/media/macy/macy_hero.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/research/bazaar.png" afterPath="$PROJECT_DIR$/src/media/macy/research/bazaar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/research/fact_book.png" afterPath="$PROJECT_DIR$/src/media/macy/research/fact_book.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/research/storefront.png" afterPath="$PROJECT_DIR$/src/media/macy/research/storefront.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/stimulus_overload.jpg" afterPath="$PROJECT_DIR$/src/media/macy/stimulus_overload.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/macy/unity.png" afterPath="$PROJECT_DIR$/src/media/macy/unity.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/misc/pics/capitalone.png" afterPath="$PROJECT_DIR$/src/media/misc/pics/capitalone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/misc/pics/hbo.png" afterPath="$PROJECT_DIR$/src/media/misc/pics/hbo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/misc/pics/magnet.png" afterPath="$PROJECT_DIR$/src/media/misc/pics/magnet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/notifiVR/affinity_map.jpg" afterPath="$PROJECT_DIR$/src/media/notifiVR/affinity_map.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/notifiVR/developer_storyboard.png" afterPath="$PROJECT_DIR$/src/media/notifiVR/developer_storyboard.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/notifiVR/hero.png" afterPath="$PROJECT_DIR$/src/media/notifiVR/hero.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/notifiVR/playing_env.png" afterPath="$PROJECT_DIR$/src/media/notifiVR/playing_env.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/media/notifiVR/vr_problem.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/philippe_kimura-thollander_resume.pdf" afterPath="$PROJECT_DIR$/public/philippe_kimura-thollander_resume.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/button/Button.js" afterPath="$PROJECT_DIR$/src/components/button/Button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/callout/Callout.js" afterPath="$PROJECT_DIR$/src/components/callout/Callout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/misc/Misc.js" afterPath="$PROJECT_DIR$/src/components/misc/Misc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.css" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/project-icon/ProjectIcon.css" afterPath="$PROJECT_DIR$/src/components/project-icon/ProjectIcon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/project-icon/ProjectIcon.js" afterPath="$PROJECT_DIR$/src/components/project-icon/ProjectIcon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/project/Project.css" afterPath="$PROJECT_DIR$/src/components/project/Project.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/project/Project.js" afterPath="$PROJECT_DIR$/src/components/project/Project.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/misc/icons/magnet.svg" afterPath="$PROJECT_DIR$/src/media/misc/icons/magnet.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/media/misc/icons/sherlock_dribbble.svg" afterPath="$PROJECT_DIR$/src/media/misc/icons/sherlock_dribbble.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/Home.css" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/Home.js" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js" afterPath="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" afterPath="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,8 +30,8 @@
       <file leaf-file-name="NotifiVR.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5033">
-              <caret line="813" column="36" lean-forward="false" selection-start-line="813" selection-start-column="36" selection-end-line="813" selection-end-column="36" />
+            <state relative-caret-position="-137">
+              <caret line="187" column="59" lean-forward="false" selection-start-line="187" selection-start-column="59" selection-end-line="187" selection-end-column="59" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -68,30 +42,8 @@
       <file leaf-file-name="Callout.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/callout/Callout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="-211">
               <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Misc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/misc/Misc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Macy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1653">
-              <caret line="1000" column="61" lean-forward="false" selection-start-line="1000" selection-start-column="61" selection-end-line="1000" selection-end-column="61" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -102,35 +54,75 @@
       <file leaf-file-name="ProjectIcon.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/project-icon/ProjectIcon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="79" column="69" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1053">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="80" column="88" lean-forward="false" selection-start-line="80" selection-start-column="88" selection-end-line="80" selection-end-column="88" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Project.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Project.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/project/Project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state relative-caret-position="376">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/project/Project.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-123">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="70" column="248" lean-forward="false" selection-start-line="70" selection-start-column="248" selection-end-line="70" selection-end-column="248" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,27 +131,7 @@
         <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-reading-progress/lib/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1651">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -177,9 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Sketches</find>
-      <find>CAllo</find>
-      <find>stats</find>
       <find>caption</find>
       <find>1dot5</find>
       <find>pStyle</find>
@@ -207,6 +176,9 @@
       <find>nor</find>
       <find>no-m</find>
       <find>Callout</find>
+      <find>see</find>
+      <find>wrist</find>
+      <find>capt</find>
     </findStrings>
     <replaceStrings>
       <replace>Circular</replace>
@@ -228,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/components/lightbox/Lightbox.css" />
         <option value="$PROJECT_DIR$/src/components/video/Video.css" />
         <option value="$PROJECT_DIR$/src/history.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/lightbox/Lightbox.js" />
         <option value="$PROJECT_DIR$/src/components/video/Video.js" />
         <option value="$PROJECT_DIR$/src/components/project-stats/ProjestStats.js" />
@@ -247,13 +218,11 @@
         <option value="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.css" />
         <option value="$PROJECT_DIR$/src/components/button/Button.css" />
         <option value="$PROJECT_DIR$/src/components/project-section/ProjectSection.css" />
-        <option value="$PROJECT_DIR$/src/components/project/Project.css" />
         <option value="$PROJECT_DIR$/src/components/project-page/ProjectPage.css" />
         <option value="$PROJECT_DIR$/src/media/misc/tachiyomi.svg" />
         <option value="$PROJECT_DIR$/src/media/grey.svg" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/project-icon/grey.svg" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/misc/Misc.css" />
         <option value="$PROJECT_DIR$/src/components/project-page/ProjectPage.js" />
@@ -261,15 +230,18 @@
         <option value="$PROJECT_DIR$/src/components/button/Button.js" />
         <option value="$PROJECT_DIR$/src/components/navbar/Navbar.css" />
         <option value="$PROJECT_DIR$/src/components/project-icon/ProjectIcon.css" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/project-icon/ProjectIcon.js" />
         <option value="$PROJECT_DIR$/src/components/misc/Misc.js" />
         <option value="$PROJECT_DIR$/src/components/callout/Callout.js" />
-        <option value="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" />
         <option value="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/Home.css" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" />
         <option value="$PROJECT_DIR$/src/components/project/Project.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/Home.css" />
+        <option value="$PROJECT_DIR$/src/components/project/Project.css" />
+        <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
       </list>
     </option>
   </component>
@@ -285,8 +257,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="133" />
-    <option name="y" value="51" />
+    <option name="x" value="155" />
+    <option name="y" value="38" />
     <option name="width" value="1186" />
     <option name="height" value="810" />
   </component>
@@ -316,11 +288,6 @@
             <path>
               <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
               <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,89 +306,12 @@
               <item name="confetti" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="callout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="lightbox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="polar-chart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
               <item name="confetti" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="project-icon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="project-page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="project-section" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="project-stats" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -429,23 +319,14 @@
               <item name="confetti" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
               <item name="confetti" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-              <item name="pics" type="462c0819:PsiDirectoryNode" />
+              <item name="notifiVR" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
@@ -459,29 +340,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="macy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="notifiVR" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -508,11 +366,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/media/notifiVR" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/media/misc/pics" />
       <recent name="$PROJECT_DIR$/src/media/misc/icons" />
       <recent name="$PROJECT_DIR$/src/components/project-icon" />
-      <recent name="$PROJECT_DIR$/src/media/macy/research" />
-      <recent name="$PROJECT_DIR$/src/media/macy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -576,15 +434,15 @@
       <workItem from="1507860281674" duration="9349000" />
       <workItem from="1508104574042" duration="20964000" />
       <workItem from="1508901758635" duration="4182000" />
-      <workItem from="1508945741238" duration="12395000" />
+      <workItem from="1508945741238" duration="23581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228285000" />
+    <option name="totallyTimeSpent" value="239471000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="133" y="51" width="1186" height="810" extended-state="0" />
+    <frame x="155" y="38" width="1186" height="810" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28154507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -637,14 +495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/history.js" />
-    <entry file="file://$PROJECT_DIR$/src/media/icons/survey.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/media/icons/clock.svg" />
     <entry file="file://$PROJECT_DIR$/src/media/home/diego_2.jpg">
       <provider selected="true" editor-type-id="images">
@@ -795,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/project/Project.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/project-icon/grey.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -815,14 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -926,29 +760,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-reading-progress/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1651">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/project-icon/ProjectIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="79" column="69" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="79" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -960,10 +776,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/particles.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6555">
+          <caret line="459" column="90" lean-forward="false" selection-start-line="459" selection-start-column="87" selection-end-line="459" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/callout/Callout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="-211">
           <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/project/Project.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/project-icon/ProjectIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/project/Project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -972,26 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5033">
-          <caret line="813" column="36" lean-forward="false" selection-start-line="813" selection-start-column="36" selection-end-line="813" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1653">
-          <caret line="1000" column="61" lean-forward="false" selection-start-line="1000" selection-start-column="61" selection-end-line="1000" selection-end-column="61" />
+        <state relative-caret-position="-137">
+          <caret line="187" column="59" lean-forward="false" selection-start-line="187" selection-start-column="59" selection-end-line="187" selection-end-column="59" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1000,18 +874,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="80" column="88" lean-forward="false" selection-start-line="80" selection-start-column="88" selection-end-line="80" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/project/Project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state relative-caret-position="314">
+          <caret line="70" column="248" lean-forward="false" selection-start-line="70" selection-start-column="248" selection-end-line="70" selection-end-column="248" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

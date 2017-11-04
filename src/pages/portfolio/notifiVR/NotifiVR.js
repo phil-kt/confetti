@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse } from 'react-collapse';
 import VisibilitySensor from 'react-visibility-sensor';
+import Isvg from 'react-inlinesvg';
 import './NotifiVR.css';
 
 import Button from '../../../components/button/Button';
@@ -15,6 +16,8 @@ import Callout from '../../../components/callout/Callout';
 import PolarChart from '../../../components/polar-chart/PolarChart';
 
 import hero from '../../../media/notifiVR/hero.png';
+
+import problem from '../../../media/notifiVR/vr_problem.svg';
 import solution from '../../../media/notifiVR/notifi_solution.mp4';
 
 //research icons
@@ -168,12 +171,26 @@ class NotifiVR extends Component {
               <ProjectSection
                 title={"Problem"}
                 content={
-                  <Row content={
-                    <p className={pStyle}>
-                      When playing a virtual reality environment, you lose your connection to the outside world.
-                      Sound, vision, and movement are all mirrored and reflected in VR, which is great for immersion, but sometimes you need to know when you’re getting a call from your spouse or about to hit a chair. We explored different methods of alerting players in VR about important information from real life.
-                    </p>
-                  }/>
+                  <span>
+                    <Row content={
+                      <p className={pStyle}>
+                        When playing a virtual reality environment, you lose your connection to the outside world.
+                        Sound, vision, and movement are all mirrored and reflected in VR, which is great for immersion, but sometimes you need to know when you’re getting a call from your spouse or about to hit a chair. We explored different methods of alerting players in VR about important information from real life.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <Isvg className={pStyle} src={problem}/>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        VR can lead you to missing out on a lot going on around you
+                      </p>
+                    }/>
+
+
+                  </span>
                 }
               />
 
@@ -912,8 +929,8 @@ class NotifiVR extends Component {
                       <PolarChart
                         data={[
                           {x: "📞", y: 3},
-                          {x: "⌚️", y: 2.5},
-                          {x: "📰", y: 5.5},
+                          {x: "⌚️", y: 5.5},
+                          {x: "📰", y: 2.5},
                           {x: "☎️", y: 2.66666666667},
                         ]}
                         caption={"Interactability"}
