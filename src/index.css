@@ -132,7 +132,8 @@ p {
 a {
   text-decoration: none;
   display: inline-block;
-  color: #000
+  color: #000;
+  overflow: visible;
 }
 
 p a::after {

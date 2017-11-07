@@ -63,6 +63,8 @@ class ProjectIcon extends Component {
     const rodalCustomStyles = {
       height: 'auto',
       maxHeight: '80%',
+      width: '80vw',
+      maxWidth: "400px",
       bottom: 'auto',
       overflow: 'scroll',
       top: '50%',

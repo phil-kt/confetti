@@ -69,7 +69,7 @@ class Home extends Component {
 
         </div>
 
-        <Project title="NotifiVR" description="Designing and delivering real world notifications when you’re inside a virtual reality environment." image={notifi} link="/notifivr" alt="Picking up a VR telephone to answer a real life call" color="blue" percentage='22%'/>
+        <Project title="NotifiVR" description="Designing and delivering real world notifications when you’re inside a virtual reality environment." image={notifi} link="/notifivr" alt="Picking up a VR telephone to answer a real life call" color="blue" percentage='20%'/>
 
         <Project title="Macy’s of the Future" description="Project done in collaboration with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red" percentage='50%'/>
 

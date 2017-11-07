@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import { Router, Route, Switch } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import createHistory from 'history/createBrowserHistory';
 
 import App from './App.js';
@@ -12,7 +13,13 @@ import Macy from './pages/portfolio/macy/Macy';
 const history = createHistory();
 let pastURL = "";
 
+ReactGA.initialize('UA-36903668-3');
+
+
 function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+
   if (history.location.pathname !== pastURL) {
     window.scrollTo(0, 0);
   }
