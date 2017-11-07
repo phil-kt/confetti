@@ -13,7 +13,7 @@ import mal from '../../media/social/MAL.svg';
 class Social extends Component {
   render () {
     return(
-      <p className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 social">
+      <p className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 social">
 
         <a href="http://dribbble.com/linkcable" target="_blank" id="dribbble">
           <Isvg src={dribbble}>

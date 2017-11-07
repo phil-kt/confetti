@@ -141,8 +141,7 @@ p a::after {
   display: block;
   height: 8px;
   width: 98%;
-  background: #8BC8F690;
-  transition: all .1s ease;
+  background: rgba(139, 200, 246, 0.565);
   margin-top: -9px;
   margin-left: 2px;
 }
