@@ -8,7 +8,22 @@
   max-height: 400px;
 }
 
-
 .Macy .customer-journey-2 {
   max-height: 450px;
+}
+
+.Macy b {
+  color: #CD6BAD;
+}
+
+.Macy .nav .navbar-link:hover {
+  color: #CD6BAD;
+}
+
+.Macy .nav .navbar-link:hover a {
+  color: #CD6BAD;
+}
+
+.Macy .nav .navbar-link:hover svg {
+  fill: #CD6BAD;
 }

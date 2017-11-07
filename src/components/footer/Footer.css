@@ -1,0 +1,10 @@
+.footer {
+  margin-top: 5em;
+}
+
+
+@media only screen and (max-width: 575px)  {
+  .footer {
+    text-align: center;
+  }
+}

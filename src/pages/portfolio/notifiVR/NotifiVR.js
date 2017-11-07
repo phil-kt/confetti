@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse } from 'react-collapse';
 import VisibilitySensor from 'react-visibility-sensor';
+import ImageZoom from 'react-medium-image-zoom';
 import Isvg from 'react-inlinesvg';
 import './NotifiVR.css';
 
@@ -79,6 +80,7 @@ class NotifiVR extends Component {
     };
 
     this.openLightbox = this.openLightbox.bind(this);
+    this.closeLightbox  = this.closeLightbox.bind(this);
     this.collapseResearch = this.collapseResearch.bind(this);
     this.collapseInsights = this.collapseInsights.bind(this);
     this.collapseEnvironment = this.collapseEnvironment.bind(this);
@@ -93,25 +95,35 @@ class NotifiVR extends Component {
     })
   }
 
+  closeLightbox() {
+    this.setState({
+      lightboxIsOpen: false
+    })
+  }
+
   collapseResearch() {
+    this.closeLightbox();
     this.setState({
       researchOpen: !this.state.researchOpen
     })
   }
 
   collapseInsights() {
+    this.closeLightbox();
     this.setState({
       insightsOpen: !this.state.insightsOpen
     })
   }
 
   collapseEnvironment() {
+    this.closeLightbox();
     this.setState({
       environmentOpen: !this.state.environmentOpen
     })
   }
 
   collapseEvaluate() {
+    this.closeLightbox();
     this.setState({
       evaluateOpen: !this.state.evaluateOpen
     })
@@ -119,6 +131,7 @@ class NotifiVR extends Component {
 
 
   collapseResults() {
+    this.closeLightbox();
     this.setState({
       resultsOpen: !this.state.resultsOpen
     })
@@ -174,8 +187,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        When playing a virtual reality environment, you lose your connection to the outside world.
-                        Sound, vision, and movement are all mirrored and reflected in VR, which is great for immersion, but sometimes you need to know when you’re getting a call from your spouse or about to hit a chair. We explored different methods of alerting players in VR about important information from real life.
+                        When playing a virtual reality environment, you lose your connection to the outside world. Sound, vision, and movement are all mirrored and reflected in VR, which is great for immersion, but sometimes you need to know when you’re getting a call from your spouse or about to hit a chair. <b>We explored different methods of alerting players in VR about important information from their real life.</b>
                       </p>
                     }/>
 
@@ -185,7 +197,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        VR can lead you to missing out on a lot going on around you
+                        VR can cause you to miss out on what's happening around you
                       </p>
                     }/>
 
@@ -231,14 +243,18 @@ class NotifiVR extends Component {
                           steps={steps}/>
                       </div>
                     }/>
-
-                    <ProjectStats
-                      team={["3 designers", "3 developers"]}
-                      responsibilities={["Interaction Design", "Framework Design", "User Testing", "Stats Analysis"]}
-                      time={"Jan ’17 – April ’17"}
-                    />
-
                   </span>
+                }
+              />
+
+              <ProjectSection
+                title={"Logistics"}
+                content={
+                  <ProjectStats
+                    team={["3 designers", "3 developers"]}
+                    responsibilities={["Interaction Design", "Framework Design", "User Testing", "Stats Analysis"]}
+                    time={"Jan ’17 – April ’17"}
+                  />
                 }
               />
 
@@ -564,12 +580,12 @@ class NotifiVR extends Component {
                           caption: 'Popping up a phone booth to answer a call'
                         },
                         {
-                          src: watch,
-                          caption: 'A smartwatch showing info using 3D space'
-                        },
-                        {
                           src: popup,
                           caption: 'Message popups over the game environment'
+                        },
+                        {
+                          src: watch,
+                          caption: 'A smartwatch showing info using 3D space'
                         },
                         {
                           src: physical,
@@ -669,8 +685,18 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <div className={pStyle}>
-                        <img className="feature-image" src={playing_env}
-                             alt="Screen capture of our game environment with a controller, a blue ball, and a yellow circle goal in the distance"/>
+
+                        <ImageZoom
+                          image={{
+                            src: playing_env,
+                            alt: 'Screen capture of our game environment with a controller, a blue ball, and a yellow circle goal in the distance',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: playing_env,
+                            alt: 'Screen capture of our game environment with a controller, a blue ball, and a yellow circle goal in the distance'
+                          }}
+                        />
                       </div>
                     }/>
 
@@ -692,7 +718,17 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <div className={pStyle}>
-                        <img className="feature-image" src={framework} alt="Framework architecture"/>
+                        <ImageZoom
+                          image={{
+                            src: framework,
+                            alt: 'Framework architecture',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: framework,
+                            alt: 'Framework architecture'
+                          }}
+                        />
                       </div>
                     }/>
 
@@ -875,7 +911,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        After the test, we then had users fill out a questionnare containing some short answer questions and a prompt to rate the notifications on a <b>Likert scale for five different metrics:</b>
+                        After the test, we then had users fill out a questionnare containing some short answer questions and a prompt to rate the notifications on a <span className="highlight">Likert scale for five different metrics:</span>
                       </p>
                     }/>
 
@@ -899,7 +935,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        To analyze the data, we compiled the Likert scores and compared medians across a wide margin of metrics. The graphs below are an <b>average across all metrics of each design</b> with visual, visual audio, and visual haptic feedback.
+                        To analyze the data, we compiled the Likert scores and compared medians across a wide margin of metrics. The graphs below are an <span className={"highlight"}>average across all metrics of each design</span> with visual, visual audio, and visual haptic feedback.
                       </p>
                     }/>
                     
@@ -991,7 +1027,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        One other important result was that the reaction time for purely visual feedback notifications were the slowest, probably due to the fact that in VR you have a large viewport and may not be looking where the viewport is. Notifications with audio or haptic cues both had consistently faster reaction times compared to just a visual cue.
+                        One other important result was that the reaction time for purely visual feedback notifications were the slowest, probably due to the fact that in VR you have a large viewport and may not be looking where the notification spawns. Notifications with audio or haptic cues both had consistently faster reaction times compared to just a visual cue.
                       </p>
                     }/>
 
@@ -1014,12 +1050,12 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <ul className={pStyle + " list"}>
-                        <li>Notifications should have a visual style or language that is different from the environment, as multiple users noted the visual difference of the notifications versus the game made them understand they were from an external source</li>
-                        <li>Haptic feedback should be reserved for only the most important notifications, as it is intrusive to the game and can also be hard to differentiate from diagetic vibration, optimally vibration would occur from a source other then the controller (e.g. wrist, feet, or head motors)</li>
-                        <li>Controllers are easier to understand as a source of external alerts, because they are both real and virtual (as in they are rendered in the game, but are also physically held by the player). However, placing a lot of notifications over the controller would be very disruptive so they should be used sparingly</li>
-                        <li>Purely visual notifications should be avoided, or placed in a specific spot in the environment, as they are easy to miss and require a lot of visual scan by the user to find</li>
-                        <li>Do not spawn notifications too close to the body (if they are not on the body), as it causes undesired jump scares and user confusion</li>
-                        <li>Borrow from existing metaphors (smart watches, phone interfaces) to display notifications in VR, it is easier for the player to grasp and interact with as they already have a mental model of how it works</li>
+                        <li><span className={"highlight"}>Notifications should have a visual style or language that is different from the environment</span>, as multiple users noted the visual difference of the notifications versus the game made them understand they were from an external source</li>
+                        <li><span className={"highlight"}>Haptic feedback should be reserved for only the most important notifications</span>, as it is intrusive to the game and can also be hard to differentiate from diagetic vibration, optimally vibration would occur from a source other then the controller (e.g. wrist, feet, or head motors)</li>
+                        <li><span className={"highlight"}>Controllers are easier to understand as a source of external alerts</span>, because they are both real and virtual (as in they are rendered in the game, but are also physically held by the player). However, placing a lot of notifications over the controller would be very disruptive so they should be used sparingly</li>
+                        <li><span className={"highlight"}>Purely visual notifications should be avoided</span>, or placed in a specific spot in the environment, as they are easy to miss and require a lot of visual scan by the user to find</li>
+                        <li><span className={"highlight"}>Do not spawn notifications too close to the body</span> (if they are not on the body), as it causes undesired jump scares and user confusion</li>
+                        <li><span className={"highlight"}>Borrow from existing metaphors</span> (smart watches, phone interfaces) to display notifications in VR, it is easier for the player to grasp and interact with as they already have a mental model of how it works</li>
                       </ul>
                     }/>
 
@@ -1056,6 +1092,18 @@ class NotifiVR extends Component {
                   </span>
                 }
               />
+
+              <ProjectSection
+                title={"Links"}
+                content={
+                  <Row content={
+                    <p className={pStyle + " links"}>
+                      <a href="https://github.com/LinkCable/NotifiVR">Github</a>
+                    </p>
+                  }/>
+                }
+              />
+
             </span>
           }
         />

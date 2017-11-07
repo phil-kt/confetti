@@ -20,6 +20,7 @@
     "react-medium-image-zoom": "^2.0.3",
     "react-modal": "^3.0.4",
     "react-motion": "^0.5.1",
+    "react-particles-js": "^2.1.0",
     "react-plx": "^0.2.0",
     "react-reading-progress": "^0.2.7",
     "react-reveal": "^0.7.3",

@@ -59,6 +59,7 @@ class Project extends Component {
         <div className="row">
           <div className="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-7 col-lg-offset-5 col-lg-5 ">
             <Plx
+              className="plx"
               parallaxData={[
                 {
                   start: this.props.percentage,
@@ -68,6 +69,11 @@ class Project extends Component {
                       startValue: 0,
                       endValue: -150,
                       property: 'translateY',
+                    },
+                    {
+                      startValue: 0,
+                      endValue: 1,
+                      property: 'opacity',
                     }
                   ]
                 }

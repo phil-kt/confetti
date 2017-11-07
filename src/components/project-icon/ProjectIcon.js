@@ -77,7 +77,7 @@ class ProjectIcon extends Component {
         <span onClick={this.showModal}>
         <Isvg src={this.props.svg} alt={this.props.alt} className={square || round}/>
         </span>
-        <Rodal visible={this.state.modalOpen} onClose={this.hideModal} customStyles={rodalCustomStyles}>
+        <Rodal visible={this.state.modalOpen} animation="fade" duration={350} onClose={this.hideModal} customStyles={rodalCustomStyles}>
           <div>
             <h2>{this.props.title}</h2>
             <div className="modal-content">

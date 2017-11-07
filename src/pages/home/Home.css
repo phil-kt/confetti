@@ -2,13 +2,21 @@
   margin-top: -.5rem;
 }
 
+
 .Home {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
-.intro {
-
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .55;
+  background: url('../../media/particles/confetti.svg');
 }
 
 .Home .other-stuff {
@@ -19,8 +27,12 @@
 
 .Home .get-in-touch {
   text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 4em;
+  margin-bottom: 0em;
+}
+
+.Home .contact {
+  text-align: center;
 }
 
 

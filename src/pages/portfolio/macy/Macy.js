@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse } from 'react-collapse';
-import ImageZoom from 'react-medium-image-zoom'
+import ImageZoom from 'react-medium-image-zoom';
+import Isvg from 'react-inlinesvg';
 import './Macy.css';
 
 import Button from '../../../components/button/Button';
@@ -12,6 +13,8 @@ import Row from '../../../components/row/Row';
 import Lightbox from '../../../components/lightbox/Lightbox';
 import Callout from '../../../components/callout/Callout';
 
+
+import problem from '../../../media/macy/robot.svg';
 
 //research icons
 import dept from '../../../media/macy/icons/dept.svg';
@@ -70,7 +73,7 @@ import single_prod from '../../../media/macy/app/Single_Product.png';
 import suggest from '../../../media/macy/app/Suggestions_White_Dress.png';
 
 //kiosk screens
-import k_initial from '../../../media/macy/kiosk/Kiosk_Initial.png';
+import k_initial from '../../../media/macy/kiosk/mockup.png';
 
 import bar_and_style from '../../../media/macy/bar_and_style.png';
 import robots from '../../../media/macy/robots.png';
@@ -78,6 +81,8 @@ import layout from '../../../media/macy/layout.jpg';
 import design_journey from '../../../media/macy/designed_journey.svg';
 
 import unity from '../../../media/macy/unity.png';
+import presentation from '../../../media/macy/presentation.png';
+import ProjectIcon from "../../../components/project-icon/ProjectIcon";
 
 class Macy extends Component {
 
@@ -229,6 +234,8 @@ class Macy extends Component {
           description={"A shopping experience focused on personal assistance and a smaller store footprint"}
           hero={hero}
           heroAlt={"Our Macy's app on top of a bag."}
+          nextProjectName={"NotifiVR"}
+          nextProjectLink={"/notifivr"}
           navbarColor={"red"}
           content={
             <span>
@@ -239,9 +246,20 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Department stores are one of the many retail stalwarts that find themselves being consumed by the convenience and ubiquity of online shopping. Macy’s came to our service design class seeking a vision on what their shopping experience might look like 5 years in the future with the current advancements in technology and the emerging trends in retail.
+                        Department stores are one of the many retail stalwarts that find themselves being consumed by the convenience and ubiquity of online shopping. Macy’s came to our service design class seeking a vision on what <b>department store shopping might look like 5 years in the future</b> with the current advancements in technology and the emerging trends in retail.
                       </p>
                     }/>
+
+                     <Row content={
+                       <Isvg className={pStyle} src={problem}/>
+                     }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        What does the future of retail look like?
+                      </p>
+                    }/>
+
 
                   </span>
                 }
@@ -280,15 +298,20 @@ class Macy extends Component {
                       </div>
                     }/>
 
-                     <ProjectStats
-                       team={["8 designers", "(Research & Synthesize)", "2 designers", "(Design onwards)"]}
-                       responsibilities={["Interaction Design", "Journey Maps", "App Concept & Design", "Unity Prototype"]}
-                       time={"Jan ’17 – April ’17"}
-                     />
                   </span>
 
                 }
               />
+
+              <ProjectSection
+                title={"Logistics"}
+                content={
+                  <ProjectStats
+                    team={["8 designers", "(Research & Synthesize)", "2 designers", "(Design onwards)"]}
+                    responsibilities={["Interaction Design", "Journey Maps", "App Concept & Design", "Unity Prototype"]}
+                    time={"Jan ’17 – April ’17"}
+                  />
+                }/>
 
               <ProjectSection
                 title={"Research"}
@@ -547,7 +570,7 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        With all these insights, we then began to figure out how all these factors connect to one another to shape the customer experience. We began developing personas, creating journey maps, and identifying stakeholder relationships which led us to identifying which problems to solve.
+                        With all these insights, we then began to figure out how all these factors connect to one another to shape the customer experience. We began developing personas, creating journey maps, and identifying stakeholder relationships which led us to identifying which issues to solve.
                       </p>
                     }/>
 
@@ -687,7 +710,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        After we had our personas developed, we then developed in-store journeys for them to help us identify key problems to tackle in our designs. The example below highlights the pains of walking between departments and having to interact with different associates at each one.
+                        After we had our personas developed, we then developed in-store journeys for them to help us identify key problems to look at in our designs. The example below highlights the pains of walking between departments and having to interact with different associates at each one.
                       </p>
                     }/>
 
@@ -747,7 +770,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        After mapping out all of this information, we managed to narrow down the problems in the Macy’s shopping experience we wanted to tackle:
+                        After mapping out all of this information, we managed to narrow down the pain points in the Macy’s shopping experience we wanted to address:
                       </p>
                     }/>
 
@@ -770,7 +793,7 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Once we had identified the issues to address, we began to brainstorm solutions. Because we had the flexibility of thinking of technical developments five years in the future, we leveraged cutting edge commercial innovations that we thought will be commonplace in five years.
+                        Once we had identified the issues to address, we began to brainstorm solutions. Because we had the flexibility of thinking of technical developments in the future, <b>we leveraged cutting edge commercial innovations that we believe will be commonplace in five years.</b>
                       </p>
                     }/>
 
@@ -782,13 +805,13 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        With the rise of the sharing economy businesses have increasingly been about providing a service, like taxis (Uber, Lyft) or lodging (Airbnb). These companies don't actually own the physical entities that enable their product, however, Macy’s does have a vast stock of physical merchandise, and we thought that we could leverage that to create the best of both worlds.
+                        With the rise of the sharing economy businesses have increasingly been about providing a service, like taxis (Uber, Lyft) or lodging (Airbnb). These companies don't actually own the physical entities that enable their product, however, Macy’s does have a vast stock of physical merchandise, and we thought that we could take advantage of that to create the best of both worlds.
                       </p>
                     }/>
 
                     <Row content={
                       <p className={pStyle}>
-                        In order to do so, we decided to reposition the store associates as personal shoppers, there to assist the customers with style advice, navigating the store, and overall creating a unique, only-in-store experience. To facilitate this, customers would be paired with an associate when they enter the store.
+                        In order to do so, we decided to <b>reposition the store associates as personal assistants</b>, there to assist the customers with style advice, navigating the store, and overall creating a unique, only-in-store experience. To facilitate this, customers would be paired with an associate when they enter the store.
                       </p>
                     }/>
 
@@ -830,19 +853,29 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        But what if they don’t have or want to download an app you say? We thought of that too, by reusing the kiosks that Macy’s currently has throughout their stores to manage their cart on their own and also call for an assistant if or when they'd like one. Shoppers can take an RFID tag off the item rack, scan it, and then receive an assigned fitting room to go to where their scanned items will be waiting.
+                        But <b>what if shoppers can't or don't want to download an app</b>? We anticipated that, by utilizing the kiosks that Macy’s currently has throughout their stores they can manage their cart on their own and also call for an assistant if or when they'd like one. Shoppers can take an RFID tag off the item rack, scan it, and then receive an assigned fitting room to go to where their scanned items will be waiting.
                       </p>
                     }/>
 
                     <Row content={
                       <div className={pStyle}>
-                        <img className={"feature-image"} src={k_initial} alt="Kiosk screen asking if you want to scan, search, or request help"/>
+                        <ImageZoom
+                          image={{
+                            src: k_initial,
+                            alt: 'Kiosk screen asking if you want to scan, search, or request help"',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: k_initial,
+                            alt: 'Kiosk screen asking if you want to scan, search, or request help"'
+                          }}
+                        />
                       </div>
                     }/>
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        No need to download another app
+                        No need to use up space on your phone
                       </p>
                     }/>
 
@@ -981,12 +1014,11 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
-                      <span className={pStyle + " video-holder"}>
-                        <span className="aspect-keeper">
-                          <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=acc0b6c2-33b3-4be9-bb45-052f385cb8bf" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" allowFullScreen title="Sketchup 3D model"/>
-                        </span>
-                      </span>
-
+                      <div className={pStyle}>
+                        <a href="https://3dwarehouse.sketchup.com/model/acc0b6c2-33b3-4be9-bb45-052f385cb8bf/Macys-Rooms" target="_blank" rel="noopener noreferrer" >
+                       <img src={layout} alt="Preview of Macy’s store layout" className="feature-image"/>
+                        </a>
+                      </div>
                     }/>
 
                     <Row content={
@@ -1062,23 +1094,37 @@ class Macy extends Component {
                     <Row content={
                       <span>
                         <p className={pStyle}>
-                          At the end of the semester, all of our work had to be nicely wrapped up to be presented to various Macy‘s VIPs and documented in order to provide an easy method to circulate our ideas around the company. The following video encapsulates most of our ideas in a cool 2 minutes and 30 seconds.
+                          At the end of the semester, all of our work had to be nicely wrapped up to be presented to various Macy‘s VIPs and documented in order to provide an easy method to circulate our ideas around the company. We both presented and provided a long PDF to reference for our ideas.
                         </p>
                       </span>
                     }/>
 
                     <Row content={
-                      <span className={pStyle + " video-holder"}>
-                          <span className="aspect-keeper">
-                            <iframe src="https://www.youtube.com/embed/ivBOMyQble8" frameBorder="0" allowFullScreen title="Youtube video of concept" />
-                          </span>
-                      </span>
+                      <div className={pStyle}>
+                        <ImageZoom
+                          image={{
+                            src: presentation,
+                            alt: 'Your local Macy’s',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: presentation,
+                            alt: 'Your local Macy’s'
+                          }}
+                        />
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        The cover for our proposal
+                      </p>
                     }/>
 
                     <Row content={
                       <span>
                         <p className={pStyle}>
-                          If you're REALLY interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macys_presentation.pdf" target="_blank" rel="noopener noreferrer" >presentation</a> and <a href="http://philkt.me/files/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >document</a> that we ultimately handed off to Macy’s.
+                          If you're interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macys_presentation.pdf" target="_blank" rel="noopener noreferrer" >presentation</a> and <a href="http://philkt.me/files/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >document</a> that we ultimately handed off to Macy’s.
                         </p>
                       </span>
                     }/>
@@ -1119,7 +1165,6 @@ class Macy extends Component {
                   }/>
                 }
               />
-
             </span>
           }
         />

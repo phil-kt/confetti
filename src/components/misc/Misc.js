@@ -44,9 +44,6 @@ class Misc extends Component {
 
 
   render() {
-
-    console.log(tachiyomi);
-
     return (
       <div className="misc">
         <div className="row">

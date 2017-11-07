@@ -23,8 +23,33 @@
 }
 
 .navbar a {
-  display: block;
+  display: inline-block;
   padding: .6em 2em .8em;
+}
+
+.navbar .next {
+  padding: .6em 2em .8em 2em;
+  display: flex;
+}
+
+.navbar .next:hover {
+  cursor: pointer;
+}
+
+.navbar .next a {
+  padding: 0
+}
+
+.navbar .next .next-arrow {
+  height: 1em;
+  width: 1em;
+  margin-left: 4px;
+  transition: all .3s linear;
+  margin-right: 2em
+}
+
+.navbar .next:hover .next-arrow{
+  transform: translateX(3px);
 }
 
 .nav .progress-bar {
@@ -66,7 +91,7 @@ progress.red::-webkit-progress-value {
 }
 
 progress.blue::-webkit-progress-value {
-  background-image: linear-gradient(90deg, #A06FE8 0%, #7CE1EC 100%);
+  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
 }
 
 progress::-moz-progress-bar {

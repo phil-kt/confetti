@@ -43,7 +43,7 @@
 /* Solid Button Colors */
 
 .blue a {
-  background-image: linear-gradient(90deg, #A06FE8 0%, #7CE1EC 100%);
+  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
 }
 
 .red a {
@@ -108,11 +108,11 @@
 /* Outline Button Colors */
 
 .button.outline.blue a:hover span {
-  background-image: linear-gradient(90deg, #A06FE8 0%, #7CE1EC 100%);
+  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
 }
 
 .button.outline.blue a:hover::before {
-  background-image: linear-gradient(90deg, #A06FE8 0%, #7CE1EC 100%);
+  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
 
 }
 

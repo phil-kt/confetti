@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import Headroom from 'react-headroom';
 import ReadingProgress from 'react-reading-progress';
 import './Navbar.css';
+import Isvg from 'react-inlinesvg';
+
+import arrow from '../../media/icons/arrow.svg';
 
 class Navbar extends Component {
 
@@ -36,8 +39,11 @@ class Navbar extends Component {
         <Headroom>
           <div>
           <navbar className="navbar">
-            <Link to="/">Home</Link>
-            <Link to={this.props.nextProjectLink}>{this.props.nextProjectName}</Link>
+            <Link className="navbar-link" to="/">Home</Link>
+            <div className="next navbar-link">
+              <Link to={this.props.nextProjectLink}>{this.props.nextProjectName}</Link>
+              <Isvg className={"next-arrow"} src={arrow} />
+            </div>
           </navbar>
           </div>
         </Headroom>

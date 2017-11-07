@@ -1,0 +1,66 @@
+.social {
+  text-align: right;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a::after{
+  display: none;
+}
+
+.social svg {
+  width: 20px;
+  height: 20px;
+  fill: #1F1E1E;
+  margin-left: .75em;
+}
+
+.social path, footer .social rect {
+  transition: fill .4s ease;
+}
+
+
+#resume svg:hover {
+  fill: #8C7AE5;
+}
+
+#dribbble svg:hover {
+  fill: #ea4c89
+}
+
+#github svg:hover {
+  fill: #6cc644;
+}
+
+#twitter svg:hover {
+  fill: rgb(29, 161, 242);
+}
+
+#mail svg:hover {
+  fill: #43918E;
+}
+
+#linkedin svg:hover {
+  fill: #0077B5;
+}
+
+#instagram svg:hover {
+  fill: #e95950;
+}
+
+#untappd svg:hover {
+  fill: #ffcc09;
+}
+
+#mal svg:hover {
+  fill: #2D50A1;
+}
+
+
+@media only screen and (max-width: 575px)  {
+  .social {
+    text-align: center;
+  }
+}

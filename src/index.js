@@ -6,12 +6,11 @@ import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 
 import App from './App.js';
-import Home from './pages/home/Home';
 import NotifiVR from './pages/portfolio/notifiVR/NotifiVR';
 import Macy from './pages/portfolio/macy/Macy';
 
 const history = createHistory();
-let pastURL = ""
+let pastURL = "";
 
 function logPageView() {
   if (history.location.pathname !== pastURL) {
