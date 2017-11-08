@@ -11,11 +11,13 @@ class ProjectIcon extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: false
+      modalOpen: false,
+      imageLoaded: false
     };
 
-    this.showModal = this.showModal.bind(this)
-    this.hideModal = this.hideModal.bind(this)
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
+    this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
 
   static propTypes = {
@@ -48,6 +50,15 @@ class ProjectIcon extends Component {
     this.setState({ modalOpen: true });
   }
 
+
+  handleImageLoaded() {
+    this.setState({
+      imageLoaded: true,
+      modalOpen: true
+    });
+  }
+
+
   hideModal() {
     this.setState({ modalOpen: false });
   }
@@ -57,11 +68,15 @@ class ProjectIcon extends Component {
     let square = this.props.square ? "square" : null;
     let round = this.props.round ? "round" : null;
 
+    let displayModal="none";
+    this.state.imageLoaded === true ? displayModal = "block" : displayModal = "none";
+
     const modalCustomStyles = {
       height: 'auto',
       width: '80vw',
       maxWidth: "400px",
-      margin: "auto"
+      margin: "auto",
+      display: displayModal
   }
 
     let iconClass = "project-icon col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xl-2";
@@ -72,12 +87,15 @@ class ProjectIcon extends Component {
         <span onClick={this.showModal}>
         <Isvg src={this.props.svg} alt={this.props.alt} className={square || round}/>
         </span>
-        <Modal open={this.state.modalOpen} onClose={this.hideModal} modalStyle={modalCustomStyles}>
+        <Modal
+          open={this.state.modalOpen}
+          onClose={this.hideModal}
+          modalStyle={modalCustomStyles}>
           <div>
             <h2>{this.props.title}</h2>
             <div className="modal-content">
               {this.props.description}
-              <Img src={this.props.image} alt={this.props.alt}/>
+              <Img src={this.props.image} alt={this.props.alt} onLoad={this.handleImageLoaded}/>
               <p>
               {
                 (this.props.links).map(function (link, index){

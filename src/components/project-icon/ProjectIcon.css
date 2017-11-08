@@ -41,6 +41,10 @@
   padding: 1em;
 }
 
+.modal-0-2 .modal-content {
+  transition: all 1s ease;
+}
+
 .modal-0-2 .modal-content img {
   display: block;
   max-width: 100%;
