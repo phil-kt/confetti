@@ -10,14 +10,16 @@ class Video extends Component {
 
   static propTypes = {
     autoplay: PropTypes.bool,
-    src: PropTypes.string.isRequired,
+    webMsrc: PropTypes.string.isRequired,
+    mp4src: PropTypes.string.isRequired,
     caption: PropTypes.string,
     controls: PropTypes.bool
   }
 
   static defaultProps = {
     autoplay: false,
-    src: "",
+    webMsrc: "",
+    mp4src: "",
     caption: "",
     controls: false
   }
@@ -34,8 +36,12 @@ class Video extends Component {
 
     return (
       <span>
-        <video className={"video"} ref={(video) => { this._video = video; }} src={this.props.src} loop>
-          Your browser does not support the video tag. You can alternatively <a href={this.props.src}>download</a> the video.
+        <video className={"video"} ref={(video) => { this._video = video; }} preload="meta" muted loop>
+
+          <source src={this.props.webMsrc} type="video/webm" />
+          <source src={this.props.mp4src} type="video/mp4" />
+
+          <p>Your browser does not support the video tag. You can alternatively <a href={this.props.mp4src}>download</a> the video.</p>
         </video>
         {this.props.caption ?
           <p className={"caption"}>

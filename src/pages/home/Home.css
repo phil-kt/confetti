@@ -14,9 +14,13 @@
   left: 0;
   height: 100%;
   width: 100%;
+  background: url('../../media/particles/confetti.svg');
+  background-size: cover;
   z-index: -1;
   opacity: .55;
-  background: url('../../media/particles/confetti.svg');
+}
+
+.confetti svg {
 }
 
 .Home .other-stuff {

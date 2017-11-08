@@ -19,7 +19,8 @@ import PolarChart from '../../../components/polar-chart/PolarChart';
 import hero from '../../../media/notifiVR/hero.png';
 
 import problem from '../../../media/notifiVR/vr_problem.svg';
-import solution from '../../../media/notifiVR/notifi_solution.mp4';
+import solution_webm from '../../../media/notifiVR/notifi_solution.webm';
+import solution_mp4 from '../../../media/notifiVR/notifi_solution.mp4';
 
 //research icons
 import survey from '../../../media/icons/survey.svg';
@@ -46,17 +47,23 @@ import popup from '../../../media/notifiVR/sketches/popup.jpg';
 import watch from '../../../media/notifiVR/sketches/watch.jpg';
 import footsteps from '../../../media/notifiVR/sketches/footstep.jpg';
 
-//icons
+//videos
 import phone_icon from '../../../media/notifiVR/icons/phone.svg';
 import phone_booth_icon from '../../../media/notifiVR/icons/phone_booth.svg';
 import popup_icon from '../../../media/notifiVR/icons/popup-2.svg';
 import watch_icon from '../../../media/notifiVR/icons/watch.svg';
 
+import phone_video_webm from '../../../media/notifiVR/video/denwa_c.webm';
+import phone_video_mp4 from '../../../media/notifiVR/video/denwa_c.mp4';
 
-import phone_video from '../../../media/notifiVR/video/denwa_c.mp4';
-import phone_booth_video from '../../../media/notifiVR/video/pb_fc_c.mp4';
-import watch_video from '../../../media/notifiVR/video/watch_c.mp4';
-import popup_video from '../../../media/notifiVR/video/slack.mp4';
+import phone_booth_video_webm from '../../../media/notifiVR/video/pb_fc_c.webm';
+import phone_booth_video_mp4 from '../../../media/notifiVR/video/pb_fc_c.mp4';
+
+import watch_video_webm from '../../../media/notifiVR/video/watch_c.webm';
+import watch_video_mp4 from '../../../media/notifiVR/video/watch_c.mp4';
+
+import popup_video_webm from '../../../media/notifiVR/video/slack.webm';
+import popup_video_mp4 from '../../../media/notifiVR/video/slack.mp4';
 
 import fourteen from '../../../media/notifiVR/icons/fourteen.svg';
 import lattice_square from '../../../media/notifiVR/icons/square.svg';
@@ -222,7 +229,8 @@ class NotifiVR extends Component {
                           <div className={pStyle}>
                             <Video
                               autoplay={isVisible}
-                              src={solution}
+                              webMsrc={solution_webm}
+                              mp4src={solution_mp4}
                               caption={"Quick overview of all notification methods"}/>
                           </div>
                         }
@@ -782,7 +790,8 @@ class NotifiVR extends Component {
                           <div className={pStyle}>
                             <Video
                               autoplay={isVisible}
-                              src={phone_video}
+                              webMsrc={phone_video_webm}
+                              mp4src={phone_video_mp4}
                               caption={"Receiving a phone call on the controller"}/>
                           </div>
                         }
@@ -796,7 +805,8 @@ class NotifiVR extends Component {
                           <div className={pStyle}>
                             <Video
                               autoplay={isVisible}
-                              src={phone_booth_video}
+                              webMsrc={phone_booth_video_webm}
+                              mp4src={phone_booth_video_mp4}
                               caption={"Answering a call in a phone booth"}/>
                           </div>
                         }
@@ -809,7 +819,8 @@ class NotifiVR extends Component {
                           <div className={pStyle}>
                             <Video
                               autoplay={isVisible}
-                              src={popup_video}
+                              webMsrc={popup_video_webm}
+                              mp4src={popup_video_mp4}
                               caption={"Getting a message from Slack on a wall"}/>
                           </div>
                         }
@@ -822,7 +833,8 @@ class NotifiVR extends Component {
                          <div className={pStyle}>
                            <Video
                              autoplay={isVisible}
-                             src={watch_video}
+                             webMsrc={watch_video_webm}
+                             mp4src={watch_video_mp4}
                              caption={"Checking email on a watch"}/>
                          </div>
                        }

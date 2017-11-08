@@ -15,43 +15,43 @@ class Social extends Component {
     return(
       <p className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 social">
 
-        <a href="http://dribbble.com/linkcable" target="_blank" id="dribbble">
+        <a href="http://dribbble.com/linkcable" rel="noopener noreferrer" target="_blank" id="dribbble">
           <Isvg src={dribbble}>
             <img src={dribbble} alt="dribbbble link" width="20px" />
           </Isvg>
         </a>
 
-        <a href="http://github.com/linkcable" target="_blank" id="github">
+        <a href="http://github.com/linkcable" rel="noopener noreferrer" target="_blank" id="github">
           <Isvg src={github}>
             <img src={github} alt="github link" width="20px" />
           </Isvg>
         </a>
 
-        <a href="http://twitter.com/link_cable" target="_blank" id="twitter">
+        <a href="http://twitter.com/link_cable" rel="noopener noreferrer" target="_blank" id="twitter">
           <Isvg src={twitter}>
             <img src={twitter} alt="twitter link" width="20px" />
           </Isvg>
         </a>
 
-        <a href="http://linkedin.com/in/philkt" target="_blank" id="linkedin">
+        <a href="http://linkedin.com/in/philkt" rel="noopener noreferrer" target="_blank" id="linkedin">
           <Isvg src={linkedin}>
             <img src={linkedin} alt="linkedin link" width="20px" />
           </Isvg>
         </a>
 
-        <a href="https://instagram.com/link_cable" target="_blank" id="instagram">
+        <a href="https://instagram.com/link_cable" rel="noopener noreferrer" target="_blank" id="instagram">
           <Isvg src={instagram}>
             <img src={instagram} alt="instagram link" width="20px" />
           </Isvg>
         </a>
 
-        <a href="https://untappd.com/user/LinkCable" target="_blank" id="untappd">
+        <a href="https://untappd.com/user/LinkCable" rel="noopener noreferrer" target="_blank" id="untappd">
           <Isvg src={untappd}>
             <img src={untappd} alt="untappd link" width="20px" />
           </Isvg>
         </a>
 
-        <a href="https://myanimelist.net/profile/LinkCable" target="_blank" id="mal">
+        <a href="https://myanimelist.net/profile/LinkCable" rel="noopener noreferrer" target="_blank" id="mal">
           <Isvg src={mal}>
             <img src={mal} alt="my anime list link" width="20px" />
           </Isvg>

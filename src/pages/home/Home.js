@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Isvg from 'react-inlinesvg';
 import './Home.css';
 
 import Project from '../../components/project/Project';
@@ -6,6 +7,7 @@ import Row from '../../components/row/Row';
 import Misc from '../../components/misc/Misc';
 import Footer from '../../components/footer/Footer';
 
+import confetti from '../../media/particles/confetti.svg';
 import notifi from '../../media/home/diego_2.jpg';
 import macy from '../../media/home/macy.jpg';
 
@@ -38,7 +40,8 @@ class Home extends Component {
 
     return (
       <div className="Home container">
-        <div className="confetti"></div>
+        <div className="confetti">
+        </div>
         <div className="intro">
 
           <Row content={
