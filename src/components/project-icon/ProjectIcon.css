@@ -37,21 +37,17 @@
   cursor: pointer;
 }
 
-.project-icon .rodal-dialog {
+.modal-0-2 {
   padding: 1em;
 }
 
-.project-icon .rodal-close:before {
-  border-radius: 20%;
-}
-
-.project-icon .modal-content img {
+.modal-0-2 .modal-content img {
   display: block;
   max-width: 100%;
   margin: auto;
   max-height: 300px;
 }
 
-.project-icon .modal-content a {
+.modal-0-2 .modal-content a {
   margin-right: .5em;
 }

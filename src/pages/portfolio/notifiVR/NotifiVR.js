@@ -69,7 +69,7 @@ import fourteen from '../../../media/notifiVR/icons/fourteen.svg';
 import lattice_square from '../../../media/notifiVR/icons/square.svg';
 import metrics from '../../../media/notifiVR/icons/five.svg';
 
-import testing from '../../../media/home/diego_2.jpg';
+import testing from '../../../media/home/vr.jpg';
 
 class NotifiVR extends Component {
 

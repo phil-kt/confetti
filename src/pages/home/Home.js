@@ -8,7 +8,7 @@ import Misc from '../../components/misc/Misc';
 import Footer from '../../components/footer/Footer';
 
 import confetti from '../../media/particles/confetti.svg';
-import notifi from '../../media/home/diego_2.jpg';
+import notifi from '../../media/home/vr.jpg';
 import macy from '../../media/home/macy.jpg';
 
 class Home extends Component {

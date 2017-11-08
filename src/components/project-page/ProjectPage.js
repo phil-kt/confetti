@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
+import Img from 'react-image';
 import './ProjectPage.css';
 
 import Video from '../video/Video';
@@ -62,7 +63,7 @@ class ProjectPage extends Component {
                   </div>
                 }
               </VisibilitySensor>
-              : <img className="hero-image" src={this.props.hero} alt={this.props.heroAlt}/>
+              : <Img className="hero-image" src={this.props.hero} alt={this.props.heroAlt}/>
             }
           </div>
         </div>

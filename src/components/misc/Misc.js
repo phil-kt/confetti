@@ -165,7 +165,7 @@ class Misc extends Component {
           <ProjectIcon
             square={true}
             svg={argon}
-            title={"Understanding AR"}
+            title={"Argon"}
             image={argon_use}
             alt={"a phone looking at a piece of paper with pokemon coming out of it"}
             description={

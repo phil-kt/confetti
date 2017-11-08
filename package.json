@@ -22,6 +22,7 @@
     "react-motion": "^0.5.1",
     "react-plx": "^0.2.0",
     "react-reading-progress": "^0.2.7",
+    "react-responsive-modal": "^1.9.2",
     "react-reveal": "^0.7.3",
     "react-router-dom": "^4.2.2",
     "react-visibility-sensor": "^3.10.1",

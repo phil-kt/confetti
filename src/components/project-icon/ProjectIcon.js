@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Isvg from 'react-inlinesvg';
-import Rodal from 'rodal';
+import Modal from 'react-responsive-modal';
+import Img from 'react-image';
 import './ProjectIcon.css';
-import 'rodal/lib/rodal.css';
 
 
 class ProjectIcon extends Component {
@@ -46,13 +46,10 @@ class ProjectIcon extends Component {
 
   showModal() {
     this.setState({ modalOpen: true });
-    console.log("show");
-    document.body.style.overflow = "hidden";
   }
 
   hideModal() {
     this.setState({ modalOpen: false });
-    document.body.style.overflow = "auto";
   }
 
   render() {
@@ -60,16 +57,12 @@ class ProjectIcon extends Component {
     let square = this.props.square ? "square" : null;
     let round = this.props.round ? "round" : null;
 
-    const rodalCustomStyles = {
+    const modalCustomStyles = {
       height: 'auto',
-      maxHeight: '80%',
       width: '80vw',
       maxWidth: "400px",
-      bottom: 'auto',
-      overflow: 'scroll',
-      top: '50%',
-      transform: 'translateY(-50%)'
-    }
+      margin: "auto"
+  }
 
     let iconClass = "project-icon col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xl-2";
     this.props.first ? iconClass += " col-xl-offset-2" : null;
@@ -79,12 +72,12 @@ class ProjectIcon extends Component {
         <span onClick={this.showModal}>
         <Isvg src={this.props.svg} alt={this.props.alt} className={square || round}/>
         </span>
-        <Rodal visible={this.state.modalOpen} animation="fade" duration={350} onClose={this.hideModal} customStyles={rodalCustomStyles}>
+        <Modal open={this.state.modalOpen} onClose={this.hideModal} modalStyle={modalCustomStyles}>
           <div>
             <h2>{this.props.title}</h2>
             <div className="modal-content">
               {this.props.description}
-              <img src={this.props.image} alt={this.props.alt}/>
+              <Img src={this.props.image} alt={this.props.alt}/>
               <p>
               {
                 (this.props.links).map(function (link, index){
@@ -96,7 +89,7 @@ class ProjectIcon extends Component {
               </p>
             </div>
           </div>
-        </Rodal>
+        </Modal>
       </div>
     );
   }
