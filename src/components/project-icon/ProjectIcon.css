@@ -46,10 +46,6 @@
   background: rgba(0, 0, 0, 0.15);
 }
 
-.ReactModal__Content {
-  padding: 1em;
-}
-
 
 .ReactModalPortal .ReactModal__Overlay--after-open {
   opacity: 1;
@@ -58,6 +54,38 @@
 .ReactModalPortal .ReactModal__Overlay--before-close {
   opacity: 0;
 }
+
+
+.ReactModal__Content {
+  padding: 1em;
+}
+
+
+.ReactModal__Content .modal-close-button {
+  padding: 0;
+  border: 0;
+  height: 1.5em;
+  width: 1.5em;
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+
+.ReactModal__Content .modal-close-button img{
+  height: 1.5em;
+  width: 1.5em;
+}
+
+
+.ReactModal__Content .modal-close-button:hover {
+  cursor: pointer;
+}
+
+.ReactModal__Content .modal-close-button:focus {
+  outline: none;
+}
+
 
 .ReactModal__Content .modal-content {
   transition: all 1s ease;

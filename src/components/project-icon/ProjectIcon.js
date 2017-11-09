@@ -5,6 +5,8 @@ import Modal from 'react-modal';
 import Img from 'react-image';
 import './ProjectIcon.css';
 
+import close from '../../media/icons/close.svg';
+
 class ProjectIcon extends Component {
 
   constructor(props) {
@@ -99,6 +101,9 @@ class ProjectIcon extends Component {
           style={modalCustomStyles}
           contentLabel="Modal">
           <div>
+            <button onClick={this.hideModal} className={"modal-close-button"}>
+              <img src={close} alt={"close button"}/>
+            </button>
             <h2>{this.props.title}</h2>
             <div className="modal-content">
               {this.props.description}
