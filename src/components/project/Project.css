@@ -50,7 +50,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  transition: all .6s linear;
+  transition: all .6s ease;
 }
 
 .project-blurb .bg-transition {
@@ -62,9 +62,17 @@
 }
 
 .project-blurb .bg-gradient {
-  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
   opacity: 0;
 }
+
+.project-blurb .bg-gradient.blue {
+  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
+}
+
+.project-blurb .bg-gradient.red {
+  background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
+}
+
 
 .project-blurb:hover .bg-white {
   opacity: 0;
