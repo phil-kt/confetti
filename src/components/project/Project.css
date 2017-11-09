@@ -32,12 +32,58 @@
 }
 
 .project-blurb {
-  background-color: #fff;
+  background-color: transparent;
   padding: 1em 1.5em;
+  overflow: hidden;
   box-shadow: 0 1em 2em 0 rgba(0,0,0,0.30);
   height: auto;
   margin-top: -10em;
-  transition: box-shadow .5s ease;
+  transition: all .6s ease;
+  position: relative;
+
+}
+
+.project-blurb .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all .6s linear;
+}
+
+.project-blurb .bg-transition {
+  z-index: -2;
+}
+
+.project-blurb .bg-white, .project-blurb .bg-transition  {
+  background: #FAFAFA;
+}
+
+.project-blurb .bg-gradient {
+  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
+  opacity: 0;
+}
+
+.project-blurb:hover .bg-white {
+  opacity: 0;
+}
+
+.project-blurb:hover .bg-gradient {
+  opacity: 1;
+}
+
+.project-blurb:hover {
+  color: #FAFAFA;
+}
+
+.project-blurb:hover .next a {
+  color: #FAFAFA;
+}
+
+.project-blurb:hover .next svg {
+  fill: #FAFAFA;
 }
 
 .bottom {
@@ -45,8 +91,27 @@
   justify-content: space-between
 }
 
-@media only screen and (max-width: 575px)  {
-  .project-blurb {
-    margin-top: 4em;
-  }
+.bottom .next {
+  display: flex;
+  padding: .5em 0 1em;
+}
+
+.bottom .next a {
+  transition: all .6s ease;
+}
+
+.bottom .next-arrow {
+  width: 1em;
+  height: 1em;
+  margin-left: 4px;
+  transition: all .6s linear;
+  display: block;
+}
+
+.bottom .next-arrow svg {
+  transition: all .6s ease;
+}
+
+.project-blurb:hover .next-arrow{
+  transform: translateX(3px);
 }

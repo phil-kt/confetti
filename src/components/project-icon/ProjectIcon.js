@@ -82,7 +82,8 @@ class ProjectIcon extends Component {
         right: "0",
         border: "none",
         margin: "10vh auto",
-        visibility: modalVisible
+        visibility: modalVisible,
+        background: "#FAFAFA"
       }
     }
 

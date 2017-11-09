@@ -69,12 +69,15 @@
   position: absolute;
   right: 1.5em;
   top: 1.5em;
+  background: #FAFAFA;
 }
 
 
-.ReactModal__Content .modal-close-button img{
+.ReactModal__Content .modal-close-button img {
   height: 1.5em;
   width: 1.5em;
+  border: 0;
+  background: #FAFAFA;
 }
 
 
