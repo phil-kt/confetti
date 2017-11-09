@@ -49,8 +49,9 @@ class Project extends Component {
                   properties: [
                     {
                       startValue: 0,
-                      endValue: -150,
+                      endValue: -100,
                       property: 'translateY',
+                      unit: "px"
                     },
                     {
                       startValue: 0,

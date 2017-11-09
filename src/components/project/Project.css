@@ -112,7 +112,7 @@
   width: 1em;
   height: 1em;
   margin-left: 4px;
-  transition: all .6s linear;
+  transition: all .4s linear;
   display: block;
 }
 
@@ -121,5 +121,11 @@
 }
 
 .project-blurb:hover .next-arrow{
-  transform: translateX(3px);
+  transform: translateX(5px);
+}
+
+@media only screen and (max-width: 575px) {
+  .plx {
+    margin-top: 175px;
+  }
 }
