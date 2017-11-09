@@ -37,15 +37,33 @@
   cursor: pointer;
 }
 
-.modal-0-2 {
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  transition: opacity 200ms ease-in-out;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.ReactModal__Content {
   padding: 1em;
 }
 
-.modal-0-2 .modal-content {
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content .modal-content {
   transition: all 1s ease;
 }
 
-.modal-0-2 .modal-content img {
+.ReactModal__Content .modal-content img {
   display: block;
   max-width: 100%;
   margin: auto;
@@ -53,7 +71,7 @@
   transition: all 1s ease;
 }
 
-.modal-0-2 .modal-content a {
+.ReactModal__Content .modal-content a {
   margin-right: .5em;
 }
 
