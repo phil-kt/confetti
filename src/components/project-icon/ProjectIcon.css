@@ -50,8 +50,13 @@
   max-width: 100%;
   margin: auto;
   max-height: 300px;
+  transition: all 1s ease;
 }
 
 .modal-0-2 .modal-content a {
   margin-right: .5em;
+}
+
+.modal-0-2 .loader {
+  background: gray;
 }

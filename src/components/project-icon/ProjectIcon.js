@@ -5,7 +5,6 @@ import Modal from 'react-responsive-modal';
 import Img from 'react-image';
 import './ProjectIcon.css';
 
-
 class ProjectIcon extends Component {
 
   constructor(props) {
@@ -17,7 +16,6 @@ class ProjectIcon extends Component {
 
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
-    this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
 
   static propTypes = {
@@ -31,7 +29,7 @@ class ProjectIcon extends Component {
     round: PropTypes.bool,
     links: PropTypes.array,
     first: PropTypes.bool,
-  }
+  };
 
   static defaultProps = {
     title: "",
@@ -44,20 +42,11 @@ class ProjectIcon extends Component {
     round: false,
     links: [],
     first: false
-  }
+  };
 
   showModal() {
     this.setState({ modalOpen: true });
   }
-
-
-  handleImageLoaded() {
-    this.setState({
-      imageLoaded: true,
-      modalOpen: true
-    });
-  }
-
 
   hideModal() {
     this.setState({ modalOpen: false });
@@ -67,16 +56,15 @@ class ProjectIcon extends Component {
 
     let square = this.props.square ? "square" : null;
     let round = this.props.round ? "round" : null;
-
-    let displayModal="none";
-    this.state.imageLoaded === true ? displayModal = "block" : displayModal = "none";
+    let modalVisible = "hidden";
+    this.state.imageLoaded ? modalVisible = "visible" : null;
 
     const modalCustomStyles = {
       height: 'auto',
       width: '80vw',
       maxWidth: "400px",
       margin: "auto",
-      display: displayModal
+      visibility: modalVisible
   }
 
     let iconClass = "project-icon col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xl-2";
@@ -95,7 +83,7 @@ class ProjectIcon extends Component {
             <h2>{this.props.title}</h2>
             <div className="modal-content">
               {this.props.description}
-              <Img src={this.props.image} alt={this.props.alt} onLoad={this.handleImageLoaded}/>
+              <Img src={this.props.image} alt={this.props.alt} onLoad={() => this.setState({imageLoaded: true})} loader={<div className={"loader"}></div> }/>
               <p>
               {
                 (this.props.links).map(function (link, index){
