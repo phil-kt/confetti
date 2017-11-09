@@ -5,8 +5,7 @@ import Plx from 'react-plx';
 import Isvg from 'react-inlinesvg';
 import './Project.css';
 
-import Button from '../button/Button';
-import arrow from '../../media/icons/arrow.svg';
+import arrow from '../../media/icons/arrow-slim.svg';
 
 class Project extends Component {
 
@@ -74,7 +73,7 @@ class Project extends Component {
                   <Button label="Case Study" link={this.props.link} color={this.props.color}/>
                   */}
                   <div className="next navbar-link">
-                    <Link to={this.props.link}>Read Case Study</Link>
+                    <Link to={this.props.link}>Case Study</Link>
                     <Isvg className={"next-arrow"} src={arrow} />
                   </div>
                 </div>

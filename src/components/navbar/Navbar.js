@@ -6,7 +6,7 @@ import ReadingProgress from 'react-reading-progress';
 import './Navbar.css';
 import Isvg from 'react-inlinesvg';
 
-import arrow from '../../media/icons/arrow.svg';
+import arrow from '../../media/icons/arrow-slim.svg';
 
 class Navbar extends Component {
 

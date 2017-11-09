@@ -9,7 +9,7 @@ import Footer from '../../components/footer/Footer';
 
 import confetti from '../../media/particles/confetti.svg';
 import notifi from '../../media/home/vr.jpg';
-import macy from '../../media/home/macy.jpg';
+import macy from '../../media/home/clock.jpg';
 
 class Home extends Component {
 
