@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 import Isvg from 'react-inlinesvg';
 import Modal from 'react-modal';
 import Img from 'react-image';
+import ReactGA from 'react-ga';
 import './ProjectIcon.css';
 
 import close from '../../media/icons/close.svg';
+
+ReactGA.initialize('UA-36903668-3');
+
 
 class ProjectIcon extends Component {
 
@@ -49,6 +53,9 @@ class ProjectIcon extends Component {
   showModal() {
     this.setState({ modalOpen: true });
     document.body.style.overflow = "hidden";
+    ReactGA.set({ page: "/" + this.props.title });
+    ReactGA.pageview("/" + this.props.title);
+    console.log(ReactGA);
   }
 
   hideModal() {

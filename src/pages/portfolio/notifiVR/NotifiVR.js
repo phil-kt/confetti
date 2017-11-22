@@ -183,8 +183,6 @@ class NotifiVR extends Component {
           hero={hero}
           heroAlt={"User testing of a person testing the Vive VR headset."}
           description={"Receive notifications in VR through virtual phones, smart watches, and popups"}
-          nextProjectName={"The Future of Macy's"}
-          nextProjectLink={"/macys"}
           navbarColor={"blue"}
           content={
             <span>
@@ -223,7 +221,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <VisibilitySensor>
                         {({isVisible}) =>
                           <div className={pStyle}>
@@ -342,8 +340,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={quoteStyle}>
-                        "My phone was ringing and I missed the call. It was quite an important call. I would like an app
-                        that shows who is calling on the phone my HMD."
+                        "My phone was ringing and I missed the call. It was quite an important call. I would like an app that shows who is calling my phone on the HMD."
                       </p>
                     }/>
 
@@ -358,19 +355,19 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <div className="row">
+                    <div className="row one-margin-top">
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                           <img className="feature-image" src={fps}
-                               alt="One person at a whiteboard sharing their design ideas"/>
+                               alt="A high energy shooting environment"/>
                         </div>
 
                         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                           <img className="feature-image" src={blocks}
-                               alt="One person at a whiteboard sharing their design ideas"/>
+                               alt="A low energy building environment"/>
                         </div>
                     </div>
 
-                    <Row content={
+                    <Row className="one-margin-bottom" content={
                       <p className={"caption " + pStyle}>
                         Designing notifications for both high energy and low energy VR environments
                       </p>
@@ -383,14 +380,14 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <img className="feature-image" src={sharing}
                             alt="One person at a whiteboard sharing their design ideas"/>
                       </div>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-bottom" content={
                       <p className={"caption " + pStyle}>
                         Sharing and discussing ideas at our participatory design event
                       </p>
@@ -490,7 +487,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
                         <img className="feature-image" src={affinity_map}
                              alt="A bunch of post its"/>
@@ -608,7 +605,7 @@ class NotifiVR extends Component {
                       index={this.state.index}
                     />
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       images.map(function (image, index) {
                         return (
                           <div key={"sketch" + index} onClick={(e) => self.openLightbox(index, e)}
@@ -691,7 +688,7 @@ class NotifiVR extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={pStyle}>
 
                         <ImageZoom
@@ -740,7 +737,7 @@ class NotifiVR extends Component {
                       </div>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <p className={"caption " + pStyle}>
                         The abstracted process
                       </p>
@@ -784,7 +781,7 @@ class NotifiVR extends Component {
                         After we had the designs, framework, and the environment decided upon, it was time to combine them into one cohesive unit. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and with some help from our good old friend the Wizard of Oz to fake the outside triggers.
                       </p>
                     }/>
-                    <Row content={
+                    <Row className="one-margin-vert" content={
                       <VisibilitySensor>
                         {({isVisible}) =>
                           <div className={pStyle}>
@@ -799,7 +796,7 @@ class NotifiVR extends Component {
 
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-vert" content={
                       <VisibilitySensor>
                         {({isVisible}) =>
                           <div className={pStyle}>
@@ -813,7 +810,7 @@ class NotifiVR extends Component {
                       </VisibilitySensor>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-vert" content={
                       <VisibilitySensor>
                         {({isVisible}) =>
                           <div className={pStyle}>
@@ -827,7 +824,7 @@ class NotifiVR extends Component {
                       </VisibilitySensor>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-vert" content={
                       <VisibilitySensor>
                        {({isVisible}) =>
                          <div className={pStyle}>

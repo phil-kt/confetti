@@ -43,6 +43,8 @@
 
 }
 
+/* Gradient background code */
+
 .project-blurb .bg {
   position: absolute;
   z-index: -1;
@@ -82,17 +84,26 @@
   opacity: 1;
 }
 
+
+/* Hover Styling */
+
 .project-blurb:hover {
   color: #FAFAFA;
 }
 
-.project-blurb:hover .next a {
+.Project .project-blurb:hover .next a {
   color: #FAFAFA;
 }
 
-.project-blurb:hover .next svg {
+.Project .project-blurb:hover .next svg {
   fill: #FAFAFA;
 }
+
+.project-blurb:hover .next-arrow{
+  transform: translateX(5px);
+}
+
+/* Link Styling */
 
 .bottom {
   display: flex;
@@ -120,9 +131,22 @@
   transition: all .6s ease;
 }
 
-.project-blurb:hover .next-arrow{
-  transform: translateX(5px);
+.project-blurb .next.blue a {
+  color: #3097B2;
 }
+
+.project-blurb .blue .next-arrow svg {
+  fill: #3097B2;
+}
+
+.project-blurb .next.red a {
+  color: #CD6BAD;
+}
+
+.project-blurb .red .next-arrow svg {
+  fill: #CD6BAD;
+}
+
 
 @media only screen and (max-width: 575px) {
   .plx {

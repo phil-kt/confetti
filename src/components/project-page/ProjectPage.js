@@ -6,11 +6,20 @@ import './ProjectPage.css';
 
 import Video from '../video/Video';
 import Navbar from '../navbar/Navbar';
+import Project from '../project/Project';
+import Projects from '../projects/Projects';
 
 class ProjectPage extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    const proj = new Projects();
+
+    this.state = {
+      nextProject: proj.getNextProject(props.title)
+    };
+
 
     this.pStyle = "col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2dot5 col-lg-7 col-xl-offset-3 col-xl-6";
   }
@@ -21,8 +30,6 @@ class ProjectPage extends Component {
     content: PropTypes.object.isRequired,
     hero: PropTypes.string.isRequired,
     heroAlt: PropTypes.string.isRequired,
-    nextProjectName: PropTypes.string.isRequired,
-    nextProjectLink: PropTypes.string.isRequired,
     video: PropTypes.bool,
     navbarColor: PropTypes.string
   }
@@ -34,16 +41,15 @@ class ProjectPage extends Component {
     hero: "",
     heroAlt: "",
     video: false,
-    nextProjectName: "Next Page",
-    nextProjectLink: "/",
     navbarColor: ""
   }
 
   render () {
 
+
     return (
       <div className={"project-page container " + this.props.title}>
-        <Navbar nextProjectName={this.props.nextProjectName} nextProjectLink={this.props.nextProjectLink} color={this.props.navbarColor}/>
+        <Navbar nextProjectName={this.state.nextProject.name} nextProjectLink={this.state.nextProject.link} color={this.props.navbarColor}/>
         <div className="header row">
           <h1 className={this.pStyle}>{this.props.title}</h1>
         </div>
@@ -63,13 +69,31 @@ class ProjectPage extends Component {
                   </div>
                 }
               </VisibilitySensor>
-              : <Img className="hero-image" src={this.props.hero} alt={this.props.heroAlt}/>
+              : <Img className="hero-image"
+                     src={this.props.hero}
+                     alt={this.props.heroAlt}
+                     loader={<div className={"loader"}></div>}
+              />
             }
           </div>
         </div>
         <div className="content" id="reading-content">
           {this.props.content}
         </div>
+
+        <div className="row next-project">
+          <h3 className={this.pStyle}>Next Project</h3>
+        </div>
+
+        <Project
+          title={this.state.nextProject.name}
+          description={this.state.nextProject.description}
+          link={this.state.nextProject.link}
+          image={this.state.nextProject.image}
+          alt={this.state.nextProject.alt}
+          color={this.state.nextProject.color}
+          percentage={'0%'}/>
+
       </div>
     )
   }

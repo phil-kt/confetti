@@ -2,14 +2,17 @@
   overflow-x: scroll;
   box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.30);
   padding: 0;
+  margin: .75em auto;
 }
 
 .Macy .customer-journey {
   max-height: 400px;
 }
 
-.Macy .customer-journey-2 {
-  max-height: 450px;
+
+.Macy .isometric-journey {
+  display: block;
+  margin: 1em 0;
 }
 
 .Macy b {
@@ -27,3 +30,4 @@
 .Macy .nav .navbar-link:hover svg {
   fill: #CD6BAD;
 }
+

@@ -6,16 +6,18 @@ class Row extends Component {
 
   static propTypes = {
     content: PropTypes.object.isRequired,
+    className: PropTypes.string
   }
 
   static defaultProps = {
     content: {},
+    className: ""
   }
 
   render () {
 
     return (
-      <div className="row">
+      <div className={this.props.className + " row"}>
         {this.props.content}
       </div>
     )

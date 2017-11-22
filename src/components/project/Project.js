@@ -16,7 +16,8 @@ class Project extends Component {
     image: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
-    percentage: PropTypes.string
+    percentage: PropTypes.string,
+    parallax: PropTypes.bool
   }
 
   static defaultProps = {
@@ -25,7 +26,8 @@ class Project extends Component {
     link: "",
     image: "",
     alt: "",
-    color: ""
+    color: "",
+    parallax: true
   }
 
   render() {
@@ -39,47 +41,72 @@ class Project extends Component {
         </div>
         <div className="row">
           <div className="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-7 col-lg-offset-5 col-lg-5 ">
-            <Plx
-              className="plx"
-              parallaxData={[
-                {
-                  start: this.props.percentage,
-                  duration: '10%',
-                  properties: [
-                    {
-                      startValue: 0,
-                      endValue: -100,
-                      property: 'translateY',
-                      unit: "px"
-                    },
-                    {
-                      startValue: 0,
-                      endValue: 1,
-                      property: 'opacity',
-                    }
-                  ]
-                }
-              ]}
-            >
-            <Link className="project-link-container" to={this.props.link}>
-              <div className="project-blurb">
-                <div className="bg bg-white"></div>
-                <div className={"bg bg-gradient " + this.props.color}></div>
-                <div className="bg bg-transition"></div>
-                <h2>{this.props.title}</h2>
-                <p>{this.props.description}</p>
-                <div className="bottom">
-                  {/*
-                  <Button label="Case Study" link={this.props.link} color={this.props.color}/>
-                  */}
-                  <div className="next navbar-link">
-                    <Link to={this.props.link}>Case Study</Link>
-                    <Isvg className={"next-arrow"} src={arrow} />
+            {this.props.parallax ?
+              <Plx
+                className="plx"
+                parallaxData={[
+                  {
+                    start: this.props.percentage,
+                    duration: this.props.parallax ? '10%' : "0%",
+                    properties: [
+                      {
+                        startValue: 0,
+                        endValue: -100,
+                        property: 'translateY',
+                        unit: "px"
+                      },
+                      {
+                        startValue: 0,
+                        endValue: 1,
+                        property: 'opacity',
+                      }
+                    ]
+                  }
+                ]}
+              >
+              <Link className="project-link-container" to={this.props.link}>
+                <div className="project-blurb">
+                  <div className="bg bg-white"></div>
+                  <div className={"bg bg-gradient " + this.props.color}></div>
+                  <div className="bg bg-transition"></div>
+                  <h2>{this.props.title}</h2>
+                  <p>{this.props.description}</p>
+                  <div className="bottom">
+                    {/*
+                    <Button label="Case Study" link={this.props.link} color={this.props.color}/>
+                    */}
+                    <div className={"next navbar-link " + this.props.color}>
+                      <Link to={this.props.link}>Case Study</Link>
+                      <Isvg className={"next-arrow"} src={arrow} />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-            </Plx>
+              </Link>
+              </Plx> :
+
+              <Link className="project-link-container" to={this.props.link}>
+                <div className="project-blurb">
+                  <div className="bg bg-white"></div>
+                  <div className={"bg bg-gradient " + this.props.color}></div>
+                  <div className="bg bg-transition"></div>
+                  <h2>{this.props.title}</h2>
+                  <p>{this.props.description}</p>
+                  <div className="bottom">
+                    {/*
+                  <Button label="Case Study" link={this.props.link} color={this.props.color}/>
+                  */}
+                    <div className={"next navbar-link " + this.props.color}>
+                      <Link to={this.props.link}>Case Study</Link>
+                      <Isvg className={"next-arrow"} src={arrow} />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+
+
+
+            }
           </div>
         </div>
       </div>

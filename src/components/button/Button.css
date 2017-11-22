@@ -42,15 +42,15 @@
 
 /* Solid Button Colors */
 
-.blue a {
+.button.blue a {
   background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
 }
 
-.red a {
+.button.red a {
   background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
 }
 
-.green a {
+.button.green a {
   background-image: linear-gradient(90deg, #134E5E 0%, #71B280 100%);
 }
 

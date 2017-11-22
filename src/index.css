@@ -129,6 +129,14 @@ p {
   margin: 1em auto;
 }
 
+.one-margin-top {
+  margin-top: 1em;
+}
+
+.one-margin-bottom {
+  margin-bottom: 1em;
+}
+
 a {
   text-decoration: none;
   display: inline-block;

@@ -78,11 +78,10 @@ import k_initial from '../../../media/macy/kiosk/mockup.png';
 import bar_and_style from '../../../media/macy/bar_and_style.png';
 import robots from '../../../media/macy/robots.png';
 import layout from '../../../media/macy/layout.jpg';
-import design_journey from '../../../media/macy/designed_journey.svg';
+import macy_journey from '../../../media/macy/macy_journey.svg';
 
 import unity from '../../../media/macy/unity.png';
 import presentation from '../../../media/macy/presentation.png';
-import ProjectIcon from "../../../components/project-icon/ProjectIcon";
 
 class Macy extends Component {
 
@@ -234,8 +233,6 @@ class Macy extends Component {
           description={"A shopping experience focused on personal assistance and a smaller store footprint"}
           hero={hero}
           heroAlt={"Our Macy's app on top of a bag."}
-          nextProjectName={"NotifiVR"}
-          nextProjectLink={"/notifivr"}
           navbarColor={"red"}
           content={
             <span>
@@ -275,7 +272,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <span className={pStyle + " video-holder"}>
                           <span className="aspect-keeper">
                             <iframe src="https://www.youtube.com/embed/ivBOMyQble8" frameBorder="0" allowFullScreen title="Youtube video of concept" />
@@ -326,7 +323,7 @@ class Macy extends Component {
                     <div className="row callouts">
                       <Callout
                         image={dept}
-                        altText={"deaprtment store icon"}
+                        altText={"department store icon"}
                         title={"Store Visits"}
                         description={"Went to Macy's and their competitors to see store environments"}
                         first={true}
@@ -406,7 +403,7 @@ class Macy extends Component {
                       index={this.state.index}
                     />
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       images.map(function (image, index) {
                         return (
                           <div key={"assets" + index} onClick={(e) => self.openLightbox(index, "research", e)}
@@ -418,7 +415,7 @@ class Macy extends Component {
                     }/>
 
 
-                    <Row content={
+                    <Row className="one-margin-bottom" content={
                       <p className={pStyle + " caption no-margin-bottom"}>
                         Various assets from researching
                       </p>
@@ -521,7 +518,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={pStyle}>
                         <img className="feature-image" src={stimulus_overload}
                             alt="Displays and racks of shoes upon shoes with no real focus"/>
@@ -665,7 +662,7 @@ class Macy extends Component {
                       index={this.state.index}
                     />
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       personas_1.map(function (persona, index) {
                         return (
                           <div key={"persona" + index} onClick={(e) => self.openLightbox(index, "persona", e)}
@@ -714,10 +711,10 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8 customer-journey-container"}>
                         <img src={current_journey}
-                            alt='Displays and racks of shoes upon shoes with no real focus'
+                            alt='A long exhausting path of bouncing between associates to get the outift you want'
                             className='customer-journey'
                         />
                       </div>
@@ -740,7 +737,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8"}>
                         <ImageZoom
                           image={{
@@ -834,7 +831,7 @@ class Macy extends Component {
                       index={this.state.index}
                     />
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                      customer_app.map(function (screen, index) {
                         return (
                           <div key={"customer_screen" + index} onClick={(e) => self.openLightbox(index, "customer_app", e)}
@@ -845,7 +842,7 @@ class Macy extends Component {
                       })
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-bottom" content={
                       <p className={"caption " + pStyle}>
                         The customer app pairs you with an associate
                       </p>
@@ -857,7 +854,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={pStyle}>
                         <ImageZoom
                           image={{
@@ -873,7 +870,7 @@ class Macy extends Component {
                       </div>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-bottom" content={
                       <p className={"caption " + pStyle}>
                         No need to use up space on your phone
                       </p>
@@ -904,7 +901,7 @@ class Macy extends Component {
                       index={this.state.index}
                     />
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       associate_app.map(function (screen, index) {
                         return (
                           <div key={"associate_screen" + index} onClick={(e) => self.openLightbox(index, "associate_app", e)}
@@ -915,7 +912,7 @@ class Macy extends Component {
                       })
                     }/>
 
-                    <Row content={
+                    <Row className={"one-margin-bottom"} content={
                       <p className={"caption " + pStyle}>
                         The associate app lets them manage a customer's cart
                       </p>
@@ -1029,7 +1026,7 @@ class Macy extends Component {
 
                     </Collapse>
 
-                    <Row content={
+                    <Row className={"one-margin-top"} content={
                       <h4 className={pStyle}>Customer Journey — 5 Years From Now</h4>
                     }/>
 
@@ -1040,17 +1037,17 @@ class Macy extends Component {
                     }/>
 
                     <Row content={
-                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10 customer-journey-container"}>
-                        <img src={design_journey}
-                             alt='Customer journey, with a private assistant'
-                             className='customer-journey-2'
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
+                        <Isvg src={macy_journey}
+                             alt='Isometric illustration of our customer journey'
+                              className={"isometric-journey"}
                         />
                       </div>
                     }/>
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        Scroll through our more intricate system, involving AI, robots, and dedicated fitting room associates — stars mark our key innovations
+                        Our more intricate system, featuring dedicated personal stylists, robot warehouses, and AR fitting rooms
                       </p>
                     }/>
 
@@ -1068,7 +1065,7 @@ class Macy extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={pStyle}>
                         <a href="http://macys.philkt.me/" target="_blank" rel="noopener noreferrer" >
                           <img className={"feature-image"} src={unity} alt="Unity demo link"/>
@@ -1099,7 +1096,7 @@ class Macy extends Component {
                       </span>
                     }/>
 
-                    <Row content={
+                    <Row className="one-margin-top" content={
                       <div className={pStyle}>
                         <ImageZoom
                           image={{
@@ -1124,7 +1121,7 @@ class Macy extends Component {
                     <Row content={
                       <span>
                         <p className={pStyle}>
-                          If you're interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macys_presentation.pdf" target="_blank" rel="noopener noreferrer" >presentation</a> and <a href="http://philkt.me/files/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >document</a> that we ultimately handed off to Macy’s.
+                          If you're interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macy/macys_presentation.pdf" target="_blank" rel="noopener noreferrer" >presentation</a> and <a href="http://philkt.me/files/macy/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >document</a> that we ultimately handed off to Macy’s.
                         </p>
                       </span>
                     }/>
@@ -1159,8 +1156,8 @@ class Macy extends Component {
                       <a href="https://3dwarehouse.sketchup.com/model/acc0b6c2-33b3-4be9-bb45-052f385cb8bf/Macys-Rooms">SketchUp Model</a>
                       <a href="http://macys.philkt.me">Unity Demo</a>
                       <br />
-                      <a href="http://philkt.me/files/macys_presentation.pdf">Presentation Deck</a>
-                      <a href="http://philkt.me/files/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >Presentation Document</a>
+                      <a href="http://philkt.me/files/macy/macys_presentation.pdf">Presentation Deck</a>
+                      <a href="http://philkt.me/files/macy/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >Presentation Document</a>
                     </p>
                   }/>
                 }
