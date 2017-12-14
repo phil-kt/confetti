@@ -8,6 +8,7 @@ import createHistory from 'history/createBrowserHistory';
 
 import App from './App.js';
 import NotifiVR from './pages/portfolio/notifiVR/NotifiVR';
+import Alien from './pages/portfolio/alien/Alien';
 import Macy from './pages/portfolio/macy/Macy';
 
 const history = createHistory();
@@ -43,6 +44,7 @@ ReactDOM.render((
       <Switch>
         <Route exact path='/' component={App}/>
         <Route path='/notifivr' component={NotifiVR}/>
+        <Route path='/alien' component={Alien}/>
         <Route path='/macys' component={Macy}/>
       </Switch>
     </TrackPageView>

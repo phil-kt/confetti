@@ -5,6 +5,7 @@ import './Social.css';
 import dribbble from '../../media/social/dribbble.svg';
 import github from '../../media/social/github.svg';
 import twitter from '../../media/social/twitter.svg';
+import medium from '../../media/social/medium.svg';
 import untappd from '../../media/social/untappd.svg';
 import linkedin from '../../media/social/linkedin.svg';
 import instagram from '../../media/social/instagram.svg';
@@ -36,6 +37,12 @@ class Social extends Component {
         <a href="http://linkedin.com/in/philkt" rel="noopener noreferrer" target="_blank" id="linkedin">
           <Isvg src={linkedin}>
             <img src={linkedin} alt="linkedin link" width="20px" />
+          </Isvg>
+        </a>
+
+        <a href="https://medium.com/@LinkCable" rel="noopener noreferrer" target="_blank" id="medium">
+          <Isvg src={medium}>
+            <img src={medium} alt="medium link" width="20px" />
           </Isvg>
         </a>
 

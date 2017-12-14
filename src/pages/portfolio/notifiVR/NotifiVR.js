@@ -16,7 +16,7 @@ import Video from '../../../components/video/Video';
 import Callout from '../../../components/callout/Callout';
 import PolarChart from '../../../components/polar-chart/PolarChart';
 
-import hero from '../../../media/notifiVR/hero.png';
+import hero from '../../../media/notifiVR/hero.jpg';
 
 import problem from '../../../media/notifiVR/vr_problem.svg';
 import solution_webm from '../../../media/notifiVR/notifi_solution.webm';
@@ -30,7 +30,7 @@ import vr_comp from '../../../media/notifiVR/icons/comp.svg';
 import fps from '../../../media/notifiVR/space_pirate.jpg';
 import blocks from '../../../media/notifiVR/blocks.jpg';
 import sharing from '../../../media/notifiVR/sharing.jpg';
-import playing_env from '../../../media/notifiVR/playing_env.png';
+import playing_env from '../../../media/notifiVR/playing_env.jpg';
 import framework from '../../../media/notifiVR/framework.png';
 import developer_storyboard from '../../../media/notifiVR/developer_storyboard.png';
 
@@ -192,7 +192,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        When playing a virtual reality environment, you lose your connection to the outside world. Sound, vision, and movement are all mirrored and reflected in VR, which is great for immersion, but sometimes you need to know when you’re getting a call from your spouse or about to hit a chair. <b>We explored different methods of alerting players in VR about important information from their real life.</b>
+                        When inside a virtual reality environment, you lose your connection to the outside world. Sound, vision, and movement are all mirrored and reflected in VR, which is great for immersion, but sometimes you need to know when you’re getting a call from your spouse or about to hit a chair. <b>We explored different methods of alerting players in VR about important information from their real life.</b>
                       </p>
                     }/>
 
@@ -244,7 +244,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <div
-                        className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10">
+                        className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
                         <Process
                           steps={steps}/>
                       </div>
@@ -270,7 +270,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        We began our research by sending out a survey to get VR fans’ experience with missed notifications as well as how they would prioritize certain alerts over others. We used the survey to inform a design workshop we held with Atlanta VR designers and developers, and also conducted research into how Playstation VR, the HTC Vive, and the Oculus Rift handled interruptions.
+                        We began by sending out a survey to get VR fans’ experience with missed notifications as well as how they would prioritize certain alerts over others. We used the survey to inform a design workshop we held with Atlanta VR designers and developers, and also conducted research into how Playstation VR, the HTC Vive, and the Oculus Rift handled interruptions.
                       </p>
                     }/>
 
@@ -326,21 +326,21 @@ class NotifiVR extends Component {
                     <Row content={
                       <p className={pStyle}>
                         From their answers we understood that people were primarily interested in
-                        infomation about their physical surroundings, as well as calls and texts. Some key quotes
+                        information about their physical surroundings, as well as calls and texts. Some key quotes
                         include:
                       </p>
                     }/>
 
                     <Row content={
                       <p className={quoteStyle}>
-                        "I was standing near a couch. When I turned to look at something behind me I bumped into the
-                        couch."
+                        “I was standing near a couch. When I turned to look at something behind me I bumped into the
+                        couch.”
                       </p>
                     }/>
 
                     <Row content={
                       <p className={quoteStyle}>
-                        "My phone was ringing and I missed the call. It was quite an important call. I would like an app that shows who is calling my phone on the HMD."
+                        “My phone was ringing and I missed the call. It was quite an important call. I would like an app that shows who is calling my phone on the HMD.”
                       </p>
                     }/>
 
@@ -350,8 +350,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Taking the results of this survey, we then held a 2 hour participatory design activity with
-                        professional VR Designers in the Atlanta area to help get their perspective on how we might solve for those problems.
+                        Taking the results of this survey, we then held a 2 hour participatory design activity with professional VR Designers in the Atlanta area to help get their perspective on how we might solve for those problems.
                       </p>
                     }/>
 
@@ -471,19 +470,13 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>3D representations</em> of real world objects were the most common solutions shared.
-                        Examples included a hand or person model appearing when someone is waving or trying to talk to
-                        you, or a digital wireframe of your couch in the environment so you don’t bump into it. This
-                        also extended into ideas like smart watches or phones for digital notifications.
+                        <em>3D representations</em> of real world objects were the most common solutions shared. Examples included a hand or person model appearing when someone is waving or trying to talk to you, or a digital wireframe of your couch in the environment so you don’t bump into it. This also extended into ideas like smart watches or phones for digital notifications.
                       </p>
                     }/>
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>Pop-ups</em> or small billboards were common choices for "digital notifications". For the
-                        less energetic environment it was suggested tha messages could appear on different objects in
-                        the game, and for more cognitively demanding environments they could appear next to or on the
-                        controller, so as to be more immediately noticeable.
+                        <em>Pop-ups</em> or small billboards were common choices for “digital notifications”. For the less energetic environment it was suggested tha messages could appear on different objects in the game, and for more cognitively demanding environments they could appear next to or on the controller, so as to be more immediately noticeable.
                       </p>
                     }/>
 
@@ -506,18 +499,13 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>3D sound</em> was often mentioned to denote physical entities. Some examples included
-                        footsteps being mapped to the actual location someone was coming from, or piping in audio from
-                        the real world when relevant so you can hear someone talking to you or a pet barking.
+                        <em>3D sound</em> was often mentioned to denote physical entities. Some examples included footsteps being mapped to the actual location someone was coming from, or piping in audio from the real world when relevant so you can hear someone talking to you or a pet barking.
                       </p>
                     }/>
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>Metaphors</em> were also very popular. Sounds like a door creak to signify someone entering
-                        the room, or having an hourly chime to help keep track of how long you've been in VR. The
-                        designers also mentioned using sounds you were familiar with, like your ring tone or text tone,
-                        to alert you when you’ve received a message.
+                        <em>Metaphors</em> were also very popular. Sounds like a door creak to signify someone entering the room, or having an hourly chime to help keep track of how long you've been in VR. The designers also mentioned using sounds you were familiar with, like your ring tone or text tone, to alert you when you’ve received a message.
                       </p>
                     }/>
 
@@ -529,10 +517,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>Metaphorical vibrations</em> were very common, such as using feet vibrations to warn you
-                        about stepping on a pet, or a tap vibration for someone trying to get your attention. One idea
-                        even played with using a ring finger vibration to indicate you had a call or message from your
-                        spouse.
+                        <em>Metaphorical vibrations</em> were very common, such as using feet vibrations to warn you about stepping on a pet, or a tap vibration for someone trying to get your attention. One idea even played with using a ring finger vibration to indicate you had a call or message from your spouse.
                       </p>
                     }/>
                     </Collapse>
@@ -683,8 +668,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        For user comfort and time restraint reasons, we decided to use a low energy environment for
-                        testing purposes. The environment modeled was one where the user would pick up a ball using the HTC Vive controllers and place it in a glowing ring on the floor in a giant warehouse. As the user repeated this task, different notifications and signifiers would be triggered randomly, like a vibration and a pop up to indicate you have a message, or spawning a phone booth in the player’s field of view to inform you of an incoming call.
+                        For user comfort and time restraint reasons, we decided to use a low energy environment for testing purposes. The environment modeled was one where the user would pick up a ball using the HTC Vive controllers and place it in a glowing ring on the floor in a giant warehouse. As the user repeated this task, different notifications and signifiers would be triggered randomly, like a vibration and a pop up to indicate you have a message, or spawning a phone booth in the player’s field of view to inform you of an incoming call.
                       </p>
                     }/>
 
@@ -714,10 +698,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        We also had to design a software framework that would work within Unity taking outside
-                        notifications and triggering the proper cue on the proper object. I and another teammate worked
-                        on this part, as we wanted the framework to be easily usable by developers wishing to add
-                        notifications to their VR experience. In the end we came up with this:
+                        We also had to design a software framework that would work within Unity taking outside notifications and triggering the proper cue on the proper object. I and another teammate worked on this part, as we wanted the framework to be easily usable by developers wishing to add notifications to their VR experience. In the end we came up with this:
                       </p>
                     }/>
 
@@ -745,11 +726,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        The premise is that a Unity scene has a Notification Manager, which watches for incoming
-                        triggers like phone calls, text messages, or physical entrances. The Manager also keeps track of
-                        what Notifier objects exist, which are the game objects that actually spawn and inform you of
-                        the notification that you received. A developer is able to pick what sort of feedback the
-                        Notifier object provides, and how it manifests itself.
+                        The premise is that a Unity scene has a Notification Manager, which watches for incoming triggers like phone calls, text messages, or physical entrances. The Manager also keeps track of what Notifier objects exist, which are the game objects that actually spawn and inform you of the notification that you received. A developer is able to pick what sort of feedback the Notifier object provides, and how it manifests itself.
                       </p>
                     }/>
 
@@ -778,7 +755,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        After we had the designs, framework, and the environment decided upon, it was time to combine them into one cohesive unit. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and with some help from our good old friend the Wizard of Oz to fake the outside triggers.
+                        With the designs, framework, and the environment decided upon, it was time to combine them into one cohesive unit. We used models from the asset store and hacked together some of our own, wired them up to the environment using our framework and with some help from our good old friend the Wizard of Oz to fake the outside triggers.
                       </p>
                     }/>
                     <Row className="one-margin-vert" content={

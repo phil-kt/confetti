@@ -8,6 +8,7 @@ import Footer from '../../components/footer/Footer';
 
 import notifi from '../../media/home/vr.jpg';
 import macy from '../../media/home/clock.jpg';
+import alien from '../../media/home/alien_wave.png';
 
 class Home extends Component {
 
@@ -83,7 +84,10 @@ class Home extends Component {
 
         <Project title="NotifiVR" description="Notifications designed to inform you about the real world when you’re inside a virtual reality environment." image={notifi} link="/notifivr" alt="Person picking up a VR telephone to answer a real life call" color="blue" percentage='20%'/>
 
-        <Project title="Macy’s of the Future" description="Service design project with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red" percentage='50%'/>
+        <Project title="Alien Encounter" description="Notifications designed to inform you about the real world when you’re inside a virtual reality environment." image={alien} link="/alien" alt="Person picking up a VR telephone to answer a real life call" color="blue" percentage='40%'/>
+
+
+        <Project title="Macy’s of the Future" description="Service design project with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red" percentage='60%'/>
 
 
         <Row content={

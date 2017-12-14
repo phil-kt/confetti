@@ -7,3 +7,10 @@
 .video + .caption {
   margin-bottom: 1em;
 }
+
+.video.vertical-video {
+  max-height: 520px;
+  width: auto;
+  margin: auto;
+  display: block;
+}

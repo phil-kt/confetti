@@ -36,7 +36,7 @@ class Video extends Component {
 
     return (
       <span>
-        <video className={"video"} ref={(video) => { this._video = video; }} preload="meta" muted loop>
+        <video className={"video " + this.props.className} ref={(video) => { this._video = video; }} preload="meta" muted loop>
 
           <source src={this.props.webMsrc} type="video/webm" />
           <source src={this.props.mp4src} type="video/mp4" />

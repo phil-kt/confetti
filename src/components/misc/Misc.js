@@ -3,10 +3,10 @@ import ProjectIcon from '../project-icon/ProjectIcon';
 import './Misc.css';
 
 import hbo from '../../media/misc/icons/hbo.svg';
-import hbo_now from '../../media/misc/pics/hbo.png';
+import hbo_now from '../../media/misc/pics/hbo.jpg';
 
 import capital_one from '../../media/misc/icons/capital_one_logo.svg';
-import capone_page from '../../media/misc/pics/capitalone.png';
+import capone_page from '../../media/misc/pics/capitalone.jpg';
 
 import tachiyomi from '../../media/misc/icons/tachiyomi.svg';
 import one_punch from '../../media/misc/pics/tachi.jpg';
@@ -15,7 +15,7 @@ import design_club from '../../media/misc/icons/design_club.svg';
 import gt_design from '../../media/misc/pics/gt_design.svg';
 
 import magnet from '../../media/misc/icons/magnet.svg';
-import magnet_emoji from '../../media/misc/pics/magnet.png';
+import magnet_emoji from '../../media/misc/pics/magnet.jpg';
 
 import dribbble from '../../media/misc/icons/sherlock_dribbble.svg';
 import sherlock from '../../media/misc/pics/dribbble.png';
@@ -172,7 +172,7 @@ class Misc extends Component {
               <span>
                 <p>I worked with Professor Jay Bolter and a teammate to create an AR storybook using the lab's Argon framework.</p>
 
-                 <p>The book depicts 10 key moments in AR history, and was made using Twine and 3D models I made in Blender.</p>
+                 <p>The book depicts 10 key moments in AR history, and was made using Twine and 3D models I created in Blender.</p>
               </span>
             }
 

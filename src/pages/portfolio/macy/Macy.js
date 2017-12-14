@@ -24,10 +24,10 @@ import phone from '../../../media/macy/icons/phone.svg';
 
 //research
 import hero from '../../../media/macy/macy_hero.jpg';
-import bazaar from '../../../media/macy/research/bazaar.png';
+import bazaar from '../../../media/macy/research/bazaar.jpg';
 import annual_report from '../../../media/macy/research/annual_report.png';
-import reimplement_brand from '../../../media/macy/research/reimplement_brand.png';
-import storefront from '../../../media/macy/research/storefront.png';
+import reimplement_brand from '../../../media/macy/research/reimplement_brand.jpg';
+import storefront from '../../../media/macy/research/storefront.jpg';
 
 //insights icons
 import trend from '../../../media/macy/icons/trend.svg';
@@ -62,7 +62,7 @@ import heather_full from '../../../media/macy/personas_full/heather.png';
 import kevin_full from '../../../media/macy/personas_full/kevin.png';
 
 import current_journey from '../../../media/macy/current_journey.svg';
-import stakeholder_map from '../../../media/macy/stakeholder_map.png';
+import stakeholder_map from '../../../media/macy/stakeholder_map.jpg';
 
 //app screens
 import searching from '../../../media/macy/app/Searching.png';
@@ -73,14 +73,14 @@ import single_prod from '../../../media/macy/app/Single_Product.png';
 import suggest from '../../../media/macy/app/Suggestions_White_Dress.png';
 
 //kiosk screens
-import k_initial from '../../../media/macy/kiosk/mockup.png';
+import k_initial from '../../../media/macy/kiosk/mockup.jpg';
 
-import bar_and_style from '../../../media/macy/bar_and_style.png';
-import robots from '../../../media/macy/robots.png';
+import bar_and_style from '../../../media/macy/bar_and_style.jpg';
+import robots from '../../../media/macy/robots.jpg';
 import layout from '../../../media/macy/layout.jpg';
 import macy_journey from '../../../media/macy/macy_journey.svg';
 
-import unity from '../../../media/macy/unity.png';
+import unity from '../../../media/macy/unity.jpg';
 import presentation from '../../../media/macy/presentation.png';
 
 class Macy extends Component {
@@ -275,7 +275,7 @@ class Macy extends Component {
                     <Row className="one-margin-top" content={
                       <span className={pStyle + " video-holder"}>
                           <span className="aspect-keeper">
-                            <iframe src="https://www.youtube.com/embed/ivBOMyQble8" frameBorder="0" allowFullScreen title="Youtube video of concept" />
+                            <iframe src="https://www.youtube.com/embed/ivBOMyQble8?rel=0&amp;showinfo=0" frameBorder="0" allowFullScreen title="Youtube video of concept" />
                           </span>
                       </span>
                     }/>
@@ -289,7 +289,7 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <div
-                        className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-1 col-xl-10">
+                        className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
                         <Process
                           steps={steps}/>
                       </div>
@@ -520,8 +520,17 @@ class Macy extends Component {
 
                     <Row className="one-margin-top" content={
                       <div className={pStyle}>
-                        <img className="feature-image" src={stimulus_overload}
-                            alt="Displays and racks of shoes upon shoes with no real focus"/>
+                        <ImageZoom
+                          image={{
+                            src: stimulus_overload,
+                            alt: 'Displays and racks of shoes upon shoes with no real focus',
+                            className: 'feature-image'
+                          }}
+                          zoomImage={{
+                            src: stimulus_overload,
+                            alt: 'Displays and racks of shoes upon shoes with no real focus'
+                          }}
+                        />
                       </div>
                     }/>
 

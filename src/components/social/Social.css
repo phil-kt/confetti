@@ -31,15 +31,15 @@
 }
 
 #github svg:hover {
-  fill: #6cc644;
+  fill: #9d7bf2;
+}
+
+#medium svg:hover rect {
+  fill: #00ab6c !important;
 }
 
 #twitter svg:hover {
   fill: rgb(29, 161, 242);
-}
-
-#mail svg:hover {
-  fill: #43918E;
 }
 
 #linkedin svg:hover {

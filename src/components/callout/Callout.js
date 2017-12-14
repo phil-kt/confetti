@@ -12,7 +12,8 @@ class Callout extends Component {
     first: PropTypes.bool,
     middle: PropTypes.bool,
     delay: PropTypes.number,
-    number: PropTypes.number
+    number: PropTypes.number,
+    middleOffset: PropTypes.bool
   }
 
   static defaultProps = {
@@ -22,6 +23,7 @@ class Callout extends Component {
     description: "",
     first: false,
     middle: false,
+    middleOffset: false,
     number: 3,
     delay: 0
   }
@@ -42,9 +44,17 @@ class Callout extends Component {
       this.props.first ? (layout += " col-lg-offset-2 col-xl-offset-2") : (layout += " col-lg-offset-0 col-xl-offset-0");
     }
 
+    if(this.props.number === 5) {
+      layout = this.props.title + " callout col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2 col-xl-2";
+      this.props.first ? (layout += " col-lg-offset-1 col-xl-offset-1") : null;
+      this.props.middle ? (layout += " col-sm-offset-3 col-md-offset-0") : null;
+      this.props.middleOffset ? (layout += " col-md-offset-2") : null;
+      !this.props.first || !this.props.middle ? (layout += " col-md-offset-0 col-lg-offset-0 col-xl-offset-0") : null;
+    }
+
     return (
       <Zoom delay={this.props.delay} className={layout}>
-        <div className={"callout-image-container"}>
+        <div className={"callout-image-container " + this.props.className}>
           <img src={this.props.image} alt={this.props.altText} />
         </div>
         <h4>{this.props.title}</h4>

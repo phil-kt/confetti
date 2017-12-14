@@ -6,6 +6,10 @@
   margin: 1em auto;
 }
 
+.callout .callout-text img {
+  height: 60px;
+}
+
 .callout img {
   max-height: 75px;
   display: block;

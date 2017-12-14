@@ -65,10 +65,7 @@ class Project extends Component {
                 ]}
               >
               <Link className="project-link-container" to={this.props.link}>
-                <div className="project-blurb">
-                  <div className="bg bg-white"></div>
-                  <div className={"bg bg-gradient " + this.props.color}></div>
-                  <div className="bg bg-transition"></div>
+                <div className={"project-blurb " + this.props.color}>
                   <h2>{this.props.title}</h2>
                   <p>{this.props.description}</p>
                   <div className="bottom">

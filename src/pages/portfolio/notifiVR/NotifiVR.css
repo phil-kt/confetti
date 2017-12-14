@@ -22,25 +22,25 @@
 }
 
 .NotifiVR .nav .navbar-link:hover {
-  color: #3097B2;
+  color: #1e95ed;
 }
 
 .NotifiVR .nav .navbar-link:hover a {
-  color: #3097B2;
+  color: #1e95ed;
 }
 
 .NotifiVR .nav .navbar-link:hover svg {
-  fill: #3097B2;
+  fill: #1e95ed;
 }
 
 
 .NotifiVR b {
-  color: #3097B2;
+  color: #1e95ed;
 }
 
 
 .NotifiVR .highlight {
-  color: #3097B2;
+  color: #1e95ed;
   font-weight: bold;
 }
 
