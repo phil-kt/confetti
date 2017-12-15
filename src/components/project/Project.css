@@ -179,19 +179,20 @@
 
 @media only screen and (max-width: 575px) {
   .plx {
-    margin-top: 175px;
+    margin-top: 35vh;
+
   }
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (min-width: 576px) {
   .plx {
     margin-top: 150px;
   }
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) and (min-width: 768px) {
   .plx {
     margin-top: 100px;
   }
