@@ -7,152 +7,62 @@
   padding: .5em 1.5em;
   color: #FAFAFA;
   text-decoration: none;
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all .6s linear;
   font-weight: 500;
-  background-size: 300% 300%;
-  animation: hoverGradient 1s ease;
-  animation-play-state: paused;
-  background-position: 40% 50%;
 }
 
 .button a:hover {
-  transform: translate(0, -1px);
   cursor: pointer;
-  animation-play-state: running;
-  background-position: 0 50%;
 }
 
-.button a::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  border-radius: 26px;
-  box-shadow: 0 .25em .5em rgba(0,0,0,0.3);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.button a:hover::after {
-  opacity: 1;
-}
-
-/* Solid Button Colors */
-
-.button.blue a {
-  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
-}
-
-.button.red a {
-  background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
-}
-
-.button.green a {
-  background-image: linear-gradient(90deg, #134E5E 0%, #71B280 100%);
-}
 
 /* Outline Button Rules */
 
 .button.outline a {
   color: #696a6d;
-  background-color: #FAFAFA;
-  background-image: none;
   padding: 0;
 }
 
 .button.outline a span {
   position: relative;
-  z-index: 1;
   display: inline-block;
-  border-radius: 26px;
   padding: .3em 1.3em;
-  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background-color: #FAFAFA;
-  background-size: 200% auto;
-  background-image: linear-gradient(90deg, #696a6d 0%, #696a6d 100%);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: gradient 1.5s ease infinite;
-  animation-play-state: paused;
-}
-
-.button.outline.red a:hover span {
-  animation-play-state: running;
 }
 
 .button.outline a::before {
+  border: 2px solid #696a6d;
   border-radius: 26px;
   width: 100%;
   height:100%;
   content: '';
-  padding: 2px;
   top: -2px;
   left: -2px;
   position: absolute;
-  z-index: -1;
-  background-size: 300% 300%;
-  animation: gradient 2s infinite;
-  animation-play-state: paused;
-  background-color: #696a6d;
-  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.button.outline a:hover::before {
-  animation-play-state: running;
 }
 
 /* Outline Button Colors */
 
 .button.outline.blue a:hover span {
-  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
+  color: #1e95ed
 }
 
 .button.outline.blue a:hover::before {
-  background-image: linear-gradient(90deg, #330867 0%, #30cfd0 100%);
-
+  border-color: #1e95ed;
 }
 
 .button.outline.red a:hover span {
-  background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
+  color: #fa5858;
 }
 
 .button.outline.red a:hover::before {
-  background-image: linear-gradient(90deg, #B36FE8 0%, #EC6565 100%);
-
-}
-
-.button.outline a::after {
-  content: none;
-}
-
-.button.outline a:hover {
-  transform: none;
-  background: #FAFAFA;
+  border-color: #fa5858;
 }
 
 
-@keyframes hoverGradient {
-  0% {
-    background-position: 40% 50%
-  }
-  100% {
-    background-position: 0 50%
-  }
+.button.outline.purple a:hover span {
+  color: #9157ff;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 50% 50%
-  }
-  50% {
-    background-position: 0 50%
-  }
-  100% {
-    background-position: 50% 50%
-  }
+.button.outline.purple a:hover::before {
+  border-color: #9157ff;
 }
-

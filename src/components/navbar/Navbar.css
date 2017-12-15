@@ -75,6 +75,10 @@
   color: #7CE1EC;
 }
 
+.progress-bar.purple {
+  color: #9157ff;
+}
+
 .navbar .progress-bar {
   position: absolute;
   width: 100%;
@@ -85,11 +89,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background: rgb(97, 13, 255);
+  background: #9157ff;
 }
 
 progress::-moz-progress-bar {
-  background: rgb(97, 13, 255);
+  background: #9157ff;
 }
 
 progress.red::-webkit-progress-value {

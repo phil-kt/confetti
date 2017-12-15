@@ -11,9 +11,11 @@ import Process from '../../../components/process/Process';
 import ProjectStats from '../../../components/project-stats/ProjectStats';
 import ProjectSection from "../../../components/project-section/ProjectSection";
 import Row from '../../../components/row/Row';
-import Lightbox from '../../../components/lightbox/Lightbox';
 import Callout from '../../../components/callout/Callout';
 import Video from '../../../components/video/Video';
+
+import hero from '../../../media/alien/hero.jpg';
+import problem from '../../../media/alien/vr_input.svg';
 
 import globe from '../../../media/alien/icons/globe.svg';
 import prior_work from '../../../media/alien/icons/prior_work.svg';
@@ -25,6 +27,7 @@ import grab from '../../../media/alien/gestures/Grab.svg';
 import give from '../../../media/alien/gestures/Give.svg';
 import bow from '../../../media/alien/gestures/Bowing.svg';
 
+import storyboard from '../../../media/alien/storyboard.jpg';
 import storylines from '../../../media/alien/storylines.png';
 
 import alien from '../../../media/alien/icons/alien.svg';
@@ -36,10 +39,10 @@ import island from '../../../media/alien/icons/island.svg';
 import twelve from '../../../media/alien/icons/twelve.svg';
 
 import gesture_doodles from '../../../media/alien/gesture_doodles.jpg';
-import first_touch from '../../../media/alien/first_contact.png';
+import first_touch from '../../../media/alien/first_contact.jpg';
 import job_simulator from '../../../media/alien/job_simulator.jpg';
 import bank_robber from '../../../media/alien/bank_robber.jpg';
-import scene from '../../../media/alien/scene.png';
+import scene from '../../../media/alien/scene.jpg';
 import user_test_1 from '../../../media/alien/user_test_1.jpg';
 import user_test_2 from '../../../media/alien/user_test_2.jpg';
 
@@ -52,9 +55,12 @@ class Alien extends Component {
     super();
 
     this.state = {
-      researchOpen: false
+      researchOpen: false,
+      writingOpen: false
     };
 
+    this.collapseResearch = this.collapseResearch.bind(this);
+    this.collapseWriting = this.collapseWriting.bind(this);
   }
 
 
@@ -63,6 +69,13 @@ class Alien extends Component {
       researchOpen: !this.state.researchOpen
     })
   }
+
+  collapseWriting() {
+    this.setState({
+      writingOpen: !this.state.writingOpen
+    })
+  }
+
 
   render() {
 
@@ -96,8 +109,8 @@ class Alien extends Component {
       <div className="Alien">
         <ProjectPage
           title={"Alien Encounter"}
-          description={"An exploration of gestural communication in VR"}
-          hero={""}
+          description={"An exploration of gestural communication in VR using a Star Trek narrative"}
+          hero={hero}
           heroAlt={"Our friendly purple alien"}
           navbarColor={"purple"}
           content={
@@ -108,7 +121,17 @@ class Alien extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Communication is one of the largest difficulties in virtual reality right now. How do you talk or convey an idea to your fellow players or characters within game? Keyboard entry is cumbersome and time-consuming, and not all headsets or games support voice. This leaves one final avenue of communication: gestures. Our team explored how might we communicate with characters in a VR game using only gestures.
+                        Communication is one of the largest difficulties in virtual reality right now. How do you talk or convey an idea to your fellow players or characters within game? Keyboard entry is cumbersome and time-consuming, and not all headsets or games support voice. This leaves one final avenue of communication: gestures. <b>Our team explored how might we communicate with characters in a VR game using only gestures.</b>
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <Isvg className={pStyle} src={problem}/>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        Keyboards and voice recognition are still being worked out in VR and not appropriate for all environments
                       </p>
                     }/>
                   </span>
@@ -389,6 +412,17 @@ class Alien extends Component {
                     </div>
 
                     <Row content={
+                      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseWriting}>
+                        <Button
+                          label={this.state.writingOpen ? "Hide Writing Process" : "See Writing Process"}
+                          color={"outline purple"}
+                        />
+                      </div>
+                    }/>
+
+                    <Collapse isOpened={this.state.writingOpen}>
+
+                    <Row content={
                       <h4 className={pStyle}>Storyboard</h4>
                     }/>
 
@@ -410,13 +444,36 @@ class Alien extends Component {
                       </p>
                     }/>
 
+                     <Row className="one-margin-top" content={
+                       <div className={pStyle}>
+
+                         <ImageZoom
+                           image={{
+                             src: storyboard,
+                             alt: 'Storyboard of a visiting an alien planet for trade',
+                             className: 'feature-image'
+                           }}
+                           zoomImage={{
+                             src: storyboard,
+                             alt: 'Storyboard of a teller of a bank being robbed'
+                           }}
+                         />
+                       </div>
+                     }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        A storyboard with our final alien
+                      </p>
+                    }/>
+
                     <Row content={
                       <h4 className={pStyle}>Script</h4>
                     }/>
 
                     <Row content={
                       <p className={pStyle}>
-                        Because this game was also going to feature full voice acting for the character of Captain Janeway, we had to write out an entire script for the voice actor. This required a lot of mapping out different branches, providing appropriate prompts depending on how many attempts at the gesture had been done,
+                        Because this game was also going to feature full voice acting for the character of Captain Janeway, we had to write out an entire script for the voice actor. This required a lot of mapping out different branches to provide appropriate prompts depending on how many attempts at the gesture had been done.
                       </p>
                     }/>
 
@@ -442,6 +499,8 @@ class Alien extends Component {
                         Our Unity animation flow provides insight into all the paths we had to write
                       </p>
                     }/>
+
+                    </Collapse>
 
 
 
@@ -497,7 +556,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Since this was an alien focused game, my first instinct was to have a model that conformed to the stereotypical image of an alien: a grey suited humanoid shape with a helmet obscuring its face. A humanoid appearance was important so that a person would be primed to mimic the character due to their similar stature.
+                        Since this was an alien focused game, my first instinct was to have a model that conformed to the stereotypical image of an alien: a grey suited humanoid shape with a helmet obscuring its face. <b>A humanoid appearance was important so that a person would be primed to mimic the character due to their similar stature.</b>
                       </p>
                     }/>
 
@@ -562,7 +621,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Based on their input, we realized that our current alien was not expressive enough to elicit an emotional response and that the environment was not as engrossing to truly immerse participants into the VR world.
+                        Based on their input, we realized that our current <b>alien was not expressive enough to elicit an emotional response and that the environment was not as engrossing to truly immerse participants into the VR world.</b>
                       </p>
                     }/>
 
@@ -638,7 +697,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        One of the main complaints was our character design, our alien felt lifeless and also difficult to engage with. This was likely due the fact that our alien was helmeted and their facial features could not be seen. In order to alleviate this, I took a more animalistic approach using an alien model which more resembled a domestic dog or cat in order to make it more relatable to players, as well as being more expressive due to the addition of ears and a tail.
+                        One of the main complaints was our character design, <b>our alien felt lifeless and also difficult to engage with</b>. This was likely due the fact that our alien was helmeted and their facial features could not be seen. In order to alleviate this, I <b>took a more animalistic approach using an alien model which more resembled a domestic dog or cat in order to make it more relatable</b> to players, as well as being more expressive due to the addition of ears and a tail.
                       </p>
                     }/>
 
@@ -663,7 +722,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Despite the belief that a more muted environment would make players focus on the alien in front of them, it actually had the opposite effect. Players would quickly become disinterested in the environment, leading them to become less invested in the scenario. In order to keep them engaged in our game of interacting with an alien species, we had to find a terrain sufficiently “alien” as well.
+                        Despite the belief that a more muted environment would make players focus on the alien in front of them, it actually had the opposite effect. Players would quickly become disinterested in the environment, leading them to become less invested in the scenario. <b>In order to keep them engaged in our game of interacting with an alien species, we had to find a terrain sufficiently “alien” as well.</b>
                       </p>
                     }/>
 
@@ -706,7 +765,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        On the plus side our testers had great things to say about the alien, using words like "patient", "kind" and "friendly." They also felt that the gestural communication provided a more human touch to games, rather than the typical button press, and saw it having applications in other VR experiences, like telling a teammate "Good job!" or establishing a standard gestural language.
+                        On the plus side our testers had great things to say about the alien, using words like "patient", "kind" and "friendly." They also felt that the <b>gestural communication provided a more human touch</b> to games, rather than the typical button press, and saw it having applications in other VR experiences, like telling a teammate "Good job!" or establishing a standard gestural language.
                       </p>
                     }/>
 
@@ -790,13 +849,26 @@ class Alien extends Component {
                       <ul className={pStyle + " list"}>
                         <li>Gestures are a promising input for VR</li>
                         <li>However, current controllers need to allow higher fidelity gestures to be ubiquitous (think VR gloves)</li>
-                        <li>In addition, using gestures with no embedded semantic meaning may be easier to detect rather than ones already established in culture</li>
+                        <li>Using gestures with no embedded semantic meaning may be easier to detect rather than ones already established in culture</li>
                         <li>Emotional affect is very important to building an immersive VR experience, you cannot rely on the novelty alone</li>
                       </ul>
                     }/>
 
                   </span>
                 }/>
+
+              <ProjectSection
+                title={"Links"}
+                content={
+                  <Row content={
+                    <p className={pStyle + " links"}>
+                      <a href="https://github.com/DaBackPack/Alien-Encounter">Github</a>
+                      <a href="https://www.youtube.com/watch?v=4A_V-faElRc">Youtube</a>
+                    </p>
+                  }/>
+                }
+              />
+
             </span>
           }
         />

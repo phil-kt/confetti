@@ -17,7 +17,8 @@ class Project extends Component {
     alt: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
     percentage: PropTypes.string,
-    parallax: PropTypes.bool
+    parallax: PropTypes.bool,
+    endValue: PropTypes.number,
   }
 
   static defaultProps = {
@@ -27,7 +28,8 @@ class Project extends Component {
     image: "",
     alt: "",
     color: "",
-    parallax: true
+    parallax: true,
+    endValue: -100
   }
 
   render() {
@@ -35,23 +37,24 @@ class Project extends Component {
     return (
       <div className={this.props.title + " Project"}>
         <div className="row">
-          <div className="col-xs-12 col-sm-10 col-md-8 col-lg-offset-2 col-lg-6">
+          <div className="col-xs-12 col-sm-10 col-md-10 col-lg-offset-0 col-lg-8 col-xl-offset-1 col-xl-7">
             <img className="project-image" src={this.props.image} alt={this.props.alt}/>
           </div>
         </div>
         <div className="row">
-          <div className="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-7 col-lg-offset-5 col-lg-5 ">
+          <div className="col-xs-12 col-sm-offset-2 col-sm-10 col-md-offset-4 col-md-8 col-lg-offset-6 col-lg-6 col-xl-5">
             {this.props.parallax ?
               <Plx
                 className="plx"
+                animateWhenNotInViewport={true}
                 parallaxData={[
                   {
                     start: this.props.percentage,
-                    duration: this.props.parallax ? '10%' : "0%",
+                    duration: this.props.parallax ? '9%' : "0%",
                     properties: [
                       {
                         startValue: 0,
-                        endValue: -100,
+                        endValue: this.props.endValue,
                         property: 'translateY',
                         unit: "px"
                       },
@@ -83,9 +86,6 @@ class Project extends Component {
 
               <Link className="project-link-container" to={this.props.link}>
                 <div className="project-blurb">
-                  <div className="bg bg-white"></div>
-                  <div className={"bg bg-gradient " + this.props.color}></div>
-                  <div className="bg bg-transition"></div>
                   <h2>{this.props.title}</h2>
                   <p>{this.props.description}</p>
                   <div className="bottom">

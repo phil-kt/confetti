@@ -31,3 +31,6 @@
   fill: #fa5858;
 }
 
+.Macy p a::after {
+  background: rgba(250, 88, 88, 0.565);
+}

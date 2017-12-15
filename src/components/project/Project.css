@@ -53,6 +53,10 @@
   background-color: #fa5858;
 }
 
+.project-blurb.purple:hover {
+  background-color: #9157ff;
+}
+
 /* Gradient background code */
 
 
@@ -162,8 +166,33 @@
 }
 
 
+.project-blurb .purple a {
+  color: #9157ff;
+}
+
+.project-blurb .purple .next-arrow svg {
+  fill: #9157ff;
+}
+
+
+
+
 @media only screen and (max-width: 575px) {
   .plx {
     margin-top: 175px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .plx {
+    margin-top: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .plx {
+    margin-top: 100px;
   }
 }

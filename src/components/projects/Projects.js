@@ -1,5 +1,6 @@
 import notifiVRImage from '../../media/home/vr.jpg';
 import macyImage from '../../media/home/clock.jpg';
+import alienImage from '../../media/home/alien.jpg';
 
 class Projects {
 
@@ -11,6 +12,14 @@ class Projects {
       link: "/notifivr",
       alt: "Person picking up a VR telephone to answer a real life call",
       color: "blue"
+    },
+    {
+      name: "Alien Encounter",
+      description: "Exploring the role of diegetic gestural communication in  virtual reality experiences.",
+      image: alienImage,
+      link: "/alien",
+      alt: "Blue digital hand waving hello to purple alien",
+      color: "purple"
     },
     {
       name: "Macy’s of the Future",
