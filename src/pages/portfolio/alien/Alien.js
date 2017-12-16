@@ -14,21 +14,21 @@ import Row from '../../../components/row/Row';
 import Callout from '../../../components/callout/Callout';
 import Video from '../../../components/video/Video';
 
+// Props for ProjectPage
+
 import hero from '../../../media/alien/hero.jpg';
 import problem from '../../../media/alien/vr_input.svg';
 
+// Icons
+
 import globe from '../../../media/alien/icons/globe.svg';
 import prior_work from '../../../media/alien/icons/prior_work.svg';
-
 
 import wave from '../../../media/alien/gestures/Wave.svg';
 import point from '../../../media/alien/gestures/Point.svg';
 import grab from '../../../media/alien/gestures/Grab.svg';
 import give from '../../../media/alien/gestures/Give.svg';
 import bow from '../../../media/alien/gestures/Bowing.svg';
-
-import storyboard from '../../../media/alien/storyboard.jpg';
-import storylines from '../../../media/alien/storylines.png';
 
 import alien from '../../../media/alien/icons/alien.svg';
 import terrain from '../../../media/alien/icons/terrain.svg';
@@ -38,6 +38,10 @@ import gremlynx from '../../../media/alien/icons/gremlynx.svg';
 import island from '../../../media/alien/icons/island.svg';
 import twelve from '../../../media/alien/icons/twelve.svg';
 
+// Images
+
+import storyboard from '../../../media/alien/storyboard.jpg';
+import storylines from '../../../media/alien/storylines.png';
 import gesture_doodles from '../../../media/alien/gesture_doodles.jpg';
 import first_touch from '../../../media/alien/first_contact.jpg';
 import job_simulator from '../../../media/alien/job_simulator.jpg';
@@ -46,8 +50,25 @@ import scene from '../../../media/alien/scene.jpg';
 import user_test_1 from '../../../media/alien/user_test_1.jpg';
 import user_test_2 from '../../../media/alien/user_test_2.jpg';
 
-import wave_webm from '../../../media/alien/wave.webm';
-import wave_mp4 from '../../../media/alien/wave.mp4';
+// Videos
+
+import wave_webm from '../../../media/alien/videos/wave/wave.webm';
+import wave_mp4 from '../../../media/alien/videos/wave/wave.mp4';
+
+import point_webm from '../../../media/alien/videos/point/point.webm';
+import point_mp4 from '../../../media/alien/videos/point/point.mp4';
+
+import grab_webm from '../../../media/alien/videos/grab/grab.webm';
+import grab_mp4 from '../../../media/alien/videos/grab/grab.mp4';
+
+import give_webm from '../../../media/alien/videos/give/give.webm';
+import give_mp4 from '../../../media/alien/videos/give/give.mp4';
+
+import bow_webm from '../../../media/alien/videos/bow/bow.webm';
+import bow_mp4 from '../../../media/alien/videos/bow/bow.mp4';
+
+import visitor_wave_webm from '../../../media/alien/visitor_wave.webm';
+import visitor_wave_mp4 from '../../../media/alien/visitor_wave.mp4';
 
 class Alien extends Component {
 
@@ -563,7 +584,7 @@ class Alien extends Component {
                     <Row content={
                       <p className={pStyle}>
                         <div className="aspect-keeper">
-                          <iframe width="640" height="480" src="https://sketchfab.com/models/602051ff61fe429e800c66da4f6d0318/embed?camera=0" frameBorder={0} allowFullScreen={true} title={"Our first alien character"}></iframe>
+                          <iframe width="640" height="480" src="https://sketchfab.com/models/602051ff61fe429e800c66da4f6d0318/embed?camera=0" frameBorder={0} allowFullScreen={true} title={"Our first alien character"} />
                         </div>
                       </p>
                     }/>
@@ -615,7 +636,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={quoteStyle}>
-                        “There's not much here is there?”
+                        “There’s not much here is there?”
                       </p>
                     }/>
 
@@ -704,7 +725,7 @@ class Alien extends Component {
                     <Row content={
                       <p className={pStyle}>
                         <div className="aspect-keeper">
-                          <iframe width="640" height="480" src="https://sketchfab.com/models/f321f28f6a224ecfba50ea4d33e4a6ba/embed" frameBorder={0} allowFullScreen={true} title={"Gremlynx"}></iframe>
+                          <iframe width="640" height="480" src="https://sketchfab.com/models/f321f28f6a224ecfba50ea4d33e4a6ba/embed" frameBorder={0} allowFullScreen={true} title={"Gremlynx"} />
                         </div>
                       </p>
                     }/>
@@ -762,10 +783,9 @@ class Alien extends Component {
                         “By using gesture you add another level of sentiment...a more of a human touch.”
                       </p>
                     }/>
-
                     <Row content={
                       <p className={pStyle}>
-                        On the plus side our testers had great things to say about the alien, using words like "patient", "kind" and "friendly." They also felt that the <b>gestural communication provided a more human touch</b> to games, rather than the typical button press, and saw it having applications in other VR experiences, like telling a teammate "Good job!" or establishing a standard gestural language.
+                        On the plus side our testers had great things to say about the alien, using words like “patient”, “kind” and “friendly”. They also felt that the <b>gestural communication provided a more human touch</b> to games, rather than the typical button press, and saw it having applications in other VR experiences, like telling a teammate "Good job!" or establishing a standard gestural language.
                       </p>
                     }/>
 
@@ -804,7 +824,98 @@ class Alien extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        We took the last user testing feedback, which mostly involved polishing up the code and fine tuning some animations, to create the final version of the game. We then hosted one final demo day to share out our work with various GT students and Atlanta VR professionals.
+                        We took the second user testing feedback to create the final version of the game. Key changes included:
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <ul className={pStyle + " list"}>
+                        <li>Improving the fidelity of the fruit to make it stand out more</li>
+                        <li>Beaming down the transponder to improve the pacing and give the player more agency</li>
+                        <li>Finishing out being teleported from the ship to provide better context</li>
+                      </ul>
+
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        Here is a look at how the final game turned out:
+                      </p>
+                    }/>
+
+                    <Row className="one-margin-top" content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              webMsrc={wave_webm}
+                              mp4src={wave_mp4}
+                              caption={"Saying hello to the alien"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row className="one-margin-top" content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              webMsrc={point_webm}
+                              mp4src={point_mp4}
+                              caption={"Pointing to the fruit you want"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row className="one-margin-top" content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              webMsrc={grab_webm}
+                              mp4src={grab_mp4}
+                              caption={"Grabbing the fruit from their hand"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row className="one-margin-top" content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              webMsrc={give_webm}
+                              mp4src={give_mp4}
+                              caption={"Giving the transponder"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row className="one-margin-top" content={
+                      <VisibilitySensor>
+                        {({isVisible}) =>
+                          <div className={pStyle}>
+                            <Video
+                              autoplay={isVisible}
+                              webMsrc={bow_webm}
+                              mp4src={bow_mp4}
+                              caption={"Bowing goodbye"}/>
+                          </div>
+                        }
+                      </VisibilitySensor>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        There was also a final demo day, where VR professionals, students and faculty came by and tried out our environments. Here is a video taken of someone playing at the event:
                       </p>
                     }/>
 
@@ -815,8 +926,8 @@ class Alien extends Component {
                           <div className={pStyle}>
                             <Video
                               autoplay={isVisible}
-                              webMsrc={wave_webm}
-                              mp4src={wave_mp4}
+                              webMsrc={visitor_wave_webm}
+                              mp4src={visitor_wave_mp4}
                               className={"vertical-video"}
                               caption={"A visitor joyously waving at our demo"}/>
                           </div>
