@@ -316,7 +316,7 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Our research began by both visiting Macy's stores and reading as many documents as we could relating to either Macy's or retail in general. We also had several calls with Macy's employees to talk about our findings and also learn about the internal workings of the company.
+                        Our research began by both visiting Macy's stores and reading as many documents as we could relating to either Macy's or retail in general. We also had several calls with Macy's employees to talk about our findings and also learn about the internal workings of the company. One of the toughest restrictions was that <b>we weren't allowed to interview customers at all.</b>
                       </p>
                     }/>
 

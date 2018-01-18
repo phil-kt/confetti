@@ -36,7 +36,7 @@ class Process extends Component {
                     />
                   </div>
                   <li key={index} className="step-details">
-                    <h4 className="step-header">{step.title}</h4>
+                    <h5 className="step-header">{step.title}</h5>
                     <ul className="step-info">
                     {(step.processes).map(function (process, index){
                       return <li key={step.title + "desc" + index}>{process}</li>

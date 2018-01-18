@@ -21,7 +21,7 @@ class ProjectStats extends Component {
     return (
       <div className="row stats">
         <div className="col-xs-4 col-sm-4 col-md-offset-1 col-md-3 col-lg-offset-2dot5 col-lg-2dot3 col-xl-offset-3 col-xl-2">
-          <h4>Team</h4>
+          <h5>Team</h5>
           <ul>
             {(this.props.team).map(function (teammate, index){
               return (
@@ -32,12 +32,12 @@ class ProjectStats extends Component {
         </div>
 
         <div className="col-xs-4 col-sm-4 col-md-3 col-lg-2dot3 col-xl-2">
-          <h4>Time Frame</h4>
+          <h5>Time Frame</h5>
           <ul><li>{this.props.time}</li></ul>
         </div>
 
         <div className="col-xs-4 col-sm-4 col-md-3 col-lg-2dot3 col-xl-2">
-          <h4>My Role</h4>
+          <h5>My Role</h5>
           <ul>
             {(this.props.responsibilities).map(function (role, index){
               return (

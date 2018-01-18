@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch, Redirect} from 'react-router-dom';
 import ReactGA from 'react-ga';
 import createHistory from 'history/createBrowserHistory';
 
@@ -10,6 +9,8 @@ import App from './App.js';
 import NotifiVR from './pages/portfolio/notifiVR/NotifiVR';
 import Alien from './pages/portfolio/alien/Alien';
 import Macy from './pages/portfolio/macy/Macy';
+import Tachiyomi from './pages/portfolio/tachiyomi/Tachiyomi';
+import PageNotFound from "./pages/404/404";
 
 const history = createHistory();
 let pastURL = "";
@@ -46,8 +47,11 @@ ReactDOM.render((
         <Route path='/notifivr' component={NotifiVR}/>
         <Route path='/alien' component={Alien}/>
         <Route path='/macys' component={Macy}/>
+        <Route path='/tachiyomi' component={Tachiyomi}/>
+        <Redirect path='/philippe_kimura-thollander_resume.pdf' />
+        <Route path='*' exact={true} component={PageNotFound} />
       </Switch>
     </TrackPageView>
   </Router>)
   , document.getElementById('root'));
-registerServiceWorker();
+

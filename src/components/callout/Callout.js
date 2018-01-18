@@ -32,6 +32,14 @@ class Callout extends Component {
 
     let layout = "";
 
+
+    if(this.props.number === 2) {
+      layout = this.props.title + " callout col-xs-offset-2 col-xs-8 col-sm-4 col-md-4 col-lg-3 col-xl-3";
+      this.props.first ? (layout += "col-sm-offset-2 col-md-offset-2 col-lg-offset-3 col-xl-offset-3") : (layout += " col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-xl-offset-0");
+    }
+
+
+
     if(this.props.number === 3) {
       layout = this.props.title + " callout col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3 col-xl-3";
       this.props.first ? (layout += " col-lg-offset-1dot5 col-xl-offset-1dot5") : null;
@@ -57,7 +65,7 @@ class Callout extends Component {
         <div className={"callout-image-container " + this.props.className}>
           <img src={this.props.image} alt={this.props.altText} />
         </div>
-        <h4>{this.props.title}</h4>
+        <h5>{this.props.title}</h5>
         <p>
           {this.props.description}
         </p>

@@ -1,0 +1,12 @@
+.Tachiyomi .project-section .feature-image.tachiyomi-preview {
+  box-shadow: none;
+}
+
+.Tachiyomi .project-section .inline-svg {
+  display: inline-flex;
+}
+
+
+.Tachiyomi .project-section .inline-svg svg {
+  height: 15px;
+}

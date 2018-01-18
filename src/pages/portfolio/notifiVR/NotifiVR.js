@@ -243,6 +243,12 @@ class NotifiVR extends Component {
                 content={
                   <span>
                     <Row content={
+                      <p className={pStyle}>
+                        Coming into this project, some work had been done previously by the Master's student whose thesis this was, primarily in the form of a survey he had distributed. We picked up from there, helping him along to the final prototype.
+                      </p>
+                    }/>
+
+                    <Row content={
                       <div
                         className="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
                         <Process
@@ -609,7 +615,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        After brainstorming, we ended up with <b>four different notifications types</b> we wanted to pursue for this part of the project, which were all aimed at conveying the status of digital notifications you’d received.
+                        After brainstorming, we ended up with <b>four different notifications types</b> we wanted to pursue for this part of the project, which were all aimed at conveying the status of digital notifications you’d received. Unfortunately <b>we had to abandon the physical situations</b> due to the time it would take to integrate a Kinect into the project.
                       </p>
                     }/>
 

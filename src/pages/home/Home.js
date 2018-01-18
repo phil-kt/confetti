@@ -9,6 +9,9 @@ import Footer from '../../components/footer/Footer';
 import notifi from '../../media/home/vr.jpg';
 import macy from '../../media/home/clock.jpg';
 import alien from '../../media/home/alien.jpg';
+import tachi from '../../media/home/tachi.jpg';
+
+import resume from '../../files/philippe_kimura-thollander_resume.pdf';
 
 class Home extends Component {
 
@@ -22,10 +25,6 @@ class Home extends Component {
     let year = date.getUTCFullYear();
 
     let localTime = date.toLocaleTimeString();
-
-    console.log(localTime);
-    console.log(parseInt(localTime.split(":")[0]));
-    console.log(localTime.split(" ")[0][1] === ":");
 
     if(localTime.includes("AM")){
       this.state = {
@@ -73,21 +72,21 @@ class Home extends Component {
                 Currently I'm wrapping up my Master's degree at Georgia Tech's HCI program and searching for opportunities starting Summer 2018 and beyond.
               </p>
               <p>
-                Scroll down to see some highlighted projects, or get an overall sense by <a
-                href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank">reading my
-                resume.</a>
+                Scroll down to see some highlighted projects, or get an overall sense by <a href={resume} target="_blank">reading my resume.</a>
               </p>
             </div>
           }/>
 
         </div>
 
-        <Project title="NotifiVR" description="Notifications designed to inform you about the real world when you’re inside a virtual reality environment." image={notifi} link="/notifivr" alt="Person picking up a VR telephone to answer a real life call" color="blue" percentage='10%'/>
+        <Project title="NotifiVR" description="Notifications designed to inform you about the real world when you’re inside a virtual reality environment." image={notifi} link="/notifivr" alt="Person picking up a VR telephone to answer a real life call" color="blue" percentage='8%'/>
 
-        <Project title="Alien Encounter" description="Exploring the role of diegetic gestural communication in  virtual reality experiences." image={alien} link="/alien" alt="Blue digital hand waving hello to purple alien" color="purple" percentage='36%'/>
+        <Project title="Tachiyomi" description="The most popular open-source app for reading manga on Android." image={tachi} link="/tachiyomi" alt="Blue digital hand waving hello to purple alien" color="blue" percentage='28%'/>
+
+        <Project title="Alien Encounter" description="An exploration in the role of diegetic gestural communication plays in virtual reality experiences." image={alien} link="/alien" alt="Blue digital hand waving hello to purple alien" color="purple" percentage='48%'/>
 
 
-        <Project title="Macy’s of the Future" description="Service design project with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red" percentage='58%'/>
+        <Project title="Macy’s of the Future" description="Service design project with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red" percentage='68%'/>
 
 
         <Row content={
