@@ -99,10 +99,6 @@ class Project extends Component {
                   </div>
                 </div>
               </Link>
-
-
-
-
             }
           </div>
         </div>

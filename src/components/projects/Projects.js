@@ -1,6 +1,7 @@
 import notifiVRImage from '../../media/home/vr.jpg';
 import macyImage from '../../media/home/clock.jpg';
 import alienImage from '../../media/home/alien.jpg';
+import tachiImage from '../../media/home/tachi.jpg';
 
 class Projects {
 
@@ -11,6 +12,14 @@ class Projects {
       image: notifiVRImage,
       link: "/notifivr",
       alt: "Person picking up a VR telephone to answer a real life call",
+      color: "blue"
+    },
+    {
+      name: "Tachiyomi",
+      description: "The most popular open-source app for reading manga on Android..",
+      image: tachiImage,
+      link: "/tachiyomi",
+      alt: "Sitting on a couch with an app with several manga covers",
       color: "blue"
     },
     {

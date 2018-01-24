@@ -40,7 +40,10 @@
   margin-top: -10em;
   transition: all .6s ease;
   position: relative;
+}
 
+.project-blurb.green:hover {
+  background-color: #0BAB28;
 }
 
 
@@ -147,6 +150,14 @@
 
 .bottom .next-arrow svg {
   transition: all .6s ease;
+}
+
+.project-blurb .next.green a {
+  color: #12a42d;
+}
+
+.project-blurb .green .next-arrow svg {
+  fill: #12a42d;
 }
 
 .project-blurb .next.blue a {

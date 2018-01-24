@@ -1,10 +1,10 @@
 {
   "name": "confetti",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "http://linkcable.github.io",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.1.0"
+    "react-scripts": "^1.1.0"
   },
   "dependencies": {
     "flexboxgrid2": "^7.0.0-alpha7",

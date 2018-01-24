@@ -10,3 +10,32 @@
 .Tachiyomi .project-section .inline-svg svg {
   height: 15px;
 }
+
+.Tachiyomi .project-section .acclaim {
+  box-shadow: none;
+}
+
+.Tachiyomi .nav .navbar-link:hover {
+  color: #1e95ed;
+}
+
+.Tachiyomi .nav .navbar-link:hover a {
+  color: #1e95ed;
+}
+
+.Tachiyomi .nav .navbar-link:hover svg {
+  fill: #1e95ed;
+}
+
+.Tachiyomi b {
+  color: #1e95ed;
+}
+
+.Tachiyomi .highlight {
+  color: #1e95ed;
+  font-weight: bold;
+}
+
+.Tachiyomi p a::after {
+  background: rgba(30, 149, 237, 0.565);
+}

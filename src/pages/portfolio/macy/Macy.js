@@ -1166,7 +1166,7 @@ class Macy extends Component {
                       <a href="http://macys.philkt.me">Unity Demo</a>
                       <br />
                       <a href="http://philkt.me/files/macy/macys_presentation.pdf">Presentation Deck</a>
-                      <a href="http://philkt.me/files/macy/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >Presentation Document</a>
+                      <a href="http://philkt.me/files/macy/macys_doc.pdf">Presentation Document</a>
                     </p>
                   }/>
                 }

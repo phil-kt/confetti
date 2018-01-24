@@ -50,6 +50,15 @@
   border-color: #1e95ed;
 }
 
+
+.button.outline.green a:hover span {
+  color: #12a42d
+}
+
+.button.outline.green a:hover::before {
+  border-color: #12a42d;
+}
+
 .button.outline.red a:hover span {
   color: #fa5858;
 }

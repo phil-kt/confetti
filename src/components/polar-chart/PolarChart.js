@@ -35,7 +35,7 @@ class PolarChart extends Component {
           <VictoryArea
             data={this.props.data}
             style={{
-              data: { fill: "#1e95ed" },
+              data: { fill: "#12a42d" },
             }}
           />
 

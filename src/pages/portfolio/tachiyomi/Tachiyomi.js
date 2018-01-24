@@ -14,11 +14,10 @@ import Row from '../../../components/row/Row';
 import Callout from '../../../components/callout/Callout';
 import Video from '../../../components/video/Video';
 
-import hero from '../../../media/notifiVR/hero.jpg';
+import hero from '../../../media/tachiyomi/hero.jpg';
 
 import app_screens from '../../../media/tachiyomi/app-screens.png';
 import problem from '../../../media/tachiyomi/google.png';
-
 
 // Research assets
 import online_comments from '../../../media/tachiyomi/icons/comments.svg';
@@ -64,7 +63,23 @@ import github_issues from '../../../media/tachiyomi/icons/github-issues.svg';
 import ux_audit from '../../../media/tachiyomi/ux_audit.jpg';
 import github_discussion from '../../../media/tachiyomi/github-discussion.png';
 
+// Discuss assets
+import technical from '../../../media/tachiyomi/icons/technical.svg';
+import use_case from '../../../media/tachiyomi/icons/use-case.svg';
+import tech_1 from '../../../media/tachiyomi/tech-1.png';
+import tech_2 from '../../../media/tachiyomi/tech-2.png';
+import use_case_1 from '../../../media/tachiyomi/use-case-1.png';
+import use_case_2 from '../../../media/tachiyomi/use-case-2.png';
 
+// Deploy assets
+import pull_request from '../../../media/tachiyomi/icons/pull_request.svg';
+import visual from '../../../media/tachiyomi/icons/visual_qa.svg';
+import github_1 from '../../../media/tachiyomi/github-1.png';
+import github_2 from '../../../media/tachiyomi/github-2.png';
+import github_3 from '../../../media/tachiyomi/github-3.png';
+import github_4 from '../../../media/tachiyomi/github-4.png';
+
+import acclaim from '../../../media/tachiyomi/social-proof/acclaim.png';
 
 class Tachiyomi extends Component {
 
@@ -73,12 +88,15 @@ class Tachiyomi extends Component {
 
     this.state = {
       researchOpen: false,
-      presentOpen: false
+      presentOpen: false,
+      discussOpen: false,
+      deployOpen: false,
     }
 
     this.collapseResearch = this.collapseResearch.bind(this);
     this.collapsePresent = this.collapsePresent.bind(this);
-
+    this.collapseDiscuss = this.collapseDiscuss.bind(this);
+    this.collapseDeploy = this.collapseDeploy.bind(this);
   }
 
   collapseResearch() {
@@ -90,6 +108,18 @@ class Tachiyomi extends Component {
   collapsePresent() {
     this.setState({
       presentOpen: !this.state.presentOpen
+    })
+  }
+
+  collapseDiscuss() {
+    this.setState({
+      discussOpen: !this.state.discussOpen
+    })
+  }
+
+  collapseDeploy() {
+    this.setState({
+      deployOpen: !this.state.deployOpen
     })
   }
 
@@ -128,7 +158,7 @@ class Tachiyomi extends Component {
       <div className="Tachiyomi">
         <ProjectPage
           title={"Tachiyomi"}
-          hero={null}
+          hero={hero}
           heroAlt={"User testing of a person testing the Vive VR headset."}
           description={"Creating the UX of the most popular open-source manga reading app"}
           navbarColor={"blue"}
@@ -252,7 +282,7 @@ class Tachiyomi extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Research for an ongoing open-source project, especially with a narrow niche like manga, can be difficult at times. Thankfully Tachiyomi is a decently popular app, so there are plenty of Github issues and online comments to reference when designing new features or finding out what's confusing to users. Evaluating it with my own design skills helps, and I luckily also had some classmates who read manga and had never used the app that I could user test on.
+                        Research for an ongoing open-source project, especially with a narrow niche like manga, can be difficult at times. Thankfully Tachiyomi is a decently popular app, so there are plenty of Github issues and online comments to reference when designing new features or finding out what's confusing to users. Evaluating it with my own design skills helps, and I luckily also had some classmates who read manga and had never used the app whom I could user test on.
                       </p>
                     }/>
 
@@ -304,7 +334,7 @@ class Tachiyomi extends Component {
                       </p>
                     }/>
 
-                    <Row content={
+                    <Row className={"one-margin-top"} content={
                       <div className={pStyle} >
                         <img className={"feature-image"} src={how_to_install} alt={"Sorry, I'm a real noob at this kind of stuff, but what do I download from the Github page? Do I just click the apk? Thanks again!"}/>
                       </div>
@@ -616,7 +646,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        By adding specific Download and FAQ features the average person who's never used Github can quickly see where to go to get the app, and by also adding images they can get a sense of the app's look and feel to decide whether they actually want to use it.
+                        By adding explicit Download and FAQ sections the average person who's never used Github can quickly see where to get the app, and by including images they can get a sense of the app's look and feel to decide whether they actually want to try it.
                       </p>
                     }/>
 
@@ -671,7 +701,7 @@ class Tachiyomi extends Component {
 
                             <Callout
                               image={github_issues}
-                              altText={"exclamation mark in cirlce"}
+                              altText={"exclamation mark in circle"}
                               title={"Github Issues"}
                               description={"To inform the community of changes and for feedback"}
                               delay={150}
@@ -753,7 +783,299 @@ class Tachiyomi extends Component {
                             </p>
                           }/>
 
+
+                          <div className="row callouts">
+                            <Callout
+                              image={technical}
+                              altText={"wrench"}
+                              title={"Technical Challenges"}
+                              description={"Addressed what makes implementation hard"}
+                              first={true}
+                              delay={0}
+                              number={2}
+                            />
+
+                            <Callout
+                              image={use_case}
+                              altText={"person with multiple choices"}
+                              title={"Use Cases"}
+                              description={"Decided on how it fits it with existing work flows"}
+                              delay={150}
+                              number={2}
+                            />
+                          </div>
+
+                          <Row content={
+                            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseDiscuss}>
+                              <Button
+                                label={this.state.researchOpen ? "Hide Discussion Process" : "See Discussion Process"}
+                                color={"outline blue"}
+                              />
+                            </div>
+                          }/>
+
+                          <Collapse isOpened={this.state.discussOpen}>
+
+                          <Row content={
+                            <h4 className={pStyle}>Technical Challenges</h4>
+                          }/>
+
+                          <Row content={
+                            <p className={pStyle}>
+                              As with any proposed design changes, there will always be technical limitations to consider for implementation. Thankfully most of my proposed designs had no evident problems, but some hit a couple roadblocks.
+                            </p>
+                          }/>
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={pStyle} >
+                              <img className={"feature-image"} src={tech_1} alt={"A proposed filter view is a little touch"}/>
+                            </div>
+                          }/>
+
+                          <Row content={
+                            <p className={"caption " + pStyle}>
+                              UIs get complicated under the hood
+                            </p>
+                          }/>
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={pStyle} >
+                              <img className={"feature-image"} src={tech_2} alt={"One API does not return images"}/>
+                            </div>
+                          }/>
+
+                          <Row content={
+                            <p className={"caption " + pStyle}>
+                              APIs not giving data you want is always a pain
+                            </p>
+                          }/>
+
+                          <Row content={
+                            <p className={pStyle}>
+                              However, with some refactoring and a clever use of a Search API instead of a direct lookup API, we were able to get everything working.
+                            </p>
+                          }/>
+
+                          <Row content={
+                            <h4 className={pStyle}>Use Cases</h4>
+                          }/>
+
+                          <Row content={
+                            <p className={pStyle}>
+                              Another important thing to consider were whether all these designs were warranted and fit the wide variety of how people use the app.
+                            </p>
+                          }/>
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={pStyle} >
+                              <img className={"feature-image"} src={use_case_1} alt={"One developer uses our default category as an All category, while some delete it entirely"}/>
+                            </div>
+                          }/>
+
+                          <Row content={
+                            <p className={"caption " + pStyle}>
+                              Discussing whether to change our Default category to an All category displaying all manga
+                            </p>
+                          }/>
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={pStyle} >
+                              <img className={"feature-image"} src={use_case_2} alt={"User wants to move genres into a table view, but would reduce clickability"}/>
+                            </div>
+                          }/>
+
+                          <Row content={
+                            <p className={"caption " + pStyle}>
+                              Debate regarding a proposed change regarding how we position a manga's genres
+                            </p>
+                          }/>
+
+                          <Row content={
+                            <p className={pStyle}>
+                              Working together usually the designs I come up with are accepted due to the reasoning behind them, but I also cooperate with developers and users to determine what's the best approach for Tachiyomi.
+                            </p>
+                          }/>
+                          </Collapse>
+
+
                         </span>
+                      }
+                    />
+
+
+                    <ProjectSection
+                      title={"Deploy"}
+                      content={
+                        <span>
+                          <Row content={
+                            <p className={pStyle}>
+                              Once discussion has finished, developers code up the features, and I ensure that PRs are addressed in a timely manner and that they accurately reflect my designs.
+                            </p>
+                          }/>
+
+                          <div className="row callouts">
+                            <Callout
+                              image={pull_request}
+                              altText={"pull request logo"}
+                              title={"Pull Requests"}
+                              description={"Realizing the designs and mockups as actual code"}
+                              first={true}
+                              delay={0}
+                              number={2}
+                            />
+
+                            <Callout
+                              image={visual}
+                              altText={"eye"}
+                              title={"Visual QA"}
+                              description={"Comparing implementation and designs to ensure quality"}
+                              delay={150}
+                              number={2}
+                            />
+                          </div>
+
+                          <Row content={
+                            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseDeploy}>
+                              <Button
+                                label={this.state.deployOpen ? "Hide Deploy Process" : "See Deploy Process"}
+                                color={"outline blue"}
+                              />
+                            </div>
+                          }/>
+
+                          <Collapse isOpened={this.state.deployOpen}>
+
+                          <Row content={
+                            <h4 className={pStyle}>Pull Requests</h4>
+                          }/>
+
+                          <Row content={
+                            <p className={pStyle}>
+                              The most vital part of this process is to ensure that my designs actually get deployed. Thankfully Tachiyomi's developers value my input in making the UX of the app better and are willing to dive into Android Studio to turn my ideas into real code.
+                            </p>
+                          }/>
+
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8"}>
+                               <img className={"feature-image"} src={github_4} alt={"Pull request addressing my designs"}/>
+                            </div>
+                          }/>
+
+                           <Row content={
+                             <p className={"caption " + pStyle}>
+                               CarlosEsco volunteered to code up my designs
+                             </p>
+                           }/>
+
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8"}>
+                              <img className={"feature-image"} src={github_1} alt={"Pull request with 68 comments"}/>
+                            </div>
+                          }/>
+
+                          <Row content={
+                            <p className={"caption " + pStyle}>
+                              Some PRs can generate a lot of back and forth
+                            </p>
+                          }/>
+
+                          <Row content={
+                            <h4 className={pStyle}>Visual QA</h4>
+                          }/>
+
+                          <Row content={
+                            <p className={pStyle}>
+                              I always appreciate when developers are willing to code up my designs, but it's important that I review them before they are merged in so that they accurately reflect my intent.
+                            </p>
+                          }/>
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={pStyle}>
+                              <ImageZoom
+                                image={{
+                                  src: github_3,
+                                  alt: 'Removing manga from toast message',
+                                  className: 'feature-image'
+                                }}
+                                zoomImage={{
+                                  src: github_3,
+                                  alt: 'Removing manga from toast message'
+                                }}
+                              />
+                            </div>
+                          }/>
+
+                          <Row content={
+                            <p className={"caption " + pStyle}>
+                              Making sure the content is right
+                            </p>
+                          }/>
+
+                          <Row className={"one-margin-top"} content={
+                            <div className={pStyle}>
+                              <ImageZoom
+                                image={{
+                                  src: github_2,
+                                  alt: 'Discussion of pixel size of icon',
+                                  className: 'feature-image'
+                                }}
+                                zoomImage={{
+                                  src: github_2,
+                                  alt: 'Discussion of pixel size of icon'
+                                }}
+                              />
+                            </div>
+                          }/>
+
+                          <Row content={
+                            <p className={"caption " + pStyle}>
+                              Diving into the pixel details
+                            </p>
+                          }/>
+
+                          </Collapse>
+                        </span>
+                      }
+                    />
+
+                    <ProjectSection
+                      title={"Conclusion"}
+                      content={
+                        <span>
+                          <Row content={
+                            <p className={pStyle}>
+                              Working on open source is super rewarding, because you help contribute to the tech community as a whole and can engage directly with your users. We're always striving to make Tachiyomi the best app it can be, so it can provide the best experience to everyone who uses it.
+                            </p>
+                          }/>
+
+                           <Row className={"one-margin-top"} content={
+                             <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"}>
+                               <img className='feature-image acclaim' src={acclaim} alt='Removing manga from toast message' />
+                             </div>
+                           }/>
+
+                           <Row content={
+                             <p className={"caption " + pStyle}>
+                               In the end it's all for the fans 😄
+                             </p>
+                           }/>
+
+
+                        </span>
+                      }
+                    />
+
+                    <ProjectSection
+                      title={"Links"}
+                      content={
+                        <Row content={
+                          <p className={pStyle + " links"}>
+                            <a href="https://github.com/inorichi/tachiyomi">Github</a>
+                            <a href="https://files.philkt.me/tachiyomi/ux_audit.pdf">Presentation</a>
+                          </p>
+                        }/>
                       }
                     />
 

@@ -183,7 +183,7 @@ class NotifiVR extends Component {
           hero={hero}
           heroAlt={"User testing of a person testing the Vive VR headset."}
           description={"Receive notifications in VR through virtual phones, smart watches, and popups"}
-          navbarColor={"blue"}
+          navbarColor={"green"}
           content={
             <span>
               <ProjectSection
@@ -312,7 +312,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResearch}>
                         <Button
                           label={this.state.researchOpen ? "Hide Research Process" : "See Research Process"}
-                          color={"outline blue"}
+                          color={"outline green"}
                         />
                       </div>
                     }/>
@@ -463,7 +463,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseInsights}>
                         <Button
                           label={this.state.insightsOpen ? "Hide Detailed Insights" : "See Detailed Insights"}
-                          color={"outline blue"}
+                          color={"outline green"}
                         />
                       </div>
                     }/>
@@ -661,7 +661,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseEnvironment}>
                         <Button
                           label={this.state.environmentOpen ? "Hide Unity Details" : "See Unity Details"}
-                          color={"outline blue"}
+                          color={"outline green"}
                         />
                       </div>
                     }/>
@@ -865,7 +865,7 @@ class NotifiVR extends Component {
                       <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseEvaluate}>
                         <Button
                           label={this.state.evaluateOpen ? "Hide Detailed Evaluation" : "See Detailed Evaluation"}
-                          color={"outline blue"}
+                          color={"outline green"}
                         />
                       </div>
                     }/>
@@ -998,7 +998,7 @@ class NotifiVR extends Component {
                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseResults}>
                          <Button
                            label={this.state.resultsOpen ? "Hide Detailed Results" : "See Detailed Results"}
-                           color={"outline blue"}
+                           color={"outline green"}
                          />
                        </div>
                      }/>
@@ -1013,7 +1013,19 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        The wrist watch is also notable for its high level of Interactibility, people were quick and wanting to play with the wrist watch to view and manage their notifications, and thought it could be capitalized on to a greater extent.
+                        The wrist watch was also notable for its high level of Interactibility, people were quick and wanting to play with the wrist watch to view and manage their notifications, and thought it could be capitalized on to a greater extent.
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={quoteStyle}>
+                        “The controller dances in-between, as a universal threshold object. It’s a bridge between external reality and virtual reality.”
+                      </p>
+                    }/>
+
+                    <Row content={
+                      <p className={pStyle}>
+                        Tying in with the wrist watch, actions that were related to the controller's physical form or position were more easily seen as a source for external notifications, due to its unique status of being both "real" and "virtual", by existing in both worlds it can act as a unifier between the two.
                       </p>
                     }/>
 

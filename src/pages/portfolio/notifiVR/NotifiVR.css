@@ -22,28 +22,32 @@
 }
 
 .NotifiVR .nav .navbar-link:hover {
-  color: #1e95ed;
+  color: #12a42d;
 }
 
 .NotifiVR .nav .navbar-link:hover a {
-  color: #1e95ed;
+  color: #12a42d;
 }
 
 .NotifiVR .nav .navbar-link:hover svg {
-  fill: #1e95ed;
+  fill: #12a42d;
 }
 
 
 .NotifiVR b {
-  color: #1e95ed;
+  color: #12a42d;
 }
 
 
 .NotifiVR .highlight {
-  color: #1e95ed;
+  color: #12a42d;
   font-weight: bold;
 }
 
+
+.NotifiVR p a::after {
+  background: rgba(18, 164, 45, 0.565);
+}
 
 #phoneEmoji {
   transform: scale(-1, 1);
