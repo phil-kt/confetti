@@ -8,8 +8,8 @@ import hbo_now from '../../media/misc/pics/hbo.jpg';
 import capital_one from '../../media/misc/icons/capital_one_logo.svg';
 import capone_page from '../../media/misc/pics/capitalone.jpg';
 
-import tachiyomi from '../../media/misc/icons/tachiyomi.svg';
-import one_punch from '../../media/misc/pics/tachi.jpg';
+import derez from '../../media/misc/icons/derez.svg';
+import rc from '../../media/misc/pics/rc.jpg';
 
 import design_club from '../../media/misc/icons/design_club.svg';
 import gt_design from '../../media/misc/pics/gt_design.svg';
@@ -48,21 +48,30 @@ class Misc extends Component {
       <div className="misc">
         <div className="row">
           <ProjectIcon
-            svg={tachiyomi}
-            title={"Tachiyomi"}
-            image={one_punch}
+            svg={derez}
+            title={"Derez"}
+            image={rc}
             first={true}
-            alt={"Image of One Punch Man open on app by a bedstand"}
+            alt={"A stylized D"}
             description={
-              <p>
-                An open source manga reading app used by 30,000+, I created the branding and now work on the design of the app.
-              </p>
+              <span>
+                <p>
+                  Made in 36 hours, Derez allows you to race through AR maps you create from a first-person view of an RC car. This project won Best AR/VR Hack at PennApps XVII.
+                </p>
+                <p>
+                  I worked on the Unity 3D assets, the UI of the game, the Tron-themed branding, and streaming the view to a PC.
+                </p>
+              </span>
             }
-            round={true}
+            square={true}
             links={[
               {
-                title: "Github",
-                url: "https://github.com/inorichi/tachiyomi"
+                title: "Devpost",
+                url: "https://devpost.com/software/derez"
+              },
+              {
+                title: "Youtube",
+                url: "https://www.youtube.com/watch?v=wxSy4dfLm_U"
               }
             ]}
           />
