@@ -179,7 +179,7 @@ class Misc extends Component {
             alt={"a phone looking at a piece of paper with pokemon coming out of it"}
             description={
               <span>
-                <p>I worked with Professor Jay Bolter and a teammate to create an AR storybook using the lab's Argon framework.</p>
+                <p>I worked with Professor Jay Bolter and a teammate to create an AR storybook using the lab’s Argon framework.</p>
 
                  <p>The book depicts 10 key moments in AR history, and was made using Twine and 3D models I created in Blender.</p>
               </span>

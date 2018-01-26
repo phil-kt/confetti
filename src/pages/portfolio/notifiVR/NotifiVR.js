@@ -202,7 +202,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        VR can cause you to miss out on what's happening around you
+                        VR can cause you to miss out on what’s happening around you
                       </p>
                     }/>
 
@@ -244,7 +244,7 @@ class NotifiVR extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Coming into this project, some work had been done previously by the Master's student whose thesis this was, primarily in the form of a survey he had distributed. We picked up from there, helping him along to the final prototype.
+                        Coming into this project, some work had been done previously by the Master’s student whose thesis this was, primarily in the form of a survey he had distributed. We picked up from there, helping him along to the final prototype.
                       </p>
                     }/>
 
@@ -325,7 +325,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Our survey was distributed around subreddits like r/vive, r/oculus, as well some private forums. It asked questions regarding how long they'd owned a VR device, what their longest play sessions had been, if they'd ever missed an important event due to being immersed in VR, and asked for them to rank various possible notifications by priority.
+                        Our survey was distributed around subreddits like r/vive, r/oculus, as well some private forums. It asked questions regarding how long they’d owned a VR device, what their longest play sessions had been, if they’d ever missed an important event due to being immersed in VR, and asked for them to rank various possible notifications by priority.
                       </p>
                     }/>
 
@@ -410,7 +410,7 @@ class NotifiVR extends Component {
                     }/>
 
                     <Row content={
-                      <p className={pStyle}>The Vive does have a notification pairing app with your phone, but it is a non diagetic approach where you must go to the dashboard to get details other than the sender's name. Daydream, Gear, and Playstation also have notifications to some extent, but very 2D inspired in that they just appear on your HUD and disappear, rather than take advantage of the 3D space.
+                      <p className={pStyle}>The Vive does have a notification pairing app with your phone, but it is a non diagetic approach where you must go to the dashboard to get details other than the sender’s name. Daydream, Gear, and Playstation also have notifications to some extent, but very 2D inspired in that they just appear on your HUD and disappear, rather than take advantage of the 3D space.
                       </p>
                     }/>
 
@@ -511,7 +511,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>Metaphors</em> were also very popular. Sounds like a door creak to signify someone entering the room, or having an hourly chime to help keep track of how long you've been in VR. The designers also mentioned using sounds you were familiar with, like your ring tone or text tone, to alert you when you’ve received a message.
+                        <em>Metaphors</em> were also very popular. Sounds like a door creak to signify someone entering the room, or having an hourly chime to help keep track of how long you’ve been in VR. The designers also mentioned using sounds you were familiar with, like your ring tone or text tone, to alert you when you’ve received a message.
                       </p>
                     }/>
 
@@ -1025,7 +1025,7 @@ class NotifiVR extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Tying in with the wrist watch, actions that were related to the controller's physical form or position were more easily seen as a source for external notifications, due to its unique status of being both "real" and "virtual", by existing in both worlds it can act as a unifier between the two.
+                        Tying in with the wrist watch, actions that were related to the controller’s physical form or position were more easily seen as a source for external notifications, due to its unique status of being both "real" and "virtual", by existing in both worlds it can act as a unifier between the two.
                       </p>
                     }/>
 

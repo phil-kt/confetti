@@ -331,13 +331,13 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        The core of our environment was of course the context the player was going to be immersed in. The narrative of our game was a key part in development, especially because this was part of Dr. Janet Murray's project studio.
+                        The core of our environment was of course the context the player was going to be immersed in. The narrative of our game was a key part in development, especially because this was part of Dr. Janet Murray’s project studio.
                       </p>
                     }/>
 
                     <Row content={
                       <p className={pStyle}>
-                        We started with an alien scenario, believing it be the easiest way to explain why you couldn't talk to the NPCs in the game. We then went on to trying a Western robbery, where you were a teller held at gunpoint who would be shot if you spoke. However we ran into issues of agency and the problem of talking, eventually settling back on the alien scenario, specifically in the world of Star Trek.
+                        We started with an alien scenario, believing it be the easiest way to explain why you couldn’t talk to the NPCs in the game. We then went on to trying a Western robbery, where you were a teller held at gunpoint who would be shot if you spoke. However we ran into issues of agency and the problem of talking, eventually settling back on the alien scenario, specifically in the world of Star Trek.
                       </p>
                     }/>
 
@@ -455,7 +455,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Most of our gesture choices were driven by the fact that the Oculus Touch has a limited range of gestures it supports. Only the pointer and thumb fingers are supported as individual digits, the other three finders move as one block. This makes it difficult to incorporate gestures that use fingers in ways other Oculus designed, for example we could not detect Spock's famous Vulcan salute <span role="img" aria-label="live long and prosper">🖖</span>
+                        Most of our gesture choices were driven by the fact that the Oculus Touch has a limited range of gestures it supports. Only the pointer and thumb fingers are supported as individual digits, the other three finders move as one block. This makes it difficult to incorporate gestures that use fingers in ways other Oculus designed, for example we could not detect Spock’s famous Vulcan salute <span role="img" aria-label="live long and prosper">🖖</span>
                       </p>
                     }/>
 
@@ -555,7 +555,7 @@ class Alien extends Component {
                         image={terrain}
                         altText={"two hills and a valley"}
                         title={"Environment Design"}
-                        description={"Created an environment using Unity's terrian tool"}
+                        description={"Created an environment using Unity’s terrian tool"}
                         delay={150}
                       />
 
@@ -601,7 +601,7 @@ class Alien extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        As for the environment, we thought that it should be a more muted environment, so that the player would be more focused on the alien in front of them instead of getting too engrossed in their surroundings. So I just created a basic landmass using Unity's terrain editor and placed our alien inside it.
+                        As for the environment, we thought that it should be a more muted environment, so that the player would be more focused on the alien in front of them instead of getting too engrossed in their surroundings. So I just created a basic landmass using Unity’s terrain editor and placed our alien inside it.
                       </p>
                     }/>
 

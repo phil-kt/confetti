@@ -2,13 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a84ce5-4153-4f1b-9bcc-df2245c632bc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/media/misc/icons/derez.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/media/misc/pics/rc.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/media/tachiyomi/solution.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/philippe_kimura-thollander_resume.pdf" afterPath="$PROJECT_DIR$/public/philippe_kimura-thollander_resume.pdf" />
       <change beforePath="$PROJECT_DIR$/src/components/misc/Misc.js" afterPath="$PROJECT_DIR$/src/components/misc/Misc.js" />
-      <change beforePath="$PROJECT_DIR$/src/media/misc/icons/tachiyomi.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/media/misc/pics/tachi.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/home/tachi.jpg" afterPath="$PROJECT_DIR$/src/media/home/tachi.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/Tachiyomi UX Audit.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/app-screens.png" afterPath="$PROJECT_DIR$/src/media/tachiyomi/app-screens.png" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/designs/categories/category_empty.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/designs/categories/category_empty_fixed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/designs/filter/filter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/designs/filter/filter_fixed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/designs/library/empty_library.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/designs/library/empty_library_fixed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/designs/mal/MAL.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/discord-1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/eval_grid.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/github-1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/github-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/github-3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/github-4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/github-discussion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/google.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/hero.jpg" afterPath="$PROJECT_DIR$/src/media/tachiyomi/hero.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/read-me-after.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/read-me-before.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/tech-1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/tech-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/use-case-1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/use-case-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/user-test.jpg" afterPath="$PROJECT_DIR$/src/media/tachiyomi/user-test.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/media/tachiyomi/ux_audit.jpg" afterPath="$PROJECT_DIR$/src/media/tachiyomi/ux_audit.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio/alien/Alien.js" afterPath="$PROJECT_DIR$/src/pages/portfolio/alien/Alien.js" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js" afterPath="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" afterPath="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.css" afterPath="$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.css" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.js" afterPath="$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,118 +53,44 @@
       <file leaf-file-name="Tachiyomi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="767">
-              <caret line="816" column="70" lean-forward="false" selection-start-line="816" selection-start-column="70" selection-end-line="816" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#958#1032#0" expanded="true" />
-                <element signature="e#3427#3496#0" expanded="true" />
-                <element signature="e#3831#3906#0" expanded="true" />
-                <marker date="1516836883499" expanded="true" signature="6052:6177" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="6372:6436" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="6461:7585" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="6541:6952" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="7129:7313" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="7221:7284" ph="..." />
-                <marker date="1516836883499" expanded="false" signature="7652:7711" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="9181:9241" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="9266:9655" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="9346:9604" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="9723:9784" ph="..." />
-                <marker date="1516836883499" expanded="false" signature="9810:11031" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="11101:11164" ph="..." />
-                <marker date="1516836883499" expanded="false" signature="11198:11237" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="11517:11577" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="11602:21042" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="11682:12191" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="12267:13376" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="12299:12392" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="12656:12761" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="12999:13103" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="14092:14406" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="14542:14790" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="14899:15102" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="15459:16039" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="16363:16596" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="16832:17211" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="17907:18188" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="18416:18694" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="18828:19356" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="19651:19820" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="20737:20958" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="21109:21167" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="21192:51703" ph="..." />
-                <marker date="1516836883499" expanded="true" signature="21272:21449" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1223">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Misc.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/misc/Misc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="73" column="65" lean-forward="false" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rc.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/media/misc/pics/rc.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="derez.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/media/misc/icons/derez.svg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home/Home.css">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="34" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <marker date="1516990817126" expanded="true" signature="6206:6331" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="6526:6590" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="6615:7739" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="6695:7106" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="7283:7467" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="7375:7438" ph="..." />
+                <marker date="1516990817126" expanded="false" signature="7806:7865" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="9335:9395" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="9420:10384" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="9500:9761" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="10452:10513" ph="..." />
+                <marker date="1516990817126" expanded="false" signature="10539:11760" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="11830:11893" ph="..." />
+                <marker date="1516990817126" expanded="false" signature="11927:11966" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="12246:12306" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="12331:21771" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="12411:12920" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="12996:14105" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="13028:13121" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="13385:13490" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="13728:13832" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="14821:15135" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="15271:15519" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="15628:15831" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="16188:16768" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="17092:17325" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="17561:17940" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="18636:18917" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="19145:19423" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="19557:20085" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="20380:20549" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="21466:21687" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="21838:21896" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="21921:52431" ph="..." />
+                <marker date="1516990817126" expanded="true" signature="22001:22178" ph="..." />
               </folding>
             </state>
           </provider>
@@ -145,20 +99,77 @@
       <file leaf-file-name="NotifiVR.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="1023" column="23" lean-forward="false" selection-start-line="1023" selection-start-column="23" selection-end-line="1023" selection-end-column="23" />
+            <state relative-caret-position="212">
+              <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
+              <folding>
+                <element signature="e#2425#2490#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Misc.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/misc/Misc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2904">
+              <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Projects.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/projects/Projects.js">
+      <file leaf-file-name="Alien.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/portfolio/alien/Alien.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="34" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Macy.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="83" column="63" lean-forward="false" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="solution.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/solution.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read-me-after.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/designs/read-me/read-me-after.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read-me-before.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/designs/read-me/read-me-before.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="github-3.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/deploy/github-3.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="github-4.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/deploy/github-4.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -174,12 +185,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Script</find>
-      <find>Callout</find>
-      <find>wave_</find>
-      <find>patient</find>
-      <find>feat</find>
-      <find>abandon</find>
       <find>Research</find>
       <find>rel=</find>
       <find>feature-</find>
@@ -202,8 +207,14 @@
       <find>also ad</find>
       <find>outline b</find>
       <find>presentation</find>
-      <find>quote</find>
       <find>back and f</find>
+      <find>github</find>
+      <find>Hide Dis</find>
+      <find>col-lg-10</find>
+      <find>col-md-10</find>
+      <find>col-lg-8</find>
+      <find>quote</find>
+      <find>'</find>
     </findStrings>
     <replaceStrings>
       <replace>Circular</replace>
@@ -237,7 +248,6 @@
         <option value="$PROJECT_DIR$/src/media/alien/icons/alien.svg" />
         <option value="$PROJECT_DIR$/src/pages/portfolio/alien/Alien.css" />
         <option value="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.css" />
-        <option value="$PROJECT_DIR$/src/pages/portfolio/alien/Alien.js" />
         <option value="$PROJECT_DIR$/src/components/project-page/ProjectPage.css" />
         <option value="$PROJECT_DIR$/src/pages/404/404.css" />
         <option value="$PROJECT_DIR$/src/components/server-link/ServerLink.js" />
@@ -259,13 +269,14 @@
         <option value="$PROJECT_DIR$/src/components/button/Button.css" />
         <option value="$PROJECT_DIR$/src/components/polar-chart/PolarChart.js" />
         <option value="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.css" />
-        <option value="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js" />
-        <option value="$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.css" />
         <option value="$PROJECT_DIR$/src/pages/home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/navbar/Navbar.css" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" />
+        <option value="$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.css" />
         <option value="$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.js" />
+        <option value="$PROJECT_DIR$/src/pages/portfolio/alien/Alien.js" />
+        <option value="$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js" />
+        <option value="$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js" />
         <option value="$PROJECT_DIR$/src/components/misc/Misc.js" />
       </list>
     </option>
@@ -282,8 +293,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
-    <option name="y" value="54" />
+    <option name="x" value="89" />
+    <option name="y" value="53" />
     <option name="width" value="1276" />
     <option name="height" value="804" />
   </component>
@@ -305,6 +316,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,35 +346,6 @@
               <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
               <item name="confetti" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-              <item name="pics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="confetti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -385,6 +368,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="alien" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="confetti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="macy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="confetti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="confetti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="notifiVR" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,7 +399,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -412,19 +410,19 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/media/misc/pics" />
-      <recent name="$PROJECT_DIR$/src/media/misc/icons" />
-      <recent name="$PROJECT_DIR$/src/media/tachiyomi" />
-      <recent name="$PROJECT_DIR$/src/media/tachiyomi/icons" />
-      <recent name="$PROJECT_DIR$/src/media/tachiyomi/research" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/files" />
       <recent name="$PROJECT_DIR$/src/media/home" />
       <recent name="$PROJECT_DIR$/src/media/misc/pics" />
       <recent name="$PROJECT_DIR$/src/media/notifiVR" />
       <recent name="$PROJECT_DIR$/src/media/macy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/media/tachiyomi" />
+      <recent name="$PROJECT_DIR$/src/media/tachiyomi/designs/read-me" />
+      <recent name="$PROJECT_DIR$/src/media/tachiyomi/deploy" />
+      <recent name="$PROJECT_DIR$/src/media/tachiyomi/discuss" />
+      <recent name="$PROJECT_DIR$/src/media/misc/pics" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -526,14 +524,17 @@
       <workItem from="1516580934916" duration="2350000" />
       <workItem from="1516722918498" duration="54000" />
       <workItem from="1516765482739" duration="10345000" />
+      <workItem from="1516927246954" duration="2299000" />
+      <workItem from="1516990472464" duration="505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="414835000" />
+    <option name="totallyTimeSpent" value="417639000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="54" width="1276" height="804" extended-state="0" />
+    <frame x="89" y="53" width="1276" height="804" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2613546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -543,7 +544,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24978541" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31593794" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31593794" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -587,80 +588,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/icons/bookmark-plus-outline.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/home/tachi.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/callout/Callout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/process/Process.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/process/Process.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/project-stats/ProjectStats.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/project-stats/ProjectStats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/icons/empty-state.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/icons/poor-feedback.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/icons/material.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/404/404.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/icons/github-issues.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -670,9 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="37" column="181" lean-forward="false" selection-start-line="37" selection-start-column="181" selection-end-line="37" selection-end-column="181" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -686,26 +610,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/github-discussion.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/github-discussion.png" />
     <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/research/how_to_install.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/read-me-before.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/read-me-after.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/read-me-before.png" />
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/read-me-after.png" />
     <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/research/how_to_install_2.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -716,16 +628,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/tech-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/tech-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/tech-1.png" />
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/tech-2.png" />
     <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/icons/technical.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -736,21 +640,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/discord-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/use-case-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/use-case-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/discord-1.png" />
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/use-case-1.png" />
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/use-case-2.png" />
     <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/icons/pull_request.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -760,9 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-87">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,9 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
           <caret line="100" column="21" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-261">
           <caret line="155" column="16" lean-forward="false" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="54" column="16" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,9 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,29 +702,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="1168" column="73" lean-forward="false" selection-start-line="1168" selection-start-column="73" selection-end-line="1168" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,90 +713,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="1023" column="23" lean-forward="false" selection-start-line="1023" selection-start-column="23" selection-end-line="1023" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/projects/Projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="270">
           <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="767">
-          <caret line="816" column="70" lean-forward="false" selection-start-line="816" selection-start-column="70" selection-end-line="816" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#958#1032#0" expanded="true" />
-            <element signature="e#3427#3496#0" expanded="true" />
-            <element signature="e#3831#3906#0" expanded="true" />
-            <marker date="1516836883499" expanded="true" signature="6052:6177" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="6372:6436" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="6461:7585" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="6541:6952" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="7129:7313" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="7221:7284" ph="..." />
-            <marker date="1516836883499" expanded="false" signature="7652:7711" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="9181:9241" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="9266:9655" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="9346:9604" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="9723:9784" ph="..." />
-            <marker date="1516836883499" expanded="false" signature="9810:11031" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="11101:11164" ph="..." />
-            <marker date="1516836883499" expanded="false" signature="11198:11237" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="11517:11577" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="11602:21042" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="11682:12191" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="12267:13376" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="12299:12392" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="12656:12761" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="12999:13103" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="14092:14406" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="14542:14790" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="14899:15102" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="15459:16039" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="16363:16596" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="16832:17211" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="17907:18188" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="18416:18694" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="18828:19356" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="19651:19820" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="20737:20958" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="21109:21167" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="21192:51703" ph="..." />
-            <marker date="1516836883499" expanded="true" signature="21272:21449" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1223">
+        <state relative-caret-position="15">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -945,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,13 +750,152 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/discuss/tech-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/discuss/tech-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/discuss/use-case-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/discuss/use-case-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/deploy/github-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/deploy/github-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/deploy/github-3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/deploy/github-4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/designs/read-me/read-me-after.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/designs/read-me/read-me-before.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="113" lean-forward="false" selection-start-line="0" selection-start-column="113" selection-end-line="0" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/media/tachiyomi/solution.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/tachiyomi/Tachiyomi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="34" />
+          <folding>
+            <marker date="1516990817126" expanded="true" signature="6206:6331" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="6526:6590" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="6615:7739" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="6695:7106" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="7283:7467" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="7375:7438" ph="..." />
+            <marker date="1516990817126" expanded="false" signature="7806:7865" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="9335:9395" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="9420:10384" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="9500:9761" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="10452:10513" ph="..." />
+            <marker date="1516990817126" expanded="false" signature="10539:11760" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="11830:11893" ph="..." />
+            <marker date="1516990817126" expanded="false" signature="11927:11966" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="12246:12306" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="12331:21771" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="12411:12920" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="12996:14105" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="13028:13121" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="13385:13490" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="13728:13832" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="14821:15135" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="15271:15519" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="15628:15831" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="16188:16768" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="17092:17325" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="17561:17940" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="18636:18917" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="19145:19423" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="19557:20085" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="20380:20549" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="21466:21687" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="21838:21896" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="21921:52431" ph="..." />
+            <marker date="1516990817126" expanded="true" signature="22001:22178" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/alien/Alien.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/macy/Macy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="83" column="63" lean-forward="false" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/portfolio/notifiVR/NotifiVR.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
+          <folding>
+            <element signature="e#2425#2490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/misc/Misc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="73" column="65" lean-forward="false" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2904">
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

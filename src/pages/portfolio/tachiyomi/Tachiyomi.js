@@ -17,7 +17,8 @@ import Video from '../../../components/video/Video';
 import hero from '../../../media/tachiyomi/hero.jpg';
 
 import app_screens from '../../../media/tachiyomi/app-screens.png';
-import problem from '../../../media/tachiyomi/google.png';
+import problem from '../../../media/tachiyomi/google.jpg';
+import solution from '../../../media/tachiyomi/solution.png';
 
 // Research assets
 import online_comments from '../../../media/tachiyomi/icons/comments.svg';
@@ -28,7 +29,7 @@ import how_to_install from '../../../media/tachiyomi/research/how_to_install.png
 import how_to_install_2 from '../../../media/tachiyomi/research/how_to_install_2.png';
 import library_help from '../../../media/tachiyomi/research/library_help.png';
 
-import eval_grid from '../../../media/tachiyomi/eval_grid.png';
+import eval_grid from '../../../media/tachiyomi/eval_grid.jpg';
 import user_test_finger from '../../../media/tachiyomi/user-test.jpg';
 
 
@@ -37,22 +38,22 @@ import empty_state from '../../../media/tachiyomi/icons/empty-state.svg';
 import poor_feedback from '../../../media/tachiyomi/icons/poor-feedback.svg';
 import material from '../../../media/tachiyomi/icons/material.svg';
 
-import empty_library from '../../../media/tachiyomi/designs/library/empty_library.png'
-import empty_library_fixed from '../../../media/tachiyomi/designs/library/empty_library_fixed.png'
+import empty_library from '../../../media/tachiyomi/designs/library/empty_library.jpg'
+import empty_library_fixed from '../../../media/tachiyomi/designs/library/empty_library_fixed.jpg'
 
-import empty_category from '../../../media/tachiyomi/designs/categories/category_empty.png'
-import empty_category_fixed from '../../../media/tachiyomi/designs/categories/category_empty_fixed.png';
+import empty_category from '../../../media/tachiyomi/designs/categories/category_empty.jpg'
+import empty_category_fixed from '../../../media/tachiyomi/designs/categories/category_empty_fixed.jpg';
 
-import filter from '../../../media/tachiyomi/designs/filter/filter.png';
-import filter_fixed from '../../../media/tachiyomi/designs/filter/filter_fixed.png';
+import filter from '../../../media/tachiyomi/designs/filter/filter.jpg';
+import filter_fixed from '../../../media/tachiyomi/designs/filter/filter_fixed.jpg';
 
 import add_to_library_mp4 from '../../../media/tachiyomi/designs/add_to_library/add_to_library.mp4';
 import add_to_library_webm from '../../../media/tachiyomi/designs/add_to_library/add_to_library.webm';
 import add_to_library_fixed_mp4 from '../../../media/tachiyomi/designs/add_to_library/add_to_library_fixed.mp4';
 import add_to_library_fixed_webm from '../../../media/tachiyomi/designs/add_to_library/add_to_library_fixed.webm';
 
-import read_me_before from '../../../media/tachiyomi/read-me-before.png';
-import read_me_after from '../../../media/tachiyomi/read-me-after.png';
+import read_me_before from '../../../media/tachiyomi/designs/read-me/read-me-before.jpg';
+import read_me_after from '../../../media/tachiyomi/designs/read-me/read-me-after.jpg';
 
 import bookmark_outline from '../../../media/tachiyomi/icons/bookmark_border.svg';
 import bookmark_outline_plus from '../../../media/tachiyomi/icons/bookmark-plus-outline.svg';
@@ -61,23 +62,23 @@ import bookmark_outline_plus from '../../../media/tachiyomi/icons/bookmark-plus-
 import present from '../../../media/tachiyomi/icons/present.svg';
 import github_issues from '../../../media/tachiyomi/icons/github-issues.svg';
 import ux_audit from '../../../media/tachiyomi/ux_audit.jpg';
-import github_discussion from '../../../media/tachiyomi/github-discussion.png';
+import github_discussion from '../../../media/tachiyomi/github-discussion.jpg';
 
 // Discuss assets
 import technical from '../../../media/tachiyomi/icons/technical.svg';
 import use_case from '../../../media/tachiyomi/icons/use-case.svg';
-import tech_1 from '../../../media/tachiyomi/tech-1.png';
-import tech_2 from '../../../media/tachiyomi/tech-2.png';
-import use_case_1 from '../../../media/tachiyomi/use-case-1.png';
-import use_case_2 from '../../../media/tachiyomi/use-case-2.png';
+import tech_1 from '../../../media/tachiyomi/discuss/tech-1.jpg';
+import tech_2 from '../../../media/tachiyomi/discuss/tech-2.jpg';
+import use_case_1 from '../../../media/tachiyomi/discuss/use-case-1.jpg';
+import use_case_2 from '../../../media/tachiyomi/discuss/use-case-2.jpg';
 
 // Deploy assets
 import pull_request from '../../../media/tachiyomi/icons/pull_request.svg';
 import visual from '../../../media/tachiyomi/icons/visual_qa.svg';
-import github_1 from '../../../media/tachiyomi/github-1.png';
-import github_2 from '../../../media/tachiyomi/github-2.png';
-import github_3 from '../../../media/tachiyomi/github-3.png';
-import github_4 from '../../../media/tachiyomi/github-4.png';
+import github_1 from '../../../media/tachiyomi/deploy/github-1.jpg';
+import github_2 from '../../../media/tachiyomi/deploy/github-2.jpg';
+import github_3 from '../../../media/tachiyomi/deploy/github-3.jpg';
+import github_4 from '../../../media/tachiyomi/deploy/github-4.jpg';
 
 import acclaim from '../../../media/tachiyomi/social-proof/acclaim.png';
 
@@ -230,7 +231,19 @@ class Tachiyomi extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        The addition of a new onboarding sequence, and a series of visual tweaks here in there, including copious addition of empty states and content tweaking, order to make the app more approachable to newcomers.
+                        The addition of a new onboarding sequence, and a series of visual tweaks here and there, including copious additions of empty states and content tweaks, in order to make the app more approachable to newcomers.
+                      </p>
+                    }/>
+
+                    <Row className="one-margin-top" content={
+                      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8"}>
+                        <img className={"feature-image solution"} src={solution} alt={"Redesigned screens with cartoons."}/>
+                      </div>
+                    }/>
+
+                    <Row content={
+                      <p className={"caption " + pStyle}>
+                        New empty states and redesigned screens
                       </p>
                     }/>
 
@@ -250,7 +263,7 @@ class Tachiyomi extends Component {
 
                      <Row content={
                        <p className={pStyle}>
-                         Other times, you might make a design suggestion, but developers will implement it with their own twist, and you have to convince them of the logic behind your design. In the case of designing for new users, here's roughly how it went:
+                         Other times, you might make a design suggestion, but developers will implement it with their own twist, and you have to convince them of the logic behind your design. In the case of designing for new users, here’s roughly how it went:
                        </p>
                      }/>
 
@@ -282,7 +295,7 @@ class Tachiyomi extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Research for an ongoing open-source project, especially with a narrow niche like manga, can be difficult at times. Thankfully Tachiyomi is a decently popular app, so there are plenty of Github issues and online comments to reference when designing new features or finding out what's confusing to users. Evaluating it with my own design skills helps, and I luckily also had some classmates who read manga and had never used the app whom I could user test on.
+                        Research for an ongoing open-source project, especially with a narrow niche like manga, can be difficult at times. Thankfully Tachiyomi is a decently popular app, so there are plenty of Github issues and online comments to reference when designing new features or finding out what’s confusing to users. Evaluating it with my own design skills helps, and I luckily also had some classmates who read manga and had never used the app whom I could user test on.
                       </p>
                     }/>
 
@@ -336,13 +349,13 @@ class Tachiyomi extends Component {
 
                     <Row className={"one-margin-top"} content={
                       <div className={pStyle} >
-                        <img className={"feature-image"} src={how_to_install} alt={"Sorry, I'm a real noob at this kind of stuff, but what do I download from the Github page? Do I just click the apk? Thanks again!"}/>
+                        <img className={"feature-image"} src={how_to_install} alt={"Sorry, I’m a real noob at this kind of stuff, but what do I download from the Github page? Do I just click the apk? Thanks again!"}/>
                       </div>
                     }/>
 
                      <Row content={
                        <div className={pStyle} >
-                         <img className={"feature-image"} src={how_to_install_2} alt={"Hi, I'm new to this. Is there a guide on how to download this? Sorry for asking."}/>
+                         <img className={"feature-image"} src={how_to_install_2} alt={"Hi, I’m new to this. Is there a guide on how to download this? Sorry for asking."}/>
                        </div>
                      }/>
 
@@ -371,7 +384,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        While others couldn't figure how to start reading
+                        While others couldn’t figure how to start reading
                       </p>
                     }/>
 
@@ -393,7 +406,7 @@ class Tachiyomi extends Component {
 
                     <Row className="one-margin-top" content={
                       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8"}>
-                        <img className={"feature-image"} src={eval_grid} alt={"Comparing Google's guidelines on their website to the app."}/>
+                        <img className={"feature-image"} src={eval_grid} alt={"Comparing Google’s guidelines on their website to the app."}/>
                       </div>
                     }/>
 
@@ -415,7 +428,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        The most informative of the three research techniques, I recruited three manga-reading students who had never used Tachiyomi to try it out in front of me to get in-the-moment insight into where the app's stumbling blocks were.
+                        The most informative of the three research techniques, I recruited three manga-reading students who had never used Tachiyomi to try it out in front of me to get in-the-moment insight into where the app’s stumbling blocks were.
                       </p>
                     }/>
 
@@ -464,7 +477,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        From their stumbles I learned a lot of struggles the first time user faces, especially in the app's initial screens due to a lack of information conveyed by the writing.
+                        From their stumbles I learned a lot of struggles the first time user faces, especially in the app’s initial screens due to a lack of information conveyed by the writing.
                       </p>
                     }/>
                     </Collapse>
@@ -542,7 +555,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        The Edit Categories screen also suffered from a poor empty state, but this time there's nothing at all to tell you what to do!
+                        The Edit Categories screen also suffered from a poor empty state, but this time there’s nothing at all to tell you what to do!
                       </p>
                     }/>
 
@@ -569,7 +582,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Probably the second most important feature in Tachiyomi after reading, adding series to your library to manage is a core part of the app. Unfortunately in user testing however, people didn't understand how to do so. <b>The default bookmark icon used did not have a connotation of adding to your library, nor was there any feedback after pressing it.</b>
+                        Probably the second most important feature in Tachiyomi after reading, adding series to your library to manage is a core part of the app. Unfortunately in user testing however, people didn’t understand how to do so. <b>The default bookmark icon used did not have a connotation of adding to your library, nor was there any feedback after pressing it.</b>
                       </p>
                     }/>
 
@@ -609,7 +622,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Another issue to address didn't even have anything do with the actual app interface, but rather the README file! As seen above, lots of people were struggling to figure out how to download Tachiyomi in the first place, so it was important we made it clear where to get from the beginning.
+                        Another issue to address didn’t even have anything do with the actual app interface, but rather the README file! As seen above, lots of people were struggling to figure out how to download Tachiyomi in the first place, so it was important we made it clear where to get from the beginning.
                       </p>
                     }/>
 
@@ -646,7 +659,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        By adding explicit Download and FAQ sections the average person who's never used Github can quickly see where to get the app, and by including images they can get a sense of the app's look and feel to decide whether they actually want to try it.
+                        By adding explicit Download and FAQ sections the average person who’s never used Github can quickly see where to get the app, and by including images they can get a sense of the app’s look and feel to decide whether they actually want to try it.
                       </p>
                     }/>
 
@@ -656,7 +669,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Tachiyomi also has the ability to filter manga from different sources, so if you're looking for an action manga, or a specific author, you can find it quickly. However, the original filter list broke some common design paradigms, such as the buttons being at the top, and did not dismiss the overlay after hitting Search.
+                        Tachiyomi also has the ability to filter manga from different sources, so if you’re looking for an action manga, or a specific author, you can find it quickly. However, the original filter list broke some common design paradigms, such as the buttons being at the top, and did not dismiss the overlay after hitting Search.
                       </p>
                     }/>
 
@@ -673,7 +686,7 @@ class Tachiyomi extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Instead, I decided to move Search to the bottom so it was always close to your thumb to press, and more in line with how fixed position elements in lists are typically placed at the bottom. I also noted that the Search button should dismiss the Filter screen, because if you tapped it didn't go away, leading users to think their search was not completed.
+                        Instead, I decided to move Search to the bottom so it was always close to your thumb to press, and more in line with how fixed position elements in lists are typically placed at the bottom. I also noted that the Search button should dismiss the Filter screen, because if you tapped it didn’t go away, leading users to think their search was not completed.
                       </p>
                     }/>
 
@@ -761,7 +774,7 @@ class Tachiyomi extends Component {
 
                           <Row className="one-margin-bottom" content={
                             <p className={"caption " + pStyle}>
-                              It's good to see what the community has to say
+                              It’s good to see what the community has to say
                             </p>
                           }/>
 
@@ -808,7 +821,7 @@ class Tachiyomi extends Component {
                           <Row content={
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 button-wrapper" onClick={this.collapseDiscuss}>
                               <Button
-                                label={this.state.researchOpen ? "Hide Discussion Process" : "See Discussion Process"}
+                                label={this.state.discussOpen ? "Hide Discussion Process" : "See Discussion Process"}
                                 color={"outline blue"}
                               />
                             </div>
@@ -886,13 +899,13 @@ class Tachiyomi extends Component {
 
                           <Row content={
                             <p className={"caption " + pStyle}>
-                              Debate regarding a proposed change regarding how we position a manga's genres
+                              Debate regarding a proposed change regarding how we position a manga’s genres
                             </p>
                           }/>
 
                           <Row content={
                             <p className={pStyle}>
-                              Working together usually the designs I come up with are accepted due to the reasoning behind them, but I also cooperate with developers and users to determine what's the best approach for Tachiyomi.
+                              Working together usually the designs I come up with are accepted due to the reasoning behind them, but I also cooperate with developers and users to determine what’s the best approach for Tachiyomi.
                             </p>
                           }/>
                           </Collapse>
@@ -951,7 +964,7 @@ class Tachiyomi extends Component {
 
                           <Row content={
                             <p className={pStyle}>
-                              The most vital part of this process is to ensure that my designs actually get deployed. Thankfully Tachiyomi's developers value my input in making the UX of the app better and are willing to dive into Android Studio to turn my ideas into real code.
+                              The most vital part of this process is to ensure that my designs actually get deployed. Thankfully Tachiyomi’s developers value my input in making the UX of the app better and are willing to dive into Android Studio to turn my ideas into real code.
                             </p>
                           }/>
 
@@ -987,7 +1000,7 @@ class Tachiyomi extends Component {
 
                           <Row content={
                             <p className={pStyle}>
-                              I always appreciate when developers are willing to code up my designs, but it's important that I review them before they are merged in so that they accurately reflect my intent.
+                              I always appreciate when developers are willing to code up my designs, but it’s important that I review them before they are merged in so that they accurately reflect my intent.
                             </p>
                           }/>
 
@@ -1046,7 +1059,7 @@ class Tachiyomi extends Component {
                         <span>
                           <Row content={
                             <p className={pStyle}>
-                              Working on open source is super rewarding, because you help contribute to the tech community as a whole and can engage directly with your users. We're always striving to make Tachiyomi the best app it can be, so it can provide the best experience to everyone who uses it.
+                              Working on open source is super rewarding, because you help contribute to the tech community as a whole and can engage directly with your users. We’re always striving to make Tachiyomi the best app it can be, so it can provide the best experience to everyone who uses it.
                             </p>
                           }/>
 
@@ -1058,7 +1071,7 @@ class Tachiyomi extends Component {
 
                            <Row content={
                              <p className={"caption " + pStyle}>
-                               In the end it's all for the fans 😄
+                               In the end it’s all for the fans 😄
                              </p>
                            }/>
 

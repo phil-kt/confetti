@@ -232,7 +232,7 @@ class Macy extends Component {
           title={"Macy’s of the Future"}
           description={"A shopping experience focused on personal assistance and a smaller store footprint"}
           hero={hero}
-          heroAlt={"Our Macy's app on top of a bag."}
+          heroAlt={"Our Macy’s app on top of a bag."}
           navbarColor={"red"}
           content={
             <span>
@@ -316,7 +316,7 @@ class Macy extends Component {
                   <span>
                     <Row content={
                       <p className={pStyle}>
-                        Our research began by both visiting Macy's stores and reading as many documents as we could relating to either Macy's or retail in general. We also had several calls with Macy's employees to talk about our findings and also learn about the internal workings of the company. One of the toughest restrictions was that <b>we weren't allowed to interview customers at all.</b>
+                        Our research began by both visiting Macy’s stores and reading as many documents as we could relating to either Macy’s or retail in general. We also had several calls with Macy’s employees to talk about our findings and also learn about the internal workings of the company. One of the toughest restrictions was that <b>we weren’t allowed to interview customers at all.</b>
                       </p>
                     }/>
 
@@ -325,7 +325,7 @@ class Macy extends Component {
                         image={dept}
                         altText={"department store icon"}
                         title={"Store Visits"}
-                        description={"Went to Macy's and their competitors to see store environments"}
+                        description={"Went to Macy’s and their competitors to see store environments"}
                         first={true}
                       />
 
@@ -374,7 +374,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                         We also read through financial reports, brand guidelines, retail news, corporate policies, internal documents,  peer reviewed articles, and a bunch of other relevant information to help us understand Macy's situation and the current retail landscape.
+                         We also read through financial reports, brand guidelines, retail news, corporate policies, internal documents,  peer reviewed articles, and a bunch of other relevant information to help us understand Macy’s situation and the current retail landscape.
                       </p>
                     }/>
 
@@ -466,7 +466,7 @@ class Macy extends Component {
 
                       <Callout
                         image={star}
-                        altText={"macy's star"}
+                        altText={"macy’s star"}
                         title={"Macy’s Brand"}
                         description={"Core principles of Macy’s not being conveyed to customers"}
                         middle={true}
@@ -497,7 +497,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        <em>Omnichannel</em> is the name of the game if you have a digital and physical presence. Having consistent pricing and promotions across both fronts, engaging with customers with the platform they're on, whether that be Facebook or Snapchat, and enabling a consistent experience with your brand across every touchpoint is vital for the modern consumer.
+                        <em>Omnichannel</em> is the name of the game if you have a digital and physical presence. Having consistent pricing and promotions across both fronts, engaging with customers with the platform they’re on, whether that be Facebook or Snapchat, and enabling a consistent experience with your brand across every touchpoint is vital for the modern consumer.
                       </p>
                     }/>
 
@@ -542,7 +542,7 @@ class Macy extends Component {
 
 
                     <Row content={
-                      <h4 className={pStyle}>Macy's Brand</h4>
+                      <h4 className={pStyle}>Macy’s Brand</h4>
                     }/>
 
                     <Row content={
@@ -624,7 +624,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        Macy’s is a national corporation with a target audience that is essentially everyone, which made it tricky deciding on personas of shoppers at Macy's. We ended up identifying and creating nine persona types that we thought best represented the majority of shoppers at Macy’s.
+                        Macy’s is a national corporation with a target audience that is essentially everyone, which made it tricky deciding on personas of shoppers at Macy’s. We ended up identifying and creating nine persona types that we thought best represented the majority of shoppers at Macy’s.
                       </p>
                     }/>
 
@@ -706,7 +706,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        Click to see each shopper's full details
+                        Click to see each shopper’s full details
                       </p>
                     }/>
 
@@ -811,7 +811,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        With the rise of the sharing economy businesses have increasingly been about providing a service, like taxis (Uber, Lyft) or lodging (Airbnb). These companies don't actually own the physical entities that enable their product, however, Macy’s does have a vast stock of physical merchandise, and we thought that we could take advantage of that to create the best of both worlds.
+                        With the rise of the sharing economy businesses have increasingly been about providing a service, like taxis (Uber, Lyft) or lodging (Airbnb). These companies don’t actually own the physical entities that enable their product, however, Macy’s does have a vast stock of physical merchandise, and we thought that we could take advantage of that to create the best of both worlds.
                       </p>
                     }/>
 
@@ -859,7 +859,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        But <b>what if shoppers can't or don't want to download an app</b>? We anticipated that, by utilizing the kiosks that Macy’s currently has throughout their stores they can manage their cart on their own and also call for an assistant if or when they'd like one. Shoppers can take an RFID tag off the item rack, scan it, and then receive an assigned fitting room to go to where their scanned items will be waiting.
+                        But <b>what if shoppers can’t or don’t want to download an app</b>? We anticipated that, by utilizing the kiosks that Macy’s currently has throughout their stores they can manage their cart on their own and also call for an assistant if or when they’d like one. Shoppers can take an RFID tag off the item rack, scan it, and then receive an assigned fitting room to go to where their scanned items will be waiting.
                       </p>
                     }/>
 
@@ -887,7 +887,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        The customer is able to rate their shopping experience at the end which provides feedback to Macy’s on their associate's perfomance. On the employee side, they are able to add objects to a customer's bag as they encounter them and are provided suggested pairings. The associate can decide which one is most relevant to the customer to recommend.
+                        The customer is able to rate their shopping experience at the end which provides feedback to Macy’s on their associate’s perfomance. On the employee side, they are able to add objects to a customer’s bag as they encounter them and are provided suggested pairings. The associate can decide which one is most relevant to the customer to recommend.
                       </p>
                     }/>
 
@@ -923,7 +923,7 @@ class Macy extends Component {
 
                     <Row className={"one-margin-bottom"} content={
                       <p className={"caption " + pStyle}>
-                        The associate app lets them manage a customer's cart
+                        The associate app lets them manage a customer’s cart
                       </p>
                     }/>
 
@@ -1003,7 +1003,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        Getting Macy's out of the mall and into the streets
+                        Getting Macy’s out of the mall and into the streets
                       </p>
                     }/>
 
@@ -1015,7 +1015,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        By sizing down the stock room, it also allowed us to play with the store layout to provide a focus on the fitting room experience. We dedicated the entire end of the store to trying on clothes, so that a customer could simply try out their clothes and leave behind the articles they didn't like. The more expansive floor also allows for a more social environment when shopping with friends or family.
+                        By sizing down the stock room, it also allowed us to play with the store layout to provide a focus on the fitting room experience. We dedicated the entire end of the store to trying on clothes, so that a customer could simply try out their clothes and leave behind the articles they didn’t like. The more expansive floor also allows for a more social environment when shopping with friends or family.
                       </p>
                     }/>
 
@@ -1029,7 +1029,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={"caption " + pStyle}>
-                        Click to play around with my <a href="https://www.lauranesaliou.me/" target="_blank" rel="noopener noreferrer" >partner's</a> store model
+                        Click to play around with my <a href="https://www.lauranesaliou.me/" target="_blank" rel="noopener noreferrer" >partner’s</a> store model
                       </p>
                     }/>
 
@@ -1130,7 +1130,7 @@ class Macy extends Component {
                     <Row content={
                       <span>
                         <p className={pStyle}>
-                          If you're interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macy/macys_presentation.pdf" target="_blank" rel="noopener noreferrer" >presentation</a> and <a href="http://philkt.me/files/macy/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >document</a> that we ultimately handed off to Macy’s.
+                          If you’re interested in diving into the details (even moreso than I did here), here are links to the <a href="http://philkt.me/files/macy/macys_presentation.pdf" target="_blank" rel="noopener noreferrer" >presentation</a> and <a href="http://philkt.me/files/macy/macys_doc.pdf" target="_blank" rel="noopener noreferrer" >document</a> that we ultimately handed off to Macy’s.
                         </p>
                       </span>
                     }/>
@@ -1149,7 +1149,7 @@ class Macy extends Component {
 
                     <Row content={
                       <p className={pStyle}>
-                        I hope that Macy's corporate takes some of our ideas to heart, and you can one day in the future experience a shopping trip like no other, designed by yours truly.
+                        I hope that Macy’s corporate takes some of our ideas to heart, and you can one day in the future experience a shopping trip like no other, designed by yours truly.
                       </p>
                     }/>
 
