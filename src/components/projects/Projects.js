@@ -67,7 +67,7 @@ class Projects {
   };
 
   getRandomProject = () => {
-    let random = Math.floor(Math.random() * this.projects.length)
+    let random = Math.floor(Math.random() * Math.floor(this.projects.length));
     return this.projects[random];
   }
 

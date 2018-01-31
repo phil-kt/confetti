@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 import Project from '../../components/project/Project';
@@ -71,6 +72,9 @@ class Home extends Component {
               </p>
               <p>
                 Scroll down to see some highlighted projects, or get an overall sense by <a href={process.env.PUBLIC_URL + '/philippe_kimura-thollander_resume.pdf'} target="_blank">reading my resume.</a>
+              </p>
+              <p>
+                Want to learn about the person behind the work? <Link to="/about">Get to know me.</Link>
               </p>
             </div>
           }/>

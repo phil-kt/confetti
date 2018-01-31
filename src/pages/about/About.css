@@ -1,0 +1,41 @@
+.About .content {
+  padding-top: 60px;
+}
+
+.About .content .my-photo-container {
+  text-align: center;
+}
+
+.About .my-photo {
+  height: 275px;
+  display: inline-block;
+  width: 275px;
+}
+
+.About .my-photo img {
+  display: block;
+  width: 100%;
+  border-radius: 999px
+}
+
+.About h3 {
+  text-align: center;
+}
+
+.About .list {
+  padding-left: 40px;
+  margin-top: 0;
+}
+
+
+.About .nav .navbar-link:hover {
+  color: #747a75;
+}
+
+.About .nav .navbar-link:hover a {
+  color: #747a75;
+}
+
+.About .nav .navbar-link:hover svg {
+  fill: #747a75;
+}

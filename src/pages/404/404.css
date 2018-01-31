@@ -1,0 +1,9 @@
+.PageNotFound {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../../media/particles/confetti.svg');
+  background-color: rgba(255, 255, 255, 0.6), ;
+}

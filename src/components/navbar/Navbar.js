@@ -19,8 +19,8 @@ class Navbar extends Component {
   }
 
   static propTypes = {
-    nextProjectLink: PropTypes.string.isRequired,
-    nextProjectName: PropTypes.string.isRequired,
+    nextProjectLink: PropTypes.string,
+    nextProjectName: PropTypes.string,
     color: PropTypes.string
   }
 
@@ -40,10 +40,14 @@ class Navbar extends Component {
           <div>
           <navbar className="navbar">
             <Link className="navbar-link" to="/">Home</Link>
-            <div className="next navbar-link">
-              <Link to={this.props.nextProjectLink}>{this.props.nextProjectName}</Link>
-              <Isvg className={"next-arrow"} src={arrow} />
-            </div>
+            { this.props.nextProjectLink ?
+              <div className="next navbar-link">
+                <Link to={this.props.nextProjectLink}>{this.props.nextProjectName}</Link>
+                <Isvg className={"next-arrow"} src={arrow}/>
+              </div>
+              :
+              null
+            }
           </navbar>
           </div>
         </Headroom>
