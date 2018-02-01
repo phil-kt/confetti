@@ -39,3 +39,8 @@
 .About .nav .navbar-link:hover svg {
   fill: #747a75;
 }
+
+.About .emoji {
+  display: inline-block;
+  margin-right: 2px;
+}

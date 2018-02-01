@@ -38,9 +38,9 @@ class About extends Component {
 
           <Row content={
             <ul className="about-me-copy col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 col-xl-6 list">
-              <li>Half-<span role="img" aria-label="swedish flag">🇸🇪</span>half-<span role="img" aria-label="japanese flag">🇯🇵</span>raised mostly in NY <span role="img" aria-label="statue of liberty">🗽</span></li>
-              <li>Big fan of craft beer <span role="img" aria-label="clinking beer glasses">🍻</span>and creating cocktails at home <span role="img" aria-label="cocktail glasss">🍸</span></li>
-              <li>Read manga pretty much daily <span role="img" aria-label="stack of books">📚</span>and love everything mecha <span role="img" aria-label="robot">🤖</span></li>
+              <li>Half-<span className="emoji" role="img" aria-label="swedish flag">🇸🇪</span>half-<span className="emoji" role="img" aria-label="japanese flag">🇯🇵</span>raised mostly in NY <span role="img" aria-label="statue of liberty">🗽</span></li>
+              <li>Big fan of craft beer <span className="emoji" role="img" aria-label="clinking beer glasses">🍻</span>and creating cocktails at home <span role="img" aria-label="cocktail glasss">🍸</span></li>
+              <li>Read manga pretty much daily <span className="emoji" span role="img" aria-label="stack of books">📚</span>and love everything mecha <span role="img" aria-label="robot">🤖</span></li>
               <li>Into 80's J-Pop, Hip-Hop, and Future Funk 🎶</li>
               <li>An emoji fanboy <span role="img" aria-label="nervous smile">😅</span></li>
             </ul>
