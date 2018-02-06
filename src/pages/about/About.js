@@ -32,7 +32,7 @@ class About extends Component {
 
           <Row content={
             <p className="about-me-copy col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 col-xl-6">
-              Glad you'd like to get more familiar. Here's a quick overview of who I am:
+              Glad you’d like to get more familiar. Here’s a quick overview of who I am:
             </p>
           }/>
 
@@ -48,7 +48,7 @@ class About extends Component {
 
           <Row content={
             <p className="about-me-copy col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 col-xl-6">
-              If that wasn't enough info, feel free to stalk my social media that I conveniently link to at the bottom.
+              If that wasn’t enough info, feel free to stalk my social media that I conveniently link to at the bottom.
             </p>
           }/>
 

@@ -88,7 +88,7 @@ class Home extends Component {
         <Project title="Alien Encounter" description="An exploration in the role of diegetic gestural communication plays in virtual reality experiences." image={alien} link="/alien" alt="Blue digital hand waving hello to purple alien" color="purple" percentage='48%'/>
 
 
-        <Project title="Macy’s of the Future" description="Service design project with Macy's to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red" percentage='68%'/>
+        <Project title="Macy’s of the Future" description="Service design project with Macy’s to envision their in-store customer experience 5 years from now." link="/macys" image={macy} alt="Macy's flagship store" color="red" percentage='68%'/>
 
 
         <Row content={

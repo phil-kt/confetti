@@ -32,7 +32,7 @@ class Projects {
     },
     {
       name: "Macy’s of the Future",
-      description: "Service design project with Macy's to envision their in-store customer experience 5 years from now.",
+      description: "Service design project with Macy’s to envision their in-store customer experience 5 years from now.",
       image: macyImage,
       link: "/macys",
       alt: "Macy's flagship store",
